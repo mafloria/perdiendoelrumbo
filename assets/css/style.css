@@ -1,33 +1,114 @@
-/* A Linux- and Windows-friendly sans-serif font stack: http://prospects.mhurrell.co.uk/post/updating-the-helvetica-font-stack */
-body {font: 13px Helmet, Freesans, sans-serif;}
-
-/* Using local fonts? Check out Font Squirrel's webfont generator: http://www.fontsquirrel.com/tools/webfont-generator */
-
-/* We like off-black for text. */
 body, select, input, textarea {color: #333;}
-
 a {color: #03f;}
 a:hover {color: #69f;}
-
-/* Custom text-selection colors (remove any text shadows: http://twitter.com/miketaylr/status/12228805301) */
 ::-moz-selection{background: #fcd700; color: #fff; text-shadow: none;}
 ::selection {background: #fcd700; color: #fff; text-shadow: none;}
-
-/*	j.mp/webkit-tap-highlight-color */
 a:link {-webkit-tap-highlight-color: #fcd700;}
-
 ins {background-color: #fcd700; color: #000; text-decoration: none;}
 mark {background-color: #fcd700; color: #000; font-style: italic; font-weight: bold;}
-
-/* Mozilla dosen't style placeholders by default */
 input:-moz-placeholder { color:#a9a9a9; }
 textarea:-moz-placeholder { color:#a9a9a9; }
-
-/* let's give blockquotes *some* default styling, because unstyled blockquotes are dangerous */
 blockquote {padding: 16px; background: #eee;}
 
 
 
+/*
+	BUSCANDO EL NORTE CSS
+*/
+
+body{
+	font-size: 16px;
+	font-family: 'Magra', sans-serif;
+	background-color: black;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+	position: relative;
+	vertical-align: middle;
+}
+img{
+	width: 100%;
+	height: 100%;
+}
+a{
+	text-decoration: none;
+}
+a.blackBtn{
+	background-color: black;
+	color: white;
+	text-align: center;
+	padding: 0.5em;
+}
+.wrapper{
+	background-size: cover;
+    width: 100%;
+    float: left;
+}
+#content-section{
+    width: 100%;
+    display: block;
+    float: left;
+}
+#nav-menu{
+	float: right;
+}
+.main-header{
+	background:rgba(255,255,255, 0.8);
+	width: 100%;
+	padding: 10px;
+	position: fixed;
+	z-index: 3;
+}
+.main-header h1{
+	width: 15%;
+	float: left;
+}
+.main-header h1 a{
+	display: block;
+}
+#content-section section{
+	width: 100%;
+	position: relative;
+}
+#content-section .cpt00{	
+	background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 2;
+    float: left;
+}
+.content-intro{
+	position: absolute;
+	top: 20%;
+	left: 10%;
+	width: 40%;
+}
+.content-intro a.blackBtn{
+	float: right;
+	width: 62%;
+	font-size: 1.4em;
+	margin-top: 5em;
+}
+.content-intro .logo{
+
+}
+#content-section .cpt00 .background-intro{
+    height: 100%;
+    overflow: hidden;
+    width: 100%;
+    background: black url("../../images/buscando-el-norte-landing-bg.png") no-repeat center center;
+    background-size: cover;
+}
+figure img{
+	max-width: 100%;
+    height: auto;
+    display: block;	
+}
+section img{
+	width: 100%;
+	height: 100%;
+}
 /* Media queries
 -------------------------------------------------------------------------------*/
 
