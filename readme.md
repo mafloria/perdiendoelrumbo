@@ -1,12 +1,7 @@
 # HTML5 Reset
 
-HTML5 Reset is a simple set of best practices to get web projects off on the right foot.
+Buscando el Norte ....
 
-## Command-line installation:
-
-```
-bower install HTML5-Reset
-```
 
 ## Some of the features:
 
@@ -20,7 +15,3 @@ bower install HTML5-Reset
 8. IE-specific classes for simple CSS targeting (if that's your thing)
 9. iPhone/iPad/iTouch icon snippets, plus social/app meta tags for Twitter, Facebook
 10. Lots of other keen details
-
-## Get the WordPress theme:
-
-https://github.com/murtaugh/HTML5-Reset-WordPress-Theme
