@@ -27,18 +27,26 @@ body{
 	position: relative;
 	vertical-align: middle;
 }
+p, a, h1, h2, h3, h4, h5{
+	font-family: 'Magra', sans-serif;
+	margin: 0;
+	padding: 0;
+}
 img{
 	width: 100%;
 	height: 100%;
 }
-a{
-	text-decoration: none;
+a, a:hover{
+	text-decoration: none !important;
 }
 a.blackBtn{
 	background-color: black;
 	color: white;
 	text-align: center;
 	padding: 0.5em;
+}
+a.blackBtn:hover{
+	color: white;
 }
 .wrapper{
 	background-size: cover;
@@ -47,11 +55,43 @@ a.blackBtn{
 }
 #content-section{
     width: 100%;
-    display: block;
-    float: left;
+    position: relative;
 }
 #nav-menu{
 	float: right;
+    position: absolute;
+    top: 0.5em;
+    right: 1em;
+    z-index: 3;
+}
+#nav-menu svg{
+	width: 30px;
+    height: 30px;
+    fill: black;
+    display: block;	
+}
+a.nav-before,
+a.nav-next{
+	position: absolute;
+	z-index: 3;
+	top: 50%;
+	opacity: 0.5;
+}
+a.nav-before:hover,
+a.nav-next:hover{
+	opacity: 1;
+}
+a.nav-before{
+	left: 1%;
+	transform : rotate(180deg);
+}
+a.nav-next{
+	right: 1%;
+}
+a.nav-before svg,
+a.nav-next svg{
+	width: 55px;
+	height: 55px;
 }
 .main-header{
 	background:rgba(255,255,255, 1);
@@ -65,6 +105,9 @@ a.blackBtn{
 .main-header h1{
 	width: 15%;
 	float: left;
+	margin: 0;
+    padding: 0;
+    line-height: 0;
 }
 .main-header h1 a{
 	display: block;
@@ -85,7 +128,8 @@ header .submenu ul li a{
 	text-align: right;
 	width: 100%;
 	display: block;	
-	line-height: 17px;
+	line-height: 1em;
+	font-size: 1.5em;
 }
 header .submenu ul li a:hover{
 	background-color: black;

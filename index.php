@@ -41,7 +41,7 @@
             </h1>
 
             <nav id="nav-menu">
-                <a id="ben-main-menu" href="javascript:void(0);">Menu</a>
+                <a id="ben-main-menu" href="javascript:void(0);"><svg><use xlink:href="#menu"/></svg></a>
             </nav>
             <div class="submenu" style="display: none;">
                 <ul>
@@ -57,7 +57,8 @@
 
         <div id="content-section">
 
-            <div class="nav-section "></div>   
+            <a class="nav-before" href=""><svg><use xlink:href="#nav"/></svg></a>
+            <a class="nav-next" href=""><svg><use xlink:href="#nav"/></svg></a>  
 
             <section class="section-site cpt00">
                 <div class="content-intro">
