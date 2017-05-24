@@ -26,7 +26,40 @@ function initPage(){
  * Author: Margaret Florian (mafloria)
  */
 $(document).ready(function(){       
+	
+//*********** window size to fix content	   
+	setHeight();
+		  
+	$(window).resize(function() {
+		setHeight();
+	});
+	//adjust sections to the browser height
+	function setHeight() {
+		windowHeight = $(window).innerHeight();
+		$('#content-section, .section-site').css('height', windowHeight);		
+	};
+//*********** end - window size to fix content
 
+//*********** scroll management - used for prevent scrolling when location detail window is opened
+	//$(window).disablescroll({handleWheel:false});
+	
+//*********** end - scroll management 
+	
+//*********** scrolls to an href section exactly
+	    $('a[href*="#"]:not([href="#"])').click(function() {
+		    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+		      var target = $(this.hash);
+		      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+		      if (target.length) {
+		        $('html, body').animate({
+		          scrollTop: target.offset().top
+		        }, 1000);
+		        return false;
+		      }
+		    }
+		});
+//*********** end - scrolls to an href section exactly	
+	
 	var vid = document.getElementById("passage-audio");
 	var txt_sc1_line = 0;
 	var pausePhrases = false;

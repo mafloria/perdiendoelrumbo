@@ -18,9 +18,9 @@
     <link rel="stylesheet" href="assets/css/reset.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
     <link rel="stylesheet" href="assets/css/animate.css" />
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
-    <link rel="stylesheet" href="css/bootstrapValidator.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrapValidator.css">
 
     <script src="assets/js/libs/prefixfree.min.js"></script>
     <script src="assets/js/libs/modernizr-3.2.0.base.js"></script> 
@@ -35,7 +35,7 @@
 
             <h1>
                 <a href="#">
-                    <img src="http://localhost/perdiendoelrumbo/images/buscando-el-norte-logo-horizontal-top.png" width="541" height="61">
+                    <img src="http://perdiendoelrumbo/images/buscando-el-norte-logo-horizontal-top.png" width="541" height="61">
                 </a>
             </h1>
 
@@ -54,33 +54,35 @@
 
         </header><!-- end headerr -->
 
-        <div id="content-section" style="height: 960px;">
+        <div id="content-section">
 
             <div class="nav-section "></div>   
 
-            <section class="section-site cpt00" style="height: 960px;">
+            <section class="section-site cpt00">
                 <div class="content-intro">
                     <div class="logo">
-                        <img src="http://localhost/perdiendoelrumbo/images/buscando-el-norte-logo-intro.png" width="781" height="260">
+                        <img src="http://perdiendoelrumbo/images/buscando-el-norte-logo-intro.png" width="781" height="260">
                     </div> 
-                    <a class="blackBtn" href="">COMENZAR</a>     
+                    <a class="blackBtn" href="#capitulo01">COMENZAR</a>     
                 </div>
                 <div class="background-intro">
                     <!--<img src="../images/buscando-el-norte-landing-bg.png">-->
                 </div>
             </section> 
 
-            <section class="section-site cpt01"></section>
+            <section id="capitulo01" class="section-site cpt01">
+                 
+            </section>
 
-            <section class="section-site cpt02"></section>
+            <section id="capitulo02" class="section-site cpt02"></section>
 
-            <section class="section-site cpt03"></section>
+            <section id="capitulo03" class="section-site cpt03"></section>
 
-            <section class="section-site cpt04"></section>
+            <section id="capitulo04" class="section-site cpt04"></section>
 
-            <section class="section-site cpt05"></section> 
+            <section id="capitulo05" class="section-site cpt05"></section> 
 
-            <section class="section-site cpt06"></section> 
+            <section id="capitulo06" class="section-site cpt06"></section> 
 
         </div> <!-- end content -->
     </div><!-- end wrapper -->  
@@ -89,15 +91,14 @@
     <article style="display: none;">
         
 
-        <p class="passage-audio">
-            <audio id="passage-audio" class="passage" controls>
+        
+        <audio id="passage-audio" class="passage" controls>
                 <!-- @todo WebM? -->
-                <source src="audio/test.mp3" type="audio/mp3">
-                <source src="audio/test.ogg" type="audio/ogg">
-                <source src="audio/test.wav" type="audio/wav">
-                <em class="error"><strong>Error:</strong> Your browser doesn't appear to support HTML5 Audio.</em>
-            </audio>
-        </p>
+            <source src="audio/test.mp3" type="audio/mp3">
+            <source src="audio/test.ogg" type="audio/ogg">
+            <source src="audio/test.wav" type="audio/wav">
+            <em class="error"><strong>Error:</strong> Your browser doesn't appear to support HTML5 Audio.</em>
+        </audio>        
         <a href="javascript:void(0)" id="playAudio">Play</a>
         <a href="javascript:void(0)" id="pauseAudio">Pause</a>
         <p class="passage-audio-unavailable" hidden>
@@ -113,6 +114,7 @@
 <script src="assets/js/libs/jquery.lettering.js"></script>
 <script src="http://yandex.st/highlightjs/7.3/highlight.min.js"></script>
 <script src="assets/js/libs/jquery.textillate.js"></script>
+<script src="assets/js/libs/jquery.disablescroll.min.js"></script>
 <script src="assets/js/functions.js"></script>
     
     
