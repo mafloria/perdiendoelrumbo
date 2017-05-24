@@ -59,6 +59,12 @@ $(document).ready(function(){
 		    }
 		});
 //*********** end - scrolls to an href section exactly	
+
+//********** actions
+	$("#ben-main-menu").click(function(){
+		$(".submenu").toggle('slow');
+	});
+//********** end - actions
 	
 	var vid = document.getElementById("passage-audio");
 	var txt_sc1_line = 0;

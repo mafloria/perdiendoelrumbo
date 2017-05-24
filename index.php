@@ -29,18 +29,19 @@
 </head>
 
 <body>
+<?php include_once("svg/buscandoelnorte.php"); ?>
     <div class="wrapper">
 
         <header class="main-header">
 
             <h1>
                 <a href="#">
-                    <img src="http://localhost/perdiendoelrumbo/images/buscando-el-norte-logo-horizontal-top.png" width="541" height="61">
+                    <img src="http://perdiendoelrumbo/images/buscando-el-norte-logo-horizontal-top.png" width="541" height="61">
                 </a>
             </h1>
 
             <nav id="nav-menu">
-                <a href="">Menu</a>
+                <a id="ben-main-menu" href="javascript:void(0);">Menu</a>
             </nav>
             <div class="submenu" style="display: none;">
                 <ul>
@@ -61,7 +62,7 @@
             <section class="section-site cpt00">
                 <div class="content-intro">
                     <div class="logo">
-                        <img src="http://localhost/perdiendoelrumbo/images/buscando-el-norte-logo-intro.png" width="781" height="260">
+                        <img src="http://perdiendoelrumbo/images/buscando-el-norte-logo-intro.png" width="781" height="260">
                     </div> 
                     <a class="blackBtn" href="#capitulo01">COMENZAR</a>     
                 </div>
@@ -89,8 +90,6 @@
 
 
     <article style="display: none;">
-        
-
         
         <audio id="passage-audio" class="passage" controls>
                 <!-- @todo WebM? -->
