@@ -27,12 +27,17 @@ body{
 	position: relative;
 	vertical-align: middle;
 }
+p, a, h1, h2, h3, h4, h5{
+	font-family: 'Magra', sans-serif;
+	margin: 0;
+	padding: 0;
+}
 img{
 	width: 100%;
 	height: 100%;
 }
-a{
-	text-decoration: none;
+a, a:hover{
+	text-decoration: none !important;
 }
 a.blackBtn{
 	background-color: black;
@@ -40,21 +45,56 @@ a.blackBtn{
 	text-align: center;
 	padding: 0.5em;
 }
+a.blackBtn:hover{
+	color: white;
+	background-color: #ab6501;
+}
 .wrapper{
-	background-size: cover;
     width: 100%;
-    float: left;
+height: 100%;
 }
 #content-section{
     width: 100%;
-    display: block;
-    float: left;
+    position: relative;
 }
 #nav-menu{
 	float: right;
+    position: absolute;
+    top: 0.5em;
+    right: 1em;
+    z-index: 3;
+}
+#nav-menu svg{
+	width: 30px;
+    height: 30px;
+    fill: black;
+    display: block;	
+}
+a.nav-before,
+a.nav-next{
+	position: absolute;
+	z-index: 3;
+	top: 50%;
+	opacity: 0.5;
+}
+a.nav-before:hover,
+a.nav-next:hover{
+	opacity: 1;
+}
+a.nav-before{
+	left: 1%;
+	transform : rotate(180deg);
+}
+a.nav-next{
+	right: 1%;
+}
+a.nav-before svg,
+a.nav-next svg{
+	width: 55px;
+	height: 55px;
 }
 .main-header{
-	background:rgba(255,255,255, 1);
+	background:rgba(255,255,255, 0.96);
 	border-bottom: 2px solid black;
 	width: 100%;
 	padding: 10px;
@@ -65,6 +105,9 @@ a.blackBtn{
 .main-header h1{
 	width: 15%;
 	float: left;
+	margin: 0;
+    padding: 0;
+    line-height: 0;
 }
 .main-header h1 a{
 	display: block;
@@ -73,7 +116,7 @@ header .submenu{
 	position: absolute;
 	top: 3.25em;
 	right: 0;
-	width: 25%;
+	width: 30%;
 }
 header .submenu ul li{
 	border-bottom: 2px solid black;
@@ -85,7 +128,8 @@ header .submenu ul li a{
 	text-align: right;
 	width: 100%;
 	display: block;	
-	line-height: 17px;
+	line-height: 1em;
+	font-size: 1.2em;
 }
 header .submenu ul li a:hover{
 	background-color: black;
@@ -122,12 +166,17 @@ header .submenu ul li a:hover{
 		from{ left:0;}
 		to{right:2em;}
 	}
-#content-section .cpt00 .background-intro{
+
+#content-section .cpt00 .background-section{
     height: 100%;
-    overflow: hidden;
     width: 100%;
-    background: black url("../../images/buscando-el-norte-landing-bg.png") no-repeat center center;
+    /*background: black url("../../images/buscando-el-norte-landing-bg.png") no-repeat center center;
     background-size: cover;
+    overflow: hidden;*/
+}
+#content-section .cpt00 .background-section img{
+	height: 100%;
+    width: 100%;	
 }
 figure img{
 	max-width: 100%;
@@ -138,6 +187,48 @@ section img{
 	width: 100%;
 	height: 100%;
 }
+img.large-bg{
+		display: none;
+}
+#barra-progreso{
+    width: 100%;
+    position: fixed;
+    bottom: 0px;
+    z-index: 4;	
+    background-color: black;
+}
+#barra-progreso .barra-marcador{
+	 display: block;
+    float: left;
+    width: 100%;
+    position: relative;
+    height: 15px;
+    background-color: #ab6501;;	
+}
+#subs-section{
+	width: 100%;
+	background: rgba(0, 0, 0, 0.8);
+	padding: 0.5em;
+
+	position: fixed;
+	z-index: 4;	
+	bottom: 15px;
+}
+#subs-section a#playAudio,
+#subs-section a#pauseAudio{
+	float: left;
+	display: block;	
+}
+#subs-section a#playAudio svg,
+#subs-section a#pauseAudio svg{
+	width: 35px;
+    height: 35px;
+    fill: white;	
+}
+.txt_sc1{
+    color: white;
+    font-style: italic;
+}
 /* Media queries
 -------------------------------------------------------------------------------*/
 
@@ -146,8 +237,17 @@ section img{
 
 }
 
-
-
+@media screen and (min-width:1440px){
+	.main-header h1{
+		width: 11%;
+	}
+	img.large-bg{
+		display: block;
+	}
+	img.med-bg{
+		display: none !important;
+	}	
+}
 /* Print styles
 -------------------------------------------------------------------------------*/
 @media print {
