@@ -67,13 +67,16 @@
                     </div> 
                     <a class="blackBtn" href="#capitulo01">COMENZAR</a>     
                 </div>
-                <div class="background-intro">
-                    <!--<img src="../images/buscando-el-norte-landing-bg.png">-->
+                <div class="background-section">
+                    <img class="med-bg" src="http://localhost/perdiendoelrumbo/images/buscando-el-norte-1024-intro.png">
+                    <img class="large-bg" src="http://localhost/perdiendoelrumbo/images/buscando-el-norte-1920-intro.png">
                 </div>
             </section> 
 
             <section id="capitulo01" class="section-site cpt01">
-                 
+                <div class="background-section">
+                    <img src="http://localhost/perdiendoelrumbo/images/buscando-el-norte-1024-capitulo01.png">
+                </div>    
             </section>
 
             <section id="capitulo02" class="section-site cpt02"></section>
@@ -86,6 +89,10 @@
 
             <section id="capitulo06" class="section-site cpt06"></section> 
 
+            <!-- barra progreso -->
+            <div id="barra-progreso">
+                <div class="barra-marcador" style="width: 30%;"></div>
+            </div>
         </div> <!-- end content -->
     </div><!-- end wrapper -->  
 

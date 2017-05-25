@@ -47,11 +47,11 @@ a.blackBtn{
 }
 a.blackBtn:hover{
 	color: white;
+	background-color: #ab6501;
 }
 .wrapper{
-	background-size: cover;
     width: 100%;
-    float: left;
+height: 100%;
 }
 #content-section{
     width: 100%;
@@ -94,7 +94,7 @@ a.nav-next svg{
 	height: 55px;
 }
 .main-header{
-	background:rgba(255,255,255, 1);
+	background:rgba(255,255,255, 0.96);
 	border-bottom: 2px solid black;
 	width: 100%;
 	padding: 10px;
@@ -166,12 +166,17 @@ header .submenu ul li a:hover{
 		from{ left:0;}
 		to{right:2em;}
 	}
-#content-section .cpt00 .background-intro{
+
+#content-section .cpt00 .background-section{
     height: 100%;
-    overflow: hidden;
     width: 100%;
-    background: black url("../../images/buscando-el-norte-landing-bg.png") no-repeat center center;
+    /*background: black url("../../images/buscando-el-norte-landing-bg.png") no-repeat center center;
     background-size: cover;
+    overflow: hidden;*/
+}
+#content-section .cpt00 .background-section img{
+	height: 100%;
+    width: 100%;	
 }
 figure img{
 	max-width: 100%;
@@ -182,6 +187,24 @@ section img{
 	width: 100%;
 	height: 100%;
 }
+img.large-bg{
+		display: none;
+}
+#barra-progreso{
+    width: 100%;
+    position: fixed;
+    bottom: 0px;
+    z-index: 4;	
+    background-color: black;
+}
+#barra-progreso .barra-marcador{
+	 display: block;
+    float: left;
+    width: 100%;
+    position: relative;
+    height: 15px;
+    background-color: #ab6501;;	
+}
 /* Media queries
 -------------------------------------------------------------------------------*/
 
@@ -190,8 +213,17 @@ section img{
 
 }
 
-
-
+@media screen and (min-width:1440px){
+	.main-header h1{
+		width: 11%;
+	}
+	img.large-bg{
+		display: block;
+	}
+	img.med-bg{
+		display: none !important;
+	}	
+}
 /* Print styles
 -------------------------------------------------------------------------------*/
 @media print {
