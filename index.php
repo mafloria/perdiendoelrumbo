@@ -36,7 +36,7 @@
 
             <h1>
                 <a href="#">
-                    <img src="http://localhost/perdiendoelrumbo/images/buscando-el-norte-logo-horizontal-top.png" width="541" height="61">
+                    <img src="http://perdiendoelrumbo/images/buscando-el-norte-logo-horizontal-top.png" width="541" height="61">
                 </a>
             </h1>
 
@@ -62,7 +62,7 @@
             <section class="section-site cpt00">
                 <div class="content-intro">
                     <div class="logo">
-                        <img src="http://localhost/perdiendoelrumbo/images/buscando-el-norte-logo-intro.png" width="781" height="260">
+                        <img src="http://perdiendoelrumbo/images/buscando-el-norte-logo-intro.png" width="781" height="260">
                     </div> 
                     <a class="blackBtn" href="#capitulo01">COMENZAR</a>     
                 </div>
@@ -72,12 +72,28 @@
             </section> 
 
             <section id="capitulo01" class="section-site cpt01">
-                 
+                 <audio id="audio-capitulo01" class="audios" controls>                
+                    <source src="audio/CAP1.mp3" type="audio/mp3">                    
+                    <em class="error"><strong>Error:</strong> Your browser doesn't appear to support HTML5 Audio.</em>
+                </audio>
             </section>
 
-            <section id="capitulo02" class="section-site cpt02"></section>
+            <section id="capitulo02" class="section-site cpt02">
+                
+                <audio id="audio-capitulo02" class="audios" controls>                
+                    <source src="audio/CAP2.mp3" type="audio/mp3">                    
+                    <em class="error"><strong>Error:</strong> Your browser doesn't appear to support HTML5 Audio.</em>
+                </audio>                 
+                                
+            </section>
 
-            <section id="capitulo03" class="section-site cpt03"></section>
+            <section id="capitulo03" class="section-site cpt03">
+                <audio id="audio-capitulo03" class="audios" controls>                
+                    <source src="audio/CAP3.mp3" type="audio/mp3">                    
+                    <em class="error"><strong>Error:</strong> Your browser doesn't appear to support HTML5 Audio.</em>
+                </audio>
+                
+            </section>
 
             <section id="capitulo04" class="section-site cpt04"></section>
 
@@ -98,8 +114,7 @@
             <source src="audio/test.wav" type="audio/wav">
             <em class="error"><strong>Error:</strong> Your browser doesn't appear to support HTML5 Audio.</em>
         </audio>        
-        <a href="javascript:void(0)" id="playAudio">Play</a>
-        <a href="javascript:void(0)" id="pauseAudio">Pause</a>
+        
         <p class="passage-audio-unavailable" hidden>
             <em class="error"><strong>Error:</strong> You will not be able to do the read-along audio because your browser is not able to play MP3, Ogg, or WAV audio formats.</em>
         </p>
