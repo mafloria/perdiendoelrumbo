@@ -60,7 +60,7 @@
             <a class="nav-before" href=""><svg><use xlink:href="#nav"/></svg></a>
             <a class="nav-next" href=""><svg><use xlink:href="#nav"/></svg></a>  
 
-            <section class="section-site cpt00">
+            <section class="section-site cpt00"><!-- INTRO-->
                 <div class="content-intro">
                     <div class="logo">
                         <img src="http://localhost/perdiendoelrumbo/images/buscando-el-norte-logo-intro.png" width="781" height="260">
@@ -73,56 +73,70 @@
                 </div>
             </section> 
 
-            <section id="capitulo01" class="section-site cpt01">
+            <section id="capitulo01" class="section-site cpt01"><!-- CAPITULO 01 -->
+                <div class="subs-section">  
+                     <audio id="audio-capitulo01" class="audios" controls>                
+                        <source src="audio/CAP1.mp3" type="audio/mp3">                    
+                        <em class="error"><strong>Error:</strong> Your browser doesn't appear to support HTML5 Audio.</em>
+                    </audio>
+                    <a href="javascript:void(0)" id="playAudio"><svg><use xlink:href="#audioplay"/></svg></a>
+                    <a href="javascript:void(0)" id="pauseAudio"><svg><use xlink:href="#audiostop"/></svg></a>
+                    <p class="passage-audio-unavailable" hidden>
+                        <em class="error"><strong>Error:</strong> You will not be able to do the read-along audio because your browser is not able to play MP3, Ogg, or WAV audio formats.</em>
+                    </p>
+                </div>
                 <div class="background-section">
                     <img src="http://localhost/perdiendoelrumbo/images/buscando-el-norte-1024-capitulo01.png">
                 </div>    
 
             </section>
 
-            <section id="capitulo02" class="section-site cpt02">
-                
-                <audio id="audio-capitulo02" class="audios" controls>                
-                    <source src="audio/CAP2.mp3" type="audio/mp3">                    
-                    <em class="error"><strong>Error:</strong> Your browser doesn't appear to support HTML5 Audio.</em>
-                </audio>                 
-                                
+            <section id="capitulo02" class="section-site cpt02"><!-- CAPITULO 02 -->
+                <div class="subs-section">   
+                    <audio id="audio-capitulo02" class="audios" controls>                
+                        <source src="audio/CAP2.mp3" type="audio/mp3">                    
+                        <em class="error"><strong>Error:</strong> Your browser doesn't appear to support HTML5 Audio.</em>
+                    </audio> 
+                    <a href="javascript:void(0)" id="playAudio"><svg><use xlink:href="#audioplay"/></svg></a>
+                    <a href="javascript:void(0)" id="pauseAudio"><svg><use xlink:href="#audiostop"/></svg></a>
+                    <p class="passage-audio-unavailable" hidden>
+                        <em class="error"><strong>Error:</strong> You will not be able to do the read-along audio because your browser is not able to play MP3, Ogg, or WAV audio formats.</em>
+                    </p>                
+                </div> 
+                <div class="background-section">
+                    <img src="http://localhost/perdiendoelrumbo/images/buscando-el-norte-1024-capitulo02.png">
+                </div>                
             </section>
 
-            <section id="capitulo03" class="section-site cpt03">
-                <audio id="audio-capitulo03" class="audios" controls>                
-                    <source src="audio/CAP3.mp3" type="audio/mp3">                    
-                    <em class="error"><strong>Error:</strong> Your browser doesn't appear to support HTML5 Audio.</em>
-                </audio>
-                
-            </section>
-
-            <section id="capitulo04" class="section-site cpt04"></section>
-
-            <section id="capitulo05" class="section-site cpt05"></section> 
-
-            <section id="capitulo06" class="section-site cpt06"></section> 
-
-            <!-- bnarra subtitulos-->
-                <div id="subs-section">
-                    <article>
-        
-                        <audio id="passage-audio" class="passage" controls>
-                                <!-- @todo WebM? -->
-                            <source src="audio/test.mp3" type="audio/mp3">
-                            <source src="audio/test.ogg" type="audio/ogg">
-                            <source src="audio/test.wav" type="audio/wav">
-                            <em class="error"><strong>Error:</strong> Your browser doesn't appear to support HTML5 Audio.</em>
-                        </audio>        
-                        <a href="javascript:void(0)" id="playAudio"><svg><use xlink:href="#audioplay"/></svg></a>
-                        <a href="javascript:void(0)" id="pauseAudio"><svg><use xlink:href="#audiostop"/></svg></a>
-                        <p class="passage-audio-unavailable" hidden>
-                            <em class="error"><strong>Error:</strong> You will not be able to do the read-along audio because your browser is not able to play MP3, Ogg, or WAV audio formats.</em>
-                        </p>
-                        <span class="txt_sc1"></span>
-                                  
-                    </article    
+            <section id="capitulo03" class="section-site cpt03"><!-- CAPITULO 03 -->
+                <div class="subs-section">  
+                    <audio id="audio-capitulo03" class="audios" controls>                
+                        <source src="audio/CAP3.mp3" type="audio/mp3">                    
+                        <em class="error"><strong>Error:</strong> Your browser doesn't appear to support HTML5 Audio.</em>
+                    </audio>
+                    <a href="javascript:void(0)" id="playAudio"><svg><use xlink:href="#audioplay"/></svg></a>
+                    <a href="javascript:void(0)" id="pauseAudio"><svg><use xlink:href="#audiostop"/></svg></a>
+                    <p class="passage-audio-unavailable" hidden>
+                        <em class="error"><strong>Error:</strong> You will not be able to do the read-along audio because your browser is not able to play MP3, Ogg, or WAV audio formats.</em>
+                    </p>
                 </div>
+                <div class="background-section">
+                    <img src="http://localhost/perdiendoelrumbo/images/buscando-el-norte-1024-capitulo03.png">
+                </div> 
+            </section>
+
+            <section id="capitulo04" class="section-site cpt04"><!-- CAPITULO 04 -->
+                
+            </section>
+
+            <section id="capitulo05" class="section-site cpt05"><!-- CAPITULO 05 -->
+                
+            </section> 
+
+            <section id="capitulo06" class="section-site cpt06"><!-- CAPITULO 05 -->
+                
+            </section> 
+
             <!-- barra progreso -->
             <div id="barra-progreso">
                 <div class="barra-marcador" style="width: 30%;"></div>

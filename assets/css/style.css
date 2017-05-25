@@ -139,12 +139,8 @@ header .submenu ul li a:hover{
 	width: 100%;
 	position: relative;
 }
-#content-section .cpt00{	
-	background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-    z-index: 2;
-    float: left;
+.cpt00{	
+
 }
 .content-intro{
 	position: absolute;
@@ -205,22 +201,22 @@ img.large-bg{
     height: 15px;
     background-color: #ab6501;;	
 }
-#subs-section{
+.subs-section{
 	width: 100%;
 	background: rgba(0, 0, 0, 0.8);
 	padding: 0.5em;
 
-	position: fixed;
+	position: absolute;
 	z-index: 4;	
 	bottom: 15px;
 }
-#subs-section a#playAudio,
-#subs-section a#pauseAudio{
+.subs-section a#playAudio,
+.subs-section a#pauseAudio{
 	float: left;
 	display: block;	
 }
-#subs-section a#playAudio svg,
-#subs-section a#pauseAudio svg{
+.subs-section a#playAudio svg,
+.subs-section a#pauseAudio svg{
 	width: 35px;
     height: 35px;
     fill: white;	
