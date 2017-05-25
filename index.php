@@ -89,6 +89,26 @@
 
             <section id="capitulo06" class="section-site cpt06"></section> 
 
+            <!-- bnarra subtitulos-->
+                <div id="subs-section">
+                    <article>
+        
+                        <audio id="passage-audio" class="passage" controls>
+                                <!-- @todo WebM? -->
+                            <source src="audio/test.mp3" type="audio/mp3">
+                            <source src="audio/test.ogg" type="audio/ogg">
+                            <source src="audio/test.wav" type="audio/wav">
+                            <em class="error"><strong>Error:</strong> Your browser doesn't appear to support HTML5 Audio.</em>
+                        </audio>        
+                        <a href="javascript:void(0)" id="playAudio"><svg><use xlink:href="#audioplay"/></svg></a>
+                        <a href="javascript:void(0)" id="pauseAudio"><svg><use xlink:href="#audiostop"/></svg></a>
+                        <p class="passage-audio-unavailable" hidden>
+                            <em class="error"><strong>Error:</strong> You will not be able to do the read-along audio because your browser is not able to play MP3, Ogg, or WAV audio formats.</em>
+                        </p>
+                        <span class="txt_sc1"></span>
+                                  
+                    </article    
+                </div>
             <!-- barra progreso -->
             <div id="barra-progreso">
                 <div class="barra-marcador" style="width: 30%;"></div>

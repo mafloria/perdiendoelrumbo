@@ -116,7 +116,7 @@ header .submenu{
 	position: absolute;
 	top: 3.25em;
 	right: 0;
-	width: 25%;
+	width: 30%;
 }
 header .submenu ul li{
 	border-bottom: 2px solid black;
@@ -129,7 +129,7 @@ header .submenu ul li a{
 	width: 100%;
 	display: block;	
 	line-height: 1em;
-	font-size: 1.5em;
+	font-size: 1.2em;
 }
 header .submenu ul li a:hover{
 	background-color: black;
@@ -204,6 +204,30 @@ img.large-bg{
     position: relative;
     height: 15px;
     background-color: #ab6501;;	
+}
+#subs-section{
+	width: 100%;
+	background: rgba(0, 0, 0, 0.8);
+	padding: 0.5em;
+
+	position: fixed;
+	z-index: 4;	
+	bottom: 15px;
+}
+#subs-section a#playAudio,
+#subs-section a#pauseAudio{
+	float: left;
+	display: block;	
+}
+#subs-section a#playAudio svg,
+#subs-section a#pauseAudio svg{
+	width: 35px;
+    height: 35px;
+    fill: white;	
+}
+.txt_sc1{
+    color: white;
+    font-style: italic;
 }
 /* Media queries
 -------------------------------------------------------------------------------*/
