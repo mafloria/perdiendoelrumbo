@@ -36,12 +36,12 @@
 
             <h1>
                 <a href="#">
-                    <img src="http://perdiendoelrumbo/images/buscando-el-norte-logo-horizontal-top.png" width="541" height="61">
+                    <img src="http://localhost/perdiendoelrumbo/images/buscando-el-norte-logo-horizontal-top.png" width="541" height="61">
                 </a>
             </h1>
 
             <nav id="nav-menu">
-                <a id="ben-main-menu" href="javascript:void(0);">Menu</a>
+                <a id="ben-main-menu" href="javascript:void(0);"><svg><use xlink:href="#menu"/></svg></a>
             </nav>
             <div class="submenu" style="display: none;">
                 <ul>
@@ -57,25 +57,27 @@
 
         <div id="content-section">
 
-            <div class="nav-section "></div>   
+            <a class="nav-before" href=""><svg><use xlink:href="#nav"/></svg></a>
+            <a class="nav-next" href=""><svg><use xlink:href="#nav"/></svg></a>  
 
             <section class="section-site cpt00">
                 <div class="content-intro">
                     <div class="logo">
-                        <img src="http://perdiendoelrumbo/images/buscando-el-norte-logo-intro.png" width="781" height="260">
+                        <img src="http://localhost/perdiendoelrumbo/images/buscando-el-norte-logo-intro.png" width="781" height="260">
                     </div> 
                     <a class="blackBtn" href="#capitulo01">COMENZAR</a>     
                 </div>
-                <div class="background-intro">
-                    <!--<img src="../images/buscando-el-norte-landing-bg.png">-->
+                <div class="background-section">
+                    <img class="med-bg" src="http://localhost/perdiendoelrumbo/images/buscando-el-norte-1024-intro.png">
+                    <img class="large-bg" src="http://localhost/perdiendoelrumbo/images/buscando-el-norte-1920-intro.png">
                 </div>
             </section> 
 
             <section id="capitulo01" class="section-site cpt01">
-                 <audio id="audio-capitulo01" class="audios" controls>                
-                    <source src="audio/CAP1.mp3" type="audio/mp3">                    
-                    <em class="error"><strong>Error:</strong> Your browser doesn't appear to support HTML5 Audio.</em>
-                </audio>
+                <div class="background-section">
+                    <img src="http://localhost/perdiendoelrumbo/images/buscando-el-norte-1024-capitulo01.png">
+                </div>    
+
             </section>
 
             <section id="capitulo02" class="section-site cpt02">
@@ -101,6 +103,30 @@
 
             <section id="capitulo06" class="section-site cpt06"></section> 
 
+            <!-- bnarra subtitulos-->
+                <div id="subs-section">
+                    <article>
+        
+                        <audio id="passage-audio" class="passage" controls>
+                                <!-- @todo WebM? -->
+                            <source src="audio/test.mp3" type="audio/mp3">
+                            <source src="audio/test.ogg" type="audio/ogg">
+                            <source src="audio/test.wav" type="audio/wav">
+                            <em class="error"><strong>Error:</strong> Your browser doesn't appear to support HTML5 Audio.</em>
+                        </audio>        
+                        <a href="javascript:void(0)" id="playAudio"><svg><use xlink:href="#audioplay"/></svg></a>
+                        <a href="javascript:void(0)" id="pauseAudio"><svg><use xlink:href="#audiostop"/></svg></a>
+                        <p class="passage-audio-unavailable" hidden>
+                            <em class="error"><strong>Error:</strong> You will not be able to do the read-along audio because your browser is not able to play MP3, Ogg, or WAV audio formats.</em>
+                        </p>
+                        <span class="txt_sc1"></span>
+                                  
+                    </article    
+                </div>
+            <!-- barra progreso -->
+            <div id="barra-progreso">
+                <div class="barra-marcador" style="width: 30%;"></div>
+            </div>
         </div> <!-- end content -->
     </div><!-- end wrapper -->  
 
