@@ -30,14 +30,17 @@
 </head>
 
 <body>
-<?php include_once("svg/buscandoelnorte.php"); ?>
+<?php 
+include_once("svg/buscandoelnorte.php");
+include_once("config.php"); 
+?>
     <div class="wrapper">
 
         <header class="main-header">
 
             <h1>
                 <a href="#">
-                    <img src="http://localhost/perdiendoelrumbo/images/buscando-el-norte-logo-horizontal-top.png" width="541" height="61">
+                    <img src="<?php echo $urls["url_base"];?>images/buscando-el-norte-logo-horizontal-top.png" width="541" height="61">
                 </a>
             </h1>
 
@@ -65,30 +68,30 @@
 
                 <div class="content-intro">
                     <div class="logo">
-                        <img src="http://localhost/perdiendoelrumbo/images/buscando-el-norte-logo-intro.png" width="781" height="260">
+                        <img src="<?php echo $urls["url_base"];?>images/buscando-el-norte-logo-intro.png" width="781" height="260">
                     </div> 
                     <a class="blackBtn" href="#capitulo01">COMENZAR</a>     
                 </div>
                 <div class="background-section">
-                    <img class="med-bg" src="http://localhost/perdiendoelrumbo/images/buscando-el-norte-1024-intro.png">
-                    <img class="large-bg" src="http://localhost/perdiendoelrumbo/images/buscando-el-norte-1920-intro.png">
+                    <img class="med-bg" src="<?php echo $urls["url_base"];?>images/buscando-el-norte-1024-intro.png">
+                    <img class="large-bg" src="<?php echo $urls["url_base"];?>images/buscando-el-norte-1920-intro.png">
                 </div>
             </section> 
 
             <section id="capitulo01" class="section-site cpt01"><!-- CAPITULO 01 -->
                 <div class="subs-section">  
-                     <audio id="audio-capitulo01" class="audios" controls>                
+                     <audio id="audio-capitulo01" class="audios">                
                         <source src="audio/CAP1.mp3" type="audio/mp3">                    
                         <em class="error"><strong>Error:</strong> Your browser doesn't appear to support HTML5 Audio.</em>
                     </audio>
-                    <a href="javascript:void(0)" id="playAudio"><svg><use xlink:href="#audioplay"/></svg></a>
-                    <a href="javascript:void(0)" id="pauseAudio"><svg><use xlink:href="#audiostop"/></svg></a>
+                    <a href="javascript:void(0)" class="playAudio" id="playAudio-capitulo01" style="display: none"><svg><use xlink:href="#audioplay"/></svg></a>
+                    <a href="javascript:void(0)" class="pauseAudio" id="pauseAudio-capitulo01"><svg><use xlink:href="#audiostop"/></svg></a>
                     <p class="passage-audio-unavailable" hidden>
                         <em class="error"><strong>Error:</strong> You will not be able to do the read-along audio because your browser is not able to play MP3, Ogg, or WAV audio formats.</em>
                     </p>
                 </div>
                 <div class="background-section">
-                    <img src="http://localhost/perdiendoelrumbo/images/buscando-el-norte-1024-capitulo01.png">
+                    <img src="<?php echo $urls["url_base"];?>images/buscando-el-norte-1024-capitulo01.png">
                 </div>    
 
             </section>
@@ -99,14 +102,14 @@
                         <source src="audio/CAP2.mp3" type="audio/mp3">                    
                         <em class="error"><strong>Error:</strong> Your browser doesn't appear to support HTML5 Audio.</em>
                     </audio> 
-                    <a href="javascript:void(0)" id="playAudio"><svg><use xlink:href="#audioplay"/></svg></a>
-                    <a href="javascript:void(0)" id="pauseAudio"><svg><use xlink:href="#audiostop"/></svg></a>
+                    <a href="javascript:void(0)" class="playAudio" id="playAudio-capitulo02"><svg><use xlink:href="#audioplay"/></svg></a>
+                    <a href="javascript:void(0)" class="pauseAudio" id="pauseAudio-capitulo02"><svg><use xlink:href="#audiostop"/></svg></a>
                     <p class="passage-audio-unavailable" hidden>
                         <em class="error"><strong>Error:</strong> You will not be able to do the read-along audio because your browser is not able to play MP3, Ogg, or WAV audio formats.</em>
                     </p>                
                 </div> 
                 <div class="background-section">
-                    <img src="http://localhost/perdiendoelrumbo/images/buscando-el-norte-1024-capitulo02.png">
+                    <img src="<?php echo $urls["url_base"];?>images/buscando-el-norte-1024-capitulo02.png">
                 </div>                
             </section>
 
@@ -116,14 +119,14 @@
                         <source src="audio/CAP3.mp3" type="audio/mp3">                    
                         <em class="error"><strong>Error:</strong> Your browser doesn't appear to support HTML5 Audio.</em>
                     </audio>
-                    <a href="javascript:void(0)" id="playAudio"><svg><use xlink:href="#audioplay"/></svg></a>
-                    <a href="javascript:void(0)" id="pauseAudio"><svg><use xlink:href="#audiostop"/></svg></a>
+                    <a href="javascript:void(0)" class="playAudio" id="playAudio-capitulo03"><svg><use xlink:href="#audioplay"/></svg></a>
+                    <a href="javascript:void(0)" class="pauseAudio" id="pauseAudio-capitulo03"><svg><use xlink:href="#audiostop"/></svg></a>
                     <p class="passage-audio-unavailable" hidden>
                         <em class="error"><strong>Error:</strong> You will not be able to do the read-along audio because your browser is not able to play MP3, Ogg, or WAV audio formats.</em>
                     </p>
                 </div>
                 <div class="background-section">
-                    <img src="http://localhost/perdiendoelrumbo/images/buscando-el-norte-1024-capitulo03.png">
+                    <img src="<?php echo $urls["url_base"];?>images/buscando-el-norte-1024-capitulo03.png">
                 </div> 
 
             </section>
@@ -177,5 +180,17 @@
 <style>
     body { width: 33102px;}
     .section-site{float: left;}
+    html {
+    overflow: scroll;
+    overflow-x: hidden;
+}
+::-webkit-scrollbar {
+    width: 0px;  /* remove scrollbar space */
+    background: transparent;  /* optional: just make scrollbar invisible */
+}
+/* optional: show position indicator in red */
+::-webkit-scrollbar-thumb {
+    background: #FF0000;
+}
 </style>    
 </html>

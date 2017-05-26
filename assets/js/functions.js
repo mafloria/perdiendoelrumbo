@@ -9,17 +9,8 @@
 // b.setAttribute('data-platform', navigator.platform);
 
 
-function initPage(){
-
-	// your functions go here
-
-	console.log('page loaded');
-
-};
-
-
 /*
- * Perdiendo el Rumbo - trasmedia
+ * Buscando el Norte - Transmedia
  *
  * Copyright (c) 2017 
  * Date: May 22 - 2017
@@ -42,27 +33,22 @@ $(document).ready(function(){
 	};
 //*********** end - window size to fix content
 
-//*********** scroll management - used for prevent scrolling when location detail window is opened
-	//$(window).disablescroll({handleWheel:false});
-
-//*********** end - scroll management 
-	
 //*********** scrolls to an href section exactly
 	    $('a[href*="#"]:not([href="#"])').click(function() {
 		    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-		      var target = $(this.hash);
+		      var target = $(this.hash);		      
 		      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
 		      if (target.length) {
-		        $('html, body').animate({
-		          //scrollTop: target.offset().top		          
-		          scrollLeft: target.offset().left //$($(this).attr('href')).offset().left
+		        $('html, body').animate({		          		         
+		          scrollLeft: target.offset().left
 		        }, 1000);
+		        
+		        autoplay_audios(this.hash.slice(1));
 		        return false;
 		      }
 		    }
 		});
 //*********** end - scrolls to an href section exactly	
-
 
 //********** actions
 	$("#ben-main-menu").click(function(){
@@ -70,36 +56,62 @@ $(document).ready(function(){
 	});
 //********** end - actions
 
+//********** Audios	
+	var vid_capitulo01 = document.getElementById("audio-capitulo01");
+	var vid_capitulo02 = document.getElementById("audio-capitulo02");
+	var vid_capitulo03 = document.getElementById("audio-capitulo03");
+	var vid_capitulo04 = document.getElementById("audio-capitulo04");
+	var vid_capitulo05 = document.getElementById("audio-capitulo05");
+	var vid_capitulo06 = document.getElementById("audio-capitulo06");
 	
-	var vid = document.getElementById("passage-audio");
 	var txt_sc1_line = 0;
 	var pausePhrases = false;
 	var timer = new Array();
 	var delayCounter = 1;
 	
-	$("#playAudio").click(function(){
-		vid.play();
+	//click over play audio icon
+	$(".playAudio").click(function(){
+		var id_info = $(this).attr('id').split('-');
+		eval("vid_"+id_info[1]).play();
 		if(txt_sc1_line==0){
 			$(".txt_sc1").html(text_sc1[0]);
 			$(".txt_sc1").textillate('start');
 			txt_sc1_line++;
 		}
 		pausePhrases = false;
-		writesentences();	
+		//writesentences(); //translated text
+		$("#pauseAudio-"+id_info[1]).show();
+		$(this).hide();	
 	});
 	
-	$("#pauseAudio").click(function(){
-		vid.pause();
-		//$('.tlt').textillate('pause');
-		pausePhrases = true;
+	//click over pause audio icon
+	$(".pauseAudio").click(function(){
+		var id_info = $(this).attr('id').split('-');
+		eval("vid_"+id_info[1]).pause();
+		
+		pausePhrases = true; //pause translated text
 		console.log("PAUSE: "+txt_sc1_line);		
 		
-		for(j=1; j<=18; j++){clearTimeout(timer[j]);}
+		//clear all text runing
+		for(j=1; j<=18; j++){ clearTimeout(timer[j]); }
 		delayCounter = 1;
 		txt_sc1_line++;
+		
+		$("#playAudio-"+id_info[1]).show();
+		$(this).hide();
 	});
 	
+	//start the audio when the chapter is displayed
+	function autoplay_audios(capitulo){
+		eval("vid_"+capitulo).play();		
+		$(".txt_sc1").html(text_sc1[0]);
+		$(".txt_sc1").textillate('start');
+		txt_sc1_line++;		
+		pausePhrases = false;
+		//writesentences();	//translated text
+	}
 	
+//********** end - Audios	
 	
 	async function writesentences(){		
 		for(i=txt_sc1_line; i<=18; i++, delayCounter++){						

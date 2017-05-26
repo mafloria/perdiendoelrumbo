@@ -210,13 +210,13 @@ img.large-bg{
 	z-index: 4;	
 	bottom: 11px;
 }
-.subs-section a#playAudio,
-.subs-section a#pauseAudio{
+.subs-section a.playAudio,
+.subs-section a.pauseAudio{
 	float: left;
 	display: block;	
 }
-.subs-section a#playAudio svg,
-.subs-section a#pauseAudio svg{
+.subs-section a.playAudio svg,
+.subs-section a.pauseAudio svg{
 	width: 35px;
     height: 35px;
     fill: white;	
