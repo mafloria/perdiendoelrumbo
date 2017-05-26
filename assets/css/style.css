@@ -15,10 +15,7 @@ blockquote {padding: 16px; background: #eee;}
 /*
 	BUSCANDO EL NORTE CSS
 */
-html{
-	background-color: black;
-    overflow: hidden;	
-}
+
 body{
 	font-size: 16px;
 	font-family: 'Magra', sans-serif;
@@ -39,20 +36,14 @@ img{
 	width: 100%;
 	height: 100%;
 }
-a, a:hover, a:focus, area, area:focus{
+a, a:hover{
 	text-decoration: none !important;
-	border: 0;
-	outline:0px;
 }
 a.blackBtn{
 	background-color: black;
 	color: white;
 	text-align: center;
 	padding: 0.5em;
-	transition: all 0.4s ease;
-	-webkit-transition: all 0.4s ease;
-	-moz-transition: all 0.4s ease;
-	-o-transition: all 0.4s ease;
 }
 a.blackBtn:hover{
 	color: white;
@@ -92,10 +83,6 @@ a.nav-next{
 	position: absolute;
 	z-index: 3;
 	top: 50%;
-	transition: all 0.4s ease;
-	-webkit-transition: all 0.4s ease;
-	-moz-transition: all 0.4s ease;
-	-o-transition: all 0.4s ease;
 }
 a.nav-before:hover,
 a.nav-next:hover{
@@ -203,8 +190,7 @@ section img{
 	width: 100%;
 	height: 100%;
 }
-img.large-bg,
-.large-bg{
+img.large-bg{
 		display: none;
 }
 #barra-progreso{
@@ -254,17 +240,15 @@ img.large-bg,
 
 }
 
-@media screen and (min-width:1290px){
+@media screen and (min-width:1440px){
 	.main-header h1{
 		width: 11%;
 	}
-	img.large-bg,
-	.large-bg{
+	img.large-bg{
 		display: block;
 	}
-	img.med-bg,
-	.med-bg{
-		display: none;
+	img.med-bg{
+		display: none !important;
 	}	
 }
 /* Print styles
