@@ -53,6 +53,7 @@ a.blackBtn:hover{
     width: 100%;
 height: 100%;
 }
+.section-site{float: left;}
 #content-section{
     width: 100%;
     position: relative;
@@ -70,12 +71,18 @@ height: 100%;
     fill: black;
     display: block;	
 }
-a.nav-before,
-a.nav-next{
+.nav-section{
 	position: absolute;
 	z-index: 3;
 	top: 50%;
+	width: 100%;	
+}
+a.nav-before,
+a.nav-next{	
 	opacity: 0.5;
+	position: absolute;
+	z-index: 3;
+	top: 50%;
 }
 a.nav-before:hover,
 a.nav-next:hover{

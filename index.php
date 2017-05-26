@@ -62,7 +62,7 @@ include_once("config.php");
         <div id="content-section">
 
             <a class="nav-before" href=""><svg><use xlink:href="#nav"/></svg></a>
-            <a class="nav-next" href=""><svg><use xlink:href="#nav"/></svg></a>  
+            <a class="nav-next" href=""><svg><use xlink:href="#nav"/></svg></a> 
 
             <section id="introduccion" class="section-site cpt00">
 
@@ -91,7 +91,17 @@ include_once("config.php");
                     </p>
                 </div>
                 <div class="background-section">
-                    <img src="<?php echo $urls["url_base"];?>images/buscando-el-norte-1024-capitulo01.png">
+                    <!--<img src="<?php echo $urls["url_base"];?>images/buscando-el-norte-1024-capitulo01.png">-->
+                    <div class="med-bg">
+                        <img src="<?php echo $urls["url_base"];?>images/buscando-el-norte-1024-capitulo01.png" alt="BUscando el norte - capítulo 1" width="1024" height="678" usemap="#Map"/>
+                        <map name="Map">
+                          <area shape="poly" coords="237,246,238,277,246,295,258,323,274,336,285,324,283,296,283,274,287,248,277,242" href="#">
+                          <area shape="poly" coords="571,514,588,567,609,572,653,537,634,492,571,514" href="#">
+                          <area shape="poly" coords="529,314,566,316,596,303,590,194,556,191,531,192,525,261,528,316" href="#">
+                          <area shape="poly" coords="565,459,623,424,628,415,645,417,668,413,690,401,677,382,655,389,663,369,657,314,667,285,685,263,685,247,661,246,657,262,645,276,617,291,600,316,589,346,573,373,555,392,554,419,567,459" href="#">
+                          <area shape="poly" coords="896,115,886,177,948,201,955,130,897,116" href="#">
+                        </map> 
+                    </div>
                 </div>    
 
             </section>
@@ -179,7 +189,6 @@ include_once("config.php");
     
 <style>
     body { width: 33102px;}
-    .section-site{float: left;}
     html {
     overflow: scroll;
     overflow-x: hidden;
