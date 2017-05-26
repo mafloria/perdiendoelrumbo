@@ -103,6 +103,17 @@ include_once("config.php");
                           <area shape="poly" class="abrir-detalle-modal" id="capitulo01-escena5" coords="896,115,886,177,948,201,955,130,897,116" href="javascript:void(0)">
                         </map> 
                     </div>
+                    
+                    <div class="large-bg">
+                        <img src="<?php echo $urls["url_base"];?>images/buscando-el-norte-1920-capitulo01.png" alt="" width="1920" height="1080" usemap="#Map"/>
+                        <map name="Map">
+                          <area shape="poly" coords="1071,874,1101,969,1147,972,1212,916,1187,829" href="#">
+                          <area shape="poly" coords="1043,633,1033,676,1044,776,1174,716,1296,668,1267,616,1241,628,1242,560,1297,381,1237,366,1206,408,1121,472" href="#">
+                          <area shape="poly" coords="986,265,1107,269,1109,472,1048,495,994,496" href="#">
+                          <area shape="poly" coords="444,387,492,377,530,386,530,452,531,520,512,542,473,512,449,440" href="#">
+                          <area shape="poly" coords="1679,128,1802,165,1781,289,1662,242" href="#">
+                        </map>
+                    </div>
                 </div>
 
             </section>
