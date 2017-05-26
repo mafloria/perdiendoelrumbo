@@ -56,6 +56,12 @@ $(document).ready(function(){
 	});
 //********** end - actions
 
+//********** images map
+	//fix the image map coordenates
+    $('img[usemap]').imageMap();
+    
+//********** end - images map
+
 //********** Audios	
 	var vid_capitulo01 = document.getElementById("audio-capitulo01");
 	var vid_capitulo02 = document.getElementById("audio-capitulo02");
@@ -79,7 +85,7 @@ $(document).ready(function(){
 			txt_sc1_line++;
 		}
 		pausePhrases = false;
-		//writesentences(); //translated text
+		writesentences(); //translated text
 		$("#pauseAudio-"+id_info[1]).show();
 		$(this).hide();	
 	});
@@ -108,7 +114,7 @@ $(document).ready(function(){
 		$(".txt_sc1").textillate('start');
 		txt_sc1_line++;		
 		pausePhrases = false;
-		//writesentences();	//translated text
+		writesentences();	//translated text
 	}
 	
 //********** end - Audios	
@@ -131,25 +137,25 @@ $(document).ready(function(){
 		
 	
 	var text_sc1 = new Array();
-	text_sc1[0]="In those days a decree went out from Caesar Augustus that all the world should be registered."; 
-    text_sc1[1]="This was the first registration when Quirinius was governor of Syria. ";
-	text_sc1[2]="And all went to be registered, each to his own town. ";
-    text_sc1[3]="And Joseph also went up from Galilee, from the town of Nazareth, to Judea, to the city of David, which is called Bethlehem, because he was of the house and lineage of David, to be registered with Mary, his betrothed, who was with child."; 
-    text_sc1[4]="And while they were there, the time came for her to give birth. ";
-    text_sc1[5]="And she gave birth to her firstborn son and wrapped him in swaddling cloths and laid him in a manger, because there was no place for them in the inn.";
-    text_sc1[6]="And in the same region there were shepherds out in the field, keeping watch over their flock by night. ";
-    text_sc1[7]="And an angel of the Lord appeared to them, and the glory of the Lord shone around them, and they were filled with fear."; 
-    text_sc1[8]="And the angel said to them, Fear not, for behold, I bring you good news of great joy that will be for all the people. ";
-    text_sc1[9]="For unto you is born this day in the city of David a Savior, who is Christ the Lord. ";
-    text_sc1[10]="And this will be a sign for you: you will find a baby wrapped in swaddling cloths and lying in a manger."; 
-    text_sc1[11]="And suddenly there was with the angel a multitude of the heavenly host praising God and saying,";               
-    text_sc1[12]="Glory to God in the highest,";
-	text_sc1[13]="and on earth peace among those with whom he is pleased!";                
-    text_sc1[14]="When the angels went away from them into heaven, the shepherds said to one another, Let us go over to Bethlehem and see this thing that has happened, which the Lord has made known to us."; 
-    text_sc1[15]="And they went with haste and found Mary and Joseph, and the baby lying in a manger."; 
-    text_sc1[16]="And when they saw it, they made known the saying that had been told them concerning this child. 18And all who heard it wondered at what the shepherds told them."; 
-    text_sc1[17]="But Mary treasured up all these things, pondering them in her heart."; 
-    text_sc1[18]="And the shepherds returned, glorifying and praising God for all they had heard and seen, as it had been told them.";
+	text_sc1[0]="Tic tac, tic tac..."; 
+    text_sc1[1]="Amalia was never afraid, or so I thought every time I saw her, strong and confindent. Tic tac, tic tac...";	
+    text_sc1[2]="she would go quiet when sensing danger, picking up the pace."; 
+    text_sc1[3]="Faster, you can’t miss the train, whispered the honeyed-eyed girl.";
+    text_sc1[4]="And she would laugh. Tic tac, tic tac...";
+    text_sc1[5]="her heart about to jump out of her chest.";
+    text_sc1[6]="Adrenaline, the thrill of the journey."; 
+    text_sc1[7]="Tic tac, tic tac, a rush of thoughts and ideas, ";
+    text_sc1[8]="her inner dialogues always ended well, because everything will be ok. ";
+    text_sc1[9]="I don’t travel alone, God is by my side. Tic tac, tic tac...";     
+    text_sc1[10]="Staying home is just too risky. Leaving is just too risky.";
+	text_sc1[11]="To make it all the way is... to save oneself";                
+    text_sc1[12]="She will see her mom and, if she’s lucky she’ll see her dad too -if he gets acquitted-."; 
+    text_sc1[13]="Innocence and hope push her to keep going."; 
+    text_sc1[14]="She was three years old when they left San Pedro Sula."; 
+    text_sc1[15]="She can’t remember their voices or laughter, but she doesn’t mind that."; 
+    text_sc1[16]="There will be plenty of time to recover the time they have lost.";
+    text_sc1[17]="She would hugh them first and then tell them about her life, school and girlfriends, Pachito -her best friend-;"; 
+    text_sc1[18]="she would tell them about her quinceañera, her grandparents and their day-to-day struggles, how tough life is in Honduras,";
 	
 	$('.txt_sc1').textillate({
 		

@@ -66,12 +66,12 @@
         })();
 
         //window.addEventListener('resize', self.update);
-        document.getElementById("travelgrafia-region-3").addEventListener("click", self.update);
-        document.getElementById("travelgrafia-region-4").addEventListener("click", self.update);
+        document.getElementById("buscandoelnorte-capitulo01").addEventListener("click", self.update);
+        /*document.getElementById("travelgrafia-region-4").addEventListener("click", self.update);
         document.getElementById("travelgrafia-region-5").addEventListener("click", self.update);
         document.getElementById("travelgrafia-region-6").addEventListener("click", self.update);
         document.getElementById("travelgrafia-region-7").addEventListener("click", self.update);
-        document.getElementById("exploremos-open-colombia-description").addEventListener("click", self.update);
+        document.getElementById("exploremos-open-colombia-description").addEventListener("click", self.update);*/
 
         return self;
     };

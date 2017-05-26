@@ -39,7 +39,7 @@ include_once("config.php");
         <header class="main-header">
 
             <h1>
-                <a href="#">
+                <a href="#introduccion">
                     <img src="<?php echo $urls["url_base"];?>images/buscando-el-norte-logo-horizontal-top.png" width="541" height="61">
                 </a>
             </h1>
@@ -89,20 +89,21 @@ include_once("config.php");
                     <p class="passage-audio-unavailable" hidden>
                         <em class="error"><strong>Error:</strong> You will not be able to do the read-along audio because your browser is not able to play MP3, Ogg, or WAV audio formats.</em>
                     </p>
+                    <div class="txt_sc1"></div>
                 </div>
                 <div class="background-section">
                     <!--<img src="<?php echo $urls["url_base"];?>images/buscando-el-norte-1024-capitulo01.png">-->
                     <div class="med-bg">
-                        <img src="<?php echo $urls["url_base"];?>images/buscando-el-norte-1024-capitulo01.png" alt="BUscando el norte - capítulo 1" width="1024" height="678" usemap="#Map"/>
-                        <map name="Map">
-                          <area shape="poly" coords="237,246,238,277,246,295,258,323,274,336,285,324,283,296,283,274,287,248,277,242" href="#">
-                          <area shape="poly" coords="571,514,588,567,609,572,653,537,634,492,571,514" href="#">
-                          <area shape="poly" coords="529,314,566,316,596,303,590,194,556,191,531,192,525,261,528,316" href="#">
-                          <area shape="poly" coords="565,459,623,424,628,415,645,417,668,413,690,401,677,382,655,389,663,369,657,314,667,285,685,263,685,247,661,246,657,262,645,276,617,291,600,316,589,346,573,373,555,392,554,419,567,459" href="#">
-                          <area shape="poly" coords="896,115,886,177,948,201,955,130,897,116" href="#">
+                        <img src="<?php echo $urls["url_base"];?>images/buscando-el-norte-1024-capitulo01.png" alt="Buscando el norte - capítulo 1" width="1024" height="678" usemap="#MapCapitulo01" id="buscandoelnorte-capitulo01" />
+                        <map name="MapCapitulo01">
+                          <area shape="poly" class="abrir-detalle-modal" id="capitulo01-escena1" coords="237,246,238,277,246,295,258,323,274,336,285,324,283,296,283,274,287,248,277,242" href="javascript:void(0)">
+                          <area shape="poly" class="abrir-detalle-modal" id="capitulo01-escena2" coords="571,514,588,567,609,572,653,537,634,492,571,514" href="javascript:void(0)">
+                          <area shape="poly" class="abrir-detalle-modal" id="capitulo01-escena3"coords="529,314,566,316,596,303,590,194,556,191,531,192,525,261,528,316" href="javascript:void(0)">
+                          <area shape="poly" class="abrir-detalle-modal" id="capitulo01-escena4" coords="565,459,623,424,628,415,645,417,668,413,690,401,677,382,655,389,663,369,657,314,667,285,685,263,685,247,661,246,657,262,645,276,617,291,600,316,589,346,573,373,555,392,554,419,567,459" href="javascript:void(0)">
+                          <area shape="poly" class="abrir-detalle-modal" id="capitulo01-escena5" coords="896,115,886,177,948,201,955,130,897,116" href="javascript:void(0)">
                         </map> 
                     </div>
-                </div>    
+                </div>
 
             </section>
 
@@ -159,24 +160,10 @@ include_once("config.php");
             </div>
         </div> <!-- end content -->
     </div><!-- end wrapper -->  
-
-
-    <article style="display: none;">
-        
-        <audio id="passage-audio" class="passage" controls>
-                <!-- @todo WebM? -->
-            <source src="audio/test.mp3" type="audio/mp3">
-            <source src="audio/test.ogg" type="audio/ogg">
-            <source src="audio/test.wav" type="audio/wav">
-            <em class="error"><strong>Error:</strong> Your browser doesn't appear to support HTML5 Audio.</em>
-        </audio>        
-        
-        <p class="passage-audio-unavailable" hidden>
-            <em class="error"><strong>Error:</strong> You will not be able to do the read-along audio because your browser is not able to play MP3, Ogg, or WAV audio formats.</em>
-        </p>
-        <span class="txt_sc1"></span>
-                  
-    </article>
+    
+    <div id="modal-description-escenas">
+        <div>HOLA</div>
+    </div>    
 </body>
 
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
@@ -185,6 +172,7 @@ include_once("config.php");
 <script src="http://yandex.st/highlightjs/7.3/highlight.min.js"></script>
 <script src="assets/js/libs/jquery.textillate.js"></script>
 <script src="assets/js/libs/jquery.disablescroll.min.js"></script>
+<script src="assets/js/image-map-master/image-map.js"></script>
 <script src="assets/js/functions.js"></script>
     
 <style>
