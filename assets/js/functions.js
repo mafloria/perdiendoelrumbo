@@ -36,13 +36,15 @@ $(document).ready(function(){
 	//adjust sections to the browser height
 	function setHeight() {
 		windowHeight = $(window).innerHeight();
-		$('#content-section, .section-site').css('height', windowHeight);		
+		windowWidth = $(window).innerWidth();
+		$('#content-section .section-site').css('height', windowHeight);		
+		$('#content-section .section-site').css('width', windowWidth);
 	};
 //*********** end - window size to fix content
 
 //*********** scroll management - used for prevent scrolling when location detail window is opened
 	//$(window).disablescroll({handleWheel:false});
-	
+
 //*********** end - scroll management 
 	
 //*********** scrolls to an href section exactly
@@ -52,7 +54,8 @@ $(document).ready(function(){
 		      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
 		      if (target.length) {
 		        $('html, body').animate({
-		          scrollTop: target.offset().top
+		          //scrollTop: target.offset().top		          
+		          scrollLeft: target.offset().left //$($(this).attr('href')).offset().left
 		        }, 1000);
 		        return false;
 		      }
@@ -60,11 +63,13 @@ $(document).ready(function(){
 		});
 //*********** end - scrolls to an href section exactly	
 
+
 //********** actions
 	$("#ben-main-menu").click(function(){
 		$(".submenu").toggle('slow');
 	});
 //********** end - actions
+
 	
 	var vid = document.getElementById("passage-audio");
 	var txt_sc1_line = 0;
