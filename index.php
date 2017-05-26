@@ -37,7 +37,7 @@
 
             <h1>
                 <a href="#">
-                    <img src="http://perdiendoelrumbo/images/buscando-el-norte-logo-horizontal-top.png" width="541" height="61">
+                    <img src="http://localhost/perdiendoelrumbo/images/buscando-el-norte-logo-horizontal-top.png" width="541" height="61">
                 </a>
             </h1>
 
@@ -61,20 +61,17 @@
             <a class="nav-before" href=""><svg><use xlink:href="#nav"/></svg></a>
             <a class="nav-next" href=""><svg><use xlink:href="#nav"/></svg></a>  
 
-<<<<<<< HEAD
             <section id="introduccion" class="section-site cpt00">
-=======
-            <section class="section-site cpt00"><!-- INTRO-->
->>>>>>> origin/master
+
                 <div class="content-intro">
                     <div class="logo">
-                        <img src="http://perdiendoelrumbo/images/buscando-el-norte-logo-intro.png" width="781" height="260">
+                        <img src="http://localhost/perdiendoelrumbo/images/buscando-el-norte-logo-intro.png" width="781" height="260">
                     </div> 
                     <a class="blackBtn" href="#capitulo01">COMENZAR</a>     
                 </div>
                 <div class="background-section">
-                    <img class="med-bg" src="http://perdiendoelrumbo/images/buscando-el-norte-1024-intro.png">
-                    <img class="large-bg" src="http://perdiendoelrumbo/images/buscando-el-norte-1920-intro.png">
+                    <img class="med-bg" src="http://localhost/perdiendoelrumbo/images/buscando-el-norte-1024-intro.png">
+                    <img class="large-bg" src="http://localhost/perdiendoelrumbo/images/buscando-el-norte-1920-intro.png">
                 </div>
             </section> 
 
@@ -91,28 +88,11 @@
                     </p>
                 </div>
                 <div class="background-section">
-                    <img src="http://perdiendoelrumbo/images/buscando-el-norte-1024-capitulo01.png">
+                    <img src="http://localhost/perdiendoelrumbo/images/buscando-el-norte-1024-capitulo01.png">
                 </div>    
 
             </section>
 
-<<<<<<< HEAD
-            <section id="capitulo02" class="section-site cpt02">
-                <div class="background-section">
-                    
-                </div>
-            </section>
-
-            <section id="capitulo03" class="section-site cpt03">
-                <div class="background-section">
-                    
-                </div>    
-                <audio id="audio-capitulo03" class="audios" controls>                
-                    <source src="audio/CAP3.mp3" type="audio/mp3">                    
-                    <em class="error"><strong>Error:</strong> Your browser doesn't appear to support HTML5 Audio.</em>
-                </audio>
-                
-=======
             <section id="capitulo02" class="section-site cpt02"><!-- CAPITULO 02 -->
                 <div class="subs-section">   
                     <audio id="audio-capitulo02" class="audios" controls>                
@@ -145,7 +125,7 @@
                 <div class="background-section">
                     <img src="http://localhost/perdiendoelrumbo/images/buscando-el-norte-1024-capitulo03.png">
                 </div> 
->>>>>>> origin/master
+
             </section>
 
             <section id="capitulo04" class="section-site cpt04"><!-- CAPITULO 04 -->
@@ -160,34 +140,6 @@
                 
             </section> 
 
-<<<<<<< HEAD
-            <!-- bnarra subtitulos-->
-                <div id="subs-section">
-                    <article>
-                    
-                        <audio id="audio-capitulo01" class="audios">
-                            <source src="audio/CAP1.mp3" type="audio/mp3">                                        
-                            <em class="error"><strong>Error:</strong> Your browser doesn't appear to support HTML5 Audio.</em>
-                        </audio>        
-                        <audio id="audio-capitulo02" class="audios" controls style="display: none">
-                            <source src="audio/CAP2.mp3" type="audio/mp3">                                        
-                            <em class="error"><strong>Error:</strong> Your browser doesn't appear to support HTML5 Audio.</em>
-                        </audio>
-                        <audio id="audio-capitulo03" class="audios" controls style="display: none">
-                            <source src="audio/CAP3.mp3" type="audio/mp3">                                        
-                            <em class="error"><strong>Error:</strong> Your browser doesn't appear to support HTML5 Audio.</em>
-                        </audio>
-                        <a href="javascript:void(0)" id="playAudio"><svg><use xlink:href="#audioplay"/></svg></a>
-                        <a href="javascript:void(0)" id="pauseAudio"><svg><use xlink:href="#audiostop"/></svg></a>
-                        <p class="passage-audio-unavailable" hidden>
-                            <em class="error"><strong>Error:</strong> You will not be able to do the read-along audio because your browser is not able to play MP3, Ogg, or WAV audio formats.</em>
-                        </p>
-                        <span class="txt_sc1"></span>
-                                  
-                    </article    
-                </div>
-=======
->>>>>>> origin/master
             <!-- barra progreso -->
             <div id="barra-progreso">
                 <div class="barra-marcador" style="width: 30%;"></div>
