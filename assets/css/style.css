@@ -262,7 +262,7 @@ section img{
 
 }
 
-@media screen and (min-width:1440px){
+@media screen and (min-width:1280px){
 	.main-header h1{
 		width: 11%;
 	}
