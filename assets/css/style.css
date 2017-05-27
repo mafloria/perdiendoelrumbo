@@ -16,7 +16,7 @@ blockquote {padding: 16px; background: #eee;}
 	BUSCANDO EL NORTE CSS
 */
 html{
-	overflow: hidden;
+	overflow: hidden !important;
 	background-color: black;
 }
 body{
