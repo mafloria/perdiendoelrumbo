@@ -96,28 +96,30 @@ include_once("config.php");
                     <div class="med-bg">
                         <img src="<?php echo $urls["url_base"];?>images/buscando-el-norte-1024-capitulo01.png" alt="Buscando el norte - capítulo 1" width="1024" height="678" usemap="#MapCapitulo01" id="buscandoelnorte-capitulo01" />
                         <map name="MapCapitulo01">
-                          <area shape="poly" class="abrir-detalle-modal" id="capitulo01-escena1" coords="237,246,238,277,246,295,258,323,274,336,285,324,283,296,283,274,287,248,277,242" href="javascript:void(0)">
-                          <area shape="poly" class="abrir-detalle-modal" id="capitulo01-escena2" coords="571,514,588,567,609,572,653,537,634,492,571,514" href="javascript:void(0)">
-                          <area shape="poly" class="abrir-detalle-modal" id="capitulo01-escena3"coords="529,314,566,316,596,303,590,194,556,191,531,192,525,261,528,316" href="javascript:void(0)">
-                          <area shape="poly" class="abrir-detalle-modal" id="capitulo01-escena4" coords="565,459,623,424,628,415,645,417,668,413,690,401,677,382,655,389,663,369,657,314,667,285,685,263,685,247,661,246,657,262,645,276,617,291,600,316,589,346,573,373,555,392,554,419,567,459" href="javascript:void(0)">
-                          <area shape="poly" class="abrir-detalle-modal" id="capitulo01-escena5" coords="896,115,886,177,948,201,955,130,897,116" href="javascript:void(0)">
+                          <area shape="poly" class="abrir-detalle-modal" id="capitulo01-escena01" coords="237,246,238,277,246,295,258,323,274,336,285,324,283,296,283,274,287,248,277,242" href="javascript:void(0)">
+                          <area shape="poly" class="abrir-detalle-modal" id="capitulo01-escena02" coords="571,514,588,567,609,572,653,537,634,492,571,514" href="javascript:void(0)">
+                          <area shape="poly" class="abrir-detalle-modal" id="capitulo01-escena03"coords="529,314,566,316,596,303,590,194,556,191,531,192,525,261,528,316" href="javascript:void(0)">
+                          <area shape="poly" class="abrir-detalle-modal" id="capitulo01-escena04" coords="565,459,623,424,628,415,645,417,668,413,690,401,677,382,655,389,663,369,657,314,667,285,685,263,685,247,661,246,657,262,645,276,617,291,600,316,589,346,573,373,555,392,554,419,567,459" href="javascript:void(0)">
+                          <area shape="poly" class="abrir-detalle-modal" id="capitulo01-escena05" coords="896,115,886,177,948,201,955,130,897,116" href="javascript:void(0)">
                         </map> 
                     </div>
 
                     <div class="large-bg">
                         <img src="<?php echo $urls["url_base"];?>images/buscando-el-norte-1920-capitulo01.png" alt="" width="1920" height="1080" usemap="#Map"/>
                         <map name="Map">
-                          <area shape="poly" coords="1071,874,1101,969,1147,972,1212,916,1187,829" href="#">
-                          <area shape="poly" coords="1043,633,1033,676,1044,776,1174,716,1296,668,1267,616,1241,628,1242,560,1297,381,1237,366,1206,408,1121,472" href="#">
-                          <area shape="poly" coords="986,265,1107,269,1109,472,1048,495,994,496" href="#">
-                          <area shape="poly" coords="444,387,492,377,530,386,530,452,531,520,512,542,473,512,449,440" href="#">
-                          <area shape="poly" coords="1679,128,1802,165,1781,289,1662,242" href="#">
+                          <area shape="poly" class="abrir-detalle-modal" id="capitulo02-escena01" coords="1071,874,1101,969,1147,972,1212,916,1187,829" href="javascript:void(0);">
+                          <area shape="poly" coords="1043,633,1033,676,1044,776,1174,716,1296,668,1267,616,1241,628,1242,560,1297,381,1237,366,1206,408,1121,472" href="javascript:void(0);">
+                          <area shape="poly" coords="986,265,1107,269,1109,472,1048,495,994,496" href="javascript:void(0);">
+                          <area shape="poly" coords="444,387,492,377,530,386,530,452,531,520,512,542,473,512,449,440" href="javascript:void(0);">
+                          <area shape="poly" coords="1679,128,1802,165,1781,289,1662,242" href="javascript:void(0);">
                         </map>
                     </div>
                 </div>
-
+				<div id="modal-description-escenas-capitulo01" class="modal-descriptions" style="display: none">
+					<?php include_once("modal_details_cap01.php"); ?>         
+	    		</div>
             </section>
-
+			
             <section id="capitulo02" class="section-site cpt02"><!-- CAPITULO 02 -->
                 <div class="subs-section">   
                     <audio id="audio-capitulo02" class="audios" controls>                
@@ -133,6 +135,9 @@ include_once("config.php");
                 <div class="background-section">
                     <img src="<?php echo $urls["url_base"];?>images/buscando-el-norte-1024-capitulo02.png">
                 </div>                
+            	<div id="modal-description-escenas-capitulo02" class="modal-descriptions" style="display: none">
+					<?php include_once("modal_details_cap02.php"); ?>         
+	    		</div>
             </section>
 
             <section id="capitulo03" class="section-site cpt03"><!-- CAPITULO 03 -->
@@ -150,7 +155,9 @@ include_once("config.php");
                 <div class="background-section">
                     <img src="<?php echo $urls["url_base"];?>images/buscando-el-norte-1024-capitulo03.png">
                 </div> 
-
+				<div id="modal-description-escenas-capitulo03" class="modal-descriptions" style="display: none">
+					<?php include_once("modal_details_cap03.php"); ?>         
+	    		</div>
             </section>
 
             <section id="capitulo04" class="section-site cpt04"><!-- CAPITULO 04 -->
@@ -164,20 +171,19 @@ include_once("config.php");
             <section id="capitulo06" class="section-site cpt06"><!-- CAPITULO 05 -->
                 
             </section> 
-
+			
             <!-- barra progreso -->
             <div id="barra-progreso">
-                <div class="barra-marcador" style="width: 30%;"></div>
+                <div class="barra-marcador" style="width: 0%;"></div>
             </div>
+                
         </div> <!-- end content -->
     </div><!-- end wrapper -->  
-    
-    <div id="modal-description-escenas">
-        <div>HOLA</div>
-    </div>    
+
 </body>
 
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+<!--<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>-->
+<script src="assets/js/libs/jquery-1.10.2-min"></script>
 <script src="assets/js/libs/jquery.fittext.js"></script>
 <script src="assets/js/libs/jquery.lettering.js"></script>
 <script src="http://yandex.st/highlightjs/7.3/highlight.min.js"></script>
@@ -189,8 +195,8 @@ include_once("config.php");
 <style>
     body { width: 33102px;}
     html {
-    overflow: scroll;
-    overflow-x: hidden;
+    /*overflow: scroll;
+    overflow-x: hidden;*/
 }
 ::-webkit-scrollbar {
     width: 0px;  /* remove scrollbar space */
@@ -199,6 +205,14 @@ include_once("config.php");
 /* optional: show position indicator in red */
 ::-webkit-scrollbar-thumb {
     background: #FF0000;
+}
+.modal-descriptions{
+	position: absolute;
+z-index: 9999;
+top: 90px;
+left: 10px;
+color: #990000;
+background-color: white;
 }
 </style>    
 </html>
