@@ -199,8 +199,8 @@ include_once("config.php");
 
 </body>
 
-<!--<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>-->
-<script src="assets/js/libs/jquery-1.10.2-min"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+<!--<script src="assets/js/libs/jquery-1.10.2-min"></script>-->
 <script src="assets/js/libs/jquery.fittext.js"></script>
 <script src="assets/js/libs/jquery.lettering.js"></script>
 <!--<script src="http://yandex.st/highlightjs/7.3/highlight.min.js"></script>-->
