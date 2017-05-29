@@ -26,9 +26,15 @@ $(document).ready(function(){
 	function setHeight() {
 		windowHeight = $(window).innerHeight();
 		windowWidth = $(window).innerWidth();
+		$('#content-section').css('height', windowHeight);
 		$('#content-section .section-site').css('height', windowHeight);		
 		$('#content-section .section-site').css('width', windowWidth);
+		$('img[usemap]').css('height', windowHeight);
+		$('img[usemap]').css('width', windowWidth);
 	};
+	
+	//fix the image map coordenates
+    $('img[usemap]').imageMap();
 //*********** end - window size to fix content
 
 //*********** scrolls to an href section exactly
@@ -68,12 +74,6 @@ $(document).ready(function(){
 	
 	
 //********** end - actions
-
-//********** images map
-	//fix the image map coordenates
-    $('img[usemap]').imageMap();
-    
-//********** end - images map
 
 //********** Audios	
 	var vid_capitulo01 = document.getElementById("audio-capitulo01");
@@ -173,25 +173,26 @@ $(document).ready(function(){
 	text_sc1[19]="She’ll start her journey heading North where life is better, or so everybody says. Tic tac, tic tac...";
 	/*text_sc1[20]="She’ll leave at 4:00 a.m. The sky is really dark, there are no stars to light the way";
 	text_sc1[21]="but the birdsongs announce that dawn is coming.";*/ 
-	text_sc1[20]="Her grandparents wish her a safe trip by the door. With tears and blessings they say goodbye to their little girl, accepting the inevitable.";
-	text_sc1[21]="They are afraid. It doesn’t matter she’s dressed ‘like a boy’,";
-	text_sc1[22]="that attire is an armour as fragile as she can seem:";
-	text_sc1[23]=" black hat, denim trousers, an oversized stripe shirt, and a pocket knife.";
-	text_sc1[24]="They have lost their own children: one died in the gang war, and another one awaits sentence in a US cell.";
-	text_sc1[25]="Hope and sustenance to their lives, gone. Are you ready? Asks grandma. Yes, answers the granddaughter.";
-	text_sc1[26]="Her heart is a tight knot in her chest and tears swell up in her eyes. ";
-	text_sc1[27]="She hesitates for an instance. What if she could stay and study and look after her old folks?";
-	text_sc1[28]="They hug each other, don’t want to let go. They’ve been together all her life.";
-	text_sc1[29]="She’s all they have left. But they can’t hold her back. Life in La Rivera, their neighbourhood,";
-	text_sc1[30]="is increasingly difficult, the fighting and shootouts are getting worse.";
-	text_sc1[31]="The nights are riddled with bullets and there is blood on the streets, bodies strewn around the floor haunt the residents.";
-	text_sc1[32]="Anyone can be the next victim. Teenage girls definitely are.";
-	text_sc1[33]="Amalia is growing, her shape and way of walking are gracious. The mareros need women.";
-	text_sc1[34]="She has to leave and reach her destination guided by the angels of the road. Tic tac, tic tac… ";
+	text_sc1[20]="Her grandparents wish her a safe trip by the door. With tears and blessings they say goodbye to their little girl,";
+	text_sc1[21]="accepting the inevitable. They are afraid. It doesn’t matter she’s dressed ‘like a boy’,";
+	text_sc1[22]="that attire is an armour as fragile as she can seem.";
+	/*text_sc1[23]=" black hat, denim trousers, an oversized stripe shirt, and a pocket knife.";*/
+	//text_sc1[22]="";
+	text_sc1[23]="They have lost their own children: one died in the gang war, and another one awaits sentence in a US cell.";
+	text_sc1[24]="Hope and sustenance to their lives, gone. Are you ready? Asks grandma. Yes, answers the granddaughter.";
+	text_sc1[25]="Her heart is a tight knot in her chest and tears swell up in her eyes. ";
+	text_sc1[26]="She hesitates for an instance. What if she could stay and study and look after her old folks?";
+	text_sc1[27]="They hug each other, don’t want to let go. They’ve been together all her life.";
+	text_sc1[28]="She’s all they have left. But they can’t hold her back. Life in La Rivera, their neighbourhood,";
+	text_sc1[29]="is increasingly difficult, the fighting and shootouts are getting worse.";
+	text_sc1[30]="The nights are riddled with bullets and there is blood on the streets,";
+	text_sc1[31]="bodies strewn around the floor haunt the residents. Anyone can be the next victim. ";
+	text_sc1[32]="Teenage girls definitely are. Amalia is growing, her shape and way of walking are gracious. The mareros need women.";
+	text_sc1[33]="She has to leave and reach her destination guided by the angels of the road. Tic tac, tic tac ...";
+	text_sc1[34]="She separates tenderly from her grandma. A kiss in the forehead, a caress, -I’ll make sure you come too- she says with a smile.";
 	text_sc1[35]="she carries a picture of her family in her pocket, along with an old letter to her father.";
-	text_sc1[36]="She separates tenderly from her grandma. A kiss in the forehead, a caress, -I’ll make sure you come too- she says with a smile.";
-	text_sc1[37]="She turns back and starts walking.";
-	text_sc1[38]="Her grandmother makes crosses in the air, she has her blessings against all danger and evil.";
+	text_sc1[36]="She turns back and starts walking.";
+	text_sc1[37]="Her grandmother makes crosses in the air, she has her blessings against all danger and evil.";
 	
 	$('.txt_sc1').textillate({
 		

@@ -269,12 +269,13 @@ section img{
 	.main-header h1{
 		width: 11%;
 	}
+	/*
 	.large-bg{
 		display: block;
 	}
 	.med-bg{
 		display: none !important;
-	}	
+	}	*/
 }
 /* Print styles
 -------------------------------------------------------------------------------*/

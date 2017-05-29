@@ -91,10 +91,9 @@ include_once("config.php");
                     </p>
                     <div class="txt_sc1"></div>
                 </div>
-                <div class="background-section">
-                    <!--<img src="<?php echo $urls["url_base"];?>images/buscando-el-norte-1024-capitulo01.png">-->
+                <div class="background-section">                    
                     <div class="med-bg">
-                        <img src="<?php echo $urls["url_base"];?>images/buscando-el-norte-1024-capitulo01.png" alt="Buscando el norte - capítulo 1" width="1024" height="678" usemap="#MapCapitulo01" id="buscandoelnorte-capitulo01" />
+                        <img src="<?php echo $urls["url_base"];?>images/buscando-el-norte-1024-capitulo01.png" alt="Buscando el norte - capítulo 1" usemap="#MapCapitulo01" id="buscandoelnorte-capitulo01-1024" />
                         <map name="MapCapitulo01">
                           <area shape="poly" class="abrir-detalle-modal" id="capitulo01-escena01" coords="237,246,238,277,246,295,258,323,274,336,285,324,283,296,283,274,287,248,277,242" href="javascript:void(0)">
                           <area shape="poly" class="abrir-detalle-modal" id="capitulo01-escena02" coords="571,514,588,567,609,572,653,537,634,492,571,514" href="javascript:void(0)">
@@ -103,17 +102,17 @@ include_once("config.php");
                           <area shape="poly" class="abrir-detalle-modal" id="capitulo01-escena05" coords="896,115,886,177,948,201,955,130,897,116" href="javascript:void(0)">
                         </map> 
                     </div>
-
-                    <div class="large-bg">
-                        <img src="<?php echo $urls["url_base"];?>images/buscando-el-norte-1920-capitulo01.png" alt="" width="1920" height="1080" usemap="#Map"/>
-                        <map name="Map">
-                          <area shape="poly" class="abrir-detalle-modal" id="capitulo02-escena01" coords="1071,874,1101,969,1147,972,1212,916,1187,829" href="javascript:void(0);">
-                          <area shape="poly" coords="1043,633,1033,676,1044,776,1174,716,1296,668,1267,616,1241,628,1242,560,1297,381,1237,366,1206,408,1121,472" href="javascript:void(0);">
-                          <area shape="poly" coords="986,265,1107,269,1109,472,1048,495,994,496" href="javascript:void(0);">
-                          <area shape="poly" coords="444,387,492,377,530,386,530,452,531,520,512,542,473,512,449,440" href="javascript:void(0);">
-                          <area shape="poly" coords="1679,128,1802,165,1781,289,1662,242" href="javascript:void(0);">
+                    <?php /*
+                     <div class="large-bg">
+                        <img src="<?php echo $urls["url_base"];?>images/buscando-el-norte-1920-capitulo01.png" alt="" height="960px" usemap="#MapCapitulo01_1920"  id="buscandoelnorte-capitulo01-1920"/><!--width="1920" height="1080" -->
+                        <map name="MapCapitulo01_1920">
+                          <area shape="poly" class="abrir-detalle-modal" id="capitulo01-escena01-1920" coords="1071,874,1101,969,1147,972,1212,916,1187,829" href="javascript:void(0);">
+                          <area shape="poly" class="abrir-detalle-modal" id="capitulo01-escena02-1920" coords="1043,633,1033,676,1044,776,1174,716,1296,668,1267,616,1241,628,1242,560,1297,381,1237,366,1206,408,1121,472" href="javascript:void(0);">
+                          <area shape="poly" class="abrir-detalle-modal" id="capitulo01-escena03-1920" coords="986,265,1107,269,1109,472,1048,495,994,496" href="javascript:void(0);">
+                          <area shape="poly" class="abrir-detalle-modal" id="capitulo01-escena04-1920" coords="444,387,492,377,530,386,530,452,531,520,512,542,473,512,449,440" href="javascript:void(0);">
+                          <area shape="poly" class="abrir-detalle-modal" id="capitulo01-escena05-1920" coords="1679,128,1802,165,1781,289,1662,242" href="javascript:void(0);">
                         </map>
-                    </div>
+                    </div>*/?>
                 </div>
 				<div id="modal-description-escenas-capitulo01" class="modal-descriptions" style="display: none">
 					<?php include_once("modal_details_cap01.php"); ?>         
@@ -132,9 +131,18 @@ include_once("config.php");
                         <em class="error"><strong>Error:</strong> You will not be able to do the read-along audio because your browser is not able to play MP3, Ogg, or WAV audio formats.</em>
                     </p>                
                 </div> 
+                
                 <div class="background-section">
-                    <img src="<?php echo $urls["url_base"];?>images/buscando-el-norte-1024-capitulo02.png">
-                </div>                
+                    <img src="<?php echo $urls["url_base"];?>images/buscando-el-norte-1024-capitulo02.png" usemap="#MapCap02">
+                    <map name="MapCap02">
+                          <area shape="poly" class="abrir-detalle-modal" id="capitulo02-escena01" coords="1071,874,1101,969,1147,972,1212,916,1187,829" href="javascript:void(0);">
+                          <area shape="poly" coords="1043,633,1033,676,1044,776,1174,716,1296,668,1267,616,1241,628,1242,560,1297,381,1237,366,1206,408,1121,472" href="javascript:void(0);">
+                          <area shape="poly" coords="986,265,1107,269,1109,472,1048,495,994,496" href="javascript:void(0);">
+                          <area shape="poly" coords="444,387,492,377,530,386,530,452,531,520,512,542,473,512,449,440" href="javascript:void(0);">
+                          <area shape="poly" coords="1679,128,1802,165,1781,289,1662,242" href="javascript:void(0);">
+                    </map>
+                </div> 
+                
             	<div id="modal-description-escenas-capitulo02" class="modal-descriptions" style="display: none">
 					<?php include_once("modal_details_cap02.php"); ?>         
 	    		</div>
@@ -152,9 +160,18 @@ include_once("config.php");
                         <em class="error"><strong>Error:</strong> You will not be able to do the read-along audio because your browser is not able to play MP3, Ogg, or WAV audio formats.</em>
                     </p>
                 </div>
+                
                 <div class="background-section">
-                    <img src="<?php echo $urls["url_base"];?>images/buscando-el-norte-1024-capitulo03.png">
-                </div> 
+                    <img src="<?php echo $urls["url_base"];?>images/buscando-el-norte-1024-capitulo03.png" usemap="#MapCap03">
+                    <map name="MapCap03">
+                          <area shape="poly" class="abrir-detalle-modal" id="capitulo02-escena01" coords="1071,874,1101,969,1147,972,1212,916,1187,829" href="javascript:void(0);">
+                          <area shape="poly" coords="1043,633,1033,676,1044,776,1174,716,1296,668,1267,616,1241,628,1242,560,1297,381,1237,366,1206,408,1121,472" href="javascript:void(0);">
+                          <area shape="poly" coords="986,265,1107,269,1109,472,1048,495,994,496" href="javascript:void(0);">
+                          <area shape="poly" coords="444,387,492,377,530,386,530,452,531,520,512,542,473,512,449,440" href="javascript:void(0);">
+                          <area shape="poly" coords="1679,128,1802,165,1781,289,1662,242" href="javascript:void(0);">
+                    </map>
+                </div>
+                
 				<div id="modal-description-escenas-capitulo03" class="modal-descriptions" style="display: none">
 					<?php include_once("modal_details_cap03.php"); ?>         
 	    		</div>
@@ -186,7 +203,7 @@ include_once("config.php");
 <script src="assets/js/libs/jquery-1.10.2-min"></script>
 <script src="assets/js/libs/jquery.fittext.js"></script>
 <script src="assets/js/libs/jquery.lettering.js"></script>
-<script src="http://yandex.st/highlightjs/7.3/highlight.min.js"></script>
+<!--<script src="http://yandex.st/highlightjs/7.3/highlight.min.js"></script>-->
 <script src="assets/js/libs/jquery.textillate.js"></script>
 <script src="assets/js/libs/jquery.disablescroll.min.js"></script>
 <script src="assets/js/image-map-master/image-map.js"></script>
