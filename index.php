@@ -89,9 +89,10 @@ include_once("config.php");
                     <p class="passage-audio-unavailable" hidden>
                         <em class="error"><strong>Error:</strong> You will not be able to do the read-along audio because your browser is not able to play MP3, Ogg, or WAV audio formats.</em>
                     </p>
-                    <div class="txt_sc1"></div>
+                    <div class="txt_capitulos" id="txt_capitulo01"></div>
+                    <a href="#capitulo02">SIGUIENTE</a>
                 </div>
-                <div class="background-section">                    
+                <div class="background-section">
                     <div class="med-bg">
                         <img src="<?php echo $urls["url_base"];?>images/buscando-el-norte-1024-capitulo01.png" alt="Buscando el norte - capítulo 1" usemap="#MapCapitulo01" id="buscandoelnorte-capitulo01-1024" />
                         <map name="MapCapitulo01">
@@ -121,15 +122,17 @@ include_once("config.php");
 			
             <section id="capitulo02" class="section-site cpt02"><!-- CAPITULO 02 -->
                 <div class="subs-section">   
-                    <audio id="audio-capitulo02" class="audios" controls>                
+                    <audio id="audio-capitulo02" class="audios">                
                         <source src="audio/CAP2.mp3" type="audio/mp3">                    
                         <em class="error"><strong>Error:</strong> Your browser doesn't appear to support HTML5 Audio.</em>
                     </audio> 
-                    <a href="javascript:void(0)" class="playAudio" id="playAudio-capitulo02"><svg><use xlink:href="#audioplay"/></svg></a>
+                    <a href="javascript:void(0)" class="playAudio" id="playAudio-capitulo02" style="display: none"><svg><use xlink:href="#audioplay"/></svg></a>
                     <a href="javascript:void(0)" class="pauseAudio" id="pauseAudio-capitulo02"><svg><use xlink:href="#audiostop"/></svg></a>
                     <p class="passage-audio-unavailable" hidden>
                         <em class="error"><strong>Error:</strong> You will not be able to do the read-along audio because your browser is not able to play MP3, Ogg, or WAV audio formats.</em>
-                    </p>                
+                    </p>
+					<div class="txt_capitulos" id="txt_capitulo02"></div>
+                    <a href="#capitulo03">SIGUIENTE</a>
                 </div> 
                 
                 <div class="background-section">
@@ -154,11 +157,12 @@ include_once("config.php");
                         <source src="audio/CAP3.mp3" type="audio/mp3">                    
                         <em class="error"><strong>Error:</strong> Your browser doesn't appear to support HTML5 Audio.</em>
                     </audio>
-                    <a href="javascript:void(0)" class="playAudio" id="playAudio-capitulo03"><svg><use xlink:href="#audioplay"/></svg></a>
+                    <a href="javascript:void(0)" class="playAudio" id="playAudio-capitulo03" style="display: none"><svg><use xlink:href="#audioplay"/></svg></a>
                     <a href="javascript:void(0)" class="pauseAudio" id="pauseAudio-capitulo03"><svg><use xlink:href="#audiostop"/></svg></a>
                     <p class="passage-audio-unavailable" hidden>
                         <em class="error"><strong>Error:</strong> You will not be able to do the read-along audio because your browser is not able to play MP3, Ogg, or WAV audio formats.</em>
                     </p>
+                    <div class="txt_capitulos" id="txt_capitulo03"></div>
                 </div>
                 
                 <div class="background-section">

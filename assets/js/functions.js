@@ -16,6 +16,20 @@ $(document).ready(function(){
 	//progress bar
 	var progress_bar = 0;
 	var capitulo01_escena01 = capitulo01_escena02 = capitulo01_escena03 = capitulo01_escena04 = capitulo01_escena05 = 3;
+	
+	//********** Audios	
+	var vid_capitulo01 = document.getElementById("audio-capitulo01");
+	var vid_capitulo02 = document.getElementById("audio-capitulo02");
+	var vid_capitulo03 = document.getElementById("audio-capitulo03");
+	var vid_capitulo04 = document.getElementById("audio-capitulo04");
+	var vid_capitulo05 = document.getElementById("audio-capitulo05");
+	var vid_capitulo06 = document.getElementById("audio-capitulo06");
+	
+	var txt_sc1_line = 0;
+	var pausePhrases = false;
+	var timer = new Array();
+	var delayCounter = 1;
+	
 //*********** window size to fix content	   
 	setHeight();
 		  
@@ -46,7 +60,9 @@ $(document).ready(function(){
 	        $('html, body').animate({		          		         
 	          scrollLeft: target.offset().left
             }, 1000);
-        
+        	
+        	let_audios_text_begins();
+        	
 		    autoplay_audios(this.hash.slice(1));
 		    return false;
 		  }//end if target length
@@ -70,35 +86,23 @@ $(document).ready(function(){
 		eval(id_array[0]+"_"+id_array[1]+"=0;"); //set scena value to 0
 		console.log(progress_bar+"::"+eval(id_array[0]+"_"+id_array[1]));
 		$(".barra-marcador").css("width", progress_bar+"%");
-	});
-	
+	});	   
 	
 //********** end - actions
 
-//********** Audios	
-	var vid_capitulo01 = document.getElementById("audio-capitulo01");
-	var vid_capitulo02 = document.getElementById("audio-capitulo02");
-	var vid_capitulo03 = document.getElementById("audio-capitulo03");
-	var vid_capitulo04 = document.getElementById("audio-capitulo04");
-	var vid_capitulo05 = document.getElementById("audio-capitulo05");
-	var vid_capitulo06 = document.getElementById("audio-capitulo06");
-	
-	var txt_sc1_line = 0;
-	var pausePhrases = false;
-	var timer = new Array();
-	var delayCounter = 1;
+//********** audios
 	
 	//click over play audio icon
 	$(".playAudio").click(function(){
 		var id_info = $(this).attr('id').split('-');
 		eval("vid_"+id_info[1]).play();
 		if(txt_sc1_line==0){
-			$(".txt_sc1").html(text_sc1[0]);
-			$(".txt_sc1").textillate('start');
+			$("#txt_"+id_info[1]).html(text_sc1[0]);
+			$("#txt_"+id_info[1]).textillate('start');
 			txt_sc1_line++;
 		}
 		pausePhrases = false;
-		writesentences(); //translated text
+		writesentences(id_info[1]); //translated text
 		$("#pauseAudio-"+id_info[1]).show();
 		$(this).hide();	
 	});
@@ -122,23 +126,33 @@ $(document).ready(function(){
 	
 	//start the audio when the chapter is displayed
 	function autoplay_audios(capitulo){
-		eval("vid_"+capitulo).play();		
-		$(".txt_sc1").html(text_sc1[0]);
-		$(".txt_sc1").textillate('start');
-		txt_sc1_line++;		
+		eval("vid_"+capitulo).load();
+		eval("vid_"+capitulo).play();
+		$("#txt_"+capitulo).html(text_sc1[0]);
+		$("#txt_"+capitulo).textillate('start');
+		txt_sc1_line++;
 		pausePhrases = false;
-		writesentences();	//translated text
+		writesentences(capitulo);	//translated text
 	}
+	//when back or forward restart audios and texts
+	function let_audios_text_begins(){
+		vid_capitulo01.pause();vid_capitulo02.pause();vid_capitulo03.pause();//vid_capitulo04.pause();vid_capitulo05.pause();vid_capitulo06.pause();		
+		for(j=1; j<=38; j++){ clearTimeout(timer[j]); }
+		pausePhrases = false;
+		txt_sc1_line = 0;
+		delayCounter = 1;
+	} 
 	
 //********** end - Audios	
-	
-	async function writesentences(){		
+
+//********** texts
+	async function writesentences(capitulo){		
 		for(i=txt_sc1_line; i<=38; i++, delayCounter++){
 			 (function (i, delayCounter) {
 			    timer[i] = setTimeout(function () {
 			    	if(!pausePhrases){
-				      	$('.txt_sc1').removeData();
-						$(".txt_sc1").html(text_sc1[i]);
+				      	$('#txt_'+capitulo).removeData();
+						$("#txt_"+capitulo).html(text_sc1[i]);
 						//$(".txt_sc1").textillate('start');
 						txt_sc1_line = i;
 						console.log("THIS IS"+txt_sc1_line+':'+i+"--"+delayCounter);
@@ -147,8 +161,8 @@ $(document).ready(function(){
 			  })(i, delayCounter);			  
 		}
 	}
-		
-	
+
+//********** end - texts	
 	var text_sc1 = new Array();
 	text_sc1[0]="Tic tac, tic tac..."; 
     text_sc1[1]="Amalia was never afraid, or so I thought every time I saw her, strong and confindent. Tic tac, tic tac...";	
@@ -193,62 +207,5 @@ $(document).ready(function(){
 	text_sc1[35]="she carries a picture of her family in her pocket, along with an old letter to her father.";
 	text_sc1[36]="She turns back and starts walking.";
 	text_sc1[37]="Her grandmother makes crosses in the air, she has her blessings against all danger and evil.";
-	
-	$('.txt_sc1').textillate({
-		
-		 // the default selector to use when detecting multiple texts to animate
-		  selector: '.texts',
-		
-		  // enable looping
-		  loop: false,
-		
-		  // sets the minimum display time for each text before it is replaced
-		  minDisplayTime: 2000,
-		
-		  // sets the initial delay before starting the animation
-		  // (note that depending on the in effect you may need to manually apply
-		  // visibility: hidden to the element before running this plugin)
-		  initialDelay: 0,
-		
-		  // set whether or not to automatically start animating
-		  autoStart: false,
-		
-		  // custom set of 'in' effects. This effects whether or not the
-		  // character is shown/hidden before or after an animation
-		  inEffects: [],
-		
-		  // custom set of 'out' effects
-		  outEffects: [ 'hinge' ],
-		
-		  // in animation settings
-		  in: {		  	
-		    effect: 'fadeIn', // set the effect name		    
-		    delayScale: 1, // set the delay factor applied to each consecutive character
-		    delay: 50, // set the delay between each character
-		    sync: false, // set to true to animate all the characters at the same time
-		    shuffle: false, // randomize the character sequence // (note that shuffle doesn't make sense with sync = true)
-		    reverse: false, // reverse the character sequence // (note that reverse doesn't make sense with sync = true)		
-		    
-		    callback: function () {} // callback that executes once the animation has finished
-		  },
-		
-		  // out animation settings.
-		  out: {
-		    effect: 'fadeOut',
-		    delayScale: 1.5,
-		    delay: 50,
-		    sync: true,
-		    shuffle: false,
-		    reverse: false,
-		    callback: function () {}
-		  },
-		
-		  // callback that executes once textillate has finished
-		  callback: function () {},
-		
-		  // set the type of token to animate (available types: 'char' and 'word')
-		  type: 'word'
-		
-	});
 
 });
