@@ -16,6 +16,7 @@ $(document).ready(function(){
 	//progress bar
 	var progress_bar = 0;
 	var capitulo01_escena01 = capitulo01_escena02 = capitulo01_escena03 = capitulo01_escena04 = capitulo01_escena05 = 3;
+	var text_current_chapter = new Array();//the actual chapter is loaded in this array to show the text
 	
 	//********** Audios	
 	var vid_capitulo01 = document.getElementById("audio-capitulo01");
@@ -25,7 +26,7 @@ $(document).ready(function(){
 	var vid_capitulo05 = document.getElementById("audio-capitulo05");
 	var vid_capitulo06 = document.getElementById("audio-capitulo06");
 	
-	var txt_sc1_line = 0;
+	var text_current_line = 0;
 	var pausePhrases = false;
 	var timer = new Array();
 	var delayCounter = 1;
@@ -61,9 +62,10 @@ $(document).ready(function(){
 	          scrollLeft: target.offset().left
             }, 1000);
         	
-        	let_audios_text_begins();
+        	let_audios_text_begins(); //restart audios and text if the user returns start all again
         	
-		    autoplay_audios(this.hash.slice(1));
+		    if(this.hash.slice(1)!="introduccion") autoplay_audios(this.hash.slice(1));
+		    
 		    return false;
 		  }//end if target length
 		}//end if location
@@ -96,41 +98,40 @@ $(document).ready(function(){
 	$(".playAudio").click(function(){
 		var id_info = $(this).attr('id').split('-');
 		eval("vid_"+id_info[1]).play();
-		if(txt_sc1_line==0){
-			$("#txt_"+id_info[1]).html(text_sc1[0]);
+		if(text_current_line==0){
+			$("#txt_"+id_info[1]).html(text_current_chapter[0]);
 			$("#txt_"+id_info[1]).textillate('start');
-			txt_sc1_line++;
+			text_current_line++;
 		}
 		pausePhrases = false;
 		writesentences(id_info[1]); //translated text
 		$("#pauseAudio-"+id_info[1]).show();
 		$(this).hide();	
-	});
-	
+	});	
 	//click over pause audio icon
 	$(".pauseAudio").click(function(){
 		var id_info = $(this).attr('id').split('-');
 		eval("vid_"+id_info[1]).pause();
 		
 		pausePhrases = true; //pause translated text
-		console.log("PAUSE: "+txt_sc1_line);		
+		console.log("PAUSE: "+text_current_line);		
 		
 		//clear all text runing
 		for(j=1; j<=38; j++){ clearTimeout(timer[j]); }
 		delayCounter = 1;
-		txt_sc1_line++;
+		text_current_line++;
 		
 		$("#playAudio-"+id_info[1]).show();
 		$(this).hide();
-	});
-	
+	});	
 	//start the audio when the chapter is displayed
 	function autoplay_audios(capitulo){
+		text_current_chapter = eval("text_"+capitulo);
 		eval("vid_"+capitulo).load();
 		eval("vid_"+capitulo).play();
-		$("#txt_"+capitulo).html(text_sc1[0]);
+		$("#txt_"+capitulo).html(text_current_chapter[0]);
 		$("#txt_"+capitulo).textillate('start');
-		txt_sc1_line++;
+		text_current_line++;
 		pausePhrases = false;
 		writesentences(capitulo);	//translated text
 	}
@@ -139,7 +140,7 @@ $(document).ready(function(){
 		vid_capitulo01.pause();vid_capitulo02.pause();vid_capitulo03.pause();//vid_capitulo04.pause();vid_capitulo05.pause();vid_capitulo06.pause();		
 		for(j=1; j<=38; j++){ clearTimeout(timer[j]); }
 		pausePhrases = false;
-		txt_sc1_line = 0;
+		text_current_line = 0;
 		delayCounter = 1;
 	} 
 	
@@ -147,15 +148,15 @@ $(document).ready(function(){
 
 //********** texts
 	async function writesentences(capitulo){		
-		for(i=txt_sc1_line; i<=38; i++, delayCounter++){
+		for(i=text_current_line; i<=text_current_chapter.length; i++, delayCounter++){
 			 (function (i, delayCounter) {
 			    timer[i] = setTimeout(function () {
 			    	if(!pausePhrases){
 				      	$('#txt_'+capitulo).removeData();
-						$("#txt_"+capitulo).html(text_sc1[i]);
+						$("#txt_"+capitulo).html(text_current_chapter[i]);
 						//$(".txt_sc1").textillate('start');
-						txt_sc1_line = i;
-						console.log("THIS IS"+txt_sc1_line+':'+i+"--"+delayCounter);
+						text_current_line = i;
+						console.log("THIS IS"+text_current_line+':'+i+"--"+delayCounter);
 					}
 			    }, 6000*delayCounter);
 			  })(i, delayCounter);			  
@@ -163,49 +164,67 @@ $(document).ready(function(){
 	}
 
 //********** end - texts	
-	var text_sc1 = new Array();
-	text_sc1[0]="Tic tac, tic tac..."; 
-    text_sc1[1]="Amalia was never afraid, or so I thought every time I saw her, strong and confindent. Tic tac, tic tac...";	
-    text_sc1[2]="she would go quiet when sensing danger, picking up the pace. Faster, you can’t miss the train, "; 
-    text_sc1[3]="whispered the honeyed-eyed girl. And she would laugh. Tic tac, tic tac... ";
-    text_sc1[4]="her heart about to jump out of her chest. Adrenaline, the thrill of the journey.";
-    text_sc1[5]="Tic tac, tic tac, a rush of thoughts and ideas, her inner dialogues always ended well, ";
-    text_sc1[6]="because everything will be ok. I don’t travel alone, God is by my side. ";     
-    text_sc1[7]="Tic tac, tic tac... ";
-    text_sc1[8]="Tic tac, tic tac... Staying home is just too risky. Leaving is just too risky.";
-	text_sc1[9]="To make it all the way is... to save oneself. She will see her mom and, ";                
-    text_sc1[10]="if she’s lucky she’ll see her dad too -if he gets acquitted-. Innocence and hope push her to keep going. "; 
-    text_sc1[11]="She was three years old when they left San Pedro Sula. "; 
-    text_sc1[12]="She can’t remember their voices or laughter, but she doesn’t mind that. There will be plenty of time to recover the time they have lost."; 
-    text_sc1[13]="She would hugh them first and then tell them about her life, school and girlfriends, Pachito -her best friend-;"; 
-    text_sc1[14]="she would tell them about her quinceañera, her grandparents and their day-to-day struggles, ";
+	var text_capitulo01 = new Array();
+	text_capitulo01[0]="Tic tac, tic tac..."; 
+    text_capitulo01[1]="Amalia was never afraid, or so I thought every time I saw her, strong and confindent. Tic tac, tic tac...";	
+    text_capitulo01[2]="she would go quiet when sensing danger, picking up the pace. Faster, you can’t miss the train, "; 
+    text_capitulo01[3]="whispered the honeyed-eyed girl. And she would laugh. Tic tac, tic tac... ";
+    text_capitulo01[4]="her heart about to jump out of her chest. Adrenaline, the thrill of the journey.";
+    text_capitulo01[5]="Tic tac, tic tac, a rush of thoughts and ideas, her inner dialogues always ended well, ";
+    text_capitulo01[6]="because everything will be ok. I don’t travel alone, God is by my side. ";     
+    text_capitulo01[7]="Tic tac, tic tac... ";
+    text_capitulo01[8]="Tic tac, tic tac... Staying home is just too risky. Leaving is just too risky.";
+	text_capitulo01[9]="To make it all the way is... to save oneself. She will see her mom and, ";                
+    text_capitulo01[10]="if she’s lucky she’ll see her dad too -if he gets acquitted-. Innocence and hope push her to keep going. "; 
+    text_capitulo01[11]="She was three years old when they left San Pedro Sula. "; 
+    text_capitulo01[12]="She can’t remember their voices or laughter, but she doesn’t mind that. There will be plenty of time to recover the time they have lost."; 
+    text_capitulo01[13]="She would hugh them first and then tell them about her life, school and girlfriends, Pachito -her best friend-;"; 
+    text_capitulo01[14]="she would tell them about her quinceañera, her grandparents and their day-to-day struggles, ";
 	//ready up to here
-	text_sc1[15]="how tough life is in Honduras, her plans of becoming a lawyer, and just how happy she is to see them again.";
-	text_sc1[16]="Happiness! How long is forever? ";
-	text_sc1[17]="She heard somewhere it can be just a second, and now she gets it. Tic tac, tic tac...";
-	text_sc1[18]="It’s been a long time coming, but the day is here, at last! ";
-	text_sc1[19]="She’ll start her journey heading North where life is better, or so everybody says. Tic tac, tic tac...";
-	/*text_sc1[20]="She’ll leave at 4:00 a.m. The sky is really dark, there are no stars to light the way";
-	text_sc1[21]="but the birdsongs announce that dawn is coming.";*/ 
-	text_sc1[20]="Her grandparents wish her a safe trip by the door. With tears and blessings they say goodbye to their little girl,";
-	text_sc1[21]="accepting the inevitable. They are afraid. It doesn’t matter she’s dressed ‘like a boy’,";
-	text_sc1[22]="that attire is an armour as fragile as she can seem.";
-	/*text_sc1[23]=" black hat, denim trousers, an oversized stripe shirt, and a pocket knife.";*/
-	//text_sc1[22]="";
-	text_sc1[23]="They have lost their own children: one died in the gang war, and another one awaits sentence in a US cell.";
-	text_sc1[24]="Hope and sustenance to their lives, gone. Are you ready? Asks grandma. Yes, answers the granddaughter.";
-	text_sc1[25]="Her heart is a tight knot in her chest and tears swell up in her eyes. ";
-	text_sc1[26]="She hesitates for an instance. What if she could stay and study and look after her old folks?";
-	text_sc1[27]="They hug each other, don’t want to let go. They’ve been together all her life.";
-	text_sc1[28]="She’s all they have left. But they can’t hold her back. Life in La Rivera, their neighbourhood,";
-	text_sc1[29]="is increasingly difficult, the fighting and shootouts are getting worse.";
-	text_sc1[30]="The nights are riddled with bullets and there is blood on the streets,";
-	text_sc1[31]="bodies strewn around the floor haunt the residents. Anyone can be the next victim. ";
-	text_sc1[32]="Teenage girls definitely are. Amalia is growing, her shape and way of walking are gracious. The mareros need women.";
-	text_sc1[33]="She has to leave and reach her destination guided by the angels of the road. Tic tac, tic tac ...";
-	text_sc1[34]="She separates tenderly from her grandma. A kiss in the forehead, a caress, -I’ll make sure you come too- she says with a smile.";
-	text_sc1[35]="she carries a picture of her family in her pocket, along with an old letter to her father.";
-	text_sc1[36]="She turns back and starts walking.";
-	text_sc1[37]="Her grandmother makes crosses in the air, she has her blessings against all danger and evil.";
+	text_capitulo01[15]="how tough life is in Honduras, her plans of becoming a lawyer, and just how happy she is to see them again.";
+	text_capitulo01[16]="Happiness! How long is forever? ";
+	text_capitulo01[17]="She heard somewhere it can be just a second, and now she gets it. Tic tac, tic tac...";
+	text_capitulo01[18]="It’s been a long time coming, but the day is here, at last! ";
+	text_capitulo01[19]="She’ll start her journey heading North where life is better, or so everybody says. Tic tac, tic tac...";
+	/*text_capitulo01[20]="She’ll leave at 4:00 a.m. The sky is really dark, there are no stars to light the way";
+	text_capitulo01[21]="but the birdsongs announce that dawn is coming.";*/ 
+	text_capitulo01[20]="Her grandparents wish her a safe trip by the door. With tears and blessings they say goodbye to their little girl,";
+	text_capitulo01[21]="accepting the inevitable. They are afraid. It doesn’t matter she’s dressed ‘like a boy’,";
+	text_capitulo01[22]="that attire is an armour as fragile as she can seem.";
+	/*text_capitulo01[23]=" black hat, denim trousers, an oversized stripe shirt, and a pocket knife.";*/
+	//text_capitulo01[22]="";
+	text_capitulo01[23]="They have lost their own children: one died in the gang war, and another one awaits sentence in a US cell.";
+	text_capitulo01[24]="Hope and sustenance to their lives, gone. Are you ready? Asks grandma. Yes, answers the granddaughter.";
+	text_capitulo01[25]="Her heart is a tight knot in her chest and tears swell up in her eyes. ";
+	text_capitulo01[26]="She hesitates for an instance. What if she could stay and study and look after her old folks?";
+	text_capitulo01[27]="They hug each other, don’t want to let go. They’ve been together all her life.";
+	text_capitulo01[28]="She’s all they have left. But they can’t hold her back. Life in La Rivera, their neighbourhood,";
+	text_capitulo01[29]="is increasingly difficult, the fighting and shootouts are getting worse.";
+	text_capitulo01[30]="The nights are riddled with bullets and there is blood on the streets,";
+	text_capitulo01[31]="bodies strewn around the floor haunt the residents. Anyone can be the next victim. ";
+	text_capitulo01[32]="Teenage girls definitely are. Amalia is growing, her shape and way of walking are gracious. The mareros need women.";
+	text_capitulo01[33]="She has to leave and reach her destination guided by the angels of the road. Tic tac, tic tac ...";
+	text_capitulo01[34]="She separates tenderly from her grandma. A kiss in the forehead, a caress, -I’ll make sure you come too- she says with a smile.";
+	text_capitulo01[35]="she carries a picture of her family in her pocket, along with an old letter to her father.";
+	text_capitulo01[36]="She turns back and starts walking.";
+	text_capitulo01[37]="Her grandmother makes crosses in the air, she has her blessings against all danger and evil.";
 
+	var text_capitulo02 = new Array();
+	text_capitulo02[0]="I met Amalia in Chiapas. When crossing borders, people get together to support each other,"; 
+    text_capitulo02[1]="the bigger ones carry the lighter ones, the healthy look after the sick ones and that way we all keep going.";	
+    text_capitulo02[2]="In that particular group there were people from far away, who spoke different languages. From Haiti "; 
+    text_capitulo02[3]="and Africa, I believe. They came in rafts by the sea, walking through hills and secret paths, ";
+    text_capitulo02[4]="hiding in cargo containers, with little girls and babies. Just like us! ";
+    text_capitulo02[5]="But on a much longer journey. Multicoloured bodies, beautiful and fragile, ";
+    text_capitulo02[6]="drinking water and showering in the river. Some Cubans were sharing stories from their journey: ";     
+    text_capitulo02[7]="They climbed a massive mountain in the Darién jungle, they crossed a river that overflowed, ";
+    text_capitulo02[8]="a woman and two kids didn’t make it to the other side, and there are other bodies scattered around... ";
+	text_capitulo02[9]="Just thinking how much distance we still had to cover, and imagining the million things that could happen,";                
+    text_capitulo02[10]=" I got scared.  And then I saw her. Like a ghost. "; 
+    text_capitulo02[11]="A girl alone in the middle of a bunch of people who doesn’t look afraid. "; 
+    text_capitulo02[12]="She seemed cool and secure, serene almost, sitting amongst the tents by the river. "; 
+    text_capitulo02[13]="That was Amalia. I admired her the moment I saw her! She sat by my side with a smile, "; 
+    text_capitulo02[14]="maybe because she saw my face while listening to the Cubans, and gave a mango.";
+    text_capitulo02[15]="-	What’s your name?";
+    
 });

@@ -60,11 +60,9 @@ include_once("config.php");
         </header><!-- end headerr -->
 
         <div id="content-section">
-
-            <a class="nav-before" href=""><svg><use xlink:href="#nav"/></svg></a>
-            <a class="nav-next" href=""><svg><use xlink:href="#nav"/></svg></a> 
-
-            <section id="introduccion" class="section-site cpt00">
+            
+            <section id="introduccion" class="section-site cpt00">                
+                <a class="nav-next" href="#capitulo01"><svg><use xlink:href="#nav"/></svg></a>
 
                 <div class="content-intro">
                     <div class="logo">
@@ -79,6 +77,8 @@ include_once("config.php");
             </section> 
 
             <section id="capitulo01" class="section-site cpt01"><!-- CAPITULO 01 -->
+                <a class="nav-before" href="#introduccion"><svg><use xlink:href="#nav"/></svg></a>
+                <a class="nav-next" href="#capitulo02"><svg><use xlink:href="#nav"/></svg></a>
                 <div class="subs-section">  
                      <audio id="audio-capitulo01" class="audios">                
                         <source src="audio/CAP1.mp3" type="audio/mp3">                    
@@ -89,8 +89,7 @@ include_once("config.php");
                     <p class="passage-audio-unavailable" hidden>
                         <em class="error"><strong>Error:</strong> You will not be able to do the read-along audio because your browser is not able to play MP3, Ogg, or WAV audio formats.</em>
                     </p>
-                    <div class="txt_capitulos" id="txt_capitulo01"></div>
-                    <a href="#capitulo02">SIGUIENTE</a>
+                    <div class="txt_capitulos" id="txt_capitulo01"></div>                    
                 </div>
                 <div class="background-section">
                     <div class="med-bg">
@@ -121,6 +120,8 @@ include_once("config.php");
             </section>
 			
             <section id="capitulo02" class="section-site cpt02"><!-- CAPITULO 02 -->
+                <a class="nav-before" href="#capitulo01"><svg><use xlink:href="#nav"/></svg></a>
+                <a class="nav-next" href="#capitulo03"><svg><use xlink:href="#nav"/></svg></a>
                 <div class="subs-section">   
                     <audio id="audio-capitulo02" class="audios">                
                         <source src="audio/CAP2.mp3" type="audio/mp3">                    
@@ -131,8 +132,7 @@ include_once("config.php");
                     <p class="passage-audio-unavailable" hidden>
                         <em class="error"><strong>Error:</strong> You will not be able to do the read-along audio because your browser is not able to play MP3, Ogg, or WAV audio formats.</em>
                     </p>
-					<div class="txt_capitulos" id="txt_capitulo02"></div>
-                    <a href="#capitulo03">SIGUIENTE</a>
+					<div class="txt_capitulos" id="txt_capitulo02"></div>                    
                 </div> 
                 
                 <div class="background-section">
@@ -152,6 +152,8 @@ include_once("config.php");
             </section>
 
             <section id="capitulo03" class="section-site cpt03"><!-- CAPITULO 03 -->
+                <a class="nav-before" href="#capitulo02"><svg><use xlink:href="#nav"/></svg></a>
+                <a class="nav-next" href="#capitulo04"><svg><use xlink:href="#nav"/></svg></a>
                 <div class="subs-section">  
                     <audio id="audio-capitulo03" class="audios" controls>                
                         <source src="audio/CAP3.mp3" type="audio/mp3">                    
