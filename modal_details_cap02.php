@@ -1,11 +1,14 @@
-<div id="detailwin-capitulo02-escena01" class="escenas-detail">
+<div id="detailwin-capitulo02-escena-1" class="escenas-detail">
 	HOLA capitulo 02 escena 01
+	<a href="javascript:void(0);" class="close-scenas-detail">Cerrar</a>
 </div>
 
-<div id="detailwin-capitulo02-escena02" class="escenas-detail">
+<div id="detailwin-capitulo02-escena-2" class="escenas-detail">
 	HOLA capitulo 02 escena 02
+	<a href="javascript:void(0);" class="close-scenas-detail">Cerrar</a>
 </div>
 
-<div id="detailwin-capitulo02-escena03" class="escenas-detail">
+<div id="detailwin-capitulo02-escena-3" class="escenas-detail">
 	HOLA capitulo 02 escena 03
+	<a href="javascript:void(0);" class="close-scenas-detail">Cerrar</a>
 </div>

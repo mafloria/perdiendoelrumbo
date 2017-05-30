@@ -15,10 +15,9 @@
 $(document).ready(function(){
 	//progress bar
 	var progress_bar = 0;
-	var capitulo01_escena01 = capitulo01_escena02 = capitulo01_escena03 = capitulo01_escena04 = capitulo01_escena05 = 3;
-	var text_current_chapter = new Array();//the actual chapter is loaded in this array to show the text
+	var capitulo01_escena_1 = capitulo01_escena_2 = capitulo01_escena_3 = capitulo01_escena_4 = capitulo01_escena_5 = 3;	
 	
-	//********** Audios	
+	// load audios elements	
 	var vid_capitulo01 = document.getElementById("audio-capitulo01");
 	var vid_capitulo02 = document.getElementById("audio-capitulo02");
 	var vid_capitulo03 = document.getElementById("audio-capitulo03");
@@ -26,10 +25,17 @@ $(document).ready(function(){
 	var vid_capitulo05 = document.getElementById("audio-capitulo05");
 	var vid_capitulo06 = document.getElementById("audio-capitulo06");
 	
+	//inizialice global vars 
+	var current_chapter_total_lines = 0;
 	var text_current_line = 0;
+	var text_current_chapter = new Array();//the actual chapter is loaded in this array to show the text
 	var pausePhrases = false;
 	var timer = new Array();
 	var delayCounter = 1;
+	
+	//scenas
+	var total_scenas_capitulo01 = 5;
+	var current_scena_number = 0;
 	
 //*********** window size to fix content	   
 	setHeight();
@@ -79,16 +85,55 @@ $(document).ready(function(){
 	//opens escenas
 	$(".abrir-detalle-modal").click(function(){
 		var id_info = $(this).attr('id');
-		var id_array = id_info.split('-');
-		$("#modal-description-escenas-"+id_array[0]).show();
-		$(".escenas-detail").hide();
-		$("#detailwin-"+id_info).show();
+		var id_array = id_info.split('-'); //0: capitulo 2:scena number
 		
-		progress_bar += eval(id_array[0]+"_"+id_array[1]); //add progress value
-		eval(id_array[0]+"_"+id_array[1]+"=0;"); //set scena value to 0
-		console.log(progress_bar+"::"+eval(id_array[0]+"_"+id_array[1]));
-		$(".barra-marcador").css("width", progress_bar+"%");
+		abrir_detalle_modal(id_array[0], id_array[2]);
 	});	   
+	
+	// shows the place name in the map with styles
+	// setup some defaults for all tooltipsters
+	$.fn.tooltipster('setDefaults', {});	 	  
+	$( ".abrir-detalle-modal" ).tooltipster({
+		theme: 'tooltipster-shadow',
+		animation: 'grow',        
+		trackTooltip: true,
+		contentCloning: true
+	});	
+	
+	//closes all detail popup windows (really only closes the only opened one)
+	$(".close-scenas-detail").click(function(){
+		$(".escenas-detail").hide();
+	})	
+	
+	$(".next-scenas-detail").click(function(){		
+		var parent_id_info = $(this).parent().attr('id').split("-");
+		
+		$(".escenas-detail").hide();
+		
+		if(current_scena_number==eval("total_scenas_"+parent_id_info[1])){
+			current_scena_number = 1;			
+		}else{
+			current_scena_number++;
+		}
+		abrir_detalle_modal(parent_id_info[1], current_scena_number); //param: capitulo number
+	});
+	
+	function abrir_detalle_modal(capitulo, escena_number){
+		$("#modal-description-escenas-"+capitulo).show();
+		$(".escenas-detail").hide();
+		$("#detailwin-"+capitulo+"-escena-"+escena_number).show();
+		
+		pause_audio(capitulo);
+		current_scena_number = escena_number;
+		
+		progress_bar += eval(capitulo+"_escena_"+escena_number); //add progress value
+		eval(capitulo+"_escena_"+escena_number+"=0;"); //set scena value to 0
+		console.log(progress_bar+"::"+eval(capitulo+"_escena_"+escena_number));
+		$(".barra-marcador").css("width", progress_bar+"%");
+
+	}
+		
+	
 	
 //********** end - actions
 
@@ -100,7 +145,7 @@ $(document).ready(function(){
 		eval("vid_"+id_info[1]).play();
 		if(text_current_line==0){
 			$("#txt_"+id_info[1]).html(text_current_chapter[0]);
-			$("#txt_"+id_info[1]).textillate('start');
+			//$("#txt_"+id_info[1]).textillate('start');
 			text_current_line++;
 		}
 		pausePhrases = false;
@@ -111,26 +156,35 @@ $(document).ready(function(){
 	//click over pause audio icon
 	$(".pauseAudio").click(function(){
 		var id_info = $(this).attr('id').split('-');
-		eval("vid_"+id_info[1]).pause();
+		
+		pause_audio(id_info[1]);				
+	});	
+	
+	function pause_audio(capitulo){
+		eval("vid_"+capitulo).pause();
 		
 		pausePhrases = true; //pause translated text
 		console.log("PAUSE: "+text_current_line);		
 		
 		//clear all text runing
-		for(j=1; j<=38; j++){ clearTimeout(timer[j]); }
+		for(j=1; j<=current_chapter_total_lines; j++){ clearTimeout(timer[j]); }
 		delayCounter = 1;
 		text_current_line++;
 		
-		$("#playAudio-"+id_info[1]).show();
-		$(this).hide();
-	});	
+		$("#playAudio-"+capitulo).show();
+		$("#pauseAudio-"+capitulo).hide();
+	}
+	
 	//start the audio when the chapter is displayed
 	function autoplay_audios(capitulo){
 		text_current_chapter = eval("text_"+capitulo);
+		current_chapter_total_lines = text_current_chapter.length;
+		
 		eval("vid_"+capitulo).load();
 		eval("vid_"+capitulo).play();
 		$("#txt_"+capitulo).html(text_current_chapter[0]);
-		$("#txt_"+capitulo).textillate('start');
+		//$("#txt_"+capitulo).textillate('start');
+		
 		text_current_line++;
 		pausePhrases = false;
 		writesentences(capitulo);	//translated text
@@ -140,15 +194,18 @@ $(document).ready(function(){
 		vid_capitulo01.pause();vid_capitulo02.pause();vid_capitulo03.pause();//vid_capitulo04.pause();vid_capitulo05.pause();vid_capitulo06.pause();		
 		for(j=1; j<=38; j++){ clearTimeout(timer[j]); }
 		pausePhrases = false;
+		current_chapter_total_lines = 0;
 		text_current_line = 0;
 		delayCounter = 1;
+		current_scena_number = 0;
 	} 
 	
 //********** end - Audios	
 
 //********** texts
+	//write texts acording the chapter
 	async function writesentences(capitulo){		
-		for(i=text_current_line; i<=text_current_chapter.length; i++, delayCounter++){
+		for(i=text_current_line; i<=current_chapter_total_lines; i++, delayCounter++){
 			 (function (i, delayCounter) {
 			    timer[i] = setTimeout(function () {
 			    	if(!pausePhrases){
@@ -225,6 +282,22 @@ $(document).ready(function(){
     text_capitulo02[12]="She seemed cool and secure, serene almost, sitting amongst the tents by the river. "; 
     text_capitulo02[13]="That was Amalia. I admired her the moment I saw her! She sat by my side with a smile, "; 
     text_capitulo02[14]="maybe because she saw my face while listening to the Cubans, and gave a mango.";
-    text_capitulo02[15]="-	What’s your name?";
+    text_capitulo02[15]="-	What’s your name? -	Gabriela-, I replied. - And yours? -Amalia- she said, -Pleasure to meet you-. And she smiled.";
+    text_capitulo02[16]="-	Where are you from, Gabriela? -	From El Salvador-, I said. -I don’t know anyone from there-, she said. ";
+    text_capitulo02[17]="-  What is it like? -Now you know me- I joked, and continued: Small and suffering. ";
+    text_capitulo02[18]="When there isn’t gang violence there are hurricanes destroying everything and if we survive that, ";
+    text_capitulo02[19]="then we have to face poverty. My teacher says God forgot about El Salvador.";
+    //text_capitulo02[20]="I sighed and we fell silent for a minute. Being by a river makes your thoughts start flowing. So I started over with my questions.";
+    text_capitulo02[20]="-	Where are you from? -	From Honduras-, she replied. -	And why are you travelling alone?- I inquired, because like my mom says, I’m very curious.";
+    
+    text_capitulo02[21]="- I could not! -	Because I have no one to keep me company-, she said calmly.";
+    text_capitulo02[22]="My parents are in the U.S., my brother was 12 when the Mara took him,";
+    text_capitulo02[23]="and that wasn’t even the last time they threatened my family. After a while they started harassing me, ";
+    text_capitulo02[24]="and my grandparents are too old to protect me. I had to leave. It’s been a long, hard way, ";
+    text_capitulo02[25]="but just as complicated is to keep living there. It would be nice to have a friend, don’t you think?-, then she smiled again.";
+    
+    text_capitulo02[26]="-	Of course it would be nice!- I had a bite of the mango and thought of her solitary journey. ";
+    text_capitulo02[27]="-	Aren’t you afraid?- I continued. -	Umm, not really. We’re not alone in this journey, God is with us-, I believed her.";
+    text_capitulo02[28]="-	Mom, can Amalia join us?- I asked. -	Sure-, she replied.  Amalia is my sister on this journey. Now we will always be together.";    
     
 });

@@ -1,19 +1,30 @@
-<div id="detailwin-capitulo01-escena01" class="escenas-detail">
+<div id="detailwin-capitulo01-escena-1" class="escenas-detail">
 	HOLA capitulo 01 escena 01
+	
+	<a href="javascript:void(0);" class="close-scenas-detail">Cerrar</a>
+	<a href="javascript:void(0);" class="next-scenas-detail">Siguiente</a>
 </div>
 
-<div id="detailwin-capitulo01-escena02" class="escenas-detail">
+<div id="detailwin-capitulo01-escena-2" class="escenas-detail">
 	HOLA capitulo 01 escena 02
+	<a href="javascript:void(0);" class="close-scenas-detail">Cerrar</a>
+	<a href="javascript:void(0);" class="next-scenas-detail">Siguiente</a>
 </div>
 
-<div id="detailwin-capitulo01-escena03" class="escenas-detail">
+<div id="detailwin-capitulo01-escena-3" class="escenas-detail">
 	HOLA capitulo 01 escena 03
+	<a href="javascript:void(0);" class="close-scenas-detail">Cerrar</a>
+	<a href="javascript:void(0);" class="next-scenas-detail">Siguiente</a>
 </div>
 
-<div id="detailwin-capitulo01-escena04" class="escenas-detail">
+<div id="detailwin-capitulo01-escena-4" class="escenas-detail">
 	HOLA capitulo 01 escena 04
+	<a href="javascript:void(0);" class="close-scenas-detail">Cerrar</a>
+	<a href="javascript:void(0);" class="next-scenas-detail">Siguiente</a>
 </div>
 
-<div id="detailwin-capitulo01-escena05" class="escenas-detail">
+<div id="detailwin-capitulo01-escena-5" class="escenas-detail">
 	HOLA capitulo 01 escena 05
+	<a href="javascript:void(0);" class="close-scenas-detail">Cerrar</a>
+	<a href="javascript:void(0);" class="next-scenas-detail">Siguiente</a>
 </div>

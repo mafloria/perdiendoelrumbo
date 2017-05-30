@@ -67,7 +67,7 @@
 
         window.addEventListener('resize', self.update);
         document.getElementById("buscandoelnorte-capitulo01-1024").addEventListener("click", self.update);
-        //document.getElementById("buscandoelnorte-capitulo01-1920").addEventListener("click", self.update);
+        document.getElementById("buscandoelnorte-capitulo02-1024").addEventListener("click", self.update);
         /*document.getElementById("travelgrafia-region-4").addEventListener("click", self.update);
         document.getElementById("travelgrafia-region-5").addEventListener("click", self.update);
         document.getElementById("travelgrafia-region-6").addEventListener("click", self.update);

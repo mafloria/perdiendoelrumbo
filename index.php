@@ -95,12 +95,31 @@ include_once("config.php");
                     <div class="med-bg">
                         <img src="<?php echo $urls["url_base"];?>images/buscando-el-norte-1024-capitulo01.png" alt="Buscando el norte - capítulo 1" usemap="#MapCapitulo01" id="buscandoelnorte-capitulo01-1024" />
                         <map name="MapCapitulo01">
-                          <area shape="poly" class="abrir-detalle-modal" id="capitulo01-escena01" coords="237,246,238,277,246,295,258,323,274,336,285,324,283,296,283,274,287,248,277,242" href="javascript:void(0)">
-                          <area shape="poly" class="abrir-detalle-modal" id="capitulo01-escena02" coords="571,514,588,567,609,572,653,537,634,492,571,514" href="javascript:void(0)">
-                          <area shape="poly" class="abrir-detalle-modal" id="capitulo01-escena03"coords="529,314,566,316,596,303,590,194,556,191,531,192,525,261,528,316" href="javascript:void(0)">
-                          <area shape="poly" class="abrir-detalle-modal" id="capitulo01-escena04" coords="565,459,623,424,628,415,645,417,668,413,690,401,677,382,655,389,663,369,657,314,667,285,685,263,685,247,661,246,657,262,645,276,617,291,600,316,589,346,573,373,555,392,554,419,567,459" href="javascript:void(0)">
-                          <area shape="poly" class="abrir-detalle-modal" id="capitulo01-escena05" coords="896,115,886,177,948,201,955,130,897,116" href="javascript:void(0)">
-                        </map> 
+                          <area shape="poly" class="abrir-detalle-modal" id="capitulo01-escena-1" coords="237,246,238,277,246,295,258,323,274,336,285,324,283,296,283,274,287,248,277,242" data-tooltip-content="#tooltip_capitulo01-escena-1" href="javascript:void(0)">
+                          <area shape="poly" class="abrir-detalle-modal" id="capitulo01-escena-2" coords="571,514,588,567,609,572,653,537,634,492,571,514" data-tooltip-content="#tooltip_capitulo01-escena-2" href="javascript:void(0)">
+                          <area shape="poly" class="abrir-detalle-modal" id="capitulo01-escena-3"coords="529,314,566,316,596,303,590,194,556,191,531,192,525,261,528,316" data-tooltip-content="#tooltip_capitulo01-escena-3" href="javascript:void(0)">
+                          <area shape="poly" class="abrir-detalle-modal" id="capitulo01-escena-4" coords="565,459,623,424,628,415,645,417,668,413,690,401,677,382,655,389,663,369,657,314,667,285,685,263,685,247,661,246,657,262,645,276,617,291,600,316,589,346,573,373,555,392,554,419,567,459" data-tooltip-content="#tooltip_capitulo01-escena-4" href="javascript:void(0)">
+                          <area shape="poly" class="abrir-detalle-modal" id="capitulo01-escena-5" coords="896,115,886,177,948,201,955,130,897,116" data-tooltip-content="#tooltip_capitulo01-escena-5" href="javascript:void(0)">
+                        </map>
+                        
+                        <div class="tooltip-html-titlecontent"><?php //tooltips ?>
+                            <span id="tooltip_capitulo01-escena-1">
+                                <b>Tooltip capitulo 1 escena 1</b><p><svg><use xlink:href="#nav"/></svg></p>
+                            </span>                           
+                            <span id="tooltip_capitulo01-escena-2">
+                                <b>Tooltip capitulo 1 escena 2</b><p><svg><use xlink:href="#nav"/></svg></p>
+                            </span>                  
+                            <span id="tooltip_capitulo01-escena-3">
+                                <b>Tooltip capitulo 1 escena 3</b><p><svg><use xlink:href="#nav"/></svg></p>
+                            </span>
+                            <span id="tooltip_capitulo01-escena-4">
+                                <b>Tooltip capitulo 1 escena 4</b><p><svg><use xlink:href="#nav"/></svg></p>
+                            </span>
+                            <span id="tooltip_capitulo01-escena-5">
+                                <b>Tooltip capitulo 1 escena 5</b><p><svg><use xlink:href="#nav"/></svg></p>
+                            </span>                               
+                        </div> 
+                         
                     </div>
                     <?php /*
                      <div class="large-bg">
@@ -136,9 +155,9 @@ include_once("config.php");
                 </div> 
                 
                 <div class="background-section">
-                    <img src="<?php echo $urls["url_base"];?>images/buscando-el-norte-1024-capitulo02.png" usemap="#MapCap02">
-                    <map name="MapCap02">
-                          <area shape="poly" class="abrir-detalle-modal" id="capitulo02-escena01" coords="1071,874,1101,969,1147,972,1212,916,1187,829" href="javascript:void(0);">
+                    <img src="<?php echo $urls["url_base"];?>images/buscando-el-norte-1024-capitulo02.png" usemap="#MapCapitulo02" id="buscandoelnorte-capitulo02-1024">
+                    <map name="MapCapitulo02">
+                          <area shape="poly" id="capitulo02-escena-1" coords="1071,874,1101,969,1147,972,1212,916,1187,829" href="javascript:void(0);">
                           <area shape="poly" coords="1043,633,1033,676,1044,776,1174,716,1296,668,1267,616,1241,628,1242,560,1297,381,1237,366,1206,408,1121,472" href="javascript:void(0);">
                           <area shape="poly" coords="986,265,1107,269,1109,472,1048,495,994,496" href="javascript:void(0);">
                           <area shape="poly" coords="444,387,492,377,530,386,530,452,531,520,512,542,473,512,449,440" href="javascript:void(0);">
@@ -170,7 +189,7 @@ include_once("config.php");
                 <div class="background-section">
                     <img src="<?php echo $urls["url_base"];?>images/buscando-el-norte-1024-capitulo03.png" usemap="#MapCap03">
                     <map name="MapCap03">
-                          <area shape="poly" class="abrir-detalle-modal" id="capitulo02-escena01" coords="1071,874,1101,969,1147,972,1212,916,1187,829" href="javascript:void(0);">
+                          <area shape="poly" id="capitulo02-escena01" coords="1071,874,1101,969,1147,972,1212,916,1187,829" href="javascript:void(0);">
                           <area shape="poly" coords="1043,633,1033,676,1044,776,1174,716,1296,668,1267,616,1241,628,1242,560,1297,381,1237,366,1206,408,1121,472" href="javascript:void(0);">
                           <area shape="poly" coords="986,265,1107,269,1109,472,1048,495,994,496" href="javascript:void(0);">
                           <area shape="poly" coords="444,387,492,377,530,386,530,452,531,520,512,542,473,512,449,440" href="javascript:void(0);">
@@ -206,13 +225,23 @@ include_once("config.php");
 </body>
 
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
-<!--<script src="assets/js/libs/jquery-1.10.2-min"></script>-->
+<!-- for tool tip management -->
+<link rel="stylesheet" href="assets/js/tooltipster/dist/css/tooltipster.bundle.min.css">    
+<script src="assets/js/tooltipster/dist/js/tooltipster.bundle.min.js"></script>
+<link rel="stylesheet" href="assets/js/tooltipster/dist/css/plugins/tooltipster/sideTip/themes/tooltipster-sideTip-shadow.min.css">    
+
+<!-- for text -->
 <script src="assets/js/libs/jquery.fittext.js"></script>
 <script src="assets/js/libs/jquery.lettering.js"></script>
-<!--<script src="http://yandex.st/highlightjs/7.3/highlight.min.js"></script>-->
 <script src="assets/js/libs/jquery.textillate.js"></script>
+
+<!-- for scrolling -->
 <script src="assets/js/libs/jquery.disablescroll.min.js"></script>
+
+<!-- for image map  -->
 <script src="assets/js/image-map-master/image-map.js"></script>
+
+<!-- for buscando el norte management -->
 <script src="assets/js/functions.js"></script>
     
 <style>
@@ -236,6 +265,9 @@ top: 90px;
 left: 10px;
 color: #990000;
 background-color: white;
+}
+.tooltip-html-titlecontent{
+    display:none;
 }
 </style>    
 </html>
