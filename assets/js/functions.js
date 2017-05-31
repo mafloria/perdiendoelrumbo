@@ -102,7 +102,8 @@ $(document).ready(function(){
 		delay: 0,        
 		trackTooltip: true,
 		contentCloning: true,		
-		plugins: ['follower']
+		plugins: ['follower'],
+		theme: 'tooltipster-sideTip'
 	});	
 	
 	//closes all detail popup windows (really only closes the only opened one)
