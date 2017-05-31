@@ -276,7 +276,6 @@ section img{
 	position: absolute;
 	z-index: 9999;
 	top: 10%;
-	bottom: 10%;
 	left: 10%;
 	right: 10%;
 	background-color: rgba(255, 255, 255, 0.97);
@@ -343,13 +342,14 @@ a.next-scenas-detail:hover{
 	.main-header h1{
 		width: 11%;
 	}
-	/*
-	.large-bg{
-		display: block;
+
+}
+@media screen and (min-width:1440px){
+	.modal-descriptions{
+		left: 30%;
+		right: 30%;
+		width: 60%;
 	}
-	.med-bg{
-		display: none !important;
-	}	*/
 }
 /* Print styles
 -------------------------------------------------------------------------------*/

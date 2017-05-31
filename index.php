@@ -260,14 +260,5 @@ include_once("config.php");
 ::-webkit-scrollbar-thumb {
     background: #FF0000;
 }
-
-.tooltip-html-titlecontent{
-    display:none;
-}
-
-.escenas-detail-content img{
-	height: 80% !important;
-	width: 80% !important;
-}
 </style>    
 </html>
