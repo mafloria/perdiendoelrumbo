@@ -155,14 +155,15 @@ include_once("config.php");
                 </div> 
                 
                 <div class="background-section">
-                    <img src="<?php echo $urls["url_base"];?>images/buscando-el-norte-1024-capitulo02.png" usemap="#MapCapitulo02" id="buscandoelnorte-capitulo02-1024">
-                    <map name="MapCapitulo02">
-                          <area shape="poly" id="capitulo02-escena-1" coords="1071,874,1101,969,1147,972,1212,916,1187,829" href="javascript:void(0);">
-                          <area shape="poly" coords="1043,633,1033,676,1044,776,1174,716,1296,668,1267,616,1241,628,1242,560,1297,381,1237,366,1206,408,1121,472" href="javascript:void(0);">
-                          <area shape="poly" coords="986,265,1107,269,1109,472,1048,495,994,496" href="javascript:void(0);">
-                          <area shape="poly" coords="444,387,492,377,530,386,530,452,531,520,512,542,473,512,449,440" href="javascript:void(0);">
-                          <area shape="poly" coords="1679,128,1802,165,1781,289,1662,242" href="javascript:void(0);">
-                    </map>
+                    <div class="med-bg">
+                        <img src="<?php echo $urls["url_base"];?>images/buscando-el-norte-1024-capitulo02.png" alt="Buscando el norte - capítulo 2" width="1024" height="678" usemap="#MapCapitulo02" id="buscandoelnorte-capitulo01-1024"/>
+                        <map name="MapCapitulo02">
+                          <area shape="poly" coords="491,241,558,243,592,225,641,171,667,132,718,121,740,108,699,51,604,59,572,86,540,118,505,160,483,231" href="javascript:void(0);">
+                          <area shape="poly" coords="245,375,224,389,207,435,179,483,163,522,173,542,195,546,211,501,233,474,260,437,272,407,286,389,262,375" href="javascript:void(0);">
+                          <area shape="poly" coords="998,517,946,526,936,457,920,436,884,487,843,479,849,426,827,485,790,499,779,409,771,326,761,249,733,240,734,209,754,185,756,143,789,127,803,89,871,85,896,56,930,36,975,100,1000,122,1018,132,1018,501" href="javascript:void(0);">
+                        </map>
+                         
+                    </div>
                 </div> 
                 
             	<div id="modal-description-escenas-capitulo02" class="modal-descriptions" style="display: none">
@@ -174,7 +175,7 @@ include_once("config.php");
                 <a class="nav-before" href="#capitulo02"><svg><use xlink:href="#nav"/></svg></a>
                 <a class="nav-next" href="#capitulo04"><svg><use xlink:href="#nav"/></svg></a>
                 <div class="subs-section">  
-                    <audio id="audio-capitulo03" class="audios" controls>                
+                    <audio id="audio-capitulo03" class="audios">                
                         <source src="audio/CAP3.mp3" type="audio/mp3">                    
                         <em class="error"><strong>Error:</strong> Your browser doesn't appear to support HTML5 Audio.</em>
                     </audio>
@@ -187,13 +188,16 @@ include_once("config.php");
                 </div>
                 
                 <div class="background-section">
-                    <img src="<?php echo $urls["url_base"];?>images/buscando-el-norte-1024-capitulo03.png" usemap="#MapCap03">
-                    <map name="MapCap03">
-                          <area shape="poly" id="capitulo02-escena01" coords="1071,874,1101,969,1147,972,1212,916,1187,829" href="javascript:void(0);">
-                          <area shape="poly" coords="1043,633,1033,676,1044,776,1174,716,1296,668,1267,616,1241,628,1242,560,1297,381,1237,366,1206,408,1121,472" href="javascript:void(0);">
-                          <area shape="poly" coords="986,265,1107,269,1109,472,1048,495,994,496" href="javascript:void(0);">
-                          <area shape="poly" coords="444,387,492,377,530,386,530,452,531,520,512,542,473,512,449,440" href="javascript:void(0);">
-                          <area shape="poly" coords="1679,128,1802,165,1781,289,1662,242" href="javascript:void(0);">
+                    <!-- imagenes de transicion: estas imagenes aparecen y desaparecen hasta llegar a la imagen del map-->
+                    <img src="<?php echo $urls["url_base"];?>images/buscando-el-norte-1024-capitulo03a.jpg" width="1024" height="678" style="display: none;">
+                    <img src="<?php echo $urls["url_base"];?>images/buscando-el-norte-1024-capitulo03b.jpg" width="1024" height="678" style="display: none;">
+                    <img src="<?php echo $urls["url_base"];?>images/buscando-el-norte-1024-capitulo03c.jpg" width="1024" height="678" style="display: none;">
+                    <!--//-->
+                    <img src="<?php echo $urls["url_base"];?>images/buscando-el-norte-1024-capitulo03.png" width="1024" height="678" usemap="#MapCapitulo03" id="buscandoelnorte-capitulo01-1024">
+                    <map name="MapCapitulo03">
+                      <area shape="poly" coords="109,143,123,200,93,244,99,298,126,328,162,309,206,315,228,297,267,282,343,295,367,257,459,294,496,288,409,224,339,194,348,150,314,132,281,140,269,163,231,150,206,133,155,134" href="javascript:void(0);">
+                      <area shape="poly" coords="349,376,327,389,297,473,264,501,228,548,265,572,307,599,349,599,379,568,407,551,408,529,423,480,418,452,469,430,614,359,596,337,395,361" href="javascript:void(0);">
+                      <area shape="poly" coords="598,251,725,272,749,247,749,230,704,189,715,158,698,123,716,104,719,69,699,45,661,54,603,116,608,217" href="javascript:void(0);">
                     </map>
                 </div>
                 
@@ -224,8 +228,8 @@ include_once("config.php");
 
 </body>
 
-<!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script> -->
-<script src="assets/js/libs/jquery-1.11.3.min.js"></script>    
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+<!--<script src="assets/js/libs/jquery-1.11.3.min.js"></script>-->    
 
 <!-- for tool tip management -->
 <link rel="stylesheet" href="assets/js/tooltipster/dist/css/tooltipster.bundle.min.css">    
