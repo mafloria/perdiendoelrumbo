@@ -156,7 +156,7 @@ include_once("config.php");
                 
                 <div class="background-section">
                     <div class="med-bg">
-                        <img src="<?php echo $urls["url_base"];?>images/buscando-el-norte-1024-capitulo02.png" alt="Buscando el norte - capítulo 2" width="1024" height="678" usemap="#MapCapitulo02" id="buscandoelnorte-capitulo01-1024"/>
+                        <img src="<?php echo $urls["url_base"];?>images/buscando-el-norte-1024-capitulo02.png" alt="Buscando el norte - capítulo 2" width="1024" height="678" usemap="#MapCapitulo02" id="buscandoelnorte-capitulo02-1024"/>
                         <map name="MapCapitulo02">
                           <area shape="poly" coords="491,241,558,243,592,225,641,171,667,132,718,121,740,108,699,51,604,59,572,86,540,118,505,160,483,231" href="javascript:void(0);">
                           <area shape="poly" coords="245,375,224,389,207,435,179,483,163,522,173,542,195,546,211,501,233,474,260,437,272,407,286,389,262,375" href="javascript:void(0);">
