@@ -190,16 +190,20 @@ $(document).ready(function(){
 		text_current_line++;
 		pausePhrases = false;
 		writesentences(capitulo);	//translated text
+		
+		$("#playAudio-"+capitulo).hide();
+		$("#pauseAudio-"+capitulo).show();
 	}
 	//when back or forward restart audios and texts
 	function let_audios_text_begins(){
 		vid_capitulo01.pause();vid_capitulo02.pause();vid_capitulo03.pause();//vid_capitulo04.pause();vid_capitulo05.pause();vid_capitulo06.pause();		
-		for(j=1; j<=38; j++){ clearTimeout(timer[j]); }
+		for(j=1; j<=current_chapter_total_lines; j++){ clearTimeout(timer[j]); }
 		pausePhrases = false;
 		current_chapter_total_lines = 0;
 		text_current_line = 0;
 		delayCounter = 1;
 		current_scena_number = 0;
+		
 	} 
 	
 //********** end - Audios	

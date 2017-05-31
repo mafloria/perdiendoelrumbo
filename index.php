@@ -224,7 +224,9 @@ include_once("config.php");
 
 </body>
 
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+<!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script> -->
+<script src="assets/js/libs/jquery-1.11.3.min.js"></script>    
+
 <!-- for tool tip management -->
 <link rel="stylesheet" href="assets/js/tooltipster/dist/css/tooltipster.bundle.min.css">    
 <script src="assets/js/tooltipster/dist/js/tooltipster.bundle.min.js"></script>
