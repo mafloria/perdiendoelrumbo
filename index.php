@@ -161,13 +161,16 @@ include_once("config.php");
                         </map>
                         <div class="tooltip-html-titlecontent"><?php //tooltips ?>
                             <span id="tooltip_capitulo02-escena-1">
-                                <b>Tooltip capitulo 2 escena 1</b><p><svg><use xlink:href="#nav"/></svg></p>
+                                <svg><use xlink:href="#view-more"/></svg>
+                                <p>ver más</p> 
                             </span>                           
                             <span id="tooltip_capitulo02-escena-2">
-                                <b>Tooltip capitulo 2 escena 2</b><p><svg><use xlink:href="#nav"/></svg></p>
+                                <svg><use xlink:href="#view-more"/></svg>
+                                <p>ver más</p> 
                             </span>                  
                             <span id="tooltip_capitulo02-escena-3">
-                                <b>Tooltip capitulo 2 escena 3</b><p><svg><use xlink:href="#nav"/></svg></p>
+                                <svg><use xlink:href="#view-more"/></svg>
+                                <p>ver más</p> 
                             </span>                            
                         </div>
                     </div>
