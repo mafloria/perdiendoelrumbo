@@ -341,7 +341,9 @@ a.next-scenas-detail:hover{
 	width: 60%;
 	padding: 4%;
 }
-
+.tooltip-html-titlecontent{
+	display: none;
+}
 .tooltipster-sidetip.tooltipster-shadow .tooltipster-box{
 	z-index: 5 !important;
 }
