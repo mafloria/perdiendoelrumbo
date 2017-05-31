@@ -323,7 +323,7 @@ a.close-scenas-detail:hover{
 }
 a.next-scenas-detail{
 	position: absolute;
-    bottom: 1em;
+    bottom: 0;
     right: 0;
     background-color: black;
     padding: 0.5em 3em;
@@ -340,6 +340,44 @@ a.next-scenas-detail:hover{
 .escenas-detail-content.no-img{
 	width: 60%;
 	padding: 4%;
+}
+
+.tooltip-html-titlecontent{}
+
+.tooltip-html-titlecontent span svg{
+	width: 15px;
+	height: 15px;
+	fill: white;
+	float: left;
+	margin-right: 1em;
+
+	background-color: rgba(0, 0, 0, 0.8);
+}
+.tooltip-html-titlecontent span p{
+	float: left;
+	color: white;
+	font-size: 1.2em;
+}
+#overlay{ display:none; }
+#overlay{
+	background-color: rgba(0, 0, 0, 0.8);
+	position: absolute;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 9;
+}
+.tooltipster-sidetip.tooltipster-noir.tooltipster-noir-customized .tooltipster-box {
+	background-color: rgba(0, 0, 0, 0.8);
+	border: 3px solid red;
+	border-radius: 6px;
+	box-shadow: 5px 5px 2px 0 rgba(0,0,0,0.4);
+}
+
+.tooltipster-sidetip.tooltipster-noir.tooltipster-noir-customized .tooltipster-content {
+	color: blue;
+	padding: 8px;
 }
 /* Media queries
 -------------------------------------------------------------------------------*/
