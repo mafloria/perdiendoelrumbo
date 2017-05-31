@@ -346,14 +346,16 @@ a.next-scenas-detail:hover{
 	z-index: 5 !important;
 }
 
-.tooltipster-sidetip.tooltipster-shadow .tooltipster-box svg{
+.tooltipster-sidetip.tooltipster-shadow .tooltipster-box svg,
+ .tooltipster-follower .tooltipster-box svg{
 	width: 25px;
 	height: 25px;
 	fill: white !important;
 	float: left;
 	margin-right: 1em;
 }
-.tooltipster-sidetip.tooltipster-shadow .tooltipster-box p{
+.tooltipster-sidetip.tooltipster-shadow .tooltipster-box p,
+.tooltipster-follower .tooltipster-box p{
 	float: left;
 	color: white;
 	font-size: 1.5em;
@@ -369,11 +371,9 @@ a.next-scenas-detail:hover{
 	bottom: 0;
 	z-index: 9;
 }
-.tooltipster-sidetip.tooltipster-shadow .tooltipster-box {
+.tooltipster-sidetip.tooltipster-shadow .tooltipster-box,
+    .tooltipster-follower .tooltipster-box {
 	background-color: rgba(0, 0, 0, 0.8) !important;
-	border: 3px solid red;
-	border-radius: 6px;
-	box-shadow: 5px 5px 2px 0 rgba(0,0,0,0.4);
 }
 .tooltipster-sidetip.tooltipster-shadow.tooltipster-left .tooltipster-arrow-border{border-left-color:#000000 !important}
 .tooltipster-sidetip.tooltipster-shadow.tooltipster-right .tooltipster-arrow-border{border-right-color:#000000 !important}
