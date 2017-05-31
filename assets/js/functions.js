@@ -100,6 +100,7 @@ $(document).ready(function(){
 		animation: 'grow',        
 		trackTooltip: true,
 		contentCloning: true
+		
 	});	
 	
 	//closes all detail popup windows (really only closes the only opened one)
@@ -107,6 +108,7 @@ $(document).ready(function(){
 		$(".escenas-detail").hide();
 		var capitulo = $(this).parent().attr('id').split('-');;
 		$("#modal-description-escenas-"+capitulo[1]).hide();
+		$("#overlay").hide();
 	})	
 	
 	$(".next-scenas-detail").click(function(){		
@@ -134,7 +136,8 @@ $(document).ready(function(){
 		eval(capitulo+"_escena_"+escena_number+"=0;"); //set scena value to 0
 		console.log(progress_bar+"::"+eval(capitulo+"_escena_"+escena_number));
 		$(".barra-marcador").css("width", progress_bar+"%");
-
+		
+		$("#overlay").show();
 	}
 		
 	
