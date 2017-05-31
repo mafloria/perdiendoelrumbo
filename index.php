@@ -25,6 +25,7 @@
 
     <script src="assets/js/libs/prefixfree.min.js"></script>
     <script src="assets/js/libs/modernizr-3.2.0.base.js"></script> 
+   <!-- <script src="https://www.w3schools.com/lib/w3.js"></script>-->
     <link href="https://fonts.googleapis.com/css?family=Magra" rel="stylesheet">  
 
 </head>
@@ -135,7 +136,8 @@ include_once("config.php");
                     </div>*/?>
                 </div>
 				<div id="modal-description-escenas-capitulo01" class="modal-descriptions" style="display: none">
-					<?php include_once("modal_details_cap01.php"); ?>         
+					<?php include_once("modal_details_cap01.php"); ?>
+					<?php // <div w3-include-html="modal_details_cap01.html"></div> ?>         
 	    		</div>
             </section>
 			
@@ -169,6 +171,7 @@ include_once("config.php");
                 
             	<div id="modal-description-escenas-capitulo02" class="modal-descriptions" style="display: none">
 					<?php include_once("modal_details_cap02.php"); ?>         
+					
 	    		</div>
             </section>
 
@@ -265,16 +268,17 @@ include_once("config.php");
 ::-webkit-scrollbar-thumb {
     background: #FF0000;
 }
+.tooltip-html-titlecontent{display:none;}
 #overlay{ display:none; }
 #overlay{
 	background-color: white;
-position: absolute;
-left: 0;
-top: 0;
-right: 0;
-bottom: 0;
-z-index: 9;
-opacity: 0.8;
+	position: absolute;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 9;
+	opacity: 0.8;
 }
 </style>    
 </html>

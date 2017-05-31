@@ -39,6 +39,7 @@ $(document).ready(function(){
 	
 //*********** window size to fix content	   
 	setHeight();
+	//w3.includeHTML();
 		  
 	$(window).resize(function() {
 		setHeight();
@@ -52,8 +53,6 @@ $(document).ready(function(){
 		$('#content-section .section-site').css('width', windowWidth);
 		$('img[usemap]').css('height', windowHeight);
 		$('img[usemap]').css('width', windowWidth);
-		
-		window.location = "#capitulo01";
 	};
 	
 	//fix the image map coordenates
