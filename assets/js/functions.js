@@ -103,6 +103,8 @@ $(document).ready(function(){
 	//closes all detail popup windows (really only closes the only opened one)
 	$(".close-scenas-detail").click(function(){
 		$(".escenas-detail").hide();
+		var capitulo = $(this).parent().attr('id').split('-');;
+		$("#modal-description-escenas-"+capitulo[1]).hide();
 	})	
 	
 	$(".next-scenas-detail").click(function(){		
