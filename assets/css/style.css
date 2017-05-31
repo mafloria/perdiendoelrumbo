@@ -279,7 +279,7 @@ section img{
 /*modales escenas*/
 .modal-descriptions{
 	position: absolute;
-	z-index: 10;
+	z-index: 999999999;
 	top: 10%;
 	left: 10%;
 	right: 10%;
@@ -342,21 +342,22 @@ a.next-scenas-detail:hover{
 	padding: 4%;
 }
 
-.tooltip-html-titlecontent{}
+.tooltipster-sidetip.tooltipster-shadow .tooltipster-box{
+	z-index: 5 !important;
+}
 
-.tooltip-html-titlecontent span svg{
-	width: 15px;
-	height: 15px;
-	fill: white;
+.tooltipster-sidetip.tooltipster-shadow .tooltipster-box svg{
+	width: 25px;
+	height: 25px;
+	fill: white !important;
 	float: left;
 	margin-right: 1em;
-
-	background-color: rgba(0, 0, 0, 0.8);
 }
-.tooltip-html-titlecontent span p{
+.tooltipster-sidetip.tooltipster-shadow .tooltipster-box p{
 	float: left;
 	color: white;
-	font-size: 1.2em;
+	font-size: 1.5em;
+	line-height: 1.2em;
 }
 #overlay{ display:none; }
 #overlay{
@@ -368,17 +369,16 @@ a.next-scenas-detail:hover{
 	bottom: 0;
 	z-index: 9;
 }
-.tooltipster-sidetip.tooltipster-noir.tooltipster-noir-customized .tooltipster-box {
-	background-color: rgba(0, 0, 0, 0.8);
+.tooltipster-sidetip.tooltipster-shadow .tooltipster-box {
+	background-color: rgba(0, 0, 0, 0.8) !important;
 	border: 3px solid red;
 	border-radius: 6px;
 	box-shadow: 5px 5px 2px 0 rgba(0,0,0,0.4);
 }
-
-.tooltipster-sidetip.tooltipster-noir.tooltipster-noir-customized .tooltipster-content {
-	color: blue;
-	padding: 8px;
-}
+.tooltipster-sidetip.tooltipster-shadow.tooltipster-left .tooltipster-arrow-border{border-left-color:#000000 !important}
+.tooltipster-sidetip.tooltipster-shadow.tooltipster-right .tooltipster-arrow-border{border-right-color:#000000 !important}
+.tooltipster-sidetip.tooltipster-shadow.tooltipster-top .tooltipster-arrow-border{border-top-color:#000000 !important}
+.tooltipster-sidetip.tooltipster-shadow.tooltipster-bottom .tooltipster-arrow-border{border-bottom-color:#000000 !important}
 /* Media queries
 -------------------------------------------------------------------------------*/
 
