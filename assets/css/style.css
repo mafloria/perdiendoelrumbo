@@ -292,15 +292,21 @@ section img{
 }
 .escenas-detail-content-left{
 	float: left;
-	width: 60%;
+	width: 55%;
 }
 .escenas-detail-content-right{
 	float: left;
-	width: 40%;
-	padding: 2%;
+	width: 45%;
+	padding: 5% 2.5%;
 }
-.escenas-detail-content p{
+.escenas-detail-content p,
+.escenas-detail-content ul li{
 	font-size: 1.25em;
+}
+.escenas-detail-content ul li{
+	font-family: 'Magra', sans-serif;
+	margin-bottom: 0.5em;
+	font-style: italic;
 }
 a.close-scenas-detail{
 	background-color: black;
