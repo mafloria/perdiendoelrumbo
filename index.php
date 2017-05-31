@@ -197,16 +197,27 @@ include_once("config.php");
                 
                 <div class="background-section">
                     <!-- imagenes de transicion: estas imagenes aparecen y desaparecen hasta llegar a la imagen del map-->
-                    <img src="<?php echo $urls["url_base"];?>images/buscando-el-norte-1024-capitulo03a.jpg" width="1024" height="678" style="display: none;">
-                    <img src="<?php echo $urls["url_base"];?>images/buscando-el-norte-1024-capitulo03b.jpg" width="1024" height="678" style="display: none;">
-                    <img src="<?php echo $urls["url_base"];?>images/buscando-el-norte-1024-capitulo03c.jpg" width="1024" height="678" style="display: none;">
+                    <img src="<?php echo $urls["url_base"];?>images/buscando-el-norte-1024-capitulo03a.jpg" class="capitulo03-rotating-item" vwidth="1024" height="678" style="display: none;">
+                    <img src="<?php echo $urls["url_base"];?>images/buscando-el-norte-1024-capitulo03b.jpg" class="capitulo03-rotating-item" width="1024" height="678" style="display: none;">
+                    <img src="<?php echo $urls["url_base"];?>images/buscando-el-norte-1024-capitulo03c.jpg" class="capitulo03-rotating-item" width="1024" height="678" style="display: none;">
                     <!--//-->
-                    <img src="<?php echo $urls["url_base"];?>images/buscando-el-norte-1024-capitulo03.png" width="1024" height="678" usemap="#MapCapitulo03" id="buscandoelnorte-capitulo01-1024">
+                    <img src="<?php echo $urls["url_base"];?>images/buscando-el-norte-1024-capitulo03.png" usemap="#MapCapitulo03" class="capitulo03-rotating-item" id="buscandoelnorte-capitulo03-1024" style="display: none;">
                     <map name="MapCapitulo03">
-                      <area shape="poly" coords="109,143,123,200,93,244,99,298,126,328,162,309,206,315,228,297,267,282,343,295,367,257,459,294,496,288,409,224,339,194,348,150,314,132,281,140,269,163,231,150,206,133,155,134" href="javascript:void(0);">
-                      <area shape="poly" coords="349,376,327,389,297,473,264,501,228,548,265,572,307,599,349,599,379,568,407,551,408,529,423,480,418,452,469,430,614,359,596,337,395,361" href="javascript:void(0);">
-                      <area shape="poly" coords="598,251,725,272,749,247,749,230,704,189,715,158,698,123,716,104,719,69,699,45,661,54,603,116,608,217" href="javascript:void(0);">
+                      <area shape="poly" class="abrir-detalle-modal" id="capitulo03-escena-1" data-tooltip-content="#tooltip_capitulo03-escena-1" coords="109,143,123,200,93,244,99,298,126,328,162,309,206,315,228,297,267,282,343,295,367,257,459,294,496,288,409,224,339,194,348,150,314,132,281,140,269,163,231,150,206,133,155,134" href="javascript:void(0);">
+                      <area shape="poly" class="abrir-detalle-modal" id="capitulo03-escena-2" data-tooltip-content="#tooltip_capitulo03-escena-2" coords="349,376,327,389,297,473,264,501,228,548,265,572,307,599,349,599,379,568,407,551,408,529,423,480,418,452,469,430,614,359,596,337,395,361" href="javascript:void(0);">
+                      <area shape="poly" class="abrir-detalle-modal" id="capitulo03-escena-3" data-tooltip-content="#tooltip_capitulo03-escena-3" coords="598,251,725,272,749,247,749,230,704,189,715,158,698,123,716,104,719,69,699,45,661,54,603,116,608,217" href="javascript:void(0);">
                     </map>
+                    <div class="tooltip-html-titlecontent"><?php //tooltips ?>
+                            <span id="tooltip_capitulo03-escena-1">
+                                <b>Tooltip capitulo 3 escena 1</b><p><svg><use xlink:href="#nav"/></svg></p>
+                            </span>                           
+                            <span id="tooltip_capitulo03-escena-2">
+                                <b>Tooltip capitulo 3 escena 2</b><p><svg><use xlink:href="#nav"/></svg></p>
+                            </span>                  
+                            <span id="tooltip_capitulo03-escena-3">
+                                <b>Tooltip capitulo 3 escena 3</b><p><svg><use xlink:href="#nav"/></svg></p>
+                            </span>                            
+                    </div>
                 </div>
                 
 				<div id="modal-description-escenas-capitulo03" class="modal-descriptions" style="display: none">

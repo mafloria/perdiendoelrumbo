@@ -16,7 +16,8 @@ $(document).ready(function(){
 	//progress bar
 	var progress_bar = 0;
 	var capitulo01_escena_1 = capitulo01_escena_2 = capitulo01_escena_3 = capitulo01_escena_4 = 4;
-	var capitulo02_escena_1 = capitulo02_escena_2 = capitulo02_escena_3 = 5.3;	
+	var capitulo02_escena_1 = capitulo02_escena_2 = capitulo02_escena_3 = 5.3;
+	var capitulo03_escena_1 = capitulo03_escena_2 = capitulo03_escena_3 = 5.3;	
 	
 	// load audios elements	
 	var vid_capitulo01 = document.getElementById("audio-capitulo01");
@@ -37,6 +38,7 @@ $(document).ready(function(){
 	//scenas
 	var total_scenas_capitulo01 = 4;
 	var total_scenas_capitulo02 = 3;
+	var total_scenas_capitulo03 = 3;
 	var current_scena_number = 0;
 	
 //*********** window size to fix content	   
@@ -55,6 +57,8 @@ $(document).ready(function(){
 		$('#content-section .section-site').css('width', windowWidth);
 		$('img[usemap]').css('height', windowHeight);
 		$('img[usemap]').css('width', windowWidth);
+		$('.capitulo03-rotating-item').css('width', windowWidth);
+		$('.capitulo03-rotating-item').css('height', windowHeight);
 	};
 	
 	//fix the image map coordenates
@@ -74,6 +78,7 @@ $(document).ready(function(){
         	let_audios_text_begins(); //restart audios and text if the user returns start all again
         	
 		    if(this.hash.slice(1)!="introduccion") autoplay_audios(this.hash.slice(1));
+		    if(this.hash.slice(1)=="capitulo03") {InfiniteRotator.init(); }
 		    
 		    return false;
 		  }//end if target length
@@ -142,6 +147,37 @@ $(document).ready(function(){
 		
 		$("#overlay").show();
 	}
+	
+	//capt 3 y 4 images rotating
+	//images rotation
+    var InfiniteRotator = {
+        init: function() {
+            //initial fade-in time (in milliseconds)
+            var initialFadeIn = 2000;
+            //interval between items (in milliseconds)
+            var itemInterval = 10000;
+            //cross-fade time (in milliseconds)
+            var fadeTime = 2000;
+            //count number of items
+            var numberOfItems = $('.capitulo03-rotating-item').length;
+            //set current item
+            var currentItem = 0;
+ 
+            //show first item
+            $('.capitulo03-rotating-item').eq(currentItem).fadeIn(initialFadeIn);
+ 
+            //loop through the items
+            var infiniteLoop = setInterval(function(){
+                $('.capitulo03-rotating-item').eq(currentItem).fadeOut(0);
+                 
+				currentItem++;
+                 
+                $('.capitulo03-rotating-item').eq(currentItem).fadeIn(fadeTime);
+                if(currentItem==3) clearInterval(infiniteLoop);
+ 
+            }, itemInterval);
+        }
+    }; 
 		
 	
 	
@@ -314,4 +350,11 @@ $(document).ready(function(){
     text_capitulo02[27]="-	Aren’t you afraid?- I continued. -	Umm, not really. We’re not alone in this journey, God is with us-, I believed her.";
     text_capitulo02[28]="-	Mom, can Amalia join us?- I asked. -	Sure-, she replied.  Amalia is my sister on this journey. Now we will always be together.";    
     
+    var text_capitulo03 = new Array();
+	text_capitulo03[0]="We travelled together for two weeks but for me it felt like a lifetime."; 
+    text_capitulo03[1]="At night we would look at the stars, while she told me her story and the details of her trip since she left home.";
+    
+    var text_capitulo04 = new Array();
+	text_capitulo04[0]="C4 Tic tac, tic tac..."; 
+    text_capitulo04[1]="C4 Amalia was never afraid, or so I thought every time I saw her, strong and confindent. Tic tac, tic tac...";
 });
