@@ -96,7 +96,8 @@ $(document).ready(function(){
 	$.fn.tooltipster('setDefaults', {});	 	  
 	$( ".abrir-detalle-modal" ).tooltipster({
 		theme: 'tooltipster-shadow',
-		animation: 'grow',        
+		animation: 'face',
+		delay: 0,        
 		trackTooltip: true,
 		contentCloning: true
 		
