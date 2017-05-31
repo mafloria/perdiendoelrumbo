@@ -258,14 +258,7 @@ include_once("config.php");
 ::-webkit-scrollbar-thumb {
     background: #FF0000;
 }
-.modal-descriptions{
-	position: absolute;
-z-index: 9999;
-top: 90px;
-left: 10px;
-color: #990000;
-background-color: white;
-}
+
 .tooltip-html-titlecontent{
     display:none;
 }

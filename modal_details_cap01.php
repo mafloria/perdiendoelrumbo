@@ -1,7 +1,10 @@
 <div id="detailwin-capitulo01-escena-1" class="escenas-detail">
-	HOLA capitulo 01 escena 01
-	
 	<a href="javascript:void(0);" class="close-scenas-detail">Cerrar</a>
+	<div class="escenas-detail-content">
+		<img src="<?php echo $urls["url_base"];?>images/img-escena1-escapulario.jpg">
+	</div>
+	
+	
 	<a href="javascript:void(0);" class="next-scenas-detail">Siguiente</a>
 </div>
 
