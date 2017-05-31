@@ -95,14 +95,14 @@ $(document).ready(function(){
 	
 	// shows the place name in the map with styles
 	// setup some defaults for all tooltipsters
-	$.fn.tooltipster('setDefaults', {});	 	  
+	$.fn.tooltipster('setDefaults', {});// 	 	  
 	$( ".abrir-detalle-modal" ).tooltipster({
 		theme: 'tooltipster-shadow',
 		animation: 'face',
 		delay: 0,        
 		trackTooltip: true,
-		contentCloning: true		
-		
+		contentCloning: true,		
+		plugins: ['follower']
 	});	
 	
 	//closes all detail popup windows (really only closes the only opened one)

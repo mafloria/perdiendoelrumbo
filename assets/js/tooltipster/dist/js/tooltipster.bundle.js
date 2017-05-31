@@ -3340,7 +3340,7 @@ $.tooltipster._plugin({
 				// if the tooltip should display an arrow that points to the origin
 				arrow: true,
 				// the distance in pixels between the tooltip and the origin
-				distance: 6,
+				distance: 1,
 				// allows to easily change the position of the tooltip
 				functionPosition: null,
 				maxWidth: null,

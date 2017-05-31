@@ -237,6 +237,7 @@ include_once("config.php");
 <!-- for tool tip management -->
 <link rel="stylesheet" href="assets/js/tooltipster/dist/css/tooltipster.bundle.min.css">    
 <script src="assets/js/tooltipster/dist/js/tooltipster.bundle.min.js"></script>
+<script type="text/javascript" src="assets/js/tooltipster/dist/js/plugins/tooltipster-follower.min.js"></script>
 <link rel="stylesheet" href="assets/js/tooltipster/dist/css/plugins/tooltipster/sideTip/themes/tooltipster-sideTip-shadow.min.css">    
 
 <!-- for text -->
