@@ -262,5 +262,10 @@ include_once("config.php");
 .tooltip-html-titlecontent{
     display:none;
 }
+
+.escenas-detail-content img{
+	height: 80% !important;
+	width: 80% !important;
+}
 </style>    
 </html>

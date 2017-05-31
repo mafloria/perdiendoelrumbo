@@ -10,7 +10,7 @@
 	<a href="javascript:void(0);" class="close-scenas-detail"><svg><use xlink:href="#close"/></svg></a>
 	<div class="escenas-detail-content">
 	<div class="escenas-detail-content-left">
-		<img src="<?php echo $urls["url_base"];?>images/img-escena1-foto.jpg" width="920" height="913">
+		<img src="<?php echo $urls["url_base"];?>images/img-escena1-foto.jpg">
 	</div>
 	<div class="escenas-detail-content-right">
 		<h2>La reunificación familiar</h2>
