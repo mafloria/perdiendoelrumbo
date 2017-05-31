@@ -15,7 +15,8 @@
 $(document).ready(function(){
 	//progress bar
 	var progress_bar = 0;
-	var capitulo01_escena_1 = capitulo01_escena_2 = capitulo01_escena_3 = capitulo01_escena_4 = capitulo01_escena_5 = 3;	
+	var capitulo01_escena_1 = capitulo01_escena_2 = capitulo01_escena_3 = capitulo01_escena_4 = 4;
+	var capitulo02_escena_1 = capitulo02_escena_2 = capitulo02_escena_3 = 5.3;	
 	
 	// load audios elements	
 	var vid_capitulo01 = document.getElementById("audio-capitulo01");
@@ -34,7 +35,8 @@ $(document).ready(function(){
 	var delayCounter = 1;
 	
 	//scenas
-	var total_scenas_capitulo01 = 5;
+	var total_scenas_capitulo01 = 4;
+	var total_scenas_capitulo02 = 3;
 	var current_scena_number = 0;
 	
 //*********** window size to fix content	   
@@ -99,7 +101,7 @@ $(document).ready(function(){
 		animation: 'face',
 		delay: 0,        
 		trackTooltip: true,
-		contentCloning: true
+		contentCloning: true		
 		
 	});	
 	

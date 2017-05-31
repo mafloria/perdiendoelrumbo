@@ -123,17 +123,6 @@ include_once("config.php");
                         </div> 
                          
                     </div>
-                    <?php /*
-                     <div class="large-bg">
-                        <img src="<?php echo $urls["url_base"];?>images/buscando-el-norte-1920-capitulo01.png" alt="" height="960px" usemap="#MapCapitulo01_1920"  id="buscandoelnorte-capitulo01-1920"/><!--width="1920" height="1080" -->
-                        <map name="MapCapitulo01_1920">
-                          <area shape="poly" class="abrir-detalle-modal" id="capitulo01-escena01-1920" coords="1071,874,1101,969,1147,972,1212,916,1187,829" href="javascript:void(0);">
-                          <area shape="poly" class="abrir-detalle-modal" id="capitulo01-escena02-1920" coords="1043,633,1033,676,1044,776,1174,716,1296,668,1267,616,1241,628,1242,560,1297,381,1237,366,1206,408,1121,472" href="javascript:void(0);">
-                          <area shape="poly" class="abrir-detalle-modal" id="capitulo01-escena03-1920" coords="986,265,1107,269,1109,472,1048,495,994,496" href="javascript:void(0);">
-                          <area shape="poly" class="abrir-detalle-modal" id="capitulo01-escena04-1920" coords="444,387,492,377,530,386,530,452,531,520,512,542,473,512,449,440" href="javascript:void(0);">
-                          <area shape="poly" class="abrir-detalle-modal" id="capitulo01-escena05-1920" coords="1679,128,1802,165,1781,289,1662,242" href="javascript:void(0);">
-                        </map>
-                    </div>*/?>
                 </div>
 				<div id="modal-description-escenas-capitulo01" class="modal-descriptions" style="display: none">
 					<?php include_once("modal_details_cap01.php"); ?>
@@ -161,11 +150,21 @@ include_once("config.php");
                     <div class="med-bg">
                         <img src="<?php echo $urls["url_base"];?>images/buscando-el-norte-1024-capitulo02.png" alt="Buscando el norte - capítulo 2" width="1024" height="678" usemap="#MapCapitulo02" id="buscandoelnorte-capitulo02-1024"/>
                         <map name="MapCapitulo02">
-                          <area shape="poly" coords="491,241,558,243,592,225,641,171,667,132,718,121,740,108,699,51,604,59,572,86,540,118,505,160,483,231" href="javascript:void(0);">
-                          <area shape="poly" coords="245,375,224,389,207,435,179,483,163,522,173,542,195,546,211,501,233,474,260,437,272,407,286,389,262,375" href="javascript:void(0);">
-                          <area shape="poly" coords="998,517,946,526,936,457,920,436,884,487,843,479,849,426,827,485,790,499,779,409,771,326,761,249,733,240,734,209,754,185,756,143,789,127,803,89,871,85,896,56,930,36,975,100,1000,122,1018,132,1018,501" href="javascript:void(0);">
+                          <area shape="poly" class="abrir-detalle-modal" id="capitulo02-escena-1" data-tooltip-content="#tooltip_capitulo02-escena-1" coords="491,241,558,243,592,225,641,171,667,132,718,121,740,108,699,51,604,59,572,86,540,118,505,160,483,231" href="javascript:void(0);">
+                          <area shape="poly" class="abrir-detalle-modal" id="capitulo02-escena-2" data-tooltip-content="#tooltip_capitulo02-escena-1" coords="245,375,224,389,207,435,179,483,163,522,173,542,195,546,211,501,233,474,260,437,272,407,286,389,262,375" href="javascript:void(0);">
+                          <area shape="poly" class="abrir-detalle-modal" id="capitulo02-escena-3" data-tooltip-content="#tooltip_capitulo02-escena-1" coords="998,517,946,526,936,457,920,436,884,487,843,479,849,426,827,485,790,499,779,409,771,326,761,249,733,240,734,209,754,185,756,143,789,127,803,89,871,85,896,56,930,36,975,100,1000,122,1018,132,1018,501" href="javascript:void(0);">
                         </map>
-                         
+                        <div class="tooltip-html-titlecontent"><?php //tooltips ?>
+                            <span id="tooltip_capitulo02-escena-1">
+                                <b>Tooltip capitulo 2 escena 1</b><p><svg><use xlink:href="#nav"/></svg></p>
+                            </span>                           
+                            <span id="tooltip_capitulo02-escena-2">
+                                <b>Tooltip capitulo 2 escena 2</b><p><svg><use xlink:href="#nav"/></svg></p>
+                            </span>                  
+                            <span id="tooltip_capitulo02-escena-3">
+                                <b>Tooltip capitulo 2 escena 3</b><p><svg><use xlink:href="#nav"/></svg></p>
+                            </span>                            
+                        </div>
                     </div>
                 </div> 
                 
