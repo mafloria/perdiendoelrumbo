@@ -106,19 +106,24 @@ include_once("config.php");
                         
                         <div class="tooltip-html-titlecontent"><?php //tooltips ?>
                             <span id="tooltip_capitulo01-escena-1">
-                                <b>Tooltip capitulo 1 escena 1</b><p><svg><use xlink:href="#nav"/></svg></p>
+                                <svg><use xlink:href="#view-more"/></svg>
+                                <p>ver más</p>    
                             </span>                           
                             <span id="tooltip_capitulo01-escena-2">
-                                <b>Tooltip capitulo 1 escena 2</b><p><svg><use xlink:href="#nav"/></svg></p>
+                                <svg><use xlink:href="#view-more"/></svg>
+                                <p>ver más</p> 
                             </span>                  
                             <span id="tooltip_capitulo01-escena-3">
-                                <b>Tooltip capitulo 1 escena 3</b><p><svg><use xlink:href="#nav"/></svg></p>
+                                <svg><use xlink:href="#view-more"/></svg>
+                                <p>ver más</p> 
                             </span>
                             <span id="tooltip_capitulo01-escena-4">
-                                <b>Tooltip capitulo 1 escena 4</b><p><svg><use xlink:href="#nav"/></svg></p>
+                                <svg><use xlink:href="#view-more"/></svg>
+                                <p>ver más</p> 
                             </span>
                             <span id="tooltip_capitulo01-escena-5">
-                                <b>Tooltip capitulo 1 escena 5</b><p><svg><use xlink:href="#nav"/></svg></p>
+                                <svg><use xlink:href="#view-more"/></svg>
+                                <p>ver más</p> 
                             </span>                               
                         </div> 
                          
@@ -267,18 +272,6 @@ include_once("config.php");
 /* optional: show position indicator in red */
 ::-webkit-scrollbar-thumb {
     background: #FF0000;
-}
-.tooltip-html-titlecontent{display:none;}
-#overlay{ display:none; }
-#overlay{
-	background-color: white;
-	position: absolute;
-	left: 0;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	z-index: 9;
-	opacity: 0.8;
 }
 </style>    
 </html>
