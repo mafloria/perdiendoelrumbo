@@ -101,7 +101,7 @@ include_once("config.php");
                           <area shape="poly" class="abrir-detalle-modal" id="capitulo01-escena-2" coords="571,514,588,567,609,572,653,537,634,492,571,514" data-tooltip-content="#tooltip_capitulo01-escena-2" href="javascript:void(0)">
                           <area shape="poly" class="abrir-detalle-modal" id="capitulo01-escena-3"coords="529,314,566,316,596,303,590,194,556,191,531,192,525,261,528,316" data-tooltip-content="#tooltip_capitulo01-escena-3" href="javascript:void(0)">
                           <area shape="poly" class="abrir-detalle-modal" id="capitulo01-escena-4" coords="565,459,623,424,628,415,645,417,668,413,690,401,677,382,655,389,663,369,657,314,667,285,685,263,685,247,661,246,657,262,645,276,617,291,600,316,589,346,573,373,555,392,554,419,567,459" data-tooltip-content="#tooltip_capitulo01-escena-4" href="javascript:void(0)">
-                          <area shape="poly" class="abrir-detalle-modal" id="capitulo01-escena-5" coords="896,115,886,177,948,201,955,130,897,116" data-tooltip-content="#tooltip_capitulo01-escena-5" href="javascript:void(0)">
+                          <area shape="poly" class="abrir-detalle-modal" id="capitulo01-escena-3-5" coords="896,115,886,177,948,201,955,130,897,116" data-tooltip-content="#tooltip_capitulo01-escena-5" href="javascript:void(0)">
                         </map>
                         
                         <div class="tooltip-html-titlecontent"><?php //tooltips ?>

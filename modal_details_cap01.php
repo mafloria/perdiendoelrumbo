@@ -21,19 +21,30 @@
 </div>
 
 <div id="detailwin-capitulo01-escena-3" class="escenas-detail">
-	HOLA capitulo 01 escena 03
 	<a href="javascript:void(0);" class="close-scenas-detail"><svg><use xlink:href="#close"/></svg></a>
+	<div class="escenas-detail-content">
+		<img src="<?php echo $urls["url_base"];?>images/img-escena1-honduras.jpg">
+	</div>
+	
 	<a href="javascript:void(0);" class="next-scenas-detail">Siguiente</a>
 </div>
 
 <div id="detailwin-capitulo01-escena-4" class="escenas-detail">
-	HOLA capitulo 01 escena 04
 	<a href="javascript:void(0);" class="close-scenas-detail"><svg><use xlink:href="#close"/></svg></a>
-	<a href="javascript:void(0);" class="next-scenas-detail">Siguiente</a>
-</div>
+	<div class="escenas-detail-content">
+		<div class="escenas-detail-content-left">
+			<img src="<?php echo $urls["url_base"];?>images/img-escena1-foto2.jpg">
+		</div>
+		<div class="escenas-detail-content-right">
+			<p>A julio de 2016 retornaron 5,284 niños, niñas y adolescentes procedentes de Honduras, 1,665 eran mujeres. Los peligros para ellas se incrementan. Por eso deben preparase físicamente antes del viaje:</p>
+			<br />
+			<h3>Atuendo:</h3>
+			<p>Cortarse el pelo, usar gorra, pantalones, parecer niño para protegerse. </p>
+			<br />
+			<h3>Anticonceptivos:</h3>
+			<p>Muchas adolescentes son agredidas sexualmente y quedan embarazadas. Por eso es importante tomar anticonceptivos antes de empezar el viaje. </p>
+		</div>
+	</div>
 
-<div id="detailwin-capitulo01-escena-5" class="escenas-detail">
-	HOLA capitulo 01 escena 05
-	<a href="javascript:void(0);" class="close-scenas-detail"><svg><use xlink:href="#close"/></svg></a>
 	<a href="javascript:void(0);" class="next-scenas-detail">Siguiente</a>
 </div>
