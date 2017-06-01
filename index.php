@@ -229,15 +229,27 @@ include_once("config.php");
             </section>
 
             <section id="capitulo04" class="section-site cpt04"><!-- CAPITULO 04 -->
-                
+                <a class="nav-before" href="#capitulo03"><svg><use xlink:href="#nav"/></svg></a>
+                <a class="nav-next" href="#capitulo05"><svg><use xlink:href="#nav"/></svg></a>
+                <div class="background-section">
+                    <img src="<?php echo $urls["url_base"];?>images/buscando-el-norte-1024-capitulo04.jpg">
+                </div>    
             </section>
 
             <section id="capitulo05" class="section-site cpt05"><!-- CAPITULO 05 -->
-                
+                <a class="nav-before" href="#capitulo04"><svg><use xlink:href="#nav"/></svg></a>
+                <a class="nav-next" href="#capitulo06"><svg><use xlink:href="#nav"/></svg></a> 
+                <div class="background-section">
+                    <img src="<?php echo $urls["url_base"];?>images/buscando-el-norte-1024-capitulo05.jpg">
+                </div>    
             </section> 
 
             <section id="capitulo06" class="section-site cpt06"><!-- CAPITULO 05 -->
-                
+                <a class="nav-before" href="#capitulo05"><svg><use xlink:href="#nav"/></svg></a>
+                <a class="nav-next" href="#introduccion"><svg><use xlink:href="#nav"/></svg></a> 
+                <div class="background-section">
+                    <img src="<?php echo $urls["url_base"];?>images/buscando-el-norte-1024-capitulo06.jpg">
+                </div>     
             </section> 
 			
             <!-- barra progreso -->
