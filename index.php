@@ -43,8 +43,7 @@ include_once("config.php");
             <h1>
                 <a href="#introduccion">
                     <img src="<?php echo $urls["url_base"];?>images/buscando-el-norte-logo-horizontal-top.png" width="541" height="61">
-                </a>
-                <a href="#capitulo03">cap3</a>
+                </a>                
             </h1>
 
             <nav id="nav-menu">
