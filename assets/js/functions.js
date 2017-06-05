@@ -13,6 +13,8 @@
  * Author: Margaret Florian (mafloria)
  */
 $(document).ready(function(){
+	w3.includeHTML();
+	
 	//progress bar
 	var progress_bar = 0;
 	var capitulo01_escena_1 = capitulo01_escena_2 = capitulo01_escena_3 = capitulo01_escena_4 = 4;
@@ -42,8 +44,7 @@ $(document).ready(function(){
 	var current_scena_number = 0;
 	
 //*********** window size to fix content	   
-	setHeight();
-	//w3.includeHTML();
+	setHeight();	
 		  
 	$(window).resize(function() {
 		setHeight();
@@ -91,7 +92,7 @@ $(document).ready(function(){
 		$(".submenu").toggle('slow');
 	});
 	//opens escenas
-	$(".abrir-detalle-modal").click(function(){
+	$(document).on('click', '.abrir-detalle-modal', function(){ 	
 		var id_info = $(this).attr('id');
 		var id_array = id_info.split('-'); //0: capitulo 2:scena number
 		
@@ -112,14 +113,14 @@ $(document).ready(function(){
 	});	
 	
 	//closes all detail popup windows (really only closes the only opened one)
-	$(".close-scenas-detail").click(function(){
+	$(document).on('click', '.close-scenas-detail', function(){
 		$(".escenas-detail").hide();
 		var capitulo = $(this).parent().attr('id').split('-');;
 		$("#modal-description-escenas-"+capitulo[1]).hide();
 		$("#overlay").hide();
 	})	
 	
-	$(".next-scenas-detail").click(function(){		
+	$(document).on('click', '.next-scenas-detail', function(){		
 		var parent_id_info = $(this).parent().attr('id').split("-");
 		
 		$(".escenas-detail").hide();
@@ -186,7 +187,7 @@ $(document).ready(function(){
 //********** audios
 	
 	//click over play audio icon
-	$(".playAudio").click(function(){
+	$(document).on('click', '.playAudio', function(){
 		var id_info = $(this).attr('id').split('-');
 		eval("vid_"+id_info[1]).play();
 		if(text_current_line==0){
@@ -200,7 +201,7 @@ $(document).ready(function(){
 		$(this).hide();	
 	});	
 	//click over pause audio icon
-	$(".pauseAudio").click(function(){
+	$(document).on('click', '.pauseAudio', function(){
 		var id_info = $(this).attr('id').split('-');
 		
 		pause_audio(id_info[1]);				
