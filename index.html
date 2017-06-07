@@ -69,8 +69,21 @@
                     <div class="logo">
                         <img src="images/buscando-el-norte-logo-intro.png" width="781" height="260">
                     </div> 
-                    <a class="blackBtn" href="#capitulo01">COMENZAR</a>     
+                    <a class="blackBtn" href="#capitulo01">COMENZAR</a>    
                 </div>
+
+                <div class="intro-chapter-menu">
+                    <h3>Navega por los diferentes capítulos:</h3>
+                    <ul>
+                        <li><a href=""><img src="images/thumb-portada-c1.jpg"></a></li>
+                        <li><a href=""><img src="images/thumb-portada-c2.jpg"></a></li>
+                        <li><a href=""><img src="images/thumb-portada-c3.jpg"></a></li>
+                        <li><a href=""><img src="images/thumb-portada-c4.jpg"></a></li>
+                        <li><a href=""><img src="images/thumb-portada-c5.jpg"></a></li>
+                        <li><a href=""><img src="images/thumb-portada-c6.jpg"></a></li>
+                    </ul>
+                </div> 
+
                 <div class="background-section">
                     <img class="med-bg" src="images/buscando-el-norte-1024-intro.png">
                     <img class="large-bg" src="images/buscando-el-norte-1920-intro.png">
@@ -78,58 +91,69 @@
             </section> 
 
             <section id="capitulo01" class="section-site cpt01"><!-- CAPITULO 01 -->
-                <a class="nav-before" href="#introduccion"><svg><use xlink:href="#nav"/></svg></a>
-                <a class="nav-next" href="#capitulo02"><svg><use xlink:href="#nav"/></svg></a>
-                <div class="subs-section">  
-                     <audio id="audio-capitulo01" class="audios">                
-                        <source src="audio/CAP1.mp3" type="audio/mp3">                    
-                        <em class="error"><strong>Error:</strong> Your browser doesn't appear to support HTML5 Audio.</em>
-                    </audio>
-                    <a href="javascript:void(0)" class="playAudio" id="playAudio-capitulo01" style="display: none"><svg><use xlink:href="#audioplay"/></svg></a>
-                    <a href="javascript:void(0)" class="pauseAudio" id="pauseAudio-capitulo01"><svg><use xlink:href="#audiostop"/></svg></a>
-                    <p class="passage-audio-unavailable" hidden>
-                        <em class="error"><strong>Error:</strong> You will not be able to do the read-along audio because your browser is not able to play MP3, Ogg, or WAV audio formats.</em>
-                    </p>
-                    <div class="txt_capitulos" id="txt_capitulo01"></div>                    
+                <div class="side-nav-section"><!-- navegacion lateral por seccion -->
+                    <ul>
+                        <li><a href=""><img src="images/thumb-portada-c1.jpg"></a></li>
+                        <li><a href=""><img src="images/thumb-portada-c1.jpg"></a></li>
+                        <li><a href=""><img src="images/thumb-portada-c1.jpg"></a></li>
+                        <li><a href=""><img src="images/thumb-portada-c1.jpg"></a></li>
+                        <li><a href=""><img src="images/thumb-portada-c1.jpg"></a></li>
+                    </ul>
                 </div>
-                <div class="background-section">
-                    <div class="med-bg">
-                        <img src="images/buscando-el-norte-1024-capitulo01.png" alt="Buscando el norte - capítulo 1" usemap="#MapCapitulo01" id="buscandoelnorte-capitulo01-1024" />
-                        <map name="MapCapitulo01">
-                          <area shape="poly" class="abrir-detalle-modal" id="capitulo01-escena-1" coords="237,246,238,277,246,295,258,323,274,336,285,324,283,296,283,274,287,248,277,242" data-tooltip-content="#tooltip_capitulo01-escena-1" href="javascript:void(0)">
-                          <area shape="poly" class="abrir-detalle-modal" id="capitulo01-escena-2" coords="571,514,588,567,609,572,653,537,634,492,571,514" data-tooltip-content="#tooltip_capitulo01-escena-2" href="javascript:void(0)">
-                          <area shape="poly" class="abrir-detalle-modal" id="capitulo01-escena-3"coords="529,314,566,316,596,303,590,194,556,191,531,192,525,261,528,316" data-tooltip-content="#tooltip_capitulo01-escena-3" href="javascript:void(0)">
-                          <area shape="poly" class="abrir-detalle-modal" id="capitulo01-escena-4" coords="565,459,623,424,628,415,645,417,668,413,690,401,677,382,655,389,663,369,657,314,667,285,685,263,685,247,661,246,657,262,645,276,617,291,600,316,589,346,573,373,555,392,554,419,567,459" data-tooltip-content="#tooltip_capitulo01-escena-4" href="javascript:void(0)">
-                          <area shape="poly" class="abrir-detalle-modal" id="capitulo01-escena-3-5" coords="896,115,886,177,948,201,955,130,897,116" data-tooltip-content="#tooltip_capitulo01-escena-5" href="javascript:void(0)">
-                        </map>
-                        
-                        <div class="tooltip-html-titlecontent"><?php //tooltips ?>
-                            <span id="tooltip_capitulo01-escena-1">
-                                <svg><use xlink:href="#view-more"/></svg>
-                                <p>ver más</p>    
-                            </span>                           
-                            <span id="tooltip_capitulo01-escena-2">
-                                <svg><use xlink:href="#view-more"/></svg>
-                                <p>ver más</p> 
-                            </span>                  
-                            <span id="tooltip_capitulo01-escena-3">
-                                <svg><use xlink:href="#view-more"/></svg>
-                                <p>ver más</p> 
-                            </span>
-                            <span id="tooltip_capitulo01-escena-4">
-                                <svg><use xlink:href="#view-more"/></svg>
-                                <p>ver más</p> 
-                            </span>
-                            <span id="tooltip_capitulo01-escena-5">
-                                <svg><use xlink:href="#view-more"/></svg>
-                                <p>ver más</p> 
-                            </span>                               
-                        </div> 
-                         
+                <div class="section-content-wrap"> <!-- contenedor de elementos del section -->
+                    <a class="nav-before" href="#introduccion"><svg><use xlink:href="#nav"/></svg></a>
+                    <a class="nav-next" href="#capitulo02"><svg><use xlink:href="#nav"/></svg></a>
+                    <div class="subs-section">  
+                         <audio id="audio-capitulo01" class="audios">                
+                            <source src="audio/CAP1.mp3" type="audio/mp3">                    
+                            <em class="error"><strong>Error:</strong> Your browser doesn't appear to support HTML5 Audio.</em>
+                        </audio>
+                        <a href="javascript:void(0)" class="playAudio" id="playAudio-capitulo01" style="display: none"><svg><use xlink:href="#audioplay"/></svg></a>
+                        <a href="javascript:void(0)" class="pauseAudio" id="pauseAudio-capitulo01"><svg><use xlink:href="#audiostop"/></svg></a>
+                        <p class="passage-audio-unavailable" hidden>
+                            <em class="error"><strong>Error:</strong> You will not be able to do the read-along audio because your browser is not able to play MP3, Ogg, or WAV audio formats.</em>
+                        </p>
+                        <div class="txt_capitulos" id="txt_capitulo01"></div>                    
                     </div>
+                    <div class="background-section">
+                        <div class="med-bg">
+                            <img src="images/buscando-el-norte-1024-capitulo01.png" alt="Buscando el norte - capítulo 1" usemap="#MapCapitulo01" id="buscandoelnorte-capitulo01-1024" />
+                            <!--
+                            <map name="MapCapitulo01">
+                              <area shape="poly" class="abrir-detalle-modal" id="capitulo01-escena-1" coords="237,246,238,277,246,295,258,323,274,336,285,324,283,296,283,274,287,248,277,242" data-tooltip-content="#tooltip_capitulo01-escena-1" href="javascript:void(0)">
+                              <area shape="poly" class="abrir-detalle-modal" id="capitulo01-escena-2" coords="571,514,588,567,609,572,653,537,634,492,571,514" data-tooltip-content="#tooltip_capitulo01-escena-2" href="javascript:void(0)">
+                              <area shape="poly" class="abrir-detalle-modal" id="capitulo01-escena-3"coords="529,314,566,316,596,303,590,194,556,191,531,192,525,261,528,316" data-tooltip-content="#tooltip_capitulo01-escena-3" href="javascript:void(0)">
+                              <area shape="poly" class="abrir-detalle-modal" id="capitulo01-escena-4" coords="565,459,623,424,628,415,645,417,668,413,690,401,677,382,655,389,663,369,657,314,667,285,685,263,685,247,661,246,657,262,645,276,617,291,600,316,589,346,573,373,555,392,554,419,567,459" data-tooltip-content="#tooltip_capitulo01-escena-4" href="javascript:void(0)">
+                              <area shape="poly" class="abrir-detalle-modal" id="capitulo01-escena-3-5" coords="896,115,886,177,948,201,955,130,897,116" data-tooltip-content="#tooltip_capitulo01-escena-5" href="javascript:void(0)">
+                            </map>
+                            
+                            <div class="tooltip-html-titlecontent"><?php //tooltips ?>
+                                <span id="tooltip_capitulo01-escena-1">
+                                    <svg><use xlink:href="#view-more"/></svg>
+                                    <p>ver más</p>    
+                                </span>                           
+                                <span id="tooltip_capitulo01-escena-2">
+                                    <svg><use xlink:href="#view-more"/></svg>
+                                    <p>ver más</p> 
+                                </span>                  
+                                <span id="tooltip_capitulo01-escena-3">
+                                    <svg><use xlink:href="#view-more"/></svg>
+                                    <p>ver más</p> 
+                                </span>
+                                <span id="tooltip_capitulo01-escena-4">
+                                    <svg><use xlink:href="#view-more"/></svg>
+                                    <p>ver más</p> 
+                                </span>
+                                <span id="tooltip_capitulo01-escena-5">
+                                    <svg><use xlink:href="#view-more"/></svg>
+                                    <p>ver más</p> 
+                                </span>                               
+                            </div> 
+                             -->
+                        </div>
+                    </div>
+    				<div id="modal-description-escenas-capitulo01" class="modal-descriptions" style="display: none"  w3-include-html="modal_details_cap01.html"></div>
                 </div>
-				<div id="modal-description-escenas-capitulo01" class="modal-descriptions" style="display: none"  w3-include-html="modal_details_cap01.html">					         
-	    		</div>
             </section>
 			
             <section id="capitulo02" class="section-site cpt02"><!-- CAPITULO 02 -->
