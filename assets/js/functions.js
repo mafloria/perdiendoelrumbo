@@ -97,7 +97,7 @@ $(document).ready(function(){
 		    }
 		    if(this.hash.slice(1)=="capitulo03") {InfiniteRotator.init(); }
 		    
-		    $("#sequence-"+current_chapter+"-scena-1 a").addClass("current-scene");		    		    		       
+		    $("#sequence-"+current_chapter+"-scena-1 a").addClass("current-scene");		    		    		    		      
 		     
 		    return false;
 		  }//end if target length
@@ -216,15 +216,20 @@ $(document).ready(function(){
 	   	}
 	   
 		console.log("PREV NEXT AUDIO: SCENA: "+current_scena_number+ " CHAPTER:"+current_chapter+" Progress Bar: "+progress_bar);
+		$("#imgbg-"+current_chapter+"-scena-"+current_scena_number).hide("slow");
 		
 		if(current_scena_number < eval("total_scenas_"+current_chapter)){
 			
 	   		current_scena_number ++;
+	   		$("#imgbg-"+current_chapter+"-scena-"+current_scena_number).show("slow");
 	   		autoplay_audios(current_chapter);
 	   			   
 	   		$("#sequence-"+current_chapter+"-scena-"+current_scena_number+" > a").addClass("current-scene");
 	   		
-	  }	   	   
+	  }else{
+	  	$("#imgbg-"+current_chapter+"-scena-0").show("slow");	
+	  }
+	  
 	}
 		
 	
