@@ -1,16 +1,9 @@
-// Browser detection for when you get desperate. A measure of last resort.
-// http://rog.ie/post/9089341529/html5boilerplatejs
-// sample CSS: html[data-useragent*='Chrome/13.0'] { ... }
-// Uncomment the below to use:
-// var b = document.documentElement;
-// b.setAttribute('data-useragent',  navigator.userAgent);
-// b.setAttribute('data-platform', navigator.platform);
 /*
  * Buscando el Norte - Transmedia
  *
  * Copyright (c) 2017 
  * Date: May 22 - 2017
- * Author: Margaret Florian (mafloria)
+ * Author: Margaret Florian (mafloria - UXDevco)
  */
 $(document).ready(function(){
 	w3.includeHTML();//includes other html files (.svg)
@@ -61,17 +54,19 @@ $(document).ready(function(){
 	function setHeight() {
 		windowHeight = $(window).innerHeight();
 		windowWidth = $(window).innerWidth();
+		//general containers
 		$('#content-section').css('height', windowHeight);
 		$('#content-section .section-site').css('height', windowHeight);		
 		$('#content-section .section-site').css('width', windowWidth);
+		//background images
 		$('.background-section img').css('height', windowHeight);
-		$('.background-section img').css('width', windowWidth);
+		$('.background-section img').css('width', windowWidth);		
 		$('.capitulo03-rotating-item').css('width', windowWidth);
 		$('.capitulo03-rotating-item').css('height', windowHeight);
 	};
 	
 	//fix the image map coordenates
-    $('img[usemap]').imageMap();
+    //$('img[usemap]').imageMap();
 //*********** end - window size to fix content
 
 //*********** scrolls to an href section exactly
@@ -209,36 +204,61 @@ $(document).ready(function(){
 	function audio_ended_action(){
 		$("#sequence-"+current_chapter+"-scena-"+current_scena_number+" > a").removeClass("current-scene");
 		$("#sequence-"+current_chapter+"-scena-"+current_scena_number+" > a").addClass("enable-scene");
+		$("#sequence-"+current_chapter+"-scena-"+current_scena_number+" > a").attr("href", "javascript:void(0)"); //enable link mouse option
 		
 		if(progress_bar<100){
 			progress_bar += eval(current_chapter+"_escena_"+current_scena_number); //add progress value
 		    $(".barra-marcador").css("width", progress_bar+"%");
+		    eval(current_chapter+"_escena_"+current_scena_number+"=0"); //reset scena progress value to cero, already listened
 	   	}
 	   
 		console.log("PREV NEXT AUDIO: SCENA: "+current_scena_number+ " CHAPTER:"+current_chapter+" Progress Bar: "+progress_bar);
-		$("#imgbg-"+current_chapter+"-scena-"+current_scena_number).hide("slow");
+		$("#imgbg-"+current_chapter+"-scena-"+current_scena_number).hide("slow"); //hides background image
 		
 		if(current_scena_number < eval("total_scenas_"+current_chapter)){
 			
 	   		current_scena_number ++;
-	   		$("#imgbg-"+current_chapter+"-scena-"+current_scena_number).show("slow");
+	   		$("#imgbg-"+current_chapter+"-scena-"+current_scena_number).show();//shows new background image
 	   		autoplay_audios(current_chapter);
 	   			   
 	   		$("#sequence-"+current_chapter+"-scena-"+current_scena_number+" > a").addClass("current-scene");
 	   		
 	  }else{
-	  	$("#imgbg-"+current_chapter+"-scena-0").show("slow");	
+	  	$("#imgbg-"+current_chapter+"-scena-0").show();	//shows scena after all images passed
+	  	
+	  	$("#nav-next-"+current_chapter+"-inactive").hide();
+	  	$("#nav-next-"+current_chapter+"-active").show();	  	
 	  }
 	  
 	}
+	
+	//allows to listed an audio already played
+	$(".sequence-thumb > a").click(function(){
+		var href = $(this).attr( "href" );
 		
+		if(href=="javascript:void(0)"){			
+			var id_info = $(this).parent(0).attr('id').split('-'); //chapter: 1 scena: 3
+			$("#sequence-"+current_chapter+"-scena-"+current_scena_number+" > a").removeClass("current-scene");
+			
+			pause_audio(id_info[1]); //pause current audio
+			$("#imgbg-"+current_chapter+"-scena-"+current_scena_number).hide("slow"); //hides background image
+			
+			current_scena_number = id_info[3];//sets current scena to the cliked one
+			
+			$("#imgbg-"+current_chapter+"-scena-"+current_scena_number).show();//shows new background image
+			autoplay_audios(id_info[1]);  //play new audio scena
+			
+			$("#sequence-"+current_chapter+"-scena-"+current_scena_number+" > a").addClass("current-scene");
+		}
+		
+	});
 	
 	//click over play audio icon
 	$(document).on('click', '.playAudio', function(){
 		var id_info = $(this).attr('id').split('-');
 		eval("vid_"+id_info[1]+"_scena_"+current_scena_number).play();
 		if(text_current_line==0){
-			$("#txt_"+id_info[1]).html(text_current_chapter[0]);			
+			$("#txt_"+id_info[1]).html(text_current_chapter[0]);
 			text_current_line++;
 		}
 		pausePhrases = false;
@@ -253,6 +273,7 @@ $(document).ready(function(){
 		pause_audio(id_info[1]);				
 	});	
 	
+	//puases audio scena
 	function pause_audio(capitulo){
 		eval("vid_"+capitulo+"_scena_"+current_scena_number).pause();
 		

@@ -93,15 +93,16 @@
             <section id="capitulo01" class="section-site cpt01"><!-- CAPITULO 01 -->
                 <div class="side-nav-section"><!-- navegacion lateral por seccion -->
                     <ul>
-                        <li id="sequence-capitulo01-scena-1"><a href="javascript:void(0);"><img src="images/thumb-portada-c1.jpg"></a></li>
-                        <li id="sequence-capitulo01-scena-2"><a href="javascript:void(0);"><img src="images/thumb-portada-c1.jpg"></a></li>
-                        <li id="sequence-capitulo01-scena-3"><a href="javascript:void(0);"><img src="images/thumb-portada-c1.jpg"></a></li>
-                        <li id="sequence-capitulo01-scena-4"><a href="javascript:void(0);"><img src="images/thumb-portada-c1.jpg"></a></li>                        
+                        <li class="sequence-thumb" id="sequence-capitulo01-scena-1"><a><img src="images/thumb-portada-c1.jpg"></a></li>
+                        <li class="sequence-thumb" id="sequence-capitulo01-scena-2"><a><img src="images/thumb-portada-c1.jpg"></a></li>
+                        <li class="sequence-thumb" id="sequence-capitulo01-scena-3"><a><img src="images/thumb-portada-c1.jpg"></a></li>
+                        <li class="sequence-thumb" id="sequence-capitulo01-scena-4"><a><img src="images/thumb-portada-c1.jpg"></a></li>                        
                     </ul>
                 </div>
                 <div class="section-content-wrap"> <!-- contenedor de elementos del section -->
                     <a class="nav-before" href="#introduccion"><svg><use xlink:href="#nav"/></svg></a>
-                    <a class="nav-next" href="#capitulo02"><svg><use xlink:href="#nav"/></svg></a>
+                    <a class="nav-next" id="nav-next-capitulo01-inactive"><svg><use xlink:href="#nav"/></svg></a>
+                    <a class="nav-next" id="nav-next-capitulo01-active" style="display: none" href="#capitulo02"><svg><use xlink:href="#nav"/></svg></a>
                     <div class="subs-section">  
                          <audio id="audio-capitulo01-scena-1" class="audios">                
                             <source src="audio/capitulo01-scena-1.mp3" type="audio/mp3">
@@ -139,14 +140,15 @@
             <section id="capitulo02" class="section-site cpt02"><!-- CAPITULO 02 -->
             	<div class="side-nav-section"><!-- navegacion lateral por seccion -->
                     <ul>
-                        <li id="sequence-capitulo02-scena-1"><a href="javascript:void(0);"><img src="images/thumb-portada-c1.jpg"></a></li>
-                        <li id="sequence-capitulo02-scena-2"><a href="javascript:void(0);"><img src="images/thumb-portada-c1.jpg"></a></li>
-                        <li id="sequence-capitulo02-scena-3"><a href="javascript:void(0);"><img src="images/thumb-portada-c1.jpg"></a></li>                                               
+                        <li id="sequence-capitulo02-scena-1"><a><img src="images/thumb-portada-c1.jpg"></a></li>
+                        <li id="sequence-capitulo02-scena-2"><a><img src="images/thumb-portada-c1.jpg"></a></li>
+                        <li id="sequence-capitulo02-scena-3"><a><img src="images/thumb-portada-c1.jpg"></a></li>                                               
                     </ul>
                 </div>
                 <div class="section-content-wrap"> <!-- contenedor de elementos del section -->
-	                <a class="nav-before" href="#capitulo01"><svg><use xlink:href="#nav"/></svg></a>
-	                <a class="nav-next" href="#capitulo03"><svg><use xlink:href="#nav"/></svg></a>
+	                <a class="nav-before" href="#capitulo01"><svg><use xlink:href="#nav"/></svg></a>	                
+	                <a class="nav-next" id="nav-next-capitulo02-inactive"><svg><use xlink:href="#nav"/></svg></a>
+                    <a class="nav-next" id="nav-next-capitulo02-active" style="display: none" href="#capitulo03"><svg><use xlink:href="#nav"/></svg></a>
 	                <div class="subs-section">   
 	                    <audio id="audio-capitulo02-scena-1" class="audios">                
 	                        <source src="audio/capitulo01-scena-1.mp3" type="audio/mp3">                    
@@ -198,14 +200,15 @@
             <section id="capitulo03" class="section-site cpt03"><!-- CAPITULO 03 -->
             	<div class="side-nav-section"><!-- navegacion lateral por seccion -->
                     <ul>
-                        <li id="sequence-capitulo03-scena-1"><a href="javascript:void(0);"><img src="images/thumb-portada-c1.jpg"></a></li>
-                        <li id="sequence-capitulo03-scena-2"><a href="javascript:void(0);"><img src="images/thumb-portada-c1.jpg"></a></li>
-                        <li id="sequence-capitulo03-scena-3"><a href="javascript:void(0);"><img src="images/thumb-portada-c1.jpg"></a></li>                                               
+                        <li id="sequence-capitulo03-scena-1"><a><img src="images/thumb-portada-c1.jpg"></a></li>
+                        <li id="sequence-capitulo03-scena-2"><a><img src="images/thumb-portada-c1.jpg"></a></li>
+                        <li id="sequence-capitulo03-scena-3"><a><img src="images/thumb-portada-c1.jpg"></a></li>                                               
                     </ul>
                 </div>
                 <div class="section-content-wrap"> <!-- contenedor de elementos del section -->
 	                <a class="nav-before" href="#capitulo02"><svg><use xlink:href="#nav"/></svg></a>
-	                <a class="nav-next" href="#capitulo04"><svg><use xlink:href="#nav"/></svg></a>
+	                <a class="nav-next" id="nav-next-capitulo03-inactive"><svg><use xlink:href="#nav"/></svg></a>
+                    <a class="nav-next" id="nav-next-capitulo03-active" style="display: none" href="#capitulo04"><svg><use xlink:href="#nav"/></svg></a>
 	                <div class="subs-section">  
 	                    <audio id="audio-capitulo03-scena-1" class="audios">                
 	                        <source src="audio/capitulo01-scena-1.mp3" type="audio/mp3">                    
@@ -270,7 +273,8 @@
                 </div>
                 <div class="section-content-wrap"> <!-- contenedor de elementos del section -->
 	                <a class="nav-before" href="#capitulo03"><svg><use xlink:href="#nav"/></svg></a>
-	                <a class="nav-next" href="#capitulo05"><svg><use xlink:href="#nav"/></svg></a>
+	                <a class="nav-next" id="nav-next-capitulo04-inactive"><svg><use xlink:href="#nav"/></svg></a>
+                    <a class="nav-next" id="nav-next-capitulo04-active" style="display: none" href="#capitulo05"><svg><use xlink:href="#nav"/></svg></a>
 	                <div class="subs-section">  
 	                    <audio id="audio-capitulo04-scena-1" class="audios">                
 	                        <source src="audio/capitulo01-scena-1.mp3" type="audio/mp3">                    
@@ -329,7 +333,8 @@
                 </div>
                 <div class="section-content-wrap"> <!-- contenedor de elementos del section -->
 	                <a class="nav-before" href="#capitulo05"><svg><use xlink:href="#nav"/></svg></a>
-	                <a class="nav-next" href="#introduccion"><svg><use xlink:href="#nav"/></svg></a> 
+	                <a class="nav-next" id="nav-next-capitulo05-inactive"><svg><use xlink:href="#nav"/></svg></a>
+                    <a class="nav-next" id="nav-next-capitulo05-active" style="display: none" href="#introduccion"><svg><use xlink:href="#nav"/></svg></a>	                
 	                <div class="subs-section">  
 	                    <audio id="audio-capitulo06-scena-1" class="audios">                
 	                        <source src="audio/capitulo01-scena-1.mp3" type="audio/mp3">                    
