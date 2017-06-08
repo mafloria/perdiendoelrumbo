@@ -21,9 +21,9 @@ $(document).ready(function(){
 	var capitulo01_escena_1 = capitulo01_escena_2 = capitulo01_escena_3 = capitulo01_escena_4 = 4;
 	var capitulo02_escena_1 = capitulo02_escena_2 = capitulo02_escena_3 = 6;
 	var capitulo03_escena_1 = capitulo03_escena_2 = capitulo03_escena_3 = 6;	
-	var capitulo04_escena_1 = 20;
+	var capitulo04_escena_1 = 12;
 	var capitulo05_escena_1 = capitulo05_escena_2 = 14;
-	var capitulo05_escena_1 = 8;
+	var capitulo06_escena_1 = 8;
 	
 	// load audios elements	
 	var vid_capitulo01_scena_1 = document.getElementById("audio-capitulo01-scena-1");var vid_capitulo01_scena_2 = document.getElementById("audio-capitulo01-scena-2");var vid_capitulo01_scena_3 = document.getElementById("audio-capitulo01-scena-3");var vid_capitulo01_scena_4 = document.getElementById("audio-capitulo01-scena-4");
@@ -87,7 +87,7 @@ $(document).ready(function(){
         	let_audios_text_begins(); //restart audios and text if the user returns start all again
         	
 		    if(this.hash.slice(1)=="introduccion") {
-		    	if(progress_bar==100){ $(".intro-chapter-menu").show(); $(".intro-chapter-startbtn").hide(); }
+		    	if(progress_bar>=100){ $(".intro-chapter-menu").show(); $(".intro-chapter-startbtn").hide(); }
 		    	else{ $(".intro-chapter-menu").hide(); $(".intro-chapter-startbtn").show(); }
 		    	$(".main-header > h1").hide();		    	
 		    }else{
@@ -97,7 +97,7 @@ $(document).ready(function(){
 		    }
 		    if(this.hash.slice(1)=="capitulo03") {InfiniteRotator.init(); }
 		    
-		    $("#sequence-"+current_chapter+"-scena-1 a").addClass("current-scene");		    		    		   
+		    $("#sequence-"+current_chapter+"-scena-1 a").addClass("current-scene");		    		    		       
 		     
 		    return false;
 		  }//end if target length
@@ -200,27 +200,31 @@ $(document).ready(function(){
 	vid_capitulo02_scena_3.onended = function() { audio_ended_action(); };
 	vid_capitulo03_scena_1.onended = function() { audio_ended_action(); };
 	vid_capitulo03_scena_2.onended = function() { audio_ended_action(); };
+	vid_capitulo03_scena_3.onended = function() { audio_ended_action(); };
 	vid_capitulo04_scena_1.onended = function() { audio_ended_action(); };
 	vid_capitulo05_scena_1.onended = function() { audio_ended_action(); };
 	vid_capitulo05_scena_2.onended = function() { audio_ended_action(); };
 	vid_capitulo06_scena_1.onended = function() { audio_ended_action(); };
 	
 	function audio_ended_action(){
+		$("#sequence-"+current_chapter+"-scena-"+current_scena_number+" > a").removeClass("current-scene");
+		$("#sequence-"+current_chapter+"-scena-"+current_scena_number+" > a").addClass("enable-scene");
+		
+		if(progress_bar<100){
+			progress_bar += eval(current_chapter+"_escena_"+current_scena_number); //add progress value
+		    $(".barra-marcador").css("width", progress_bar+"%");
+	   	}
+	   
+		console.log("PREV NEXT AUDIO: SCENA: "+current_scena_number+ " CHAPTER:"+current_chapter+" Progress Bar: "+progress_bar);
+		
 		if(current_scena_number < eval("total_scenas_"+current_chapter)){
-			$("#sequence-"+current_chapter+"-scena-"+current_scena_number+" > a").removeClass("current-scene");
-			$("#sequence-"+current_chapter+"-scena-"+current_scena_number+" > a").addClass("enable-scene");
-	   		
+			
 	   		current_scena_number ++;
 	   		autoplay_audios(current_chapter);
-	   		
-	   		progress_bar += eval(current_chapter+"_escena_"+current_scena_number); //add progress value	
+	   			   
 	   		$("#sequence-"+current_chapter+"-scena-"+current_scena_number+" > a").addClass("current-scene");
 	   		
-	   		console.log("NEXT AUDIO: SCENA: "+current_scena_number+ " CHAPTER:"+current_chapter);			   	
-	   }else{
-	   		$("#sequence-"+current_chapter+"-scena-"+current_scena_number+" > a").removeClass("current-scene");
-			$("#sequence-"+current_chapter+"-scena-"+current_scena_number+" > a").addClass("enable-scene");
-	   }
+	  }	   	   
 	}
 		
 	
