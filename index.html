@@ -24,7 +24,8 @@
 
 
     <script src="assets/js/libs/prefixfree.min.js"></script>
-    <script src="assets/js/libs/modernizr-3.2.0.base.js"></script> 
+    <script src="assets/js/libs/modernizr-3.2.0.base.js"></script>
+    <script src="https://www.w3schools.com/lib/w3.js"></script> 
     
     <link href="https://fonts.googleapis.com/css?family=Magra" rel="stylesheet">       
 
@@ -92,11 +93,10 @@
             <section id="capitulo01" class="section-site cpt01"><!-- CAPITULO 01 -->
                 <div class="side-nav-section"><!-- navegacion lateral por seccion -->
                     <ul>
-                        <li><a href=""><img src="images/thumb-portada-c1.jpg"></a></li>
-                        <li><a href=""><img src="images/thumb-portada-c1.jpg"></a></li>
-                        <li><a href=""><img src="images/thumb-portada-c1.jpg"></a></li>
-                        <li><a href=""><img src="images/thumb-portada-c1.jpg"></a></li>
-                        <li><a href=""><img src="images/thumb-portada-c1.jpg"></a></li>
+                        <li id="sequence-capitulo01-scena-1"><a href="javascript:void(0);"><img src="images/thumb-portada-c1.jpg"></a></li>
+                        <li id="sequence-capitulo01-scena-2"><a href="javascript:void(0);"><img src="images/thumb-portada-c1.jpg"></a></li>
+                        <li id="sequence-capitulo01-scena-3"><a href="javascript:void(0);"><img src="images/thumb-portada-c1.jpg"></a></li>
+                        <li id="sequence-capitulo01-scena-4"><a href="javascript:void(0);"><img src="images/thumb-portada-c1.jpg"></a></li>                        
                     </ul>
                 </div>
                 <div class="section-content-wrap"> <!-- contenedor de elementos del section -->
@@ -135,117 +135,207 @@
             </section>
 			
             <section id="capitulo02" class="section-site cpt02"><!-- CAPITULO 02 -->
-                <a class="nav-before" href="#capitulo01"><svg><use xlink:href="#nav"/></svg></a>
-                <a class="nav-next" href="#capitulo03"><svg><use xlink:href="#nav"/></svg></a>
-                <div class="subs-section">   
-                    <audio id="audio-capitulo02" class="audios">                
-                        <source src="audio/CAP2.mp3" type="audio/mp3">                    
-                        <em class="error"><strong>Error:</strong> Your browser doesn't appear to support HTML5 Audio.</em>
-                    </audio> 
-                    <a href="javascript:void(0)" class="playAudio" id="playAudio-capitulo02" style="display: none"><svg><use xlink:href="#audioplay"/></svg></a>
-                    <a href="javascript:void(0)" class="pauseAudio" id="pauseAudio-capitulo02"><svg><use xlink:href="#audiostop"/></svg></a>
-                    <p class="passage-audio-unavailable" hidden>
-                        <em class="error"><strong>Error:</strong> You will not be able to do the read-along audio because your browser is not able to play MP3, Ogg, or WAV audio formats.</em>
-                    </p>
-					<div class="txt_capitulos" id="txt_capitulo02"></div>                    
-                </div> 
-                
-                <div class="background-section">
-                    <div class="med-bg">
-                        <img src="images/buscando-el-norte-1024-capitulo02.png" alt="Buscando el norte - capítulo 2" width="1024" height="678" usemap="#MapCapitulo02" id="buscandoelnorte-capitulo02-1024"/>
-                        <map name="MapCapitulo02">
-                          <area shape="poly" class="abrir-detalle-modal" id="capitulo02-escena-1" data-tooltip-content="#tooltip_capitulo02-escena-1" coords="491,241,558,243,592,225,641,171,667,132,718,121,740,108,699,51,604,59,572,86,540,118,505,160,483,231" href="javascript:void(0);">
-                          <area shape="poly" class="abrir-detalle-modal" id="capitulo02-escena-2" data-tooltip-content="#tooltip_capitulo02-escena-1" coords="245,375,224,389,207,435,179,483,163,522,173,542,195,546,211,501,233,474,260,437,272,407,286,389,262,375" href="javascript:void(0);">
-                          <area shape="poly" class="abrir-detalle-modal" id="capitulo02-escena-3" data-tooltip-content="#tooltip_capitulo02-escena-1" coords="998,517,946,526,936,457,920,436,884,487,843,479,849,426,827,485,790,499,779,409,771,326,761,249,733,240,734,209,754,185,756,143,789,127,803,89,871,85,896,56,930,36,975,100,1000,122,1018,132,1018,501" href="javascript:void(0);">
-                        </map>
-                        <div class="tooltip-html-titlecontent"><?php //tooltips ?>
-                            <span id="tooltip_capitulo02-escena-1">
-                                <svg><use xlink:href="#view-more"/></svg>
-                                <p>ver más</p> 
-                            </span>                           
-                            <span id="tooltip_capitulo02-escena-2">
-                                <svg><use xlink:href="#view-more"/></svg>
-                                <p>ver más</p> 
-                            </span>                  
-                            <span id="tooltip_capitulo02-escena-3">
-                                <svg><use xlink:href="#view-more"/></svg>
-                                <p>ver más</p> 
-                            </span>                            
-                        </div>
-                    </div>
-                </div> 
-                
-            	<div id="modal-description-escenas-capitulo02" class="modal-descriptions" style="display: none"  w3-include-html="modal_details_cap02.html">					
-	    		</div>
+            	<div class="side-nav-section"><!-- navegacion lateral por seccion -->
+                    <ul>
+                        <li id="sequence-capitulo02-scena-1"><a href="javascript:void(0);"><img src="images/thumb-portada-c1.jpg"></a></li>
+                        <li id="sequence-capitulo02-scena-2"><a href="javascript:void(0);"><img src="images/thumb-portada-c1.jpg"></a></li>
+                        <li id="sequence-capitulo02-scena-3"><a href="javascript:void(0);"><img src="images/thumb-portada-c1.jpg"></a></li>                                               
+                    </ul>
+                </div>
+                <div class="section-content-wrap"> <!-- contenedor de elementos del section -->
+	                <a class="nav-before" href="#capitulo01"><svg><use xlink:href="#nav"/></svg></a>
+	                <a class="nav-next" href="#capitulo03"><svg><use xlink:href="#nav"/></svg></a>
+	                <div class="subs-section">   
+	                    <audio id="audio-capitulo02-scena-1" class="audios">                
+	                        <source src="audio/capitulo01-scena-1.mp3" type="audio/mp3">                    
+	                        <em class="error"><strong>Error:</strong> Your browser doesn't appear to support HTML5 Audio.</em>
+	                    </audio> 
+	                    <audio id="audio-capitulo02-scena-2" class="audios">                
+	                        <source src="audio/capitulo01-scena-2.mp3" type="audio/mp3">                    
+	                        <em class="error"><strong>Error:</strong> Your browser doesn't appear to support HTML5 Audio.</em>
+	                    </audio>
+	                    <audio id="audio-capitulo02-scena-3" class="audios">                
+	                        <source src="audio/capitulo01-scena-1.mp3" type="audio/mp3">                    
+	                        <em class="error"><strong>Error:</strong> Your browser doesn't appear to support HTML5 Audio.</em>
+	                    </audio>
+	                    <a href="javascript:void(0)" class="playAudio" id="playAudio-capitulo02" style="display: none"><svg><use xlink:href="#audioplay"/></svg></a>
+	                    <a href="javascript:void(0)" class="pauseAudio" id="pauseAudio-capitulo02"><svg><use xlink:href="#audiostop"/></svg></a>
+	                    <p class="passage-audio-unavailable" hidden>
+	                        <em class="error"><strong>Error:</strong> You will not be able to do the read-along audio because your browser is not able to play MP3, Ogg, or WAV audio formats.</em>
+	                    </p>
+						<div class="txt_capitulos" id="txt_capitulo02"></div>                    
+	                </div> 
+	                
+	                <div class="background-section">
+	                    <div class="med-bg">
+	                        <img src="images/buscando-el-norte-1024-capitulo02.png" alt="Buscando el norte - capítulo 2" width="1024" height="678" usemap="#MapCapitulo02" id="buscandoelnorte-capitulo02-1024"/>
+	                        <map name="MapCapitulo02">
+	                          <area shape="poly" class="abrir-detalle-modal" id="capitulo02-escena-1" data-tooltip-content="#tooltip_capitulo02-escena-1" coords="491,241,558,243,592,225,641,171,667,132,718,121,740,108,699,51,604,59,572,86,540,118,505,160,483,231" href="javascript:void(0);">
+	                          <area shape="poly" class="abrir-detalle-modal" id="capitulo02-escena-2" data-tooltip-content="#tooltip_capitulo02-escena-1" coords="245,375,224,389,207,435,179,483,163,522,173,542,195,546,211,501,233,474,260,437,272,407,286,389,262,375" href="javascript:void(0);">
+	                          <area shape="poly" class="abrir-detalle-modal" id="capitulo02-escena-3" data-tooltip-content="#tooltip_capitulo02-escena-1" coords="998,517,946,526,936,457,920,436,884,487,843,479,849,426,827,485,790,499,779,409,771,326,761,249,733,240,734,209,754,185,756,143,789,127,803,89,871,85,896,56,930,36,975,100,1000,122,1018,132,1018,501" href="javascript:void(0);">
+	                        </map>
+	                        <div class="tooltip-html-titlecontent"><?php //tooltips ?>
+	                            <span id="tooltip_capitulo02-escena-1">
+	                                <svg><use xlink:href="#view-more"/></svg>
+	                                <p>ver más</p> 
+	                            </span>                           
+	                            <span id="tooltip_capitulo02-escena-2">
+	                                <svg><use xlink:href="#view-more"/></svg>
+	                                <p>ver más</p> 
+	                            </span>                  
+	                            <span id="tooltip_capitulo02-escena-3">
+	                                <svg><use xlink:href="#view-more"/></svg>
+	                                <p>ver más</p> 
+	                            </span>                            
+	                        </div>
+	                    </div>
+	                </div> 
+	            </div> <!--end section wrap -->
             </section>
 
             <section id="capitulo03" class="section-site cpt03"><!-- CAPITULO 03 -->
-                <a class="nav-before" href="#capitulo02"><svg><use xlink:href="#nav"/></svg></a>
-                <a class="nav-next" href="#capitulo04"><svg><use xlink:href="#nav"/></svg></a>
-                <div class="subs-section">  
-                    <audio id="audio-capitulo03" class="audios">                
-                        <source src="audio/CAP3.mp3" type="audio/mp3">                    
-                        <em class="error"><strong>Error:</strong> Your browser doesn't appear to support HTML5 Audio.</em>
-                    </audio>
-                    <a href="javascript:void(0)" class="playAudio" id="playAudio-capitulo03" style="display: none"><svg><use xlink:href="#audioplay"/></svg></a>
-                    <a href="javascript:void(0)" class="pauseAudio" id="pauseAudio-capitulo03"><svg><use xlink:href="#audiostop"/></svg></a>
-                    <p class="passage-audio-unavailable" hidden>
-                        <em class="error"><strong>Error:</strong> You will not be able to do the read-along audio because your browser is not able to play MP3, Ogg, or WAV audio formats.</em>
-                    </p>
-                    <div class="txt_capitulos" id="txt_capitulo03"></div>
+            	<div class="side-nav-section"><!-- navegacion lateral por seccion -->
+                    <ul>
+                        <li id="sequence-capitulo03-scena-1"><a href="javascript:void(0);"><img src="images/thumb-portada-c1.jpg"></a></li>
+                        <li id="sequence-capitulo03-scena-2"><a href="javascript:void(0);"><img src="images/thumb-portada-c1.jpg"></a></li>
+                        <li id="sequence-capitulo03-scena-3"><a href="javascript:void(0);"><img src="images/thumb-portada-c1.jpg"></a></li>                                               
+                    </ul>
                 </div>
-                
-                <div class="background-section">
-                    <!-- imagenes de transicion: estas imagenes aparecen y desaparecen hasta llegar a la imagen del map-->
-                    <img src="images/buscando-el-norte-1024-capitulo03a.jpg" class="capitulo03-rotating-item" vwidth="1024" height="678" style="display: none;">
-                    <img src="images/buscando-el-norte-1024-capitulo03b.jpg" class="capitulo03-rotating-item" width="1024" height="678" style="display: none;">
-                    <img src="images/buscando-el-norte-1024-capitulo03c.jpg" class="capitulo03-rotating-item" width="1024" height="678" style="display: none;">
-                    <!--//-->
-                    <img src="images/buscando-el-norte-1024-capitulo03.png" usemap="#MapCapitulo03" class="capitulo03-rotating-item" id="buscandoelnorte-capitulo03-1024" style="display: none;">
-                    <map name="MapCapitulo03">
-                      <area shape="poly" class="abrir-detalle-modal" id="capitulo03-escena-1" data-tooltip-content="#tooltip_capitulo03-escena-1" coords="109,143,123,200,93,244,99,298,126,328,162,309,206,315,228,297,267,282,343,295,367,257,459,294,496,288,409,224,339,194,348,150,314,132,281,140,269,163,231,150,206,133,155,134" href="javascript:void(0);">
-                      <area shape="poly" class="abrir-detalle-modal" id="capitulo03-escena-2" data-tooltip-content="#tooltip_capitulo03-escena-2" coords="349,376,327,389,297,473,264,501,228,548,265,572,307,599,349,599,379,568,407,551,408,529,423,480,418,452,469,430,614,359,596,337,395,361" href="javascript:void(0);">
-                      <area shape="poly" class="abrir-detalle-modal" id="capitulo03-escena-3" data-tooltip-content="#tooltip_capitulo03-escena-3" coords="598,251,725,272,749,247,749,230,704,189,715,158,698,123,716,104,719,69,699,45,661,54,603,116,608,217" href="javascript:void(0);">
-                    </map>
-                    <div class="tooltip-html-titlecontent"><?php //tooltips ?>
-                            <span id="tooltip_capitulo03-escena-1">
-                                <b>Tooltip capitulo 3 escena 1</b><p><svg><use xlink:href="#nav"/></svg></p>
-                            </span>                           
-                            <span id="tooltip_capitulo03-escena-2">
-                                <b>Tooltip capitulo 3 escena 2</b><p><svg><use xlink:href="#nav"/></svg></p>
-                            </span>                  
-                            <span id="tooltip_capitulo03-escena-3">
-                                <b>Tooltip capitulo 3 escena 3</b><p><svg><use xlink:href="#nav"/></svg></p>
-                            </span>                            
-                    </div>
-                </div>
-                
-				<div id="modal-description-escenas-capitulo03" class="modal-descriptions" style="display: none" w3-include-html="modal_details_cap03.html">					         
-	    		</div>
+                <div class="section-content-wrap"> <!-- contenedor de elementos del section -->
+	                <a class="nav-before" href="#capitulo02"><svg><use xlink:href="#nav"/></svg></a>
+	                <a class="nav-next" href="#capitulo04"><svg><use xlink:href="#nav"/></svg></a>
+	                <div class="subs-section">  
+	                    <audio id="audio-capitulo03-scena-1" class="audios">                
+	                        <source src="audio/capitulo01-scena-1.mp3" type="audio/mp3">                    
+	                        <em class="error"><strong>Error:</strong> Your browser doesn't appear to support HTML5 Audio.</em>
+	                    </audio>
+	                    <audio id="audio-capitulo03-scena-2" class="audios">                
+	                        <source src="audio/capitulo01-scena-4.mp3" type="audio/mp3">                    
+	                        <em class="error"><strong>Error:</strong> Your browser doesn't appear to support HTML5 Audio.</em>
+	                    </audio>
+	                    <audio id="audio-capitulo03-scena-3" class="audios">                
+	                        <source src="audio/capitulo01-scena-3.mp3" type="audio/mp3">                    
+	                        <em class="error"><strong>Error:</strong> Your browser doesn't appear to support HTML5 Audio.</em>
+	                    </audio>
+	                    <a href="javascript:void(0)" class="playAudio" id="playAudio-capitulo03" style="display: none"><svg><use xlink:href="#audioplay"/></svg></a>
+	                    <a href="javascript:void(0)" class="pauseAudio" id="pauseAudio-capitulo03"><svg><use xlink:href="#audiostop"/></svg></a>
+	                    <p class="passage-audio-unavailable" hidden>
+	                        <em class="error"><strong>Error:</strong> You will not be able to do the read-along audio because your browser is not able to play MP3, Ogg, or WAV audio formats.</em>
+	                    </p>
+	                    <div class="txt_capitulos" id="txt_capitulo03"></div>
+	                </div>
+	                
+	                <div class="background-section">
+	                    <!-- imagenes de transicion: estas imagenes aparecen y desaparecen hasta llegar a la imagen del map-->
+	                    <img src="images/buscando-el-norte-1024-capitulo03a.jpg" class="capitulo03-rotating-item" vwidth="1024" height="678" style="display: none;">
+	                    <img src="images/buscando-el-norte-1024-capitulo03b.jpg" class="capitulo03-rotating-item" width="1024" height="678" style="display: none;">
+	                    <img src="images/buscando-el-norte-1024-capitulo03c.jpg" class="capitulo03-rotating-item" width="1024" height="678" style="display: none;">
+	                    <!--//-->
+	                    <img src="images/buscando-el-norte-1024-capitulo03.png" usemap="#MapCapitulo03" class="capitulo03-rotating-item" id="buscandoelnorte-capitulo03-1024" style="display: none;">
+	                    <map name="MapCapitulo03">
+	                      <area shape="poly" class="abrir-detalle-modal" id="capitulo03-escena-1" data-tooltip-content="#tooltip_capitulo03-escena-1" coords="109,143,123,200,93,244,99,298,126,328,162,309,206,315,228,297,267,282,343,295,367,257,459,294,496,288,409,224,339,194,348,150,314,132,281,140,269,163,231,150,206,133,155,134" href="javascript:void(0);">
+	                      <area shape="poly" class="abrir-detalle-modal" id="capitulo03-escena-2" data-tooltip-content="#tooltip_capitulo03-escena-2" coords="349,376,327,389,297,473,264,501,228,548,265,572,307,599,349,599,379,568,407,551,408,529,423,480,418,452,469,430,614,359,596,337,395,361" href="javascript:void(0);">
+	                      <area shape="poly" class="abrir-detalle-modal" id="capitulo03-escena-3" data-tooltip-content="#tooltip_capitulo03-escena-3" coords="598,251,725,272,749,247,749,230,704,189,715,158,698,123,716,104,719,69,699,45,661,54,603,116,608,217" href="javascript:void(0);">
+	                    </map>
+	                    <div class="tooltip-html-titlecontent"><?php //tooltips ?>
+	                            <span id="tooltip_capitulo03-escena-1">
+	                                <b>Tooltip capitulo 3 escena 1</b><p><svg><use xlink:href="#nav"/></svg></p>
+	                            </span>                           
+	                            <span id="tooltip_capitulo03-escena-2">
+	                                <b>Tooltip capitulo 3 escena 2</b><p><svg><use xlink:href="#nav"/></svg></p>
+	                            </span>                  
+	                            <span id="tooltip_capitulo03-escena-3">
+	                                <b>Tooltip capitulo 3 escena 3</b><p><svg><use xlink:href="#nav"/></svg></p>
+	                            </span>                            
+	                    </div>
+	                </div>	                										        
+		    	</div> <!--end section wrap -->
             </section>
 
             <section id="capitulo04" class="section-site cpt04"><!-- CAPITULO 04 -->
-                <a class="nav-before" href="#capitulo03"><svg><use xlink:href="#nav"/></svg></a>
-                <a class="nav-next" href="#capitulo05"><svg><use xlink:href="#nav"/></svg></a>
-                <div class="background-section">
-                    <img src="images/buscando-el-norte-1024-capitulo04.jpg">
-                </div>    
+            	<div class="side-nav-section"><!-- navegacion lateral por seccion -->
+                    <ul>
+                        <li id="sequence-capitulo04-scena-1"><a href="javascript:void(0);"><img src="images/thumb-portada-c1.jpg"></a></li>                                                                       
+                    </ul>
+                </div>
+                <div class="section-content-wrap"> <!-- contenedor de elementos del section -->
+	                <a class="nav-before" href="#capitulo03"><svg><use xlink:href="#nav"/></svg></a>
+	                <a class="nav-next" href="#capitulo05"><svg><use xlink:href="#nav"/></svg></a>
+	                <div class="subs-section">  
+	                    <audio id="audio-capitulo04-scena-1" class="audios">                
+	                        <source src="audio/capitulo01-scena-1.mp3" type="audio/mp3">                    
+	                        <em class="error"><strong>Error:</strong> Your browser doesn't appear to support HTML5 Audio.</em>
+	                    </audio>	                    
+	                    <a href="javascript:void(0)" class="playAudio" id="playAudio-capitulo04" style="display: none"><svg><use xlink:href="#audioplay"/></svg></a>
+	                    <a href="javascript:void(0)" class="pauseAudio" id="pauseAudio-capitulo04"><svg><use xlink:href="#audiostop"/></svg></a>
+	                    <p class="passage-audio-unavailable" hidden>
+	                        <em class="error"><strong>Error:</strong> You will not be able to do the read-along audio because your browser is not able to play MP3, Ogg, or WAV audio formats.</em>
+	                    </p>
+	                    <div class="txt_capitulos" id="txt_capitulo04"></div>
+	                </div>
+	                <div class="background-section">
+	                    <img src="images/buscando-el-norte-1024-capitulo04.jpg">
+	                </div>    
+	            </div> <!--end section wrap -->
             </section>
 
             <section id="capitulo05" class="section-site cpt05"><!-- CAPITULO 05 -->
-                <a class="nav-before" href="#capitulo04"><svg><use xlink:href="#nav"/></svg></a>
-                <a class="nav-next" href="#capitulo06"><svg><use xlink:href="#nav"/></svg></a> 
-                <div class="background-section">
-                    <img src="images/buscando-el-norte-1024-capitulo05.jpg">
-                </div>    
+            	<div class="side-nav-section"><!-- navegacion lateral por seccion -->
+                    <ul>
+                        <li id="sequence-capitulo05-scena-1"><a href="javascript:void(0);"><img src="images/thumb-portada-c1.jpg"></a></li>                                                                       
+                    </ul>
+                </div>
+                <div class="section-content-wrap"> <!-- contenedor de elementos del section -->
+	                <a class="nav-before" href="#capitulo04"><svg><use xlink:href="#nav"/></svg></a>
+	                <a class="nav-next" href="#capitulo06"><svg><use xlink:href="#nav"/></svg></a>
+	                <div class="subs-section">  
+	                    <audio id="audio-capitulo05-scena-1" class="audios">                
+	                        <source src="audio/capitulo01-scena-1.mp3" type="audio/mp3">                    
+	                        <em class="error"><strong>Error:</strong> Your browser doesn't appear to support HTML5 Audio.</em>
+	                    </audio>	                    
+	                    <audio id="audio-capitulo05-scena-2" class="audios">                
+	                        <source src="audio/capitulo01-scena-4.mp3" type="audio/mp3">                    
+	                        <em class="error"><strong>Error:</strong> Your browser doesn't appear to support HTML5 Audio.</em>
+	                    </audio>
+	                    <a href="javascript:void(0)" class="playAudio" id="playAudio-capitulo05" style="display: none"><svg><use xlink:href="#audioplay"/></svg></a>
+	                    <a href="javascript:void(0)" class="pauseAudio" id="pauseAudio-capitulo05"><svg><use xlink:href="#audiostop"/></svg></a>
+	                    <p class="passage-audio-unavailable" hidden>
+	                        <em class="error"><strong>Error:</strong> You will not be able to do the read-along audio because your browser is not able to play MP3, Ogg, or WAV audio formats.</em>
+	                    </p>
+	                    <div class="txt_capitulos" id="txt_capitulo04"></div>
+	                </div> 
+	                <div class="background-section">
+	                    <img src="images/buscando-el-norte-1024-capitulo05.jpg">
+	                </div>    
+	            </div>
             </section> 
 
             <section id="capitulo06" class="section-site cpt06"><!-- CAPITULO 05 -->
-                <a class="nav-before" href="#capitulo05"><svg><use xlink:href="#nav"/></svg></a>
-                <a class="nav-next" href="#introduccion"><svg><use xlink:href="#nav"/></svg></a> 
-                <div class="background-section">
-                    <img src="images/buscando-el-norte-1024-capitulo06.jpg">
-                </div>     
+            	<div class="side-nav-section"><!-- navegacion lateral por seccion -->
+                    <ul>
+                        <li id="sequence-capitulo06-scena-1"><a href="javascript:void(0);"><img src="images/thumb-portada-c1.jpg"></a></li>                                                                       
+                        <li id="sequence-capitulo06-scena-2"><a href="javascript:void(0);"><img src="images/thumb-portada-c1.jpg"></a></li>
+                    </ul>
+                </div>
+                <div class="section-content-wrap"> <!-- contenedor de elementos del section -->
+	                <a class="nav-before" href="#capitulo05"><svg><use xlink:href="#nav"/></svg></a>
+	                <a class="nav-next" href="#introduccion"><svg><use xlink:href="#nav"/></svg></a> 
+	                <div class="subs-section">  
+	                    <audio id="audio-capitulo06-scena-1" class="audios">                
+	                        <source src="audio/capitulo01-scena-1.mp3" type="audio/mp3">                    
+	                        <em class="error"><strong>Error:</strong> Your browser doesn't appear to support HTML5 Audio.</em>
+	                    </audio>	                    
+	                    <a href="javascript:void(0)" class="playAudio" id="playAudio-capitulo06" style="display: none"><svg><use xlink:href="#audioplay"/></svg></a>
+	                    <a href="javascript:void(0)" class="pauseAudio" id="pauseAudio-capitulo06"><svg><use xlink:href="#audiostop"/></svg></a>
+	                    <p class="passage-audio-unavailable" hidden>
+	                        <em class="error"><strong>Error:</strong> You will not be able to do the read-along audio because your browser is not able to play MP3, Ogg, or WAV audio formats.</em>
+	                    </p>
+	                    <div class="txt_capitulos" id="txt_capitulo04"></div>
+	                </div>
+	                <div class="background-section">
+	                    <img src="images/buscando-el-norte-1024-capitulo06.jpg">
+	                </div>     
+	            </div>
             </section> 
 			
             <!-- barra progreso -->

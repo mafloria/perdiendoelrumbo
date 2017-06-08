@@ -13,24 +13,27 @@
  * Author: Margaret Florian (mafloria)
  */
 $(document).ready(function(){
-	//w3.includeHTML();
+	w3.includeHTML();//includes other html files (.svg)
 	$(".main-header > h1").hide();
 	
 	//progress bar
 	var progress_bar = 0;
 	var capitulo01_escena_1 = capitulo01_escena_2 = capitulo01_escena_3 = capitulo01_escena_4 = 4;
-	var capitulo02_escena_1 = capitulo02_escena_2 = capitulo02_escena_3 = 5.3;
-	var capitulo03_escena_1 = capitulo03_escena_2 = capitulo03_escena_3 = 5.3;	
+	var capitulo02_escena_1 = capitulo02_escena_2 = capitulo02_escena_3 = 6;
+	var capitulo03_escena_1 = capitulo03_escena_2 = capitulo03_escena_3 = 6;	
+	var capitulo04_escena_1 = 20;
+	var capitulo05_escena_1 = capitulo05_escena_2 = 14;
+	var capitulo05_escena_1 = 8;
 	
 	// load audios elements	
 	var vid_capitulo01_scena_1 = document.getElementById("audio-capitulo01-scena-1");var vid_capitulo01_scena_2 = document.getElementById("audio-capitulo01-scena-2");var vid_capitulo01_scena_3 = document.getElementById("audio-capitulo01-scena-3");var vid_capitulo01_scena_4 = document.getElementById("audio-capitulo01-scena-4");
-	var vid_capitulo02_scena_1 = document.getElementById("audio-capitulo02");
-	var vid_capitulo03_scena_1 = document.getElementById("audio-capitulo03");
-	var vid_capitulo04_scena_1 = document.getElementById("audio-capitulo04");
-	var vid_capitulo05_scena_1 = document.getElementById("audio-capitulo05");
-	var vid_capitulo06_scena_1 = document.getElementById("audio-capitulo06");
+	var vid_capitulo02_scena_1 = document.getElementById("audio-capitulo02-scena-1");var vid_capitulo02_scena_2 = document.getElementById("audio-capitulo02-scena-2");var vid_capitulo02_scena_3 = document.getElementById("audio-capitulo02-scena-3");
+	var vid_capitulo03_scena_1 = document.getElementById("audio-capitulo03-scena-1");var vid_capitulo03_scena_2 = document.getElementById("audio-capitulo03-scena-2");var vid_capitulo03_scena_3 = document.getElementById("audio-capitulo03-scena-3");
+	var vid_capitulo04_scena_1 = document.getElementById("audio-capitulo04-scena-1");
+	var vid_capitulo05_scena_1 = document.getElementById("audio-capitulo05-scena-1");var vid_capitulo05_scena_2 = document.getElementById("audio-capitulo05-scena-2");
+	var vid_capitulo06_scena_1 = document.getElementById("audio-capitulo06-scena-1");
 	
-	//inizialice global vars 
+	//initialice global vars 
 	var current_chapter_total_lines = 0;
 	var text_current_line = 0;
 	var text_current_chapter = new Array();//the actual chapter is loaded in this array to show the text
@@ -38,10 +41,13 @@ $(document).ready(function(){
 	var timer = new Array();
 	var delayCounter = 1;
 	
-	//scenas	
+	//scenas counter and total per chapter
 	var total_scenas_capitulo01 = 4;
 	var total_scenas_capitulo02 = 3;
 	var total_scenas_capitulo03 = 3;
+	var total_scenas_capitulo04 = 1;
+	var total_scenas_capitulo05 = 2;
+	var total_scenas_capitulo06 = 1;
 	var current_scena_number = 1;
 	var current_chapter = "";
 	
@@ -89,7 +95,9 @@ $(document).ready(function(){
 		    	$(".main-header > h1").show();
 		    	current_chapter = this.hash.slice(1);
 		    }
-		    if(this.hash.slice(1)=="capitulo03") {InfiniteRotator.init(); }		    		    
+		    if(this.hash.slice(1)=="capitulo03") {InfiniteRotator.init(); }
+		    
+		    $("#sequence-"+current_chapter+"-scena-1 a").addClass("current-scene");		    		    		   
 		     
 		    return false;
 		  }//end if target length
@@ -187,14 +195,31 @@ $(document).ready(function(){
 	vid_capitulo01_scena_2.onended = function() { audio_ended_action(); };
 	vid_capitulo01_scena_3.onended = function() { audio_ended_action(); };
 	vid_capitulo01_scena_4.onended = function() { audio_ended_action(); };
+	vid_capitulo02_scena_1.onended = function() { audio_ended_action(); };
+	vid_capitulo02_scena_2.onended = function() { audio_ended_action(); };
+	vid_capitulo02_scena_3.onended = function() { audio_ended_action(); };
+	vid_capitulo03_scena_1.onended = function() { audio_ended_action(); };
+	vid_capitulo03_scena_2.onended = function() { audio_ended_action(); };
+	vid_capitulo04_scena_1.onended = function() { audio_ended_action(); };
+	vid_capitulo05_scena_1.onended = function() { audio_ended_action(); };
+	vid_capitulo05_scena_2.onended = function() { audio_ended_action(); };
+	vid_capitulo06_scena_1.onended = function() { audio_ended_action(); };
 	
 	function audio_ended_action(){
 		if(current_scena_number < eval("total_scenas_"+current_chapter)){
+			$("#sequence-"+current_chapter+"-scena-"+current_scena_number+" > a").removeClass("current-scene");
+			$("#sequence-"+current_chapter+"-scena-"+current_scena_number+" > a").addClass("enable-scene");
+	   		
 	   		current_scena_number ++;
 	   		autoplay_audios(current_chapter);
-	   		progress_bar += eval(current_chapter+"_escena_"+escena_number); //add progress value
+	   		
+	   		progress_bar += eval(current_chapter+"_escena_"+current_scena_number); //add progress value	
+	   		$("#sequence-"+current_chapter+"-scena-"+current_scena_number+" > a").addClass("current-scene");
+	   		
+	   		console.log("NEXT AUDIO: SCENA: "+current_scena_number+ " CHAPTER:"+current_chapter);			   	
 	   }else{
-	   	alert("todas las scenas: "+current_chapter);
+	   		$("#sequence-"+current_chapter+"-scena-"+current_scena_number+" > a").removeClass("current-scene");
+			$("#sequence-"+current_chapter+"-scena-"+current_scena_number+" > a").addClass("enable-scene");
 	   }
 	}
 		
@@ -410,4 +435,13 @@ $(document).ready(function(){
     var text_capitulo04 = new Array();
 	text_capitulo04[0]="C4 Tic tac, tic tac..."; 
     text_capitulo04[1]="C4 Amalia was never afraid, or so I thought every time I saw her, strong and confindent. Tic tac, tic tac...";
+    
+    var text_capitulo05 = new Array();
+	text_capitulo05[0]="C5 Tic tac, tic tac..."; 
+    text_capitulo05[1]="C5 Amalia was never afraid, or so I thought every time I saw her, strong and confindent. Tic tac, tic tac...";
+    
+    var text_capitulo06 = new Array();
+	text_capitulo06[0]="C6 Tic tac, tic tac..."; 
+    text_capitulo06[1]="C6 Amalia was never afraid, or so I thought every time I saw her, strong and confindent. Tic tac, tic tac...";
+    
 });
