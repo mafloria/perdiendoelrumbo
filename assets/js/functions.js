@@ -58,8 +58,8 @@ $(document).ready(function(){
 		$('#content-section').css('height', windowHeight);
 		$('#content-section .section-site').css('height', windowHeight);		
 		$('#content-section .section-site').css('width', windowWidth);
-		$('img[usemap]').css('height', windowHeight);
-		$('img[usemap]').css('width', windowWidth);
+		$('.background-section img').css('height', windowHeight);
+		$('.background-section img').css('width', windowWidth);
 		$('.capitulo03-rotating-item').css('width', windowWidth);
 		$('.capitulo03-rotating-item').css('height', windowHeight);
 	};
