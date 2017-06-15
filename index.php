@@ -184,7 +184,7 @@ include_once("config.php");
 
             <section id="capitulo03" class="section-site cpt03"><!-- CAPITULO 03 -->
                 <a class="nav-before" href="#capitulo02"><svg><use xlink:href="#nav"/></svg></a>
-                <a class="nav-next" href="#capitulo04"><svg><use xlink:href="#nav"/></svg></a>
+                <!--<a class="nav-next" href="#capitulo04"><svg><use xlink:href="#nav"/></svg></a>-->
                 <div class="subs-section">  
                     <audio id="audio-capitulo03" class="audios">                
                         <source src="audio/CAP3.mp3" type="audio/mp3">                    
