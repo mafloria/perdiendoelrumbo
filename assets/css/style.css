@@ -21,8 +21,8 @@ html{
 }
 body{
 	font-size: 16px;
-	font-family: 'Magra', sans-serif;
-	background-color: black;
+	font-family: 'Magra', sans-serif !important;
+	background-color: black !important;
 	margin: 0;
 	padding: 0;
 	width: 100%;
@@ -209,7 +209,40 @@ header .submenu ul li a:hover{
 		from{ left:0;}
 		to{right:2em;}
 	}
+.intro-chapter-menu{
+    position: absolute;
+    z-index: 5;
+    bottom: 1em;
+    width: 50%;
+    left: 25%;
+    text-align: center;
+}
+.intro-chapter-menu ul{
+	    display: inline-block;
+    padding: 1em 0px;
+}
+.intro-chapter-menu ul li{
+	    width: 16.5%;
+    float: left;
+}
+.intro-chapter-menu ul li a{}
+.intro-chapter-menu ul li a img{
+	border: 5px solid black;
+    border-radius: 50%;
+    width: 80%;
+    transition: all 0.4s ease;
+	-webkit-transition: all 0.4s ease;
+	-moz-transition: all 0.4s ease;
+	opacity: 0.5;
+	-webkit-box-shadow: inset 0px 0px 42px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: inset 0px 0px 42px 0px rgba(0,0,0,0.75);
+	box-shadow: inset 0px 0px 42px 0px rgba(0,0,0,0.75);
+}
+.intro-chapter-menu ul li a img:hover{
+	opacity: 1;
+	border: 5px solid #b46127;
 
+}
 #content-section .cpt00 .background-section{
     height: 100%;
     width: 100%;
@@ -275,7 +308,44 @@ section img{
     font-size: 20px;
     padding: 0 4%;
 }
-
+.side-nav-section{
+	width: 8%;
+	float: left;
+}
+.side-nav-section ul{
+	   margin: 0;
+    padding: 3.25em 0 0 0;	
+}
+.side-nav-section ul li a{
+	display: block;
+    width: 100%;
+    opacity: 0.3;
+    transition: all 0.4s ease;
+	-webkit-transition: all 0.4s ease;
+	-moz-transition: all 0.4s ease;
+}
+.side-nav-section ul li a:hover{
+	opacity: 1;
+}
+.side-nav-section ul li a.enable-scene{
+	opacity: 1;
+}
+.side-nav-section ul li a.current-scene{
+	opacity: 1;
+	background-color: #b46127;	
+}
+.side-nav-section ul li a img{
+	border-radius: 60%;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    padding: 10% 25%;	
+}
+.section-content-wrap{
+	width: 92%;
+	float: right;
+	position: relative;
+}
 /*modales escenas*/
 .modal-descriptions{
 	position: absolute;
