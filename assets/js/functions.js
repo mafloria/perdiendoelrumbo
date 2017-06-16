@@ -8,15 +8,15 @@
 
 // Setup total images per chapter per scena
 	var totalimg_capitulo01_scena_1 = 4; 
-	var totalimg_capitulo01_scena_2 = 3;
+	var totalimg_capitulo01_scena_2 = 5;
 	var totalimg_capitulo01_scena_3 = 2;
 	var totalimg_capitulo01_scena_4 = 2;
 	var totalimg_capitulo01_scena_5 = 1;
 	var totalimg_capitulo01_scena_6 = 2;
 	
 	//setup time when the image is displayed
-	var timeimg_capitulo01_scena_1 = [12, 15, 24, 30];
-	var timeimg_capitulo01_scena_2 = [40, 50, 60];
+	var timeimg_capitulo01_scena_1 = [8, 13, 24, 30];
+	var timeimg_capitulo01_scena_2 = [8, 15, 20, 30, 40];
 	var timeimg_capitulo01_scena_3 = [9, 10];
 	var timeimg_capitulo01_scena_4 = [1.52, 2.24];
 	var timeimg_capitulo01_scena_5 = [2.50];
@@ -25,21 +25,29 @@
 	var current_scena_number = 1;
 	var current_chapter = "capitulo01";
 	var current_image_counter = 1;
+	var stop_last_image = false;
+	var last_image_displayed = "";
 	
 /* function needed to load before html end loading */
 function set_current_audio_time(event){
 		current_audio_tracktime = event.currentTime;
 		console.log(eval("timeimg_"+current_chapter+"_scena_"+current_scena_number+"["+(current_image_counter-1)+"]")+"<"+current_audio_tracktime);
-		if(eval(current_image_counter+" < totalimg_"+current_chapter+"_scena_"+current_scena_number)){
+		if(eval(current_image_counter+" < totalimg_"+current_chapter+"_scena_"+current_scena_number) && !stop_last_image){
 			if(eval("timeimg_"+current_chapter+"_scena_"+current_scena_number+"["+(current_image_counter-1)+"]<current_audio_tracktime")){
 				$("#imgbg-"+current_chapter+"-scena-"+current_scena_number+"-"+current_image_counter).hide();//shows new background image
 				current_image_counter++;	
 				$("#imgbg-"+current_chapter+"-scena-"+current_scena_number+"-"+current_image_counter).show();//shows new background image
 				console.log("#imgbg-"+current_chapter+"-scena-"+current_scena_number+"-"+current_image_counter + "---"+current_audio_tracktime );
 			}
+		}else{
+			if(stop_last_image==false){ last_image_displayed = "#imgbg-"+current_chapter+"-scena-"+current_scena_number+"-"+current_image_counter; }
+			
+			stop_last_image = true;
+			current_image_counter = 1;			 
+			console.log(" ELSE:"+current_image_counter);
 		}
 		
-		//console.log(" Audio current time:"+current_audio_tracktime);
+		
 		
 	}
 
@@ -356,6 +364,14 @@ $(document).ready(function(){
 		
 		$("#playAudio-"+capitulo).hide();
 		$("#pauseAudio-"+capitulo).show();
+		
+		stop_last_image = false;//allows move images again 
+		$(last_image_displayed).hide(); //hide the last image of the previous scena
+		$("#imgbg-"+current_chapter+"-scena-"+current_scena_number+"-1").show();//shows first bg image fot this audio
+		
+						
+		console.log("play next audio: "+stop_last_image);
+				
 	}
 	//when back or forward restart audios and texts
 	function let_audios_text_begins(){
