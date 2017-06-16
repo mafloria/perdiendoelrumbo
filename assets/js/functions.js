@@ -10,17 +10,17 @@
 	var totalimg_capitulo01_scena_1 = 4; 
 	var totalimg_capitulo01_scena_2 = 5;
 	var totalimg_capitulo01_scena_3 = 2;
-	var totalimg_capitulo01_scena_4 = 2;
-	var totalimg_capitulo01_scena_5 = 1;
+	var totalimg_capitulo01_scena_4 = 4;
+	var totalimg_capitulo01_scena_5 = 3;
 	var totalimg_capitulo01_scena_6 = 2;
 	
 	//setup time when the image is displayed
-	var timeimg_capitulo01_scena_1 = [8, 13, 24, 30];
-	var timeimg_capitulo01_scena_2 = [8, 15, 20, 30, 40];
+	var timeimg_capitulo01_scena_1 = [8, 19, 25, 27];
+	var timeimg_capitulo01_scena_2 = [7, 9, 14, 18, 42, 48];
 	var timeimg_capitulo01_scena_3 = [9, 10];
-	var timeimg_capitulo01_scena_4 = [1.52, 2.24];
-	var timeimg_capitulo01_scena_5 = [2.50];
-	var timeimg_capitulo01_scena_6 = [3.14, 3.24];
+	var timeimg_capitulo01_scena_4 = [9, 19, 32, 44];
+	var timeimg_capitulo01_scena_5 = [5, 7, 15];
+	var timeimg_capitulo01_scena_6 = [12, 29];
 	
 	var current_scena_number = 1;
 	var current_chapter = "capitulo01";

@@ -98,7 +98,7 @@ a.blackBtn:hover{
 }
 a.nav-before,
 a.nav-next{	
-	opacity: 0.4;
+	opacity: 0.25;
 	position: absolute;
 	z-index: 3;
 	top: 50%;
@@ -113,7 +113,8 @@ a.nav-next{
 	box-shadow: -8px 10px 12px 0px rgba(0,0,0,0.4);
 }
 a.nav-before:hover,
-a.nav-next:hover{
+a.nav-next:hover,
+a.nav-enable{
 	opacity: 1;
 }
 a.nav-before{
