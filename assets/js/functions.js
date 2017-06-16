@@ -19,13 +19,45 @@ $(document).ready(function(){
 	var capitulo06_escena_1 = 8;
 	
 	// load audios elements	
-	var vid_capitulo01_scena_1 = document.getElementById("audio-capitulo01-scena-1");var vid_capitulo01_scena_2 = document.getElementById("audio-capitulo01-scena-2");var vid_capitulo01_scena_3 = document.getElementById("audio-capitulo01-scena-3");var vid_capitulo01_scena_4 = document.getElementById("audio-capitulo01-scena-4");
+	//capitulo 01
+	var vid_capitulo01_scena_1 = new Array();
+	vid_capitulo01_scena_1[0] = document.getElementById("audio-capitulo01-scena-1-1");vid_capitulo01_scena_1[1] = document.getElementById("audio-capitulo01-scena-1-2");vid_capitulo01_scena_1[2] = document.getElementById("audio-capitulo01-scena-1-3");vid_capitulo01_scena_1[3] = document.getElementById("audio-capitulo01-scena-1-4");
+	
+	var vid_capitulo01_scena_2 = new Array(); 
+	vid_capitulo01_scena_2[0] = document.getElementById("audio-capitulo01-scena-2-1"); vid_capitulo01_scena_2[1] = document.getElementById("audio-capitulo01-scena-2-2"); vid_capitulo01_scena_2[2] = document.getElementById("audio-capitulo01-scena-2-3");
+	
+	var vid_capitulo01_scena_3 = new Array(); 
+	vid_capitulo01_scena_3[0] = document.getElementById("audio-capitulo01-scena-3-1"); vid_capitulo01_scena_3[1] = document.getElementById("audio-capitulo01-scena-3-2");
+	
+	var vid_capitulo01_scena_4 = new Array(); 
+	vid_capitulo01_scena_4[0] = document.getElementById("audio-capitulo01-scena-4-1"); vid_capitulo01_scena_4[1] = document.getElementById("audio-capitulo01-scena-4-2");
+	
+	var vid_capitulo01_scena_5 = new Array(); 
+	vid_capitulo01_scena_5[0] = document.getElementById("audio-capitulo01-scena-5-1"); 
+	
+	//capitulo 02
 	var vid_capitulo02_scena_1 = document.getElementById("audio-capitulo02-scena-1");var vid_capitulo02_scena_2 = document.getElementById("audio-capitulo02-scena-2");var vid_capitulo02_scena_3 = document.getElementById("audio-capitulo02-scena-3");
+	
+	//capitulo 03
 	var vid_capitulo03_scena_1 = document.getElementById("audio-capitulo03-scena-1");var vid_capitulo03_scena_2 = document.getElementById("audio-capitulo03-scena-2");var vid_capitulo03_scena_3 = document.getElementById("audio-capitulo03-scena-3");
+	
+	//capitulo 04
 	var vid_capitulo04_scena_1 = document.getElementById("audio-capitulo04-scena-1");
+	
+	//capitulo 05
 	var vid_capitulo05_scena_1 = document.getElementById("audio-capitulo05-scena-1");var vid_capitulo05_scena_2 = document.getElementById("audio-capitulo05-scena-2");
+	
+	//capitulo 06
 	var vid_capitulo06_scena_1 = document.getElementById("audio-capitulo06-scena-1");
 	
+	// Setup images per chapter per scena
+	var totalimg_capitulo01_scena_1 = 4;
+	var totalimg_capitulo01_scena_2 = 5;
+	var totalimg_capitulo01_scena_3 = 2;
+	var totalimg_capitulo01_scena_4 = 4;
+	var totalimg_capitulo01_scena_5 = 1;
+	var totalimg_capitulo01_scena_6 = 2;
+		
 	//initialice global vars 
 	var current_chapter_total_lines = 0;
 	var text_current_line = 0;
@@ -35,7 +67,7 @@ $(document).ready(function(){
 	var delayCounter = 1;
 	
 	//scenas counter and total per chapter
-	var total_scenas_capitulo01 = 4;
+	var total_scenas_capitulo01 = 6;
 	var total_scenas_capitulo02 = 3;
 	var total_scenas_capitulo03 = 3;
 	var total_scenas_capitulo04 = 1;
@@ -186,7 +218,7 @@ $(document).ready(function(){
 
 //********** audios
 
-	vid_capitulo01_scena_1.onended = function() { audio_ended_action(); };
+	vid_capitulo01_scena_1[0].onended = function() { audio_ended_action(); };
 	vid_capitulo01_scena_2.onended = function() { audio_ended_action(); };
 	vid_capitulo01_scena_3.onended = function() { audio_ended_action(); };
 	vid_capitulo01_scena_4.onended = function() { audio_ended_action(); };
