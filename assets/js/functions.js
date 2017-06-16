@@ -5,13 +5,52 @@
  * Date: May 22 - 2017
  * Author: Margaret Florian (mafloria - UXDevco)
  */
+
+// Setup total images per chapter per scena
+	var totalimg_capitulo01_scena_1 = 4; 
+	var totalimg_capitulo01_scena_2 = 3;
+	var totalimg_capitulo01_scena_3 = 2;
+	var totalimg_capitulo01_scena_4 = 2;
+	var totalimg_capitulo01_scena_5 = 1;
+	var totalimg_capitulo01_scena_6 = 2;
+	
+	//setup time when the image is displayed
+	var timeimg_capitulo01_scena_1 = [12, 15, 24, 30];
+	var timeimg_capitulo01_scena_2 = [40, 50, 60];
+	var timeimg_capitulo01_scena_3 = [9, 10];
+	var timeimg_capitulo01_scena_4 = [1.52, 2.24];
+	var timeimg_capitulo01_scena_5 = [2.50];
+	var timeimg_capitulo01_scena_6 = [3.14, 3.24];
+	
+	var current_scena_number = 1;
+	var current_chapter = "capitulo01";
+	var current_image_counter = 1;
+	
+/* function needed to load before html end loading */
+function set_current_audio_time(event){
+		current_audio_tracktime = event.currentTime;
+		console.log(eval("timeimg_"+current_chapter+"_scena_"+current_scena_number+"["+(current_image_counter-1)+"]")+"<"+current_audio_tracktime);
+		if(eval(current_image_counter+" < totalimg_"+current_chapter+"_scena_"+current_scena_number)){
+			if(eval("timeimg_"+current_chapter+"_scena_"+current_scena_number+"["+(current_image_counter-1)+"]<current_audio_tracktime")){
+				$("#imgbg-"+current_chapter+"-scena-"+current_scena_number+"-"+current_image_counter).hide();//shows new background image
+				current_image_counter++;	
+				$("#imgbg-"+current_chapter+"-scena-"+current_scena_number+"-"+current_image_counter).show();//shows new background image
+				console.log("#imgbg-"+current_chapter+"-scena-"+current_scena_number+"-"+current_image_counter + "---"+current_audio_tracktime );
+			}
+		}
+		
+		//console.log(" Audio current time:"+current_audio_tracktime);
+		
+	}
+
+//document ready	
 $(document).ready(function(){
 	w3.includeHTML();//includes other html files (.svg)
 	$(".main-header > h1").hide();
 	
 	//progress bar
 	var progress_bar = 0;
-	var capitulo01_escena_1 = capitulo01_escena_2 = capitulo01_escena_3 = capitulo01_escena_4 = 4;
+	var capitulo01_escena_1 = capitulo01_escena_2 = capitulo01_escena_3 = capitulo01_escena_4 = capitulo01_escena_5 = capitulo01_escena_6 = 4;
 	var capitulo02_escena_1 = capitulo02_escena_2 = capitulo02_escena_3 = 6;
 	var capitulo03_escena_1 = capitulo03_escena_2 = capitulo03_escena_3 = 6;	
 	var capitulo04_escena_1 = 12;
@@ -20,43 +59,23 @@ $(document).ready(function(){
 	
 	// load audios elements	
 	//capitulo 01
-	var vid_capitulo01_scena_1 = new Array();
-	vid_capitulo01_scena_1[0] = document.getElementById("audio-capitulo01-scena-1-1");vid_capitulo01_scena_1[1] = document.getElementById("audio-capitulo01-scena-1-2");vid_capitulo01_scena_1[2] = document.getElementById("audio-capitulo01-scena-1-3");vid_capitulo01_scena_1[3] = document.getElementById("audio-capitulo01-scena-1-4");
-	
-	var vid_capitulo01_scena_2 = new Array(); 
-	vid_capitulo01_scena_2[0] = document.getElementById("audio-capitulo01-scena-2-1"); vid_capitulo01_scena_2[1] = document.getElementById("audio-capitulo01-scena-2-2"); vid_capitulo01_scena_2[2] = document.getElementById("audio-capitulo01-scena-2-3");
-	
-	var vid_capitulo01_scena_3 = new Array(); 
-	vid_capitulo01_scena_3[0] = document.getElementById("audio-capitulo01-scena-3-1"); vid_capitulo01_scena_3[1] = document.getElementById("audio-capitulo01-scena-3-2");
-	
-	var vid_capitulo01_scena_4 = new Array(); 
-	vid_capitulo01_scena_4[0] = document.getElementById("audio-capitulo01-scena-4-1"); vid_capitulo01_scena_4[1] = document.getElementById("audio-capitulo01-scena-4-2");
-	
-	var vid_capitulo01_scena_5 = new Array(); 
-	vid_capitulo01_scena_5[0] = document.getElementById("audio-capitulo01-scena-5-1"); 
+	var vid_capitulo01_scena_1 = document.getElementById("audio-capitulo01-scena-1"); var vid_capitulo01_scena_2 = document.getElementById("audio-capitulo01-scena-2");var vid_capitulo01_scena_3 = document.getElementById("audio-capitulo01-scena-3");var vid_capitulo01_scena_4 = document.getElementById("audio-capitulo01-scena-4");	var vid_capitulo01_scena_5 = document.getElementById("audio-capitulo01-scena-5"); var vid_capitulo01_scena_6 = document.getElementById("audio-capitulo01-scena-6");
 	
 	//capitulo 02
-	var vid_capitulo02_scena_1 = document.getElementById("audio-capitulo02-scena-1");var vid_capitulo02_scena_2 = document.getElementById("audio-capitulo02-scena-2");var vid_capitulo02_scena_3 = document.getElementById("audio-capitulo02-scena-3");
+	var vid_capitulo02_scena_1 = document.getElementById("audio-capitulo02-scena-1"); var vid_capitulo02_scena_2 = document.getElementById("audio-capitulo02-scena-2");var vid_capitulo02_scena_3 = document.getElementById("audio-capitulo02-scena-3");
 	
 	//capitulo 03
-	var vid_capitulo03_scena_1 = document.getElementById("audio-capitulo03-scena-1");var vid_capitulo03_scena_2 = document.getElementById("audio-capitulo03-scena-2");var vid_capitulo03_scena_3 = document.getElementById("audio-capitulo03-scena-3");
+	var vid_capitulo03_scena_1 = document.getElementById("audio-capitulo03-scena-1"); var vid_capitulo03_scena_2 = document.getElementById("audio-capitulo03-scena-2");var vid_capitulo03_scena_3 = document.getElementById("audio-capitulo03-scena-3");
 	
 	//capitulo 04
 	var vid_capitulo04_scena_1 = document.getElementById("audio-capitulo04-scena-1");
 	
 	//capitulo 05
-	var vid_capitulo05_scena_1 = document.getElementById("audio-capitulo05-scena-1");var vid_capitulo05_scena_2 = document.getElementById("audio-capitulo05-scena-2");
+	var vid_capitulo05_scena_1 = document.getElementById("audio-capitulo05-scena-1"); var vid_capitulo05_scena_2 = document.getElementById("audio-capitulo05-scena-2");
 	
 	//capitulo 06
 	var vid_capitulo06_scena_1 = document.getElementById("audio-capitulo06-scena-1");
-	
-	// Setup images per chapter per scena
-	var totalimg_capitulo01_scena_1 = 4;
-	var totalimg_capitulo01_scena_2 = 5;
-	var totalimg_capitulo01_scena_3 = 2;
-	var totalimg_capitulo01_scena_4 = 4;
-	var totalimg_capitulo01_scena_5 = 1;
-	var totalimg_capitulo01_scena_6 = 2;
+		
 		
 	//initialice global vars 
 	var current_chapter_total_lines = 0;
@@ -73,8 +92,7 @@ $(document).ready(function(){
 	var total_scenas_capitulo04 = 1;
 	var total_scenas_capitulo05 = 2;
 	var total_scenas_capitulo06 = 1;
-	var current_scena_number = 1;
-	var current_chapter = "";
+	
 	
 //*********** window size to fix content	   
 	setHeight();	
@@ -218,10 +236,12 @@ $(document).ready(function(){
 
 //********** audios
 
-	vid_capitulo01_scena_1[0].onended = function() { audio_ended_action(); };
+	vid_capitulo01_scena_1.onended = function() { audio_ended_action(); };
 	vid_capitulo01_scena_2.onended = function() { audio_ended_action(); };
 	vid_capitulo01_scena_3.onended = function() { audio_ended_action(); };
 	vid_capitulo01_scena_4.onended = function() { audio_ended_action(); };
+	vid_capitulo01_scena_5.onended = function() { audio_ended_action(); };
+	vid_capitulo01_scena_6.onended = function() { audio_ended_action(); };
 	vid_capitulo02_scena_1.onended = function() { audio_ended_action(); };
 	vid_capitulo02_scena_2.onended = function() { audio_ended_action(); };
 	vid_capitulo02_scena_3.onended = function() { audio_ended_action(); };
@@ -349,6 +369,7 @@ $(document).ready(function(){
 		current_scena_number = 1;
 		
 	} 
+		
 	
 //********** end - Audios	
 
@@ -363,7 +384,7 @@ $(document).ready(function(){
 						$("#txt_"+capitulo).html(text_current_chapter[i]);
 						//$(".txt_sc1").textillate('start');
 						text_current_line = i;
-						console.log("THIS IS"+text_current_line+':'+i+"--"+delayCounter);
+						//console.log("THIS IS"+text_current_line+':'+i+"--"+delayCounter);
 					}
 			    }, 6000*delayCounter);
 			  })(i, delayCounter);			  
