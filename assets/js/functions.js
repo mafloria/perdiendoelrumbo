@@ -16,7 +16,7 @@
 	
 	//setup time when the image is displayed
 	var timeimg_capitulo01_scena_1 = [8, 19, 25, 27];
-	var timeimg_capitulo01_scena_2 = [7, 9, 14, 18, 42, 48];
+	var timeimg_capitulo01_scena_2 = [8, 15, 27, 38, 48, 57];
 	var timeimg_capitulo01_scena_3 = [9, 10];
 	var timeimg_capitulo01_scena_4 = [9, 19, 32, 44];
 	var timeimg_capitulo01_scena_5 = [5, 7, 15];
