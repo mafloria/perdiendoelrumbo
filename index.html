@@ -44,6 +44,7 @@
                 <a href="#introduccion">
                     <img src="images/buscando-el-norte-logo-horizontal-top.png" width="541" height="61">
                 </a>                
+                <a href="#capitulo02"> Cap 2</a>
             </h1>
 
             <nav id="nav-menu">
@@ -175,7 +176,8 @@
                     <ul>
                         <li id="sequence-capitulo02-scena-1"><a><img src="images/thumb-portada-c1.jpg"></a></li>
                         <li id="sequence-capitulo02-scena-2"><a><img src="images/thumb-portada-c1.jpg"></a></li>
-                        <li id="sequence-capitulo02-scena-3"><a><img src="images/thumb-portada-c1.jpg"></a></li>                                               
+                        <li id="sequence-capitulo02-scena-3"><a><img src="images/thumb-portada-c1.jpg"></a></li>
+                        <li id="sequence-capitulo02-scena-4"><a><img src="images/thumb-portada-c1.jpg"></a></li>                                               
                     </ul>
                 </div>
                 <div class="section-content-wrap"> <!-- contenedor de elementos del section -->
@@ -183,18 +185,22 @@
 	                <a class="nav-next" id="nav-next-capitulo02-inactive"><svg><use xlink:href="#nav"/></svg></a>
                     <a class="nav-next" id="nav-next-capitulo02-active" style="display: none" href="#capitulo03"><svg><use xlink:href="#nav"/></svg></a>
 	                <div class="subs-section">   
-	                    <audio id="audio-capitulo02-scena-1" class="audios">                
-	                        <source src="audio/capitulo01-scena-1.mp3" type="audio/mp3">                    
-	                        <em class="error"><strong>Error:</strong> Your browser doesn't appear to support HTML5 Audio.</em>
-	                    </audio> 
-	                    <audio id="audio-capitulo02-scena-2" class="audios">                
-	                        <source src="audio/capitulo01-scena-2.mp3" type="audio/mp3">                    
-	                        <em class="error"><strong>Error:</strong> Your browser doesn't appear to support HTML5 Audio.</em>
-	                    </audio>
-	                    <audio id="audio-capitulo02-scena-3" class="audios">                
-	                        <source src="audio/capitulo01-scena-1.mp3" type="audio/mp3">                    
-	                        <em class="error"><strong>Error:</strong> Your browser doesn't appear to support HTML5 Audio.</em>
-	                    </audio>
+	                    <audio id="audio-capitulo02-scena-1" class="audios" ontimeupdate="set_current_audio_time(this)">
+                            <source src="audio/capitulo02/buscando-el-norte-capitulo02-E1.mp3" type="audio/mp3">
+                            <em class="error"><strong>Error:</strong> Your browser doesn't appear to support HTML5 Audio.</em>
+                        </audio>
+	                    <audio id="audio-capitulo02-scena-2" class="audios" ontimeupdate="set_current_audio_time(this)">
+                            <source src="audio/capitulo02/buscando-el-norte-capitulo02-E2.mp3" type="audio/mp3">
+                            <em class="error"><strong>Error:</strong> Your browser doesn't appear to support HTML5 Audio.</em>
+                        </audio> 
+	                    <audio id="audio-capitulo02-scena-3" class="audios" ontimeupdate="set_current_audio_time(this)">
+                            <source src="audio/capitulo02/buscando-el-norte-capitulo02-E3.mp3" type="audio/mp3">
+                            <em class="error"><strong>Error:</strong> Your browser doesn't appear to support HTML5 Audio.</em>
+                        </audio>
+	                    <audio id="audio-capitulo02-scena-4" class="audios" ontimeupdate="set_current_audio_time(this)">
+                            <source src="audio/capitulo02/buscando-el-norte-capitulo02-E4.mp3" type="audio/mp3">
+                            <em class="error"><strong>Error:</strong> Your browser doesn't appear to support HTML5 Audio.</em>
+                        </audio>
 	                    <a href="javascript:void(0)" class="playAudio" id="playAudio-capitulo02" style="display: none"><svg><use xlink:href="#audioplay"/></svg></a>
 	                    <a href="javascript:void(0)" class="pauseAudio" id="pauseAudio-capitulo02"><svg><use xlink:href="#audiostop"/></svg></a>
 	                    <p class="passage-audio-unavailable" hidden>
@@ -204,27 +210,24 @@
 	                </div> 
 	                
 	                <div class="background-section">
-	                    <div class="med-bg">
-	                        <img src="images/buscando-el-norte-1024-capitulo02.png" alt="Buscando el norte - capítulo 2" width="1024" height="678" usemap="#MapCapitulo02" id="buscandoelnorte-capitulo02-1024"/>
-	                        <map name="MapCapitulo02">
-	                          <area shape="poly" class="abrir-detalle-modal" id="capitulo02-escena-1" data-tooltip-content="#tooltip_capitulo02-escena-1" coords="491,241,558,243,592,225,641,171,667,132,718,121,740,108,699,51,604,59,572,86,540,118,505,160,483,231" href="javascript:void(0);">
-	                          <area shape="poly" class="abrir-detalle-modal" id="capitulo02-escena-2" data-tooltip-content="#tooltip_capitulo02-escena-1" coords="245,375,224,389,207,435,179,483,163,522,173,542,195,546,211,501,233,474,260,437,272,407,286,389,262,375" href="javascript:void(0);">
-	                          <area shape="poly" class="abrir-detalle-modal" id="capitulo02-escena-3" data-tooltip-content="#tooltip_capitulo02-escena-1" coords="998,517,946,526,936,457,920,436,884,487,843,479,849,426,827,485,790,499,779,409,771,326,761,249,733,240,734,209,754,185,756,143,789,127,803,89,871,85,896,56,930,36,975,100,1000,122,1018,132,1018,501" href="javascript:void(0);">
-	                        </map>
-	                        <div class="tooltip-html-titlecontent"><?php //tooltips ?>
-	                            <span id="tooltip_capitulo02-escena-1">
-	                                <svg><use xlink:href="#view-more"/></svg>
-	                                <p>ver más</p> 
-	                            </span>                           
-	                            <span id="tooltip_capitulo02-escena-2">
-	                                <svg><use xlink:href="#view-more"/></svg>
-	                                <p>ver más</p> 
-	                            </span>                  
-	                            <span id="tooltip_capitulo02-escena-3">
-	                                <svg><use xlink:href="#view-more"/></svg>
-	                                <p>ver más</p> 
-	                            </span>                            
-	                        </div>
+	                    <div class="med-bg">	              
+	                        <img src="images/capitulo02/escena-1/buscando-el-norte-capitulo02-escena-1-1.jpg" id="imgbg-capitulo02-scena-1-1" style="display: none;">
+	                        <img src="images/capitulo02/escena-1/buscando-el-norte-capitulo02-escena-1-2.jpg" id="imgbg-capitulo02-scena-1-2" style="display: none;">
+                        	<img src="images/capitulo02/escena-1/buscando-el-norte-capitulo02-escena-1-3.jpg" id="imgbg-capitulo02-scena-1-3" style="display: none;"> 
+	                       
+	                        <img src="images/capitulo02/escena-2/buscando-el-norte-capitulo02-escena-2-1.jpg" id="imgbg-capitulo02-scena-2-1" style="display: none;">
+	                        <img src="images/capitulo02/escena-2/buscando-el-norte-capitulo02-escena-2-2.jpg" id="imgbg-capitulo02-scena-2-2" style="display: none;">
+                        	
+                        	<img src="images/capitulo02/escena-3/buscando-el-norte-capitulo02-escena-3-1.jpg" id="imgbg-capitulo02-scena-3-1" style="display: none;">
+	                        <img src="images/capitulo02/escena-3/buscando-el-norte-capitulo02-escena-3-2.jpg" id="imgbg-capitulo02-scena-3-2" style="display: none;">
+	                        <img src="images/capitulo02/escena-3/buscando-el-norte-capitulo02-escena-3-3.jpg" id="imgbg-capitulo02-scena-3-3" style="display: none;">
+	                        <img src="images/capitulo02/escena-3/buscando-el-norte-capitulo02-escena-3-4.jpg" id="imgbg-capitulo02-scena-3-4" style="display: none;">
+	                        <img src="images/capitulo02/escena-3/buscando-el-norte-capitulo02-escena-3-5.jpg" id="imgbg-capitulo02-scena-3-5" style="display: none;">
+	                        <img src="images/capitulo02/escena-3/buscando-el-norte-capitulo02-escena-3-6.jpg" id="imgbg-capitulo02-scena-3-6" style="display: none;">
+	                        
+	                        <img src="images/capitulo02/escena-4/buscando-el-norte-capitulo02-escena-4-1.jpg" id="imgbg-capitulo02-scena-4-1" style="display: none;">
+	                        <img src="images/capitulo02/escena-4/buscando-el-norte-capitulo02-escena-4-2.jpg" id="imgbg-capitulo02-scena-4-2" style="display: none;">
+	                        <img src="images/capitulo02/escena-4/buscando-el-norte-capitulo02-escena-4-3.jpg" id="imgbg-capitulo02-scena-4-3" style="display: none;">
 	                    </div>
 	                </div> 
 	            </div> <!--end section wrap -->
