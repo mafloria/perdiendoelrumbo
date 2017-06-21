@@ -144,7 +144,8 @@ $(document).ready(function(){
 		    if(this.hash.slice(1)=="introduccion") {
 		    	if(progress_bar>=100){ $(".intro-chapter-menu").show(); $(".intro-chapter-startbtn").hide(); }
 		    	else{ $(".intro-chapter-menu").hide(); $(".intro-chapter-startbtn").show(); }
-		    	$(".main-header > h1").hide();		    	
+		    	$(".main-header > h1").hide();
+				$("#imgbg-introduccion").show();
 		    }else{
 		    	autoplay_audios(this.hash.slice(1));
 		    	$(".main-header > h1").show();
