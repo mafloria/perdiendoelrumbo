@@ -9,6 +9,7 @@
 // Setup total images per chapter per scena
 	var totalimg_capitulo01_scena_1 = 4; var totalimg_capitulo01_scena_2 = 6; var totalimg_capitulo01_scena_3 = 2; var totalimg_capitulo01_scena_4 = 4; var totalimg_capitulo01_scena_5 = 3; var totalimg_capitulo01_scena_6 = 2;
 	var totalimg_capitulo02_scena_1 = 3; var totalimg_capitulo02_scena_2 = 2; var totalimg_capitulo02_scena_3 = 5; var totalimg_capitulo02_scena_4 = 4;
+	var totalimg_capitulo03_scena_1 = 7; var totalimg_capitulo03_scena_2 = 3; var totalimg_capitulo03_scena_3 = 9; var totalimg_capitulo03_scena_4 = 4;
 	
 	//setup time when the image is displayed
 	var timeimg_capitulo01_scena_1 = [8, 19, 25, 27]; 
@@ -23,6 +24,10 @@
 	var timeimg_capitulo02_scena_3 = [10, 28, 36, 42, 49];
 	var timeimg_capitulo02_scena_4 = [16, 25, 43, 120];
 	
+	var timeimg_capitulo03_scena_1 = [5, 10, 15, 20, 25, 30, 35]; 
+	var timeimg_capitulo03_scena_2 = [11, 19, 25];
+	var timeimg_capitulo03_scena_3 = [5, 9, 15, 20, 25, 30, 34, 38, 42];
+	var timeimg_capitulo03_scena_4 = [12, 20, 25, 30];
 	
 	var current_scena_number = 1;
 	var current_chapter = "capitulo01";
@@ -62,7 +67,7 @@ $(document).ready(function(){
 	var progress_bar = 0;
 	var capitulo01_escena_1 = capitulo01_escena_2 = capitulo01_escena_3 = capitulo01_escena_4 = capitulo01_escena_5 = capitulo01_escena_6 = 4;
 	var capitulo02_escena_1 = capitulo02_escena_2 = capitulo02_escena_3 = capitulo02_escena_4 = 6;
-	var capitulo03_escena_1 = capitulo03_escena_2 = capitulo03_escena_3 = 6;	
+	var capitulo03_escena_1 = capitulo03_escena_2 = capitulo03_escena_3 = capitulo03_escena_4 = 6;	
 	var capitulo04_escena_1 = 12;
 	var capitulo05_escena_1 = capitulo05_escena_2 = 14;
 	var capitulo06_escena_1 = 8;
@@ -75,7 +80,7 @@ $(document).ready(function(){
 	var vid_capitulo02_scena_1 = document.getElementById("audio-capitulo02-scena-1"); var vid_capitulo02_scena_2 = document.getElementById("audio-capitulo02-scena-2");var vid_capitulo02_scena_3 = document.getElementById("audio-capitulo02-scena-3");var vid_capitulo02_scena_4 = document.getElementById("audio-capitulo02-scena-4");
 	
 	//capitulo 03
-	var vid_capitulo03_scena_1 = document.getElementById("audio-capitulo03-scena-1"); var vid_capitulo03_scena_2 = document.getElementById("audio-capitulo03-scena-2");var vid_capitulo03_scena_3 = document.getElementById("audio-capitulo03-scena-3");
+	var vid_capitulo03_scena_1 = document.getElementById("audio-capitulo03-scena-1"); var vid_capitulo03_scena_2 = document.getElementById("audio-capitulo03-scena-2");var vid_capitulo03_scena_3 = document.getElementById("audio-capitulo03-scena-3"); var vid_capitulo03_scena_4 = document.getElementById("audio-capitulo03-scena-4");
 	
 	//capitulo 04
 	var vid_capitulo04_scena_1 = document.getElementById("audio-capitulo04-scena-1");
@@ -98,7 +103,7 @@ $(document).ready(function(){
 	//scenas counter and total per chapter
 	var total_scenas_capitulo01 = 6;
 	var total_scenas_capitulo02 = 4;
-	var total_scenas_capitulo03 = 3;
+	var total_scenas_capitulo03 = 4;
 	var total_scenas_capitulo04 = 1;
 	var total_scenas_capitulo05 = 2;
 	var total_scenas_capitulo06 = 1;
@@ -121,12 +126,7 @@ $(document).ready(function(){
 		//background images
 		$('.background-section img').css('height', windowHeight);
 		$('.background-section img').css('width', windowWidth);		
-		$('.capitulo03-rotating-item').css('width', windowWidth);
-		$('.capitulo03-rotating-item').css('height', windowHeight);
 	};
-	
-	//fix the image map coordenates
-    //$('img[usemap]').imageMap();
 //*********** end - window size to fix content
 
 //*********** scrolls to an href section exactly
@@ -153,7 +153,7 @@ $(document).ready(function(){
 		    	$("#imgbg-"+current_chapter+"-scena-1-1").show();//shows new background image
 		    	
 		    }
-		    if(this.hash.slice(1)=="capitulo03") {InfiniteRotator.init(); }
+		    //if(this.hash.slice(1)=="capitulo03") {InfiniteRotator.init(); }
 		    
 		    $("#sequence-"+current_chapter+"-scena-1 a").addClass("current-scene");		    		    		    		      
 		     
@@ -214,6 +214,7 @@ $(document).ready(function(){
 	}
 	*/
 	
+	/*
 	//capt 3 y 4 images rotating
 	//images rotation
     var InfiniteRotator = {
@@ -243,7 +244,7 @@ $(document).ready(function(){
  
             }, itemInterval);
         }
-    };	
+    };*/	
 	
 //********** end - actions
 
@@ -262,6 +263,7 @@ $(document).ready(function(){
 	vid_capitulo03_scena_1.onended = function() { audio_ended_action(); };
 	vid_capitulo03_scena_2.onended = function() { audio_ended_action(); };
 	vid_capitulo03_scena_3.onended = function() { audio_ended_action(); };
+	vid_capitulo03_scena_4.onended = function() { audio_ended_action(); };
 	vid_capitulo04_scena_1.onended = function() { audio_ended_action(); };
 	vid_capitulo05_scena_1.onended = function() { audio_ended_action(); };
 	vid_capitulo05_scena_2.onended = function() { audio_ended_action(); };
@@ -311,6 +313,7 @@ $(document).ready(function(){
 			
 			current_scena_number = id_info[3];//sets current scena to the cliked one
 			
+			$(".background-section > img").hide();
 			$("#imgbg-"+current_chapter+"-scena-"+current_scena_number).show();//shows new background image
 			autoplay_audios(id_info[1]);  //play new audio scena
 			
@@ -518,7 +521,7 @@ $(document).ready(function(){
     text_capitulo03[19]=" She didn’t make it too far. The group was being closely followed, every step of the way.";
     text_capitulo03[20]=" The thugs caught her on her own. Her oversized denim pants and ";
     text_capitulo03[21]="the pocket knife weren’t enough to deflect the attackers. Nobody even heard her scream. ";    
-    text_capitulo03[22]="Poor Tita, the youngest. They found her naked, left for dead like an animal. It was impossible to lift her spirits afterwards.";
+    text_capitulo03[22]="Poor Tita, the youngest. They found her lying naked in the shrubs. It was impossible to lift her spirits afterwards.";
     text_capitulo03[23]= "Amalia remembered that before leaving someone told her to take contraceptives because those things do happen all the time. ";
     text_capitulo03[24]="The gang members, the polleros, anyone can rape you. ";
     text_capitulo03[25]="It was the ‘Z’ gang, somebody saw their tattoos. The group split. ";
@@ -526,11 +529,11 @@ $(document).ready(function(){
     text_capitulo03[27]="She ran to the highway, looking for the migra patrol. They noticed her and started coming closer.";
     //text_capitulo03[28]="- We gotta go!-, one o guys yelled, and they all started running back. The girls stayed with Tita.";
     text_capitulo03[28]="Tic tac, tic tac... Amalia was never afraid, or so it seemed. It’s the thrill of the journey, she’d say.";
-    text_capitulo03[29]="How long does forever last? Sometimes, it’s just a second. ";
+    text_capitulo03[29]="Tic tac, tic tac... How long does forever last? Sometimes, it’s just a second. ";
     text_capitulo03[30]="She put her hand in her pocket and felt the picture of her family and the letter for her dad.";
     text_capitulo03[31]="She mustered some energy and ran as fast as she could to reach the group, ";
     text_capitulo03[32]="she got entangled in the brush but kept running; she got cuts in her arms and legs but kept running. ";
-    text_capitulo03[33]="She would soon see her mom and maybe even her dad -if he got released from jail-. She ran and ran, and fell! ";
+    text_capitulo03[33]="She would soon see her mom and maybe even her dad -if he got released from jail-. She ran and ran, and fell! Tic tac...";
     text_capitulo03[34]="When she woke up she was alone. She didn’t know how long she was out. She missed the guys, ";
     text_capitulo03[35]="maybe they’re already on The beast. She cried her heart out. There are some really dark and painful moments in life,";
     text_capitulo03[36]=" that continuing without a grandmother’s prayer would be impossible. ";
