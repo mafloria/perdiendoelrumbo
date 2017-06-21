@@ -9,7 +9,7 @@
 // Setup total images per chapter per scena
 	var totalimg_capitulo01_scena_1 = 4; var totalimg_capitulo01_scena_2 = 6; var totalimg_capitulo01_scena_3 = 2; var totalimg_capitulo01_scena_4 = 4; var totalimg_capitulo01_scena_5 = 3; var totalimg_capitulo01_scena_6 = 2;
 	var totalimg_capitulo02_scena_1 = 3; var totalimg_capitulo02_scena_2 = 2; var totalimg_capitulo02_scena_3 = 5; var totalimg_capitulo02_scena_4 = 4;
-	var totalimg_capitulo03_scena_1 = 7; var totalimg_capitulo03_scena_2 = 3; var totalimg_capitulo03_scena_3 = 9; var totalimg_capitulo03_scena_4 = 4;
+	var totalimg_capitulo03_scena_1 = 7; var totalimg_capitulo03_scena_2 = 3; var totalimg_capitulo03_scena_3 = 5; var totalimg_capitulo03_scena_4 = 4;
 	
 	//setup time when the image is displayed
 	var timeimg_capitulo01_scena_1 = [8, 19, 25, 27]; 
@@ -24,10 +24,10 @@
 	var timeimg_capitulo02_scena_3 = [10, 28, 36, 42, 49];
 	var timeimg_capitulo02_scena_4 = [16, 25, 43, 120];
 	
-	var timeimg_capitulo03_scena_1 = [5, 10, 15, 20, 25, 30, 35]; 
-	var timeimg_capitulo03_scena_2 = [11, 19, 25];
-	var timeimg_capitulo03_scena_3 = [5, 9, 15, 20, 25, 30, 34, 38, 42];
-	var timeimg_capitulo03_scena_4 = [12, 20, 25, 30];
+	var timeimg_capitulo03_scena_1 = [11, 25, 32, 36, 46, 50, 64]; 
+	var timeimg_capitulo03_scena_2 = [12, 31, 35];
+	var timeimg_capitulo03_scena_3 = [13, 30, 42, 51, 82];
+	var timeimg_capitulo03_scena_4 = [22, 34, 36, 53];
 	
 	var current_scena_number = 1;
 	var current_chapter = "capitulo01";
