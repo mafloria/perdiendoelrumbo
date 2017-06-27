@@ -41,7 +41,8 @@ function set_current_audio_time(event){
 		//console.log(eval("timeimg_"+current_chapter+"_scena_"+current_scena_number+"["+(current_image_counter-1)+"]")+"<"+current_audio_tracktime);
 		if(eval(current_image_counter+" < totalimg_"+current_chapter+"_scena_"+current_scena_number) && !stop_last_image){
 			if(eval("timeimg_"+current_chapter+"_scena_"+current_scena_number+"["+(current_image_counter-1)+"]<current_audio_tracktime")){
-				$("#imgbg-"+current_chapter+"-scena-"+current_scena_number+"-"+current_image_counter).hide();//shows new background image
+				//$("#imgbg-"+current_chapter+"-scena-"+current_scena_number+"-"+current_image_counter).hide();//hides prev background image
+				$(".background-section > img").hide();
 				current_image_counter++;	
 				$("#imgbg-"+current_chapter+"-scena-"+current_scena_number+"-"+current_image_counter).show();//shows new background image
 				console.log("#imgbg-"+current_chapter+"-scena-"+current_scena_number+"-"+current_image_counter + "---"+current_audio_tracktime );
@@ -282,8 +283,8 @@ $(document).ready(function(){
 	   	}
 	   
 		console.log("PREV NEXT AUDIO: SCENA: "+current_scena_number+ " CHAPTER:"+current_chapter+" Progress Bar: "+progress_bar);
-		$("#imgbg-"+current_chapter+"-scena-"+current_scena_number).hide("slow"); //hides background image
-		
+		//$("#imgbg-"+current_chapter+"-scena-"+current_scena_number).hide("slow"); //hides background image
+		$(".background-section > img").hide();
 		if(current_scena_number < eval("total_scenas_"+current_chapter)){
 			
 	   		current_scena_number ++;
