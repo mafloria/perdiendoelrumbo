@@ -138,13 +138,13 @@ a.nav-next svg{
 	height: 55px;
 }
 .main-header{
-	background:rgba(255,255,255, 0.96);
+	/*background:rgba(255,255,255, 0.96);
 	border-bottom: 2px solid black;
-	width: 100%;
-	padding: 10px;
+	width: 100%;*/
+	padding: 0;
 	position: fixed;
 	z-index: 3;
-	height: 3.25em;
+	width: 100%;
 }
 .main-header h1{
 	width: 15%;
@@ -152,9 +152,36 @@ a.nav-next svg{
 	margin: 0;
     padding: 0;
     line-height: 0;
+    display: block;
+    background-color: white;
+    padding: 10px;
+    border-bottom: 4px solid black;  
+    border-right: 4px solid black;
+    border-bottom-right-radius: 5px;
 }
 .main-header h1 a{
 	display: block;
+}
+.main-header h1 p{
+	float: left;
+	font-size: 20px;
+	padding: 10px;
+	margin-left: 1em;
+}
+.chapter-title{
+	float: right;
+	width: auto;
+	padding: 10px;
+	background-color: white;
+	border-bottom: 4px solid black;  
+    border-left: 4px solid black;
+    border-bottom-left-radius: 5px;
+}
+.chapter-title h3{
+	margin: 0;
+}
+.nav-chap-us{
+	display: none !important;
 }
 header .submenu{
 	position: absolute;
