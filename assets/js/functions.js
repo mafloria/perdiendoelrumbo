@@ -130,7 +130,7 @@ $(document).ready(function(){
 	};
 //*********** end - window size to fix content
 
-//*********** scrolls to an href section exactly
+//*********** scrolls to an href section exactly - just for biggest navegation
     $('a[href*="#"]:not([href="#"])').click(function() {
 	    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
 	      var target = $(this.hash);		      
@@ -158,7 +158,7 @@ $(document).ready(function(){
 		    //if(this.hash.slice(1)=="capitulo03") {InfiniteRotator.init(); }
 		    
 		    $("#sequence-"+current_chapter+"-scena-1 a").addClass("current-scene");		    		    		    		      
-		     
+
 		    return false;
 		  }//end if target length
 		}//end if location
@@ -311,7 +311,7 @@ $(document).ready(function(){
 			$("#sequence-"+current_chapter+"-scena-"+current_scena_number+" > a").removeClass("current-scene");
 			
 			pause_audio(id_info[1]); //pause current audio
-			$("#imgbg-"+current_chapter+"-scena-"+current_scena_number).hide("slow"); //hides background image
+			//$("#imgbg-"+current_chapter+"-scena-"+current_scena_number).hide("slow"); //hides background image			
 			
 			current_scena_number = id_info[3];//sets current scena to the cliked one
 			
@@ -319,7 +319,10 @@ $(document).ready(function(){
 			$("#imgbg-"+current_chapter+"-scena-"+current_scena_number).show();//shows new background image
 			autoplay_audios(id_info[1]);  //play new audio scena
 			
+			console.log("Jump scena current scena number:"+current_scena_number);		
+				
 			$("#sequence-"+current_chapter+"-scena-"+current_scena_number+" > a").addClass("current-scene");
+			current_image_counter = 1;
 		}
 		
 	});
