@@ -436,10 +436,10 @@ $(document).ready(function(){
     text_capitulo02[2]="In that particular group there were people from far away, who spoke different languages. From Haiti "; 
     text_capitulo02[3]="and Africa, I believe. They came in rafts by the sea, walking through hills and secret paths, ";
     text_capitulo02[4]="hiding in cargo containers, with little girls and babies. Just like us!  But on a much longer journey. ";
-    text_capitulo02[5]="Multicoloured bodies, beautiful and fragile, ";
-    text_capitulo02[6]="drinking water and showering in the river. Some Cubans were sharing stories from their journey: ";     
-    text_capitulo02[7]="They climbed a massive mountain in the Darién jungle, they crossed a river that overflowed, ";
-    text_capitulo02[8]="a woman and two kids didn’t make it to the other side, and there are other bodies scattered around... ";
+    text_capitulo02[5]="Multicoloured bodies, beautiful and fragile, drinking water and showering in the river. ";
+    text_capitulo02[6]="Some Cubans were sharing stories from their journey: They climbed a massive mountain in the Darién jungle, ";     
+    text_capitulo02[7]="they crossed a river that overflowed, a woman and two kids didn’t make it to the other side, ";
+    text_capitulo02[8]="and there are other bodies scattered around... ";
 	text_capitulo02[9]="Just thinking how much distance we still had to cover, and imagining the million things that could happen,";                
     text_capitulo02[10]=" I got scared.  And then I saw her. Like a ghost. "; 
     text_capitulo02[11]="A girl alone in the middle of a bunch of people who doesn’t look afraid. "; 
