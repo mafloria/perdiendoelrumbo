@@ -29,33 +29,48 @@
 	var timeimg_capitulo03_scena_3 = [13, 30, 42, 51, 82];
 	var timeimg_capitulo03_scena_4 = [22, 34, 36, 53];
 	
+	
+	//setup line number for each scena inside the chapter
+	var textini_capitulo01 = [0, 6, 16, 21, 29, 33]; 	
+	var textini_capitulo02 = [0, 5, 9, 17]; 		
+	var textini_capitulo03 = [0, 25, 32, 36, 46, 50, 64]; 	
+	
 	var current_scena_number = 1;
 	var current_chapter = "capitulo01";
 	var current_image_counter = 1;
 	var stop_last_image = false;
 	var last_image_displayed = "";
 	
+	//initialice global vars 
+	var current_chapter_total_lines = 0;
+	var text_current_line = 0;
+	var text_current_chapter = new Array();//the actual chapter is loaded in this array to show the text
+	var pausePhrases = false;
+	var timer = new Array();
+	var delayCounter = 1;
+	
+	var interval;
+	
 /* function needed to load before html end loading */
 function set_current_audio_time(event){
-		current_audio_tracktime = event.currentTime;
-		//console.log(eval("timeimg_"+current_chapter+"_scena_"+current_scena_number+"["+(current_image_counter-1)+"]")+"<"+current_audio_tracktime);
+		current_audio_tracktime = event.currentTime;		
 		if(eval(current_image_counter+" < totalimg_"+current_chapter+"_scena_"+current_scena_number) && !stop_last_image){
+			//console.log(eval("timeimg_"+current_chapter+"_scena_"+current_scena_number+"["+(current_image_counter-1)+"]")+"<"+current_audio_tracktime);
 			if(eval("timeimg_"+current_chapter+"_scena_"+current_scena_number+"["+(current_image_counter-1)+"]<current_audio_tracktime")){
-				//$("#imgbg-"+current_chapter+"-scena-"+current_scena_number+"-"+current_image_counter).hide();//hides prev background image
+				
 				$(".background-section > img").hide();
+				$(last_image_displayed).hide();
 				current_image_counter++;	
 				$("#imgbg-"+current_chapter+"-scena-"+current_scena_number+"-"+current_image_counter).show();//shows new background image
-				console.log("#imgbg-"+current_chapter+"-scena-"+current_scena_number+"-"+current_image_counter + "---"+current_audio_tracktime );
+				//console.log("#imgbg-"+current_chapter+"-scena-"+current_scena_number+"-"+current_image_counter + "---"+current_audio_tracktime );
 			}
 		}else{
 			if(stop_last_image==false){ last_image_displayed = "#imgbg-"+current_chapter+"-scena-"+current_scena_number+"-"+current_image_counter; }
 			
 			stop_last_image = true;
 			current_image_counter = 1;			 
-			console.log(" ELSE:"+current_image_counter+" last Iamge:"+last_image_displayed);
+			//console.log(" ELSE:"+current_image_counter+" last Iamge:"+last_image_displayed);
 		}
-		
-		
 		
 	}
 
@@ -91,15 +106,7 @@ $(document).ready(function(){
 	
 	//capitulo 06
 	var vid_capitulo06_scena_1 = document.getElementById("audio-capitulo06-scena-1");
-		
-		
-	//initialice global vars 
-	var current_chapter_total_lines = 0;
-	var text_current_line = 0;
-	var text_current_chapter = new Array();//the actual chapter is loaded in this array to show the text
-	var pausePhrases = false;
-	var timer = new Array();
-	var delayCounter = 1;
+					
 	
 	//scenas counter and total per chapter
 	var total_scenas_capitulo01 = 6;
@@ -148,11 +155,11 @@ $(document).ready(function(){
 		    	$(".main-header > h1").hide();
 				$("#imgbg-introduccion").show();
 		    }else{
-		    	autoplay_audios(this.hash.slice(1));
-		    	$(".main-header > h1").show();
 		    	current_chapter = this.hash.slice(1);
-		    	$(".background-section > img").hide();
-		    	$("#imgbg-"+current_chapter+"-scena-1-1").show();//shows new background image
+		    	autoplay_audios(this.hash.slice(1));
+		    	$(".main-header > h1").show();		    	
+		    	//$(".background-section > img").hide();
+		    	//$("#imgbg-"+current_chapter+"-scena-1-1").show();//shows new background image
 		    	
 		    }
 		    //if(this.hash.slice(1)=="capitulo03") {InfiniteRotator.init(); }
@@ -168,53 +175,7 @@ $(document).ready(function(){
 //********** actions
 	$("#ben-main-menu").click(function(){
 		$(".submenu").toggle('slow');
-	});
-	/*
-	//opens escenas
-	$(document).on('click', '.abrir-detalle-modal', function(){ 	
-		var id_info = $(this).attr('id');
-		var id_array = id_info.split('-'); //0: capitulo 2:scena number
-		
-		abrir_detalle_modal(id_array[0], id_array[2]);
-	});	   
-	
-	//closes all detail popup windows (really only closes the only opened one)
-	$(document).on('click', '.close-scenas-detail', function(){
-		$(".escenas-detail").hide();
-		var capitulo = $(this).parent().attr('id').split('-');;
-		$("#modal-description-escenas-"+capitulo[1]).hide();
-		$("#overlay").hide();
-	})	
-	
-	$(document).on('click', '.next-scenas-detail', function(){		
-		var parent_id_info = $(this).parent().attr('id').split("-");
-		
-		$(".escenas-detail").hide();
-		
-		if(current_scena_number==eval("total_scenas_"+parent_id_info[1])){
-			current_scena_number = 1;			
-		}else{
-			current_scena_number++;
-		}
-		abrir_detalle_modal(parent_id_info[1], current_scena_number); //param: capitulo number
-	});
-	
-	function abrir_detalle_modal(capitulo, escena_number){
-		$("#modal-description-escenas-"+capitulo).show();
-		$(".escenas-detail").hide();
-		$("#detailwin-"+capitulo+"-escena-"+escena_number).show();
-		
-		pause_audio(capitulo);
-		current_scena_number = escena_number;
-		
-		progress_bar += eval(capitulo+"_escena_"+escena_number); //add progress value
-		eval(capitulo+"_escena_"+escena_number+"=0;"); //set scena value to 0
-		console.log(progress_bar+"::"+eval(capitulo+"_escena_"+escena_number));
-		$(".barra-marcador").css("width", progress_bar+"%");
-		
-		$("#overlay").show();
-	}
-	*/
+	});	
 	
 	/*
 	//capt 3 y 4 images rotating
@@ -282,13 +243,22 @@ $(document).ready(function(){
 		    eval(current_chapter+"_escena_"+current_scena_number+"=0"); //reset scena progress value to cero, already listened
 	   	}
 	   
-		console.log("PREV NEXT AUDIO: SCENA: "+current_scena_number+ " CHAPTER:"+current_chapter+" Progress Bar: "+progress_bar);
-		//$("#imgbg-"+current_chapter+"-scena-"+current_scena_number).hide("slow"); //hides background image
+		//console.log("PREV NEXT AUDIO: SCENA: "+current_scena_number+ " CHAPTER:"+current_chapter+" Progress Bar: "+progress_bar);		
 		$(".background-section > img").hide();
 		if(current_scena_number < eval("total_scenas_"+current_chapter)){
 			
 	   		current_scena_number ++;
 	   		$("#imgbg-"+current_chapter+"-scena-"+current_scena_number).show();//shows new background image
+	   		
+	   		//---------- stop write text threat
+	   		pausePhrases = true; //pause translated text
+			//clear all text runing
+			var total_timer_lines = timer.length;
+			for(j=0; j<=total_timer_lines; j++){ clearTimeout(timer[j]);  }
+			//clearTimeout(timer);
+			delayCounter = 1;
+			//---------- end - stop write text threat
+	   		
 	   		autoplay_audios(current_chapter);
 	   			   
 	   		$("#sequence-"+current_chapter+"-scena-"+current_scena_number+" > a").addClass("current-scene");
@@ -306,23 +276,36 @@ $(document).ready(function(){
 	$(".sequence-thumb > a").click(function(){
 		var href = $(this).attr( "href" );
 		
-		if(href=="javascript:void(0)"){			
+		if(href=="javascript:void(0)"){	
+			
+			var total_timer_lines = timer.length;
+			for(j=0; j<=total_timer_lines; j++){ clearTimeout(timer[j]); }
+			pausePhrases = false;
+			current_chapter_total_lines = 0;
+			//text_current_line = 0;
+			delayCounter = 1;
+			//current_scena_number = 1;
+				
 			var id_info = $(this).parent(0).attr('id').split('-'); //chapter: 1 scena: 3
 			$("#sequence-"+current_chapter+"-scena-"+current_scena_number+" > a").removeClass("current-scene");
 			
-			pause_audio(id_info[1]); //pause current audio
-			//$("#imgbg-"+current_chapter+"-scena-"+current_scena_number).hide("slow"); //hides background image			
+			$("#audio-"+current_chapter+"-scena-"+current_scena_number).prop("currentTime",0);
+									
+			pause_audio(current_chapter); //pause current audio					
 			
 			current_scena_number = id_info[3];//sets current scena to the cliked one
-			
-			$(".background-section > img").hide();
-			$("#imgbg-"+current_chapter+"-scena-"+current_scena_number).show();//shows new background image
-			autoplay_audios(id_info[1]);  //play new audio scena
-			
-			console.log("Jump scena current scena number:"+current_scena_number);		
-				
-			$("#sequence-"+current_chapter+"-scena-"+current_scena_number+" > a").addClass("current-scene");
 			current_image_counter = 1;
+			$("#audio-"+id_info[1]+"-scena-"+current_scena_number).prop("currentTime",0);
+			
+			text_current_line = eval("textini_"+current_chapter+"["+(current_scena_number-1)+"];");
+			
+			console.log("Jump scena current scena number:"+current_scena_number+" text line: "+text_current_line);
+			
+			//pause_audio(current_chapter); //pause current audio			
+			autoplay_audios(id_info[1]);  //play new audio scena							
+				
+			$("#sequence-"+current_chapter+"-scena-"+current_scena_number+" > a").addClass("current-scene");		
+						
 		}
 		
 	});
@@ -336,7 +319,8 @@ $(document).ready(function(){
 			text_current_line++;
 		}
 		pausePhrases = false;
-		writesentences(id_info[1]); //translated text
+		delayCounter = 1;
+		writesentences(id_info[1], pausePhrases); //translated text		
 		$("#pauseAudio-"+id_info[1]).show();
 		$(this).hide();	
 	});	
@@ -351,12 +335,16 @@ $(document).ready(function(){
 	function pause_audio(capitulo){
 		eval("vid_"+capitulo+"_scena_"+current_scena_number).pause();
 		
+		//---------- stop write text threat
 		pausePhrases = true; //pause translated text
 		console.log("PAUSE: "+text_current_line);		
-		
 		//clear all text runing
-		for(j=1; j<=current_chapter_total_lines; j++){ clearTimeout(timer[j]); }
+		var total_timer_lines = timer.length;
+		for(j=0; j<=total_timer_lines; j++){ clearTimeout(timer[j]);  }
+		//clearTimeout(timer);
 		delayCounter = 1;
+		//---------- end - stop write text threat
+		
 		text_current_line++;
 		
 		$("#playAudio-"+capitulo).show();
@@ -370,20 +358,21 @@ $(document).ready(function(){
 		
 		eval("vid_"+capitulo+"_scena_"+current_scena_number).load();
 		eval("vid_"+capitulo+"_scena_"+current_scena_number).play();
-		$("#txt_"+capitulo).html(text_current_chapter[0]);
+		$("#txt_"+capitulo).html(text_current_chapter[text_current_line]);
 		
-		text_current_line++;
+		//text_current_line++;
 		pausePhrases = false;
-		writesentences(capitulo);	//translated text //if(eval(current_scena_number+"==total_scenas_"+capitulo)) 
+		delayCounter = 1;
+		writesentences(capitulo, pausePhrases);	//translated text //if(eval(current_scena_number+"==total_scenas_"+capitulo)) 
 		console.log("autoplay: text line: "+text_current_line);
 		
 		$("#playAudio-"+capitulo).hide();
 		$("#pauseAudio-"+capitulo).show();
 		
 		stop_last_image = false;//allows move images again 
-		$(last_image_displayed).hide(); //hide the last image of the previous scena
-		$("#imgbg-"+current_chapter+"-scena-"+current_scena_number+"-1").show();//shows first bg image fot this audio
-		
+		$(".background-section > img").hide();
+		//$(last_image_displayed).hide(); //hide the last image of the previous scena
+		$("#imgbg-"+current_chapter+"-scena-"+current_scena_number+"-1").show();//shows first bg image fot this audio		
 						
 		console.log("play next audio: "+stop_last_image);
 				
@@ -392,7 +381,8 @@ $(document).ready(function(){
 	function let_audios_text_begins(){
 		vid_capitulo01_scena_1.pause();vid_capitulo01_scena_2.pause();vid_capitulo01_scena_3.pause();vid_capitulo01_scena_4.pause();
 		vid_capitulo02_scena_1.pause();vid_capitulo03_scena_1.pause();//vid_capitulo04.pause();vid_capitulo05.pause();vid_capitulo06.pause();		
-		for(j=1; j<=current_chapter_total_lines; j++){ clearTimeout(timer[j]); }
+		var total_timer_lines = timer.length;
+		for(j=0; j<=total_timer_lines; j++){ clearTimeout(timer[j]); }		
 		pausePhrases = false;
 		current_chapter_total_lines = 0;
 		text_current_line = 0;
@@ -406,21 +396,23 @@ $(document).ready(function(){
 
 //********** texts
 	//write texts acording the chapter
-	async function writesentences(capitulo){		
+	
+	async function writesentences(capitulo, pause){		
 		for(i=text_current_line; i<=current_chapter_total_lines; i++, delayCounter++){
 			 (function (i, delayCounter) {
 			    timer[i] = setTimeout(function () {
-			    	if(!pausePhrases){
+			    	if(!pause){
 				      	$('#txt_'+capitulo).removeData();
 						$("#txt_"+capitulo).html(text_current_chapter[i]);
 						//$(".txt_sc1").textillate('start');
-						text_current_line = i;
-						console.log(capitulo + " THIS IS: "+text_current_line+' : '+i+" -- "+delayCounter);
-					}
-			    }, 6000*delayCounter);
-			  })(i, delayCounter);			  
+						text_current_line = i;						
+						console.log(capitulo + " THIS IS: "+text_current_line+" -- "+delayCounter);
+					}			
+			    }, 5000*delayCounter);			    
+			  })(i, delayCounter);			  			 
 		}
 	}
+	
 
 //********** end - texts	
 	var text_capitulo01 = new Array();
@@ -436,7 +428,7 @@ $(document).ready(function(){
 	text_capitulo01[9]="if she’s lucky she’ll see her dad too -if he gets released from jail- Innocence and hope push her to keep going.";    
     text_capitulo01[10]="Tic tac, tic tac... She was three years old when they left San Pedro Sula."; 
     text_capitulo01[11]="She can’t remember their voices or laughter, but she doesn’t mind that. There will be plenty of time to recover the time they have lost."; 
-    text_capitulo01[12]="She would hug them first and then tell them about her life, school and girlfriends, Pachito -her best friend-;"; 
+    text_capitulo01[12]="She would hug them first and then tell them about her life, school and girlfriends, Pachito -her best friend-"; 
     text_capitulo01[13]="she would tell them about her quinceañera, her grandparents and their day-to-day struggles,";
 	//ready up to here
 	text_capitulo01[14]="how tough life is in Honduras, her plans of becoming a lawyer, and just how happy she is to see them again.";
@@ -458,24 +450,25 @@ $(document).ready(function(){
 	text_capitulo01[26]="Her heart is a tight knot in her chest and tears swell up in her eyes. ";
 	text_capitulo01[27]="She hesitates for an instance. What if she could stay and study and look after her old folks?";
 	text_capitulo01[27]="They hug each other, don’t want to let go. They’ve been together all her life.";
-	text_capitulo01[28]="She’s all they have left. But they can’t hold her back. Life in La Rivera, their neighbourhood,";
-	text_capitulo01[29]="is increasingly difficult, the fighting and shootouts are getting worse.";
+	text_capitulo01[28]="She’s all they have left. But they can’t hold her back.";
+	text_capitulo01[29]="Life in La Rivera, their neighbourhood, is increasingly difficult, the fighting and shootouts are getting worse.";
 	text_capitulo01[30]="The nights are riddled with bullets and there is blood on the streets,";
 	text_capitulo01[31]="bodies strewn around the floor haunt the residents. Anyone can be the next victim. ";
-	text_capitulo01[32]="Teenage girls definitely are. Amalia is growing, her shape and way of walking are gracious. The mareros need women.";
-	text_capitulo01[33]="She has to leave and reach her destination guided by the angels of the road. Tic tac, tic tac ...";
-	text_capitulo01[34]="She separates tenderly from her grandma. A kiss in the forehead, a caress, -I’ll make sure you come too- she says with a smile.";
-	text_capitulo01[35]="she carries a picture of her family in her pocket, along with an old letter to her father.";
-	text_capitulo01[36]="She turns back and starts walking.";
-	text_capitulo01[37]="Her grandmother makes crosses in the air, she has her blessings against all danger and evil.";
+	text_capitulo01[32]="Teenage girls definitely are.";
+	text_capitulo01[33]="Amalia is growing, her shape and way of walking are gracious. The mareros need women.";
+	text_capitulo01[34]="She has to leave and reach her destination guided by the angels of the road. Tic tac, tic tac ...";
+	text_capitulo01[35]="She separates tenderly from her grandma. A kiss in the forehead, a caress, -I’ll make sure you come too- she says with a smile.";
+	text_capitulo01[36]="she carries a picture of her family in her pocket, along with an old letter to her father.";
+	text_capitulo01[37]="She turns back and starts walking.";
+	text_capitulo01[38]="Her grandmother makes crosses in the air, she has her blessings against all danger and evil.";
 
 	var text_capitulo02 = new Array();
 	text_capitulo02[0]="I met Amalia in Chiapas. When crossing borders, people get together to support each other,"; 
     text_capitulo02[1]="the bigger ones carry the lighter ones, the healthy look after the sick ones and that way we all keep going.";	
     text_capitulo02[2]="In that particular group there were people from far away, who spoke different languages. From Haiti "; 
     text_capitulo02[3]="and Africa, I believe. They came in rafts by the sea, walking through hills and secret paths, ";
-    text_capitulo02[4]="hiding in cargo containers, with little girls and babies. Just like us! ";
-    text_capitulo02[5]="But on a much longer journey. Multicoloured bodies, beautiful and fragile, ";
+    text_capitulo02[4]="hiding in cargo containers, with little girls and babies. Just like us!  But on a much longer journey. ";
+    text_capitulo02[5]="Multicoloured bodies, beautiful and fragile, ";
     text_capitulo02[6]="drinking water and showering in the river. Some Cubans were sharing stories from their journey: ";     
     text_capitulo02[7]="They climbed a massive mountain in the Darién jungle, they crossed a river that overflowed, ";
     text_capitulo02[8]="a woman and two kids didn’t make it to the other side, and there are other bodies scattered around... ";
