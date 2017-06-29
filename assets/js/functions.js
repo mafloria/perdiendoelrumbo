@@ -33,7 +33,7 @@
 	//setup line number for each scena inside the chapter
 	var textini_capitulo01 = [0, 6, 16, 21, 29, 33]; 	
 	var textini_capitulo02 = [0, 5, 9, 17]; 		
-	var textini_capitulo03 = [0, 25, 32, 36, 46, 50, 64]; 	
+	var textini_capitulo03 = [0, 11, 17, 30]; 	
 	
 	var current_scena_number = 1;
 	var current_chapter = "capitulo01";
@@ -53,23 +53,21 @@
 	
 /* function needed to load before html end loading */
 function set_current_audio_time(event){
-		current_audio_tracktime = event.currentTime;		
+		current_audio_tracktime = event.currentTime;
+		console.log(" image counter:"+current_image_counter);				
 		if(eval(current_image_counter+" < totalimg_"+current_chapter+"_scena_"+current_scena_number) && !stop_last_image){
 			//console.log(eval("timeimg_"+current_chapter+"_scena_"+current_scena_number+"["+(current_image_counter-1)+"]")+"<"+current_audio_tracktime);
-			if(eval("timeimg_"+current_chapter+"_scena_"+current_scena_number+"["+(current_image_counter-1)+"]<current_audio_tracktime")){
-				
-				$(".background-section > img").hide();
-				$(last_image_displayed).hide();
-				current_image_counter++;	
+			if(eval("timeimg_"+current_chapter+"_scena_"+current_scena_number+"["+(current_image_counter-1)+"]<current_audio_tracktime")){				
+				$(".background-section > img").hide();				
+				current_image_counter++;
 				$("#imgbg-"+current_chapter+"-scena-"+current_scena_number+"-"+current_image_counter).show();//shows new background image
-				//console.log("#imgbg-"+current_chapter+"-scena-"+current_scena_number+"-"+current_image_counter + "---"+current_audio_tracktime );
+				console.log("#imgbg-"+current_chapter+"-scena-"+current_scena_number+"-"+current_image_counter + "---"+current_audio_tracktime );
 			}
 		}else{
 			if(stop_last_image==false){ last_image_displayed = "#imgbg-"+current_chapter+"-scena-"+current_scena_number+"-"+current_image_counter; }
 			
 			stop_last_image = true;
-			current_image_counter = 1;			 
-			//console.log(" ELSE:"+current_image_counter+" last Iamge:"+last_image_displayed);
+			current_image_counter = 1;			
 		}
 		
 	}
@@ -152,17 +150,19 @@ $(document).ready(function(){
 		    if(this.hash.slice(1)=="introduccion") {
 		    	if(progress_bar>=100){ $(".intro-chapter-menu").show(); $(".intro-chapter-startbtn").hide(); }
 		    	else{ $(".intro-chapter-menu").hide(); $(".intro-chapter-startbtn").show(); }
-		    	$(".main-header > h1").hide();
+		    	$(".main-header > h1").hide();//hide image page title
+		    	$(".chapter-title").hide(); //hide chpaters title
+		    	$("#nav-menu").show();//show main menu
 				$("#imgbg-introduccion").show();
 		    }else{
 		    	current_chapter = this.hash.slice(1);
 		    	autoplay_audios(this.hash.slice(1));
-		    	$(".main-header > h1").show();		    	
-		    	//$(".background-section > img").hide();
-		    	//$("#imgbg-"+current_chapter+"-scena-1-1").show();//shows new background image
-		    	
+		    	$(".main-header > h1").show();//page title
+		    	$("#nav-menu").hide();//hide main menu
+		    	$(".chapter-title").show();//show chapter title section
+		    	$(".chapter-title > h3 > span").hide(); //hide chapter titles
+		    	$("#title-"+current_chapter).show(); //show only current chapter title		    	
 		    }
-		    //if(this.hash.slice(1)=="capitulo03") {InfiniteRotator.init(); }
 		    
 		    $("#sequence-"+current_chapter+"-scena-1 a").addClass("current-scene");		    		    		    		      
 
@@ -175,44 +175,12 @@ $(document).ready(function(){
 //********** actions
 	$("#ben-main-menu").click(function(){
 		$(".submenu").toggle('slow');
-	});	
-	
-	/*
-	//capt 3 y 4 images rotating
-	//images rotation
-    var InfiniteRotator = {
-        init: function() {
-            //initial fade-in time (in milliseconds)
-            var initialFadeIn = 2000;
-            //interval between items (in milliseconds)
-            var itemInterval = 10000;
-            //cross-fade time (in milliseconds)
-            var fadeTime = 2000;
-            //count number of items
-            var numberOfItems = $('.capitulo03-rotating-item').length;
-            //set current item
-            var currentItem = 0;
- 
-            //show first item
-            $('.capitulo03-rotating-item').eq(currentItem).fadeIn(initialFadeIn);
- 
-            //loop through the items
-            var infiniteLoop = setInterval(function(){
-                $('.capitulo03-rotating-item').eq(currentItem).fadeOut(0);
-                 
-				currentItem++;
-                 
-                $('.capitulo03-rotating-item').eq(currentItem).fadeIn(fadeTime);
-                if(currentItem==3) clearInterval(infiniteLoop);
- 
-            }, itemInterval);
-        }
-    };*/	
+	});			
 	
 //********** end - actions
 
 //********** audios
-
+	//listen each audio to check if it is finihed
 	vid_capitulo01_scena_1.onended = function() { audio_ended_action(); };
 	vid_capitulo01_scena_2.onended = function() { audio_ended_action(); };
 	vid_capitulo01_scena_3.onended = function() { audio_ended_action(); };
@@ -281,27 +249,24 @@ $(document).ready(function(){
 			var total_timer_lines = timer.length;
 			for(j=0; j<=total_timer_lines; j++){ clearTimeout(timer[j]); }
 			pausePhrases = false;
-			current_chapter_total_lines = 0;
-			//text_current_line = 0;
-			delayCounter = 1;
-			//current_scena_number = 1;
+			current_chapter_total_lines = 0;			
+			delayCounter = 1;			
 				
 			var id_info = $(this).parent(0).attr('id').split('-'); //chapter: 1 scena: 3
 			$("#sequence-"+current_chapter+"-scena-"+current_scena_number+" > a").removeClass("current-scene");
 			
-			$("#audio-"+current_chapter+"-scena-"+current_scena_number).prop("currentTime",0);
+			$("#audio-"+current_chapter+"-scena-"+current_scena_number).prop("currentTime",0);//sets the current scena at the begining
 									
 			pause_audio(current_chapter); //pause current audio					
 			
 			current_scena_number = id_info[3];//sets current scena to the cliked one
 			current_image_counter = 1;
-			$("#audio-"+id_info[1]+"-scena-"+current_scena_number).prop("currentTime",0);
+			$("#audio-"+id_info[1]+"-scena-"+current_scena_number).prop("currentTime",0);//sets the new scena at the begining
 			
 			text_current_line = eval("textini_"+current_chapter+"["+(current_scena_number-1)+"];");
 			
-			console.log("Jump scena current scena number:"+current_scena_number+" text line: "+text_current_line);
-			
-			//pause_audio(current_chapter); //pause current audio			
+			//console.log("Jump scena current scena number:"+current_scena_number+" text line: "+text_current_line);
+								
 			autoplay_audios(id_info[1]);  //play new audio scena							
 				
 			$("#sequence-"+current_chapter+"-scena-"+current_scena_number+" > a").addClass("current-scene");		
@@ -364,31 +329,32 @@ $(document).ready(function(){
 		pausePhrases = false;
 		delayCounter = 1;
 		writesentences(capitulo, pausePhrases);	//translated text //if(eval(current_scena_number+"==total_scenas_"+capitulo)) 
-		console.log("autoplay: text line: "+text_current_line);
+		//console.log("autoplay: text line: "+text_current_line);
 		
 		$("#playAudio-"+capitulo).hide();
 		$("#pauseAudio-"+capitulo).show();
 		
 		stop_last_image = false;//allows move images again 
-		$(".background-section > img").hide();
-		//$(last_image_displayed).hide(); //hide the last image of the previous scena
+		$(".background-section > img").hide();		
 		$("#imgbg-"+current_chapter+"-scena-"+current_scena_number+"-1").show();//shows first bg image fot this audio		
 						
-		console.log("play next audio: "+stop_last_image);
+		console.log("play next audio: "+capitulo + "scena: "+current_scena_number);
 				
 	}
 	//when back or forward restart audios and texts
 	function let_audios_text_begins(){
-		vid_capitulo01_scena_1.pause();vid_capitulo01_scena_2.pause();vid_capitulo01_scena_3.pause();vid_capitulo01_scena_4.pause();
-		vid_capitulo02_scena_1.pause();vid_capitulo03_scena_1.pause();//vid_capitulo04.pause();vid_capitulo05.pause();vid_capitulo06.pause();		
+		vid_capitulo01_scena_1.pause();vid_capitulo01_scena_2.pause();vid_capitulo01_scena_3.pause();vid_capitulo01_scena_4.pause();vid_capitulo01_scena_5.pause();vid_capitulo01_scena_6.pause();
+		vid_capitulo02_scena_1.pause();vid_capitulo02_scena_2.pause();vid_capitulo02_scena_3.pause();vid_capitulo02_scena_4.pause();
+		vid_capitulo03_scena_1.pause();vid_capitulo03_scena_2.pause();vid_capitulo03_scena_3.pause();vid_capitulo03_scena_4.pause();
+		//vid_capitulo04.pause();vid_capitulo05.pause();vid_capitulo06.pause();		
 		var total_timer_lines = timer.length;
 		for(j=0; j<=total_timer_lines; j++){ clearTimeout(timer[j]); }		
 		pausePhrases = false;
 		current_chapter_total_lines = 0;
 		text_current_line = 0;
 		delayCounter = 1;
-		current_scena_number = 1;
-		
+		current_scena_number = 1;		
+		current_image_counter = 1;
 	} 
 		
 	
@@ -406,9 +372,9 @@ $(document).ready(function(){
 						$("#txt_"+capitulo).html(text_current_chapter[i]);
 						//$(".txt_sc1").textillate('start');
 						text_current_line = i;						
-						console.log(capitulo + " THIS IS: "+text_current_line+" -- "+delayCounter);
+						//console.log(capitulo + " THIS IS: "+text_current_line+" -- "+delayCounter);
 					}			
-			    }, 5000*delayCounter);			    
+			    }, 5500*delayCounter);			    
 			  })(i, delayCounter);			  			 
 		}
 	}
@@ -429,8 +395,7 @@ $(document).ready(function(){
     text_capitulo01[10]="Tic tac, tic tac... She was three years old when they left San Pedro Sula."; 
     text_capitulo01[11]="She can’t remember their voices or laughter, but she doesn’t mind that. There will be plenty of time to recover the time they have lost."; 
     text_capitulo01[12]="She would hug them first and then tell them about her life, school and girlfriends, Pachito -her best friend-"; 
-    text_capitulo01[13]="she would tell them about her quinceañera, her grandparents and their day-to-day struggles,";
-	//ready up to here
+    text_capitulo01[13]="she would tell them about her quinceañera, her grandparents and their day-to-day struggles,";	
 	text_capitulo01[14]="how tough life is in Honduras, her plans of becoming a lawyer, and just how happy she is to see them again.";
 	text_capitulo01[15]="Happiness!";
 	text_capitulo01[16]="How long is forever? She heard somewhere it can be just a second, and now she gets it."; 
