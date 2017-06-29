@@ -232,6 +232,9 @@ $(document).ready(function(){
 	   		$("#sequence-"+current_chapter+"-scena-"+current_scena_number+" > a").addClass("current-scene");
 	   		
 	  }else{
+	  	
+	  	$("#nav-next-"+current_chapter+"-active").trigger("click");
+	  	
 	  	$("#imgbg-"+current_chapter+"-scena-0").show();	//shows scena after all images passed
 	  	
 	  	$("#nav-next-"+current_chapter+"-inactive").hide();
