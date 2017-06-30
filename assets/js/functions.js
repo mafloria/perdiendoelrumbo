@@ -43,6 +43,8 @@
 	var textini_capitulo02 = [0, 5, 9, 17]; 		
 	var textini_capitulo03 = [0, 11, 17, 30];
 	var textini_capitulo04 = [0, 6, 7, 16, 27, 37];	 	
+	var textini_capitulo05 = [0];
+	var textini_capitulo06 = [0];
 	
 	var current_scena_number = 1;
 	var current_chapter = "capitulo01";
@@ -348,6 +350,7 @@ $(document).ready(function(){
 		vid_capitulo01_scena_1.pause();vid_capitulo01_scena_2.pause();vid_capitulo01_scena_3.pause();vid_capitulo01_scena_4.pause();vid_capitulo01_scena_5.pause();vid_capitulo01_scena_6.pause();
 		vid_capitulo02_scena_1.pause();vid_capitulo02_scena_2.pause();vid_capitulo02_scena_3.pause();vid_capitulo02_scena_4.pause();
 		vid_capitulo03_scena_1.pause();vid_capitulo03_scena_2.pause();vid_capitulo03_scena_3.pause();vid_capitulo03_scena_4.pause();
+		vid_capitulo04_scena_1.pause();vid_capitulo04_scena_2.pause();vid_capitulo04_scena_3.pause();vid_capitulo04_scena_4.pause();vid_capitulo04_scena_5.pause();vid_capitulo04_scena_6.pause();
 		//vid_capitulo04.pause();vid_capitulo05.pause();vid_capitulo06.pause();		
 		var total_timer_lines = timer.length;
 		for(j=0; j<=total_timer_lines; j++){ clearTimeout(timer[j]); }		
