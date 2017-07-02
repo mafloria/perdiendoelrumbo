@@ -149,19 +149,20 @@ a.nav-next svg{
 .main-title{
 	width: auto;
 	float: left;
-	background-color: white;
-    padding: 10px;
-    border-bottom: 4px solid black;  
-    border-right: 4px solid black;
-    border-bottom-right-radius: 5px;	
+		
 }
 .main-header h1{
-	width: 30%;
+	width: 15%;
 	float: left;
 	margin: 0;
     padding: 0;
     line-height: 0;
     display: block;
+    background-color: white;
+    padding: 10px;
+    border-bottom: 4px solid black;  
+    border-right: 4px solid black;
+    border-bottom-right-radius: 5px;
     
 }
 .main-header h1 a{
@@ -174,10 +175,15 @@ a.nav-next svg{
 	margin-left: 1em;
 }
 .chapter-title{
-	float: left;
+	float: right;
+	background-color: white;
+    padding: 10px;
+    border-bottom: 4px solid black;  
+    border-left: 4px solid black;
+    border-bottom-left-radius: 5px;
 }
 .chapter-title h3{
-	margin: 0 0 0 1em;
+	margin: 0 1em 0 0;
 }
 .nav-chap-us{
 
