@@ -77,6 +77,8 @@ function set_current_audio_time(event){
 		}else{
 			if(stop_last_image==false){ last_image_displayed = "#imgbg-"+current_chapter+"-scena-"+current_scena_number+"-"+current_image_counter; }
 			
+			$("#imgbg-"+current_chapter+"-scena-"+current_scena_number+"-"+current_image_counter).show();//shows new background image
+			
 			stop_last_image = true;
 			current_image_counter = 1;			
 		}
@@ -154,7 +156,7 @@ $(document).ready(function(){
 	      if (target.length) {
 	        $('html, body').animate({		          		         
 	          scrollLeft: target.offset().left
-            }, 1000);
+            }, 5);//1000
         	
         	let_audios_text_begins(); //restart audios and text if the user returns start all again
         	
