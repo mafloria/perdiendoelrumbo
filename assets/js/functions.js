@@ -75,9 +75,7 @@ function set_current_audio_time(event){
 				console.log("#imgbg-"+current_chapter+"-scena-"+current_scena_number+"-"+current_image_counter + "---"+current_audio_tracktime );
 			}
 		}else{
-			if(stop_last_image==false){ last_image_displayed = "#imgbg-"+current_chapter+"-scena-"+current_scena_number+"-"+current_image_counter; }
-			
-			$("#imgbg-"+current_chapter+"-scena-"+current_scena_number+"-"+current_image_counter).show();//shows new background image
+			if(stop_last_image==false){ last_image_displayed = "#imgbg-"+current_chapter+"-scena-"+current_scena_number+"-"+current_image_counter; }						
 			
 			stop_last_image = true;
 			current_image_counter = 1;			
@@ -233,14 +231,14 @@ $(document).ready(function(){
 	   			   
 	   		$("#sequence-"+current_chapter+"-scena-"+current_scena_number+" > a").addClass("current-scene");
 	   		
-	  }else{
-	  	
-	  	$("#nav-next-"+current_chapter+"-active").trigger("click");
+	  }else{	  		  	
 	  	
 	  	$("#imgbg-"+current_chapter+"-scena-0").show();	//shows scena after all images passed
 	  	
 	  	$("#nav-next-"+current_chapter+"-inactive").hide();
-	  	$("#nav-next-"+current_chapter+"-active").show();	  	
+	  	$("#nav-next-"+current_chapter+"-active").show();
+	  	
+	  	$("#nav-next-"+current_chapter+"-active").trigger("click");	  	
 	  }
 	  
 	}
@@ -539,8 +537,8 @@ $(document).ready(function(){
     text_capitulo04[22]="Between the deafening echo of the wind, the unbearable cold and the crack crack around us, I feel desperate.";
     text_capitulo04[23]="My teeth are clattering loudly. I’m shaking, out of control. I want to scream at him, make him realise how irresponsible he is!";
     text_capitulo04[24]="Our lives are in his hands and he seems not to care, actually he doesn’t care at all!";
-    text_capitulo04[25]="My eyes avoided him since the beginning and now beg to find his. I’m crying!";
-    text_capitulo04[26]="Even though I’m afraid of him, knowing he’s here to guide us through the desert makes me feel safer. Crack! Crack! ";
+    text_capitulo04[25]="My eyes avoided him since the beginning and now beg to find his. I’m crying! Even though I’m afraid of him, ";
+    text_capitulo04[26]="knowing he’s here to guide us through the desert makes me feel safer. Crack! Crack! ";
     //scena 5
     text_capitulo04[27]="What is it now? Multiple ideas overloading my head, similar to what I experienced when we started getting blackmailed at my mom’s restaurant. ";
     text_capitulo04[28]="That’s when my family’s ordeal began. Week after week for over two years, paying to stay alive. ";
