@@ -567,5 +567,10 @@ $(document).ready(function(){
     var text_capitulo06 = new Array();
 	text_capitulo06[0]="C6 Tic tac, tic tac..."; 
     text_capitulo06[1]="C6 Amalia was never afraid, or so I thought every time I saw her, strong and confindent. Tic tac, tic tac...";
-    
+   
+   //waits 5 seconds after all is available to show story
+   	setTimeout(function() {
+    	$("#cargando-historia").hide();
+    	$(".wrapper").show();
+  	}, 5000);		 
 });

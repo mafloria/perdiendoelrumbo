@@ -35,9 +35,16 @@
 <body>
 
 <div w3-include-html="svg/buscandoelnorte.html">&nbsp;</div> 
-
-	<div id="overlay"></div>
-    <div class="wrapper">
+	<div id="cargando-historia" class="section-site overlay">
+    		<img src="images/cargando-img.png" width="472px" height="371px">
+    		<p id="cargando-texto-animado" data-text="Cargando historia ...">Cargando historia ...</p>
+    		<style> #cargando-texto-animado {position: relative;color: rgba(216, 212, 217, .3);font-size: 2em} 
+    				#cargando-texto-animado:before {content: attr(data-text);position: absolute;overflow: hidden;max-width: 10em;white-space: nowrap;color: #fff;animation: loading 6s linear;}	
+					@keyframes loading {from { max-width: 0; }}			
+    		</style>
+    		
+   	</div>
+    <div class="wrapper" style="display:none">
         <header class="main-header">
             <h1>
                 <a href="#introduccion">
@@ -76,7 +83,6 @@
         </header><!-- end headerr -->
 
         <div id="content-section">
-            
             <section id="introduccion" class="section-site cpt00">                
                 <a class="nav-next" href="#capitulo01"><svg><use xlink:href="#nav"/></svg></a>
 
