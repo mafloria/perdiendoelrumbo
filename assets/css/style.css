@@ -10,8 +10,6 @@ input:-moz-placeholder { color:#a9a9a9; }
 textarea:-moz-placeholder { color:#a9a9a9; }
 blockquote {padding: 16px; background: #eee;}
 
-
-
 /*
 	BUSCANDO EL NORTE CSS
 */
@@ -25,10 +23,10 @@ body{
 	background-color: black !important;
 	margin: 0;
 	padding: 0;
-	width: 100%;
+	width: 33102px;
 	height: 100%;
 	position: relative;
-	vertical-align: middle;
+	vertical-align: middle;	
 }
 p, a, h1, h2, h3, h4, h5{
 	font-family: 'Magra', sans-serif;
@@ -58,6 +56,20 @@ a.blackBtn:hover{
 	color: white;
 	background-color: #ab6501;
 }
+/*sets horizontal scroll*/
+::-webkit-scrollbar {
+    width: 0px;  /* remove scrollbar space */
+    background: transparent;  /* optional: just make scrollbar invisible */
+}
+/* optional: show position indicator in red */
+::-webkit-scrollbar-thumb {
+    background: #FF0000;
+}
+/* loading section */
+#cargando-texto-animado {position: relative;color: rgba(216, 212, 217, .3);font-size: 2em} 
+#cargando-texto-animado:before {content: attr(data-text);position: absolute;overflow: hidden;max-width: 10em;white-space: nowrap;color: #fff;animation: loading 6s linear;}	
+@keyframes loading {from { max-width: 0; }}
+/* end - loading section */
 .wrapper{
     width: 100%;
 	height: 100%;

@@ -36,13 +36,8 @@
 
 <div w3-include-html="svg/buscandoelnorte.html">&nbsp;</div> 
 	<div id="cargando-historia" class="section-site overlay">
-    		<img src="images/cargando-img.png" width="472px" height="371px">
-    		<p id="cargando-texto-animado" data-text="Cargando historia ...">Cargando historia ...</p>
-    		<style> #cargando-texto-animado {position: relative;color: rgba(216, 212, 217, .3);font-size: 2em} 
-    				#cargando-texto-animado:before {content: attr(data-text);position: absolute;overflow: hidden;max-width: 10em;white-space: nowrap;color: #fff;animation: loading 6s linear;}	
-					@keyframes loading {from { max-width: 0; }}			
-    		</style>
-    		
+    	<img src="images/cargando-img.png" width="472px" height="371px">
+    	<p id="cargando-texto-animado" data-text="Cargando historia ...">Cargando historia ...</p>    		    		
    	</div>
     <div class="wrapper" style="display:none">
         <header class="main-header">
@@ -477,19 +472,4 @@
 <!-- for buscando el norte management -->
 <script src="assets/js/functions.js"></script>
     
-<style>
-    body { width: 33102px;}
-    html {
-    /*overflow: scroll;
-    overflow-x: hidden;*/
-}
-::-webkit-scrollbar {
-    width: 0px;  /* remove scrollbar space */
-    background: transparent;  /* optional: just make scrollbar invisible */
-}
-/* optional: show position indicator in red */
-::-webkit-scrollbar-thumb {
-    background: #FF0000;
-}
-</style>    
 </html>
