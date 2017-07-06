@@ -154,7 +154,7 @@ $(document).ready(function(){
 	      if (target.length) {
 	        $('html, body').animate({		          		         
 	          scrollLeft: target.offset().left
-            }, 700);//1000
+            }, 1000);//1000
         	
         	let_audios_text_begins(); //restart audios and text if the user returns start all again
         	
