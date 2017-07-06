@@ -66,7 +66,13 @@ a.blackBtn:hover{
     background: #FF0000;
 }
 /* loading section */
-#cargando-texto-animado {position: relative;color: rgba(216, 212, 217, .3);font-size: 2em} 
+.loadH-content{
+	width: 15%;
+	margin: 10% auto;
+}
+#cargando-historia img{
+}
+#cargando-texto-animado {position: relative;color: rgba(216, 212, 217, .3);font-size: 1.4em; width: 100%; text-align: right; right: 0;} 
 #cargando-texto-animado:before {content: attr(data-text);position: absolute;overflow: hidden;max-width: 10em;white-space: nowrap;color: #fff;animation: loading 6s linear;}	
 @keyframes loading {from { max-width: 0; }}
 /* end - loading section */
