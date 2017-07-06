@@ -136,6 +136,10 @@ $(document).ready(function(){
 	function setHeight() {
 		windowHeight = $(window).innerHeight();
 		windowWidth = $(window).innerWidth();
+		
+		$("#cargando-historia").css('height', windowHeight);
+		$("#cargando-historia").css('width', windowWidth);
+		
 		//general containers
 		$('#content-section').css('height', windowHeight);
 		$('#content-section .section-site').css('height', windowHeight);		
