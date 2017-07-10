@@ -27,7 +27,7 @@
 	
 	var timeimg_capitulo03_scena_1 = [11, 25, 32, 36, 46, 50, 64]; 
 	var timeimg_capitulo03_scena_2 = [12, 31, 35];
-	var timeimg_capitulo03_scena_3 = [13, 30, 42, 46 50, 53, 56, 59, 62, 65, 67, 82];
+	var timeimg_capitulo03_scena_3 = [13, 30, 42, 46, 50, 53, 56, 59, 62, 65, 67, 82];
 	var timeimg_capitulo03_scena_4 = [22, 34, 36, 53];
 	
 	var timeimg_capitulo04_scena_1 = [10, 22, 29, 32, 36, 41]; 
