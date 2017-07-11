@@ -32,7 +32,7 @@
 	
 	var timeimg_capitulo04_scena_1 = [10, 22, 29, 32, 36, 41]; 
 	var timeimg_capitulo04_scena_2 = [2, 4, 5, 6, 11];
-	var timeimg_capitulo04_scena_3 = [17, 20, 27, 28, 29, 33, 54];
+	var timeimg_capitulo04_scena_3 = [17, 20, 25, 27, 28, 33, 54];
 	var timeimg_capitulo04_scena_4 = [11, 30, 44, 63];
 	var timeimg_capitulo04_scena_5 = [25, 29, 30, 46, 49, 59, 66];
 	var timeimg_capitulo04_scena_6 = [45];
