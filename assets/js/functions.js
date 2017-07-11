@@ -65,14 +65,14 @@
 /* function needed to load before html end loading */
 function set_current_audio_time(event){
 		current_audio_tracktime = event.currentTime;
-		console.log(" image counter:"+current_image_counter);				
+		//console.log(" image counter:"+current_image_counter);				
 		if(eval(current_image_counter+" < totalimg_"+current_chapter+"_scena_"+current_scena_number) && !stop_last_image){
 			//console.log(eval("timeimg_"+current_chapter+"_scena_"+current_scena_number+"["+(current_image_counter-1)+"]")+"<"+current_audio_tracktime);
 			if(eval("timeimg_"+current_chapter+"_scena_"+current_scena_number+"["+(current_image_counter-1)+"]<current_audio_tracktime")){				
 				$(".background-section > img").hide();				
 				current_image_counter++;
 				$("#imgbg-"+current_chapter+"-scena-"+current_scena_number+"-"+current_image_counter).show();//shows new background image
-				console.log("#imgbg-"+current_chapter+"-scena-"+current_scena_number+"-"+current_image_counter + "---"+current_audio_tracktime );
+				//console.log("#imgbg-"+current_chapter+"-scena-"+current_scena_number+"-"+current_image_counter + "---"+current_audio_tracktime );
 			}
 		}else{
 			if(stop_last_image==false){ last_image_displayed = "#imgbg-"+current_chapter+"-scena-"+current_scena_number+"-"+current_image_counter; }						
@@ -309,7 +309,7 @@ $(document).ready(function(){
 		
 		//---------- stop write text threat
 		pausePhrases = true; //pause translated text
-		console.log("PAUSE: "+text_current_line);		
+		//console.log("PAUSE: "+text_current_line);		
 		//clear all text runing
 		var total_timer_lines = timer.length;
 		for(j=0; j<=total_timer_lines; j++){ clearTimeout(timer[j]);  }
@@ -346,8 +346,7 @@ $(document).ready(function(){
 		$(".background-section > img").hide();		
 		$("#imgbg-"+current_chapter+"-scena-"+current_scena_number+"-1").show();//shows first bg image fot this audio		
 						
-		console.log("play next audio: "+capitulo + "scena: "+current_scena_number);
-				
+		//console.log("play next audio: "+capitulo + "scena: "+current_scena_number);			
 	}
 	//when back or forward restart audios and texts
 	function let_audios_text_begins(){
@@ -372,7 +371,7 @@ $(document).ready(function(){
 //********** texts
 	//write texts acording the chapter
 	
-	async function writesentences(capitulo, pause){		
+	function writesentences(capitulo, pause){//async		
 		for(i=text_current_line; i<=current_chapter_total_lines; i++, delayCounter++){
 			 (function (i, delayCounter) {
 			    timer[i] = setTimeout(function () {
@@ -381,7 +380,7 @@ $(document).ready(function(){
 						$("#txt_"+capitulo).html(text_current_chapter[i]);
 						//$(".txt_sc1").textillate('start');
 						text_current_line = i;						
-						console.log(capitulo + " THIS IS: "+text_current_line+" -- "+delayCounter);
+						//console.log(capitulo + " THIS IS: "+text_current_line+" -- "+delayCounter);
 					}			
 			    }, 5500*delayCounter);			    
 			  })(i, delayCounter);			  			 
@@ -576,5 +575,5 @@ $(document).ready(function(){
    	setTimeout(function() {
     	$("#cargando-historia").hide();
     	$(".wrapper").show();
-  	}, 5000);		 
+  	}, 10000);		 
 });
