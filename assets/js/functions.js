@@ -10,7 +10,7 @@
 	var totalimg_capitulo01_scena_1 = 4; var totalimg_capitulo01_scena_2 = 10; var totalimg_capitulo01_scena_3 = 2; var totalimg_capitulo01_scena_4 = 4; var totalimg_capitulo01_scena_5 = 3; var totalimg_capitulo01_scena_6 = 2;
 	var totalimg_capitulo02_scena_1 = 4; var totalimg_capitulo02_scena_2 = 4; var totalimg_capitulo02_scena_3 = 5; var totalimg_capitulo02_scena_4 = 8;
 	var totalimg_capitulo03_scena_1 = 7; var totalimg_capitulo03_scena_2 = 3; var totalimg_capitulo03_scena_3 = 12; var totalimg_capitulo03_scena_4 = 4;
-	var totalimg_capitulo04_scena_1 = 6; var totalimg_capitulo04_scena_2 = 5; var totalimg_capitulo04_scena_3 = 7; var totalimg_capitulo04_scena_4 = 4;var totalimg_capitulo04_scena_5 = 7;var totalimg_capitulo04_scena_6 = 1;
+	var totalimg_capitulo04_scena_1 = 6; var totalimg_capitulo04_scena_2 = 5; var totalimg_capitulo04_scena_3 = 7; var totalimg_capitulo04_scena_4 = 6;var totalimg_capitulo04_scena_5 = 8;var totalimg_capitulo04_scena_6 = 1;
 	
 	//setup time when the image is displayed
 	var timeimg_capitulo01_scena_1 = [10, 16, 25, 27]; 
@@ -33,8 +33,8 @@
 	var timeimg_capitulo04_scena_1 = [10, 22, 29, 32, 36, 41]; 
 	var timeimg_capitulo04_scena_2 = [2, 4, 5, 6, 11];
 	var timeimg_capitulo04_scena_3 = [17, 20, 25, 27, 28, 33, 54];
-	var timeimg_capitulo04_scena_4 = [11, 30, 44, 63];
-	var timeimg_capitulo04_scena_5 = [25, 29, 30, 46, 49, 59, 66];
+	var timeimg_capitulo04_scena_4 = [11, 30, 39, 44, 57, 63];
+	var timeimg_capitulo04_scena_5 = [9, 25, 29, 31, 46, 49, 58, 66];
 	var timeimg_capitulo04_scena_6 = [45];
 	
 	
