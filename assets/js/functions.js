@@ -151,12 +151,8 @@ $(document).ready(function(){
 	    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
 	      var target = $(this.hash);		      
 	      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-	      if (target.length) {
-	        $('html, body').animate({		          		         
-	          scrollLeft: target.offset().left
-            }, 5);//1000
-        	
-        	let_audios_text_begins(); //restart audios and text if the user returns start all again
+	     
+	     let_audios_text_begins(); //restart audios and text if the user returns start all again
         	
 		    if(this.hash.slice(1)=="introduccion") {
 		    	if(progress_bar>=100){ $(".intro-chapter-menu").show(); $(".intro-chapter-startbtn").hide(); }
@@ -177,6 +173,13 @@ $(document).ready(function(){
 		    
 		    $("#sequence-"+current_chapter+"-scena-1 a").addClass("current-scene");		    		    		    		      
 
+	     
+	      if (target.length) {
+	        $('html, body').animate({		          		         
+	          scrollLeft: target.offset().left
+            }, 1000);//1000
+        	
+        	
 		    return false;
 		  }//end if target length
 		}//end if location
