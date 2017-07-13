@@ -573,13 +573,12 @@ $(document).ready(function(){
     
     
     var text_capitulo05 = new Array();
-	text_capitulo05[0]="C5 Tic tac, tic tac..."; 
-    text_capitulo05[1]="C5 Amalia was never afraid, or so I thought every time I saw her, strong and confindent. Tic tac, tic tac...";
-    text_capitulo05[2]="C5 Amalia was never afraid, or so I thought every time I saw her, strong and confindent. Tic tac, tic tac...";
-    text_capitulo05[3]="C5 Amalia was never afraid, or so I thought every time I saw her, strong and confindent. Tic tac, tic tac...";
-    text_capitulo05[4]="C5 Amalia was never afraid, or so I thought every time I saw her, strong and confindent. Tic tac, tic tac...";
-    text_capitulo05[5]="C5 Amalia was never afraid, or so I thought every time I saw her, strong and confindent. Tic tac, tic tac...";
-    text_capitulo05[6]="C5 Amalia was never afraid, or so I thought every time I saw her, strong and confindent. Tic tac, tic tac...";
+	text_capitulo05[0]="There is a planet on which its dominant inhabitants call themselves humans. These beings have a tendency to differentiate themselves from others, based on the concept of evolution."; 
+    text_capitulo05[1]="First from other species, compared to which they believe to have a higher consciousness.";
+    text_capitulo05[2]="But also amongst themselves, to determine who is the strongest. They divide themselves along ideas of body types, languages, skin tone,";
+    text_capitulo05[3]="the kind of foods they prepare... And thus, among self-imposed categories, they created their countries.";
+    text_capitulo05[4]="Imaginary lines mark what they call borders. According to the side of the border on which you find yourself you will be more or less fortunate.";
+    text_capitulo05[5]="They have guards, checkpoints and weapons to protect them, the idea being that no one should cross a border without being invited to do so.";
     
     var text_capitulo06 = new Array();
 	text_capitulo06[0]="C6 Tic tac, tic tac..."; 
