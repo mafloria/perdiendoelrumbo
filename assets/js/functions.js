@@ -12,6 +12,7 @@
 	var totalimg_capitulo03_scena_1 = 7; var totalimg_capitulo03_scena_2 = 3; var totalimg_capitulo03_scena_3 = 5; var totalimg_capitulo03_scena_4 = 4;
 	var totalimg_capitulo04_scena_1 = 6; var totalimg_capitulo04_scena_2 = 2; var totalimg_capitulo04_scena_3 = 7; var totalimg_capitulo04_scena_4 = 4;var totalimg_capitulo04_scena_5 = 7;var totalimg_capitulo04_scena_6 = 1;
 	var totalimg_capitulo05_scena_1 = 5; var totalimg_capitulo05_scena_2 = 2; var totalimg_capitulo05_scena_3 = 4; var totalimg_capitulo05_scena_4 = 2;var totalimg_capitulo05_scena_5 = 5;var totalimg_capitulo05_scena_6 = 2;
+	var totalimg_capitulo06_scena_1 = 2; var totalimg_capitulo06_scena_2 = 5; var totalimg_capitulo06_scena_3 = 4; var totalimg_capitulo06_scena_4 = 1;var totalimg_capitulo06_scena_5 = 3;var totalimg_capitulo06_scena_6 = 2;
 	
 	//setup time when the image is displayed
 	var timeimg_capitulo01_scena_1 = [8, 19, 25, 27]; 
@@ -45,12 +46,19 @@
 	var timeimg_capitulo05_scena_5 = [25, 29, 30, 46, 49];
 	var timeimg_capitulo05_scena_6 = [10,20];
 	
+	var timeimg_capitulo06_scena_1 = [6, 11]; 
+	var timeimg_capitulo06_scena_2 = [6, 11, 20, 25, 30];
+	var timeimg_capitulo06_scena_3 = [17, 20, 27, 28];
+	var timeimg_capitulo06_scena_4 = [11, 30];
+	var timeimg_capitulo06_scena_5 = [25, 29, 30, 46, 49];
+	var timeimg_capitulo06_scena_6 = [10,20];
+	
 	//setup line number for each scena inside the chapter
 	var textini_capitulo01 = [0, 6, 16, 21, 29, 33]; 	
 	var textini_capitulo02 = [0, 5, 9, 17]; 		
 	var textini_capitulo03 = [0, 11, 17, 30];
 	var textini_capitulo04 = [0, 6, 7, 16, 27, 37];	 	
-	var textini_capitulo05 = [0, 6, 7, 16, 27, 37];
+	var textini_capitulo05 = [0, 1, 2, 3, 4, 5];
 	var textini_capitulo06 = [0, 1, 2, 3, 4, 5];
 	
 	var current_scena_number = 1;
@@ -91,18 +99,17 @@ function set_current_audio_time(event){
 	}
 
 //document ready	
-$(document).ready(function(){
-	w3.includeHTML();//includes other html files (.svg)
+$(document).ready(function(){	
 	$(".main-header > h1").hide();
 	
 	//progress bar
 	var progress_bar = 0;
-	var capitulo01_escena_1 = capitulo01_escena_2 = capitulo01_escena_3 = capitulo01_escena_4 = capitulo01_escena_5 = capitulo01_escena_6 = 4;
-	var capitulo02_escena_1 = capitulo02_escena_2 = capitulo02_escena_3 = capitulo02_escena_4 = 6;
-	var capitulo03_escena_1 = capitulo03_escena_2 = capitulo03_escena_3 = capitulo03_escena_4 = 6;	
-	var capitulo04_escena_1 = capitulo04_escena_2 = capitulo04_escena_3 = capitulo04_escena_4 = capitulo04_escena_5 = capitulo04_escena_6 =4;
-	var capitulo05_escena_1 = capitulo05_escena_2 = capitulo05_escena_3 = capitulo05_escena_4 = capitulo05_escena_5 = capitulo05_escena_6 =4;
-	var capitulo06_escena_1 = 8;
+	var capitulo01_escena_1 = capitulo01_escena_2 = capitulo01_escena_3 = capitulo01_escena_4 = capitulo01_escena_5 = capitulo01_escena_6 = 3;
+	var capitulo02_escena_1 = capitulo02_escena_2 = capitulo02_escena_3 = capitulo02_escena_4 = 3;
+	var capitulo03_escena_1 = capitulo03_escena_2 = capitulo03_escena_3 = capitulo03_escena_4 = 3;	
+	var capitulo04_escena_1 = capitulo04_escena_2 = capitulo04_escena_3 = capitulo04_escena_4 = capitulo04_escena_5 = capitulo04_escena_6 =3;
+	var capitulo05_escena_1 = capitulo05_escena_2 = capitulo05_escena_3 = capitulo05_escena_4 = capitulo05_escena_5 = capitulo05_escena_6 =3;
+	var capitulo06_escena_1 = capitulo06_escena_2 = capitulo06_escena_3 = capitulo06_escena_4 = capitulo06_escena_5 = capitulo06_escena_6 =4;
 	
 	// load audios elements	
 	//capitulo 01
@@ -116,7 +123,7 @@ $(document).ready(function(){
 	//capitulo 05
 	var vid_capitulo05_scena_1 = document.getElementById("audio-capitulo05-scena-1"); var vid_capitulo05_scena_2 = document.getElementById("audio-capitulo05-scena-2"); var vid_capitulo05_scena_3 = document.getElementById("audio-capitulo05-scena-3"); var vid_capitulo05_scena_4 = document.getElementById("audio-capitulo05-scena-4"); var vid_capitulo05_scena_5 = document.getElementById("audio-capitulo05-scena-5"); var vid_capitulo05_scena_6 = document.getElementById("audio-capitulo05-scena-6");
 	//capitulo 06
-	var vid_capitulo06_scena_1 = document.getElementById("audio-capitulo06-scena-1"); var vid_capitulo06_scena_2 = document.getElementById("audio-capitulo06-scena-2");						
+	var vid_capitulo06_scena_1 = document.getElementById("audio-capitulo06-scena-1"); var vid_capitulo06_scena_2 = document.getElementById("audio-capitulo06-scena-2");  var vid_capitulo06_scena_3 = document.getElementById("audio-capitulo06-scena-3"); var vid_capitulo06_scena_4 = document.getElementById("audio-capitulo06-scena-4"); var vid_capitulo06_scena_5 = document.getElementById("audio-capitulo06-scena-5"); var vid_capitulo06_scena_6 = document.getElementById("audio-capitulo06-scena-6");						
 	
 	//scenas counter and total per chapter
 	var total_scenas_capitulo01 = 6;
@@ -124,7 +131,7 @@ $(document).ready(function(){
 	var total_scenas_capitulo03 = 4;
 	var total_scenas_capitulo04 = 6;
 	var total_scenas_capitulo05 = 6;
-	var total_scenas_capitulo06 = 1;
+	var total_scenas_capitulo06 = 6;
 	
 	
 //*********** window size to fix content	   
@@ -201,7 +208,7 @@ $(document).ready(function(){
 	vid_capitulo03_scena_1.onended = function() { audio_ended_action(); }; vid_capitulo03_scena_2.onended = function() { audio_ended_action(); }; vid_capitulo03_scena_3.onended = function() { audio_ended_action(); }; vid_capitulo03_scena_4.onended = function() { audio_ended_action(); };
 	vid_capitulo04_scena_1.onended = function() { audio_ended_action(); }; vid_capitulo04_scena_2.onended = function() { audio_ended_action(); }; vid_capitulo04_scena_3.onended = function() { audio_ended_action(); }; vid_capitulo04_scena_4.onended = function() { audio_ended_action(); }; vid_capitulo04_scena_5.onended = function() { audio_ended_action(); }; vid_capitulo04_scena_6.onended = function() { audio_ended_action(); };
 	vid_capitulo05_scena_1.onended = function() { audio_ended_action(); }; vid_capitulo05_scena_2.onended = function() { audio_ended_action(); }; vid_capitulo05_scena_3.onended = function() { audio_ended_action(); }; vid_capitulo05_scena_4.onended = function() { audio_ended_action(); }; vid_capitulo05_scena_5.onended = function() { audio_ended_action(); }; vid_capitulo05_scena_6.onended = function() { audio_ended_action(); };
-	vid_capitulo06_scena_1.onended = function() { audio_ended_action(); };
+	vid_capitulo06_scena_1.onended = function() { audio_ended_action(); }; vid_capitulo06_scena_2.onended = function() { audio_ended_action(); }; vid_capitulo06_scena_3.onended = function() { audio_ended_action(); }; vid_capitulo06_scena_4.onended = function() { audio_ended_action(); }; vid_capitulo06_scena_5.onended = function() { audio_ended_action(); }; vid_capitulo06_scena_6.onended = function() { audio_ended_action(); };
 	
 	function audio_ended_action(){
 		$("#sequence-"+current_chapter+"-scena-"+current_scena_number+" > a").removeClass("current-scene");
@@ -355,6 +362,7 @@ $(document).ready(function(){
 		vid_capitulo03_scena_1.pause();vid_capitulo03_scena_2.pause();vid_capitulo03_scena_3.pause();vid_capitulo03_scena_4.pause();
 		vid_capitulo04_scena_1.pause();vid_capitulo04_scena_2.pause();vid_capitulo04_scena_3.pause();vid_capitulo04_scena_4.pause();vid_capitulo04_scena_5.pause();vid_capitulo04_scena_6.pause();
 		vid_capitulo05_scena_1.pause();vid_capitulo05_scena_2.pause();vid_capitulo05_scena_3.pause();vid_capitulo05_scena_4.pause();vid_capitulo05_scena_5.pause();vid_capitulo05_scena_6.pause();
+		vid_capitulo06_scena_1.pause();vid_capitulo06_scena_2.pause();vid_capitulo06_scena_3.pause();vid_capitulo06_scena_4.pause();vid_capitulo06_scena_5.pause();vid_capitulo06_scena_6.pause();
 				
 		var total_timer_lines = timer.length;
 		for(j=0; j<=total_timer_lines; j++){ clearTimeout(timer[j]); }		
@@ -372,7 +380,7 @@ $(document).ready(function(){
 //********** texts
 	//write texts acording the chapter
 	
-	async function writesentences(capitulo, pause){		
+	function writesentences(capitulo, pause){//async		
 		for(i=text_current_line; i<=current_chapter_total_lines; i++, delayCounter++){
 			 (function (i, delayCounter) {
 			    timer[i] = setTimeout(function () {
@@ -576,6 +584,11 @@ $(document).ready(function(){
     var text_capitulo06 = new Array();
 	text_capitulo06[0]="C6 Tic tac, tic tac..."; 
     text_capitulo06[1]="C6 Amalia was never afraid, or so I thought every time I saw her, strong and confindent. Tic tac, tic tac...";
+    text_capitulo06[2]="C6 Amalia was never afraid, or so I thought every time I saw her, strong and confindent. Tic tac, tic tac...";
+    text_capitulo06[3]="C6 Amalia was never afraid, or so I thought every time I saw her, strong and confindent. Tic tac, tic tac...";
+    text_capitulo06[4]="C6 Amalia was never afraid, or so I thought every time I saw her, strong and confindent. Tic tac, tic tac...";
+    text_capitulo06[5]="C6 Amalia was never afraid, or so I thought every time I saw her, strong and confindent. Tic tac, tic tac...";
+    text_capitulo06[6]="C6 Amalia was never afraid, or so I thought every time I saw her, strong and confindent. Tic tac, tic tac...";
     
     //waits 5 seconds after all is available to show story
    	setTimeout(function() {
