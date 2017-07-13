@@ -150,7 +150,7 @@ $(document).ready(function(){
 		$('#content-section .section-site').css('width', windowWidth);
 		//background images
 		$('.background-section img').css('height', windowHeight);
-		$('.background-section img').css('width', windowWidth);		
+		//$('.background-section img').css('width', windowWidth);		
 	};
 //*********** end - window size to fix content
 
@@ -380,7 +380,7 @@ $(document).ready(function(){
 //********** texts
 	//write texts acording the chapter
 	
-	function writesentences(capitulo, pause){//async		
+	async function writesentences(capitulo, pause){//		
 		for(i=text_current_line; i<=current_chapter_total_lines; i++, delayCounter++){
 			 (function (i, delayCounter) {
 			    timer[i] = setTimeout(function () {
@@ -576,9 +576,26 @@ $(document).ready(function(){
 	text_capitulo05[0]="There is a planet on which its dominant inhabitants call themselves humans. These beings have a tendency to differentiate themselves from others, based on the concept of evolution."; 
     text_capitulo05[1]="First from other species, compared to which they believe to have a higher consciousness.";
     text_capitulo05[2]="But also amongst themselves, to determine who is the strongest. They divide themselves along ideas of body types, languages, skin tone,";
-    text_capitulo05[3]="the kind of foods they prepare... And thus, among self-imposed categories, they created their countries.";
+    text_capitulo05[3]="the kind of foods they prepare... And thus, among self-imposed categories, they created their countries. ";
     text_capitulo05[4]="Imaginary lines mark what they call borders. According to the side of the border on which you find yourself you will be more or less fortunate.";
-    text_capitulo05[5]="They have guards, checkpoints and weapons to protect them, the idea being that no one should cross a border without being invited to do so.";
+    text_capitulo05[5]="They have guards, checkpoints and weapons to protect them,";
+    text_capitulo05[6]="the idea being that no one should cross a border without being invited to do so. But many try... ";
+    text_capitulo05[7]="some of them manage to cross them, and a lot of them don’t. ";
+    text_capitulo05[8]="We are staying here. We lost our north… for now.";
+    text_capitulo05[9]="That’s how I met Luis, telling stories in a shelter in Reynosa. He can barely read or write but is a skilled narrator of beautiful stories.";
+    text_capitulo05[10]="The wordsmith uses his whole tall and skinny body to convey the tale while moving through the room,";
+    text_capitulo05[11]="saying his grandpa taught him his art. His big, open smile is a sort of beacon these days.";
+    text_capitulo05[12]="Luis is a boy from Quiché who crossed the border with Guatemala via Tapachula.";
+    text_capitulo05[13]="Tired of the poverty of his community, of struggling to put some bread on the table, but mostly of the abusive way in which his stepfather treated his mother.";
+    text_capitulo05[14]="He made a plan, borrowed money, got into a huge debt, $10,000 at 10% interest.";
+    text_capitulo05[15]="He would cross the borders, up to the U.S., and start working with his uncle.";
+    text_capitulo05[16]="Life is easier there, you can work and get paid in dollars, he would then send for his mom and pay what he owed.";
+    text_capitulo05[17]="A master plan! Everything was going accordingly, he almost made it to McAllen. Almost, but not quite.";
+    text_capitulo05[18]="Something didn’t work: flashing lights in his face, blinding his sight. And he stayed on this side.";
+    text_capitulo05[19]="We’re together for now. Luis is my new friend on the journey.";
+    text_capitulo05[20]="I was sad and lonely, and his stories made me think, I can dream and smile again.";
+    text_capitulo05[21]="There are other creatures on that same planet where humans live: birds that roam the skies at their will and migrate when it gets too hot or too cold where they are,";
+    text_capitulo05[22]="";
     
     var text_capitulo06 = new Array();
 	text_capitulo06[0]="C6 Tic tac, tic tac..."; 
