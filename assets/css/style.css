@@ -72,8 +72,9 @@ a.blackBtn:hover{
 }
 /* loading section */
 .loadH-content{
-	width: 50%;
-	margin: 10% auto;
+	width: 20%;
+    margin: 0 auto;
+    line-height: 50;
 }
 #cargando-historia img{
 }
