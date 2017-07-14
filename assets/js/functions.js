@@ -15,28 +15,28 @@
 	var totalimg_capitulo06_scena_1 = 2; var totalimg_capitulo06_scena_2 = 5; var totalimg_capitulo06_scena_3 = 4; var totalimg_capitulo06_scena_4 = 1;var totalimg_capitulo06_scena_5 = 3;var totalimg_capitulo06_scena_6 = 2;
 	
 	//setup time when the image is displayed
-	var timeimg_capitulo01_scena_1 = [8, 19, 25, 27]; 
-	var timeimg_capitulo01_scena_2 = [8, 15, 27, 38, 48, 57];
+	var timeimg_capitulo01_scena_1 = [10, 16, 25, 27]; 
+	var timeimg_capitulo01_scena_2 = [8, 14, 17, 18, 27, 43, 45, 47, 50, 57];
 	var timeimg_capitulo01_scena_3 = [9, 10];
 	var timeimg_capitulo01_scena_4 = [9, 19, 32, 44];
 	var timeimg_capitulo01_scena_5 = [5, 7, 15];
 	var timeimg_capitulo01_scena_6 = [12, 29];
 	
-	var timeimg_capitulo02_scena_1 = [16, 26, 33]; 
-	var timeimg_capitulo02_scena_2 = [11, 19];
-	var timeimg_capitulo02_scena_3 = [10, 28, 36, 42, 49];
-	var timeimg_capitulo02_scena_4 = [16, 25, 43, 120];
+	var timeimg_capitulo02_scena_1 = [12, 16, 25, 33]; 
+	var timeimg_capitulo02_scena_2 = [9, 13, 16, 19];
+	var timeimg_capitulo02_scena_3 = [9, 28, 36, 42, 49];
+	var timeimg_capitulo02_scena_4 = [3, 6, 9, 13, 16, 25, 43, 120];
 	
 	var timeimg_capitulo03_scena_1 = [11, 25, 32, 36, 46, 50, 64]; 
 	var timeimg_capitulo03_scena_2 = [12, 31, 35];
-	var timeimg_capitulo03_scena_3 = [13, 30, 42, 51, 82];
-	var timeimg_capitulo03_scena_4 = [22, 34, 36, 53];
+	var timeimg_capitulo03_scena_3 = [13, 30, 42, 46, 50, 53, 56, 59, 62, 65, 67, 82];
+	var timeimg_capitulo03_scena_4 = [22, 31, 44, 53];
 	
 	var timeimg_capitulo04_scena_1 = [10, 22, 29, 32, 36, 41]; 
-	var timeimg_capitulo04_scena_2 = [6, 11];
-	var timeimg_capitulo04_scena_3 = [17, 20, 27, 28, 29, 33, 54];
-	var timeimg_capitulo04_scena_4 = [11, 30, 44, 63];
-	var timeimg_capitulo04_scena_5 = [25, 29, 30, 46, 49, 59, 66];
+	var timeimg_capitulo04_scena_2 = [2, 4, 5, 6, 11];
+	var timeimg_capitulo04_scena_3 = [17, 20, 25, 27, 28, 33, 54];
+	var timeimg_capitulo04_scena_4 = [11, 30, 39, 44, 57, 63];
+	var timeimg_capitulo04_scena_5 = [9, 25, 29, 31, 46, 49, 58, 66];
 	var timeimg_capitulo04_scena_6 = [45];
 	
 	var timeimg_capitulo05_scena_1 = [8, 16, 20, 29, 52]; 
