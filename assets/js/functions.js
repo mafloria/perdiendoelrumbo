@@ -58,8 +58,8 @@
 	var textini_capitulo02 = [0, 5, 9, 17]; 		
 	var textini_capitulo03 = [0, 11, 17, 30];
 	var textini_capitulo04 = [0, 6, 7, 16, 27, 37];	 	
-	var textini_capitulo05 = [0, 1, 2, 3, 4, 5];
-	var textini_capitulo06 = [0, 1, 2, 3, 4, 5];
+	var textini_capitulo05 = [0, 9, 14, 23, 28, 33];
+	var textini_capitulo06 = [0, 3, 8, 17, 21, 27];
 	
 	var current_scena_number = 1;
 	var current_chapter = "capitulo01";
@@ -579,32 +579,90 @@ $(document).ready(function(){
     text_capitulo05[3]="the kind of foods they prepare... And thus, among self-imposed categories, they created their countries. ";
     text_capitulo05[4]="Imaginary lines mark what they call borders. According to the side of the border on which you find yourself you will be more or less fortunate.";
     text_capitulo05[5]="They have guards, checkpoints and weapons to protect them,";
-    text_capitulo05[6]="the idea being that no one should cross a border without being invited to do so. But many try... ";
-    text_capitulo05[7]="some of them manage to cross them, and a lot of them don’t. ";
-    text_capitulo05[8]="We are staying here. We lost our north… for now.";
-    text_capitulo05[9]="That’s how I met Luis, telling stories in a shelter in Reynosa. He can barely read or write but is a skilled narrator of beautiful stories.";
-    text_capitulo05[10]="The wordsmith uses his whole tall and skinny body to convey the tale while moving through the room,";
-    text_capitulo05[11]="saying his grandpa taught him his art. His big, open smile is a sort of beacon these days.";
-    text_capitulo05[12]="Luis is a boy from Quiché who crossed the border with Guatemala via Tapachula.";
-    text_capitulo05[13]="Tired of the poverty of his community, of struggling to put some bread on the table, but mostly of the abusive way in which his stepfather treated his mother.";
-    text_capitulo05[14]="He made a plan, borrowed money, got into a huge debt, $10,000 at 10% interest.";
-    text_capitulo05[15]="He would cross the borders, up to the U.S., and start working with his uncle.";
-    text_capitulo05[16]="Life is easier there, you can work and get paid in dollars, he would then send for his mom and pay what he owed.";
-    text_capitulo05[17]="A master plan! Everything was going accordingly, he almost made it to McAllen. Almost, but not quite.";
-    text_capitulo05[18]="Something didn’t work: flashing lights in his face, blinding his sight. And he stayed on this side.";
-    text_capitulo05[19]="We’re together for now. Luis is my new friend on the journey.";
-    text_capitulo05[20]="I was sad and lonely, and his stories made me think, I can dream and smile again.";
-    text_capitulo05[21]="There are other creatures on that same planet where humans live: birds that roam the skies at their will and migrate when it gets too hot or too cold where they are,";
-    text_capitulo05[22]="";
+    text_capitulo05[6]="the idea being that no one should cross a border without being invited to do so. ";
+    text_capitulo05[7]="But many try... some of them manage to cross them, ";
+    text_capitulo05[8]="and a lot of them don’t.";
+    //scena 2
+    text_capitulo05[9]="We are staying here. We lost our north… for now. That’s how I met Luis, telling stories in a shelter in Reynosa.";
+    text_capitulo05[10]="He can barely read or write but is a skilled narrator of beautiful stories.";
+    text_capitulo05[11]="The wordsmith uses his whole tall and skinny body to convey the tale while moving through the room,";
+    text_capitulo05[12]="saying his grandpa taught him his art. His big, open smile is a sort of beacon these days.";
+    text_capitulo05[13]="Luis is a boy from Quiché who crossed the border with Guatemala via Tapachula.";
+    //scena 3
+    text_capitulo05[14]="Tired of the poverty of his community, of struggling to put some bread on the table, but mostly of the abusive way in which his stepfather treated his mother.";
+    text_capitulo05[15]="He made a plan, borrowed money, got into a huge debt, $10,000 at 10% interest.";
+    text_capitulo05[16]="He would cross the borders, up to the U.S., and start working with his uncle.";
+    text_capitulo05[17]="Life is easier there, you can work and get paid in dollars, he would then send for his mom and pay what he owed.";
+    text_capitulo05[18]="A master plan! Everything was going accordingly, he almost made it to McAllen. ";
+    text_capitulo05[19]="Almost, but not quite. Something didn’t work: ";
+    text_capitulo05[20]="flashing lights in his face, blinding his sight. And he stayed on this side. ";
+    text_capitulo05[21]="We’re together for now. Luis is my new friend on the journey. ";
+    text_capitulo05[22]="I was sad and lonely, and his stories made me think, I can dream and smile again.";
+    //scena 4
+    text_capitulo05[23]="There are other creatures on that same planet where humans live: birds that roam the skies at their will and ";
+    text_capitulo05[24]="migrate when it gets too hot or too cold where they are, when the foliage starts dwindling or the snow covers the fields.";
+    text_capitulo05[25]="here are new trees and new friends of different colours where they’re heading, and they’ll be able to nest.";
+    text_capitulo05[26]="It is a natural order, and animals don’t have too much difficulty finding harmony.";
+    text_capitulo05[27]="Fish can also travel around, following the sea currents...";
+    //scena 5
+    text_capitulo05[28]="Can you imagine some fish telling the others ‘Hey you, with the blue stripes! ou cannot cross past that sign there’? Haha.";
+    text_capitulo05[29]="We share a laugh, Luis and me. For a moment I dream am not a human ";
+    text_capitulo05[30]="and I can leave behind all those imaginary lines called borders, ";
+    text_capitulo05[31]="turn into a bird and fly wherever I please with mom and my brother, with Luis and Amalia.";
+    text_capitulo05[32]="Luis helps me forget my fears...";
+    //scena 6
+    text_capitulo05[33]="- All right! Listen everybody! Quit it with the storytelling and get ready because you’re being picked up now-, yelled the Sergeant, cutting short Luis’ tale ";
+    text_capitulo05[34]="of planets and migrating fish, and went through the list: López, Lemus, Flores, Cruz… Luis Cruz. ";
+    text_capitulo05[35]="It was the last time I saw him, I gave him a big, long hug.";
+    text_capitulo05[36]="And I cried. -Another friend I lose-, I told him. -No-, he said. -Just another friend- and smiled.";
+    
     
     var text_capitulo06 = new Array();
-	text_capitulo06[0]="C6 Tic tac, tic tac..."; 
-    text_capitulo06[1]="C6 Amalia was never afraid, or so I thought every time I saw her, strong and confindent. Tic tac, tic tac...";
-    text_capitulo06[2]="C6 Amalia was never afraid, or so I thought every time I saw her, strong and confindent. Tic tac, tic tac...";
-    text_capitulo06[3]="C6 Amalia was never afraid, or so I thought every time I saw her, strong and confindent. Tic tac, tic tac...";
-    text_capitulo06[4]="C6 Amalia was never afraid, or so I thought every time I saw her, strong and confindent. Tic tac, tic tac...";
-    text_capitulo06[5]="C6 Amalia was never afraid, or so I thought every time I saw her, strong and confindent. Tic tac, tic tac...";
-    text_capitulo06[6]="C6 Amalia was never afraid, or so I thought every time I saw her, strong and confindent. Tic tac, tic tac...";
+	text_capitulo06[0]="The way there: 40 days of fear and vertigo. The way back: a 40-hour ride on an air conditioned bus with its own bathroom."; 
+    text_capitulo06[1]="With all that comfort, I couldn’t peel my face from the big window. ";
+    text_capitulo06[2]="I wanted to see the other route, the one those allowed to cross the line that way make.";
+    //scena 2
+    text_capitulo06[3]="On the way I thought about Amalia, Luis and Tita; about the Africans and the Cubans’ stories.";
+    text_capitulo06[4]="How many people would make it through and how many wouldn’t?";
+    text_capitulo06[5]="My grandpa, when would I be able to see him? I felt frustrated, fancy bus ride notwithstanding.";
+    text_capitulo06[6]="Mom was also very upset, I caught her sight on the window and noticed it.";
+    text_capitulo06[7]="I embraced her. We stayed like that for a while... until I fell asleep in her arms.";
+    //scena 3
+    text_capitulo06[8]="Mom asked for political refugee status in Mexico but they denied it to us: -We cannot live in San Salvador-, she told the agent at the station ";
+    text_capitulo06[9]="before we got in the bus. -I can’t do anything, ma’am-, the officer replied drily.";
+    text_capitulo06[10]="- We have a death mark on our backs, we tried to escape extortion,";
+    text_capitulo06[11]="and you know you pay for that with your life, please sir-, ";
+    text_capitulo06[12]="mom continued, almost begging. - I am sorry, but it’s the law-. ";
+    text_capitulo06[13]="Thus sealing our destiny to return to El Salvador. ";
+    text_capitulo06[14]="It takes so long to reach a border and so little to go back! It seems like a joke.";
+    text_capitulo06[15]="After such a journey you are at the starting point";
+    text_capitulo06[16]="but just more vulnerable. At this point, who could help us?";
+    //scena 4
+    text_capitulo06[17]="We looked for an answer in a government program for the returned. Mom registered us hoping to get us some kind of protection.";
+    text_capitulo06[18]="They listened to us there, we talked to a psychologist and I told him all my stories.";
+    text_capitulo06[19]="We also received training and advice on where to live and how to proceed.";
+    text_capitulo06[20]="The main thing was changing cities. Now we’re going to Usulután.";
+    //scena 5
+    text_capitulo06[21]="Before leaving I contacted Luis to tell him our good news: - I’m working as a farmhand to pay back the loan-, he told me.";
+    text_capitulo06[22]="No chance to study with such a debt! I have to pay $230 a month, but I’m hanging in here,";
+    text_capitulo06[23]="working hard and steady I think I can make it. I’m still young and have the time-, he said.";
+    text_capitulo06[24]="I haven’t heard anything about Amalia. I don’t know if she was deported to Honduras or she’s still in the shelter,";
+    text_capitulo06[25]="waiting to be identified and registered in the system. I do remember her smile, her tender voice,";
+    text_capitulo06[26]="her harrowing journey and how she would soothe me with her visions for our life in the north.";
+    //scena 6
+    text_capitulo06[27]="I see her when I look at the stars. The fearless girl, facing her journey with a confident stride;";
+    text_capitulo06[28]="she made it through and like a free migrating bird, is nesting now with her mom and dad.";
+    text_capitulo06[29]="Life is not easy upon return. The future is still uncertain for us. We risked everything and we lost.";
+    text_capitulo06[30]="There are so many things you love but had to leave ‘behind’, and so many others that hurt";
+    text_capitulo06[31]="you every time they come back to your present, that it is hard to reconnect with an idea of normalcy."; 
+    text_capitulo06[32]="We keep trying, anyway. In our new home I’ll go back to school,";
+    text_capitulo06[33]="I’ll have to redo the year I left unfinished, but I like school.";
+    text_capitulo06[34]="Mom will stay in the job placement program until she finds something, ";
+    text_capitulo06[35]="my brother already has. He’s working at a restaurant.";
+    text_capitulo06[36]="We choose to believe it is possible to build a future for us in our own country,";
+    text_capitulo06[37]="that God has not forgotten about us. Hopefully!";
+    text_capitulo06[38]="Because if nothing comes up in the next few months -mom has already said-, we’ll go back to the North.";    
+    
     
     //waits 5 seconds after all is available to show story
    	setTimeout(function() {
