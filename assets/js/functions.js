@@ -684,5 +684,5 @@ $(document).ready(function(){
    	setTimeout(function() {
     	$("#cargando-historia").hide();
     	$(".wrapper").show();
-  	}, 5000);	    
+  	}, 10000);	    
 });
