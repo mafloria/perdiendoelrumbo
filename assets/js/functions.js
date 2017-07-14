@@ -358,8 +358,9 @@ $(document).ready(function(){
 		$("#pauseAudio-"+capitulo).show();
 		
 		stop_last_image = false;//allows move images again 
-		//$(".background-section > img").hide();		
-		//$("#imgbg-"+current_chapter+"-scena-"+current_scena_number+"-1").show();//shows first bg image fot this audio		
+		$(".background-section > img").hide();		
+		//$("#imgbg-"+current_chapter+"-scena-"+current_scena_number+"-1").show();//shows first bg image fot this audio
+		$("#imgbg-"+current_chapter).show();		
 		$("#imgbg-"+current_chapter).attr("src", "images/"+current_chapter+"/escena-"+current_scena_number+"/buscando-el-norte-"+current_chapter+"-escena-"+current_scena_number+"-"+current_image_counter+".jpg");				
 		console.log("play next audio: "+capitulo + "scena: "+current_scena_number);
 				
