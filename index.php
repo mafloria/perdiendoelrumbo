@@ -382,13 +382,12 @@
             <section id="capitulo05" class="section-site cpt05"><!-- CAPITULO 05 -->
                 <div class="side-nav-section"><!-- navegacion lateral por seccion -->
                     <ul>
-                        <li class="sequence-thumb" id="sequence-capitulo05-scena-1"><a><img src="images/thumb-portada-c1.jpg"></a></li>                                                                       
-                        <li class="sequence-thumb" id="sequence-capitulo05-scena-2"><a><img src="images/thumb-portada-c1.jpg"></a></li>
-                        <li class="sequence-thumb" id="sequence-capitulo05-scena-3"><a><img src="images/thumb-portada-c1.jpg"></a></li>
-                        <li class="sequence-thumb" id="sequence-capitulo05-scena-4"><a><img src="images/thumb-portada-c1.jpg"></a></li>
-                        <li class="sequence-thumb" id="sequence-capitulo05-scena-5"><a><img src="images/thumb-portada-c1.jpg"></a></li>
-                        <li class="sequence-thumb" id="sequence-capitulo05-scena-6"><a><img src="images/thumb-portada-c1.jpg"></a></li>
-                        <li class="sequence-thumb" id="sequence-capitulo05-scena-7"><a><img src="images/thumb-portada-c1.jpg"></a></li>
+                        <li class="sequence-thumb" id="sequence-capitulo05-scena-1"><a><img src="images/thumb-c5-e1.jpg"></a></li>                              
+                        <li class="sequence-thumb" id="sequence-capitulo05-scena-2"><a><img src="images/thumb-c5-e2.jpg"></a></li>
+                        <li class="sequence-thumb" id="sequence-capitulo05-scena-3"><a><img src="images/thumb-c5-e3.jpg"></a></li>
+                        <li class="sequence-thumb" id="sequence-capitulo05-scena-4"><a><img src="images/thumb-c5-e4.jpg"></a></li>
+                        <li class="sequence-thumb" id="sequence-capitulo05-scena-5"><a><img src="images/thumb-c5-e5.jpg"></a></li>
+                        <li class="sequence-thumb" id="sequence-capitulo05-scena-6"><a><img src="images/thumb-c5-e6.jpg"></a></li>
                     </ul>                    
                 </div>
                 <div class="section-content-wrap"> <!-- contenedor de elementos del section -->
@@ -452,12 +451,12 @@
             <section id="capitulo06" class="section-site cpt06"><!-- CAPITULO 05 -->
                 <div class="side-nav-section"><!-- navegacion lateral por seccion -->
                     <ul>
-                        <li class="sequence-thumb" id="sequence-capitulo06-scena-1"><a><img src="images/thumb-portada-c1.jpg"></a></li>                        
-                        <li class="sequence-thumb" id="sequence-capitulo06-scena-2"><a><img src="images/thumb-portada-c1.jpg"></a></li>
-                        <li class="sequence-thumb" id="sequence-capitulo06-scena-3"><a><img src="images/thumb-portada-c1.jpg"></a></li>
-                        <li class="sequence-thumb" id="sequence-capitulo06-scena-4"><a><img src="images/thumb-portada-c1.jpg"></a></li>
-                        <li class="sequence-thumb" id="sequence-capitulo06-scena-5"><a><img src="images/thumb-portada-c1.jpg"></a></li>
-                        <li class="sequence-thumb" id="sequence-capitulo06-scena-6"><a href="javascript:void(0)"><img src="images/thumb-portada-c1.jpg"></a></li>
+                        <li class="sequence-thumb" id="sequence-capitulo06-scena-1"><a><img src="images/thumb-c6-e1.jpg"></a></li>                        
+                        <li class="sequence-thumb" id="sequence-capitulo06-scena-2"><a><img src="images/thumb-c6-e2.jpg"></a></li>
+                        <li class="sequence-thumb" id="sequence-capitulo06-scena-3"><a><img src="images/thumb-c6-e3.jpg"></a></li>
+                        <li class="sequence-thumb" id="sequence-capitulo06-scena-4"><a><img src="images/thumb-c6-e4.jpg"></a></li>
+                        <li class="sequence-thumb" id="sequence-capitulo06-scena-5"><a><img src="images/thumb-c6-e5.jpg"></a></li>
+                        <li class="sequence-thumb" id="sequence-capitulo06-scena-6"><a href="javascript:void(0)"><img src="images/thumb-c6-e6.jpg"></a></li>
                     </ul>
                 </div>
                 <div class="section-content-wrap"> <!-- contenedor de elementos del section -->

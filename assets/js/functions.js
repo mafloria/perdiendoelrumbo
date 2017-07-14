@@ -46,12 +46,12 @@
 	var timeimg_capitulo05_scena_5 = [14, 25, 28, 29, 32];
 	var timeimg_capitulo05_scena_6 = [12, 34];
 	
-	var timeimg_capitulo06_scena_1 = [6, 11]; 
-	var timeimg_capitulo06_scena_2 = [6, 11, 20, 25, 30];
-	var timeimg_capitulo06_scena_3 = [17, 20, 27, 28];
-	var timeimg_capitulo06_scena_4 = [11, 30];
-	var timeimg_capitulo06_scena_5 = [25, 29, 30, 46, 49];
-	var timeimg_capitulo06_scena_6 = [10,20];
+	var timeimg_capitulo06_scena_1 = [4, 21]; 
+	var timeimg_capitulo06_scena_2 = [4, 5, 12, 16, 33];
+	var timeimg_capitulo06_scena_3 = [18, 30, 33, 56];
+	var timeimg_capitulo06_scena_4 = [24];
+	var timeimg_capitulo06_scena_5 = [22, 30, 39];
+	var timeimg_capitulo06_scena_6 = [15, 68];
 	
 	//setup line number for each scena inside the chapter
 	var textini_capitulo01 = [0, 6, 16, 21, 29, 33]; 	
