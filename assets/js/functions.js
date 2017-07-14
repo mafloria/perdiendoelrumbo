@@ -157,10 +157,12 @@ $(document).ready(function(){
 //*********** scrolls to an href section exactly - just for biggest navegation
     $('a[href*="#"]:not([href="#"])').click(function() {
 	    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+	      $(".submenu").hide();
+	      
 	      var target = $(this.hash);		      
 	      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
 	     
-	     let_audios_text_begins(); //restart audios and text if the user returns start all again
+	      let_audios_text_begins(); //restart audios and text if the user returns start all again
         	
 		    if(this.hash.slice(1)=="introduccion") {
 		    	if(progress_bar>=100){ $(".intro-chapter-menu").show(); $(".intro-chapter-startbtn").hide(); }
@@ -665,9 +667,10 @@ $(document).ready(function(){
     
     
     //waits 5 seconds after all is available to show story
+    /*
    	setTimeout(function() {
     	$("#cargando-historia").hide();
     	$(".wrapper").show();
   	}, 5000);	
-    
+   */ 
 });
