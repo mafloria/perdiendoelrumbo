@@ -148,6 +148,10 @@ $(document).ready(function(){
 		$('#content-section').css('height', windowHeight);
 		$('#content-section .section-site').css('height', windowHeight);		
 		$('#content-section .section-site').css('width', windowWidth);
+		//loading
+		$('#cargando-historia').css('height', windowHeight);
+		$('#cargando-historia').css('width', windowWidth);
+		
 		//background images
 		$('.background-section img').css('height', windowHeight);
 		//$('.background-section img').css('width', windowWidth);		
