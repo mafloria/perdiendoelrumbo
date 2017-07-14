@@ -144,13 +144,14 @@ $(document).ready(function(){
 	function setHeight() {
 		windowHeight = $(window).innerHeight();
 		windowWidth = $(window).innerWidth();
-		//general containers
-		$('#content-section').css('height', windowHeight);
-		$('#content-section .section-site').css('height', windowHeight);		
-		$('#content-section .section-site').css('width', windowWidth);
 		//loading
 		$('#cargando-historia').css('height', windowHeight);
 		$('#cargando-historia').css('width', windowWidth);
+		
+		//general containers
+		$('#content-section').css('height', windowHeight);
+		$('#content-section .section-site').css('height', windowHeight);		
+		$('#content-section .section-site').css('width', windowWidth);		
 		
 		//background images
 		$('.background-section img').css('height', windowHeight);
@@ -670,11 +671,9 @@ $(document).ready(function(){
     text_capitulo06[38]="Because if nothing comes up in the next few months -mom has already said-, we’ll go back to the North.";    
     
     
-    //waits 5 seconds after all is available to show story
-    /*
+    //waits 5 seconds after all is available to show story   
    	setTimeout(function() {
     	$("#cargando-historia").hide();
     	$(".wrapper").show();
-  	}, 5000);	
-   */ 
+  	}, 5000);	    
 });
