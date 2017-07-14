@@ -71,15 +71,13 @@
 
         <div id="content-section">
             <section id="introduccion" class="section-site cpt00">                
-                <a class="nav-next" href="#capitulo01"><svg><use xlink:href="#nav"/></svg></a>
-
+                <a class="nav-next chapter-nav" href="#capitulo01"><svg><use xlink:href="#nav"/></svg></a>
                 <div class="content-intro">
                     <div class="logo">
                         <img src="images/buscando-el-norte-logo-intro.png" width="781" height="260">
                     </div> 
                     <a class="blackBtn intro-chapter-startbtn" href="#capitulo01">COMENZAR</a>    
                 </div>
-
                 <div class="intro-chapter-menu" style="display:none">
                     <h3>Navega por los diferentes capítulos:</h3>
                     <ul>
@@ -90,8 +88,7 @@
                         <li><a href="#capitulo05"><img src="images/thumb-portada-c5.jpg"></a></li>
                         <li><a href="#capitulo06"><img src="images/thumb-portada-c6.jpg"></a></li>
                     </ul>
-                </div> 
-
+                </div>
                 <div class="background-section">
                     <img class="med-bg" id="imgbg-introduccion" src="images/buscando-el-norte-1024-intro.png">
                 </div>
@@ -385,13 +382,13 @@
             <section id="capitulo05" class="section-site cpt05"><!-- CAPITULO 05 -->
                 <div class="side-nav-section"><!-- navegacion lateral por seccion -->
                     <ul>
-                        <li class="sequence-thumb" id="sequence-capitulo05-scena-1"><a href="javascript:void(0);"><img src="images/thumb-portada-c1.jpg"></a></li>                                                                       
-                        <li class="sequence-thumb" id="sequence-capitulo05-scena-2"><a href="javascript:void(0);"><img src="images/thumb-portada-c1.jpg"></a></li>
-                        <li class="sequence-thumb" id="sequence-capitulo05-scena-3"><a href="javascript:void(0);"><img src="images/thumb-portada-c1.jpg"></a></li>
-                        <li class="sequence-thumb" id="sequence-capitulo05-scena-4"><a href="javascript:void(0);"><img src="images/thumb-portada-c1.jpg"></a></li>
-                        <li class="sequence-thumb" id="sequence-capitulo05-scena-5"><a href="javascript:void(0);"><img src="images/thumb-portada-c1.jpg"></a></li>
-                        <li class="sequence-thumb" id="sequence-capitulo05-scena-6"><a href="javascript:void(0);"><img src="images/thumb-portada-c1.jpg"></a></li>
-                        <li class="sequence-thumb" id="sequence-capitulo05-scena-7"><a href="javascript:void(0);"><img src="images/thumb-portada-c1.jpg"></a></li>
+                        <li class="sequence-thumb" id="sequence-capitulo05-scena-1"><a><img src="images/thumb-portada-c1.jpg"></a></li>                                                                       
+                        <li class="sequence-thumb" id="sequence-capitulo05-scena-2"><a><img src="images/thumb-portada-c1.jpg"></a></li>
+                        <li class="sequence-thumb" id="sequence-capitulo05-scena-3"><a><img src="images/thumb-portada-c1.jpg"></a></li>
+                        <li class="sequence-thumb" id="sequence-capitulo05-scena-4"><a><img src="images/thumb-portada-c1.jpg"></a></li>
+                        <li class="sequence-thumb" id="sequence-capitulo05-scena-5"><a><img src="images/thumb-portada-c1.jpg"></a></li>
+                        <li class="sequence-thumb" id="sequence-capitulo05-scena-6"><a><img src="images/thumb-portada-c1.jpg"></a></li>
+                        <li class="sequence-thumb" id="sequence-capitulo05-scena-7"><a><img src="images/thumb-portada-c1.jpg"></a></li>
                     </ul>                    
                 </div>
                 <div class="section-content-wrap"> <!-- contenedor de elementos del section -->
@@ -455,12 +452,12 @@
             <section id="capitulo06" class="section-site cpt06"><!-- CAPITULO 05 -->
                 <div class="side-nav-section"><!-- navegacion lateral por seccion -->
                     <ul>
-                        <li class="sequence-thumb" id="sequence-capitulo06-scena-1"><a href="javascript:void(0);"><img src="images/thumb-portada-c1.jpg"></a></li>                        
-                        <li class="sequence-thumb" id="sequence-capitulo06-scena-2"><a href="javascript:void(0);"><img src="images/thumb-portada-c1.jpg"></a></li>
-                        <li class="sequence-thumb" id="sequence-capitulo06-scena-3"><a href="javascript:void(0);"><img src="images/thumb-portada-c1.jpg"></a></li>
-                        <li class="sequence-thumb" id="sequence-capitulo06-scena-4"><a href="javascript:void(0);"><img src="images/thumb-portada-c1.jpg"></a></li>
-                        <li class="sequence-thumb" id="sequence-capitulo06-scena-5"><a href="javascript:void(0);"><img src="images/thumb-portada-c1.jpg"></a></li>
-                        <li class="sequence-thumb" id="sequence-capitulo06-scena-6"><a href="javascript:void(0);"><img src="images/thumb-portada-c1.jpg"></a></li>
+                        <li class="sequence-thumb" id="sequence-capitulo06-scena-1"><a><img src="images/thumb-portada-c1.jpg"></a></li>                        
+                        <li class="sequence-thumb" id="sequence-capitulo06-scena-2"><a><img src="images/thumb-portada-c1.jpg"></a></li>
+                        <li class="sequence-thumb" id="sequence-capitulo06-scena-3"><a><img src="images/thumb-portada-c1.jpg"></a></li>
+                        <li class="sequence-thumb" id="sequence-capitulo06-scena-4"><a><img src="images/thumb-portada-c1.jpg"></a></li>
+                        <li class="sequence-thumb" id="sequence-capitulo06-scena-5"><a><img src="images/thumb-portada-c1.jpg"></a></li>
+                        <li class="sequence-thumb" id="sequence-capitulo06-scena-6"><a href="javascript:void(0)"><img src="images/thumb-portada-c1.jpg"></a></li>
                     </ul>
                 </div>
                 <div class="section-content-wrap"> <!-- contenedor de elementos del section -->
