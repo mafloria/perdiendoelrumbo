@@ -208,7 +208,8 @@
                         <div class="txt_capitulos" id="txt_capitulo02">&nbsp;</div>                    
                     </div> 
                     
-                    <div class="background-section">                                
+                    <div class="background-section">
+						
                         <img src="images/capitulo02/escena-1/buscando-el-norte-capitulo02-escena-1-1.jpg" id="imgbg-capitulo02-scena-1-1" style="display: none;">
                         <img src="images/capitulo02/escena-1/buscando-el-norte-capitulo02-escena-1-2.jpg" id="imgbg-capitulo02-scena-1-2" style="display: none;">
                         <img src="images/capitulo02/escena-1/buscando-el-norte-capitulo02-escena-1-3.jpg" id="imgbg-capitulo02-scena-1-3" style="display: none;"> 
