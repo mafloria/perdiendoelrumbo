@@ -138,10 +138,8 @@
                         <div class="txt_capitulos" id="txt_capitulo01">&nbsp;</div>
                     </div>
                     <div class="background-section">
-                    	<img src="images/capitulo01/escena-1/buscando-el-norte-capitulo01-escena-1-1.jpg" id="imgbg-capitulo01">                        
-                        <?php /*
                         <img src="images/capitulo01/escena-1/buscando-el-norte-capitulo01-escena-1-1.jpg" id="imgbg-capitulo01-scena-1-1">
-						 * <img src="images/capitulo01/escena-1/buscando-el-norte-capitulo01-escena-1-2.jpg" id="imgbg-capitulo01-scena-1-2" style="display: none;">
+                        <img src="images/capitulo01/escena-1/buscando-el-norte-capitulo01-escena-1-2.jpg" id="imgbg-capitulo01-scena-1-2" style="display: none;">
                         <img src="images/capitulo01/escena-1/buscando-el-norte-capitulo01-escena-1-3.jpg" id="imgbg-capitulo01-scena-1-3" style="display: none;">
                         <img src="images/capitulo01/escena-1/buscando-el-norte-capitulo01-escena-1-4.jpg" id="imgbg-capitulo01-scena-1-4" style="display: none;">
                         
@@ -171,8 +169,6 @@
                         
                         <img src="images/capitulo01/escena-6/buscando-el-norte-capitulo01-escena-6-1.jpg" id="imgbg-capitulo01-scena-6-1" style="display: none;">
                         <img src="images/capitulo01/escena-6/buscando-el-norte-capitulo01-escena-6-2.jpg" id="imgbg-capitulo01-scena-6-2" style="display: none;">
-						*/ ?>
-						
                     </div>                  
                 </div>
             </section>

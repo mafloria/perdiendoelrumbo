@@ -84,9 +84,10 @@ function set_current_audio_time(event){
 		if(eval(current_image_counter+" < totalimg_"+current_chapter+"_scena_"+current_scena_number) && !stop_last_image){
 			//console.log(eval("timeimg_"+current_chapter+"_scena_"+current_scena_number+"["+(current_image_counter-1)+"]")+"<"+current_audio_tracktime);
 			if(eval("timeimg_"+current_chapter+"_scena_"+current_scena_number+"["+(current_image_counter-1)+"]<current_audio_tracktime")){				
-				$(".background-section > img").hide();				
+				//$(".background-section > img").hide();				
 				current_image_counter++;
-				$("#imgbg-"+current_chapter+"-scena-"+current_scena_number+"-"+current_image_counter).show();//shows new background image
+				$("#imgbg-"+current_chapter).attr("src", "images/"+current_chapter+"/escena-"+current_scena_number+"/buscando-el-norte-"+current_chapter+"-escena-"+current_scena_number+"-"+current_image_counter+".jpg");
+				//$("#imgbg-"+current_chapter+"-scena-"+current_scena_number+"-"+current_image_counter).show();//shows new background image
 				console.log("#imgbg-"+current_chapter+"-scena-"+current_scena_number+"-"+current_image_counter + "---"+current_audio_tracktime );
 			}
 		}else{
@@ -229,11 +230,12 @@ $(document).ready(function(){
 	   	}
 	   
 		//console.log("PREV NEXT AUDIO: SCENA: "+current_scena_number+ " CHAPTER:"+current_chapter+" Progress Bar: "+progress_bar);		
-		$(".background-section > img").hide();
+		//$(".background-section > img").hide();
 		if(current_scena_number < eval("total_scenas_"+current_chapter)){
 			
 	   		current_scena_number ++;
-	   		$("#imgbg-"+current_chapter+"-scena-"+current_scena_number).show();//shows new background image
+	   		$("#imgbg-"+current_chapter).attr("src", "images/"+current_chapter+"/escena-"+current_scena_number+"/buscando-el-norte-"+current_chapter+"-escena-"+current_scena_number+"-"+current_image_counter+".jpg");
+	   		//$("#imgbg-"+current_chapter+"-scena-"+current_scena_number).show();//shows new background image
 	   		
 	   		//---------- stop write text threat
 	   		pausePhrases = true; //pause translated text
@@ -356,9 +358,9 @@ $(document).ready(function(){
 		$("#pauseAudio-"+capitulo).show();
 		
 		stop_last_image = false;//allows move images again 
-		$(".background-section > img").hide();		
-		$("#imgbg-"+current_chapter+"-scena-"+current_scena_number+"-1").show();//shows first bg image fot this audio		
-						
+		//$(".background-section > img").hide();		
+		//$("#imgbg-"+current_chapter+"-scena-"+current_scena_number+"-1").show();//shows first bg image fot this audio		
+		$("#imgbg-"+current_chapter).attr("src", "images/"+current_chapter+"/escena-"+current_scena_number+"/buscando-el-norte-"+current_chapter+"-escena-"+current_scena_number+"-"+current_image_counter+".jpg");				
 		console.log("play next audio: "+capitulo + "scena: "+current_scena_number);
 				
 	}
