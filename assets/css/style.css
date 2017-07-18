@@ -405,8 +405,8 @@ section img{
     padding: 10% 25%;	
 }
 .section-content-wrap{
-	width: 92%;
-	float: right;
+	width: 100%;
+	/*float: right;*/
 	position: relative;
 }
 /*modales escenas*/

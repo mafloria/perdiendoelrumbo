@@ -32,7 +32,7 @@
     </div>
     <div class="wrapper" style="display:none">
         <header class="main-header">
-            <h1>
+            <h1 id="back-to-intro">
                 <a href="#introduccion">
                     <img src="images/buscando-el-norte-logo-horizontal-top.png" width="541" height="61">
                 </a>            
@@ -46,13 +46,13 @@
                     <span id="title-capitulo05" style="display: none;">Cap&iacute;tulo 5: Encuentros y despedidas</span>
                     <span id="title-capitulo06" style="display: none;">Cap&iacute;tulo 6: El regreso</span>
                 </h3>
-                <?php /*    
-                <div>
+                <?php /*     
+                <div> 
                     <a class="nav-chap-us" href="#capitulo02">C2</a>
                     <a class="nav-chap-us" href="#capitulo03">C3</a>
                     <a class="nav-chap-us" href="#capitulo04">C4</a>
                     <a class="nav-chap-us" href="#capitulo05">C5</a>
-                    <a class="nav-chap-us" href="#capitulo06">C6</a>
+                    <a class="nav-chap-us" href="#firmar-peticion">C6</a>
                 </div>*/?>
             </div>
             <nav id="nav-menu">
@@ -96,7 +96,7 @@
             </section> 
 
             <section id="capitulo01" class="section-site cpt01"><!-- CAPITULO 01 -->
-                <div class="side-nav-section"><!-- navegacion lateral por seccion -->
+                <div class="side-nav-section" style="display: none"><!-- navegacion lateral por seccion -->
                     <ul>
                         <li class="sequence-thumb" id="sequence-capitulo01-scena-1"><a><img src="images/thumb-c1-e1.jpg"></a></li>
                         <li class="sequence-thumb" id="sequence-capitulo01-scena-2"><a><img src="images/thumb-c1-e2.jpg"></a></li>
@@ -107,8 +107,8 @@
                     </ul>
                 </div>
                 <div class="section-content-wrap"> <!-- contenedor de elementos del section -->
-                    <a class="nav-before chapter-nav" href="#introduccion"><svg><use xlink:href="#nav"/></svg></a>
-                    <a class="nav-next" id="nav-next-capitulo01-inactive"><svg><use xlink:href="#nav"/></svg></a>
+                    <a class="nav-before chapter-nav" href="#introduccion" style="display: none"><svg><use xlink:href="#nav"/></svg></a>
+                    <?php /*<a class="nav-next" id="nav-next-capitulo01-inactive"><svg><use xlink:href="#nav"/></svg></a> */ ?>
                     <a class="nav-next chapter-nav" id="nav-next-capitulo01-active" style="display: none" href="#capitulo02"><svg><use xlink:href="#nav"/></svg></a>
                     <div class="subs-section">  
                          <audio id="audio-capitulo01-scena-1" class="audios" ontimeupdate="set_current_audio_time(this)">
@@ -138,47 +138,13 @@
                         <div class="txt_capitulos" id="txt_capitulo01">&nbsp;</div>
                     </div>
                     <div class="background-section">
-                    	<img src="images/capitulo01/escena-1/buscando-el-norte-capitulo01-escena-1-1.jpg" id="imgbg-capitulo01">                        
-                        <?php /*
-                        <img src="images/capitulo01/escena-1/buscando-el-norte-capitulo01-escena-1-1.jpg" id="imgbg-capitulo01-scena-1-1">
-						 * <img src="images/capitulo01/escena-1/buscando-el-norte-capitulo01-escena-1-2.jpg" id="imgbg-capitulo01-scena-1-2" style="display: none;">
-                        <img src="images/capitulo01/escena-1/buscando-el-norte-capitulo01-escena-1-3.jpg" id="imgbg-capitulo01-scena-1-3" style="display: none;">
-                        <img src="images/capitulo01/escena-1/buscando-el-norte-capitulo01-escena-1-4.jpg" id="imgbg-capitulo01-scena-1-4" style="display: none;">
-                        
-                        <img src="images/capitulo01/escena-2/buscando-el-norte-capitulo01-escena-2-1.jpg" id="imgbg-capitulo01-scena-2-1" style="display: none;">
-                        <img src="images/capitulo01/escena-2/buscando-el-norte-capitulo01-escena-2-2.jpg" id="imgbg-capitulo01-scena-2-2" style="display: none;">
-                        <img src="images/capitulo01/escena-2/buscando-el-norte-capitulo01-escena-2-3.jpg" id="imgbg-capitulo01-scena-2-3" style="display: none;">
-                        <img src="images/capitulo01/escena-2/buscando-el-norte-capitulo01-escena-2-4.jpg" id="imgbg-capitulo01-scena-2-4" style="display: none;">
-                        <img src="images/capitulo01/escena-2/buscando-el-norte-capitulo01-escena-2-5.jpg" id="imgbg-capitulo01-scena-2-5" style="display: none;">
-                        <img src="images/capitulo01/escena-2/buscando-el-norte-capitulo01-escena-2-6.jpg" id="imgbg-capitulo01-scena-2-6" style="display: none;">
-                        <img src="images/capitulo01/escena-2/buscando-el-norte-capitulo01-escena-2-7.jpg" id="imgbg-capitulo01-scena-2-7" style="display: none;">
-                        <img src="images/capitulo01/escena-2/buscando-el-norte-capitulo01-escena-2-8.jpg" id="imgbg-capitulo01-scena-2-8" style="display: none;">
-                        <img src="images/capitulo01/escena-2/buscando-el-norte-capitulo01-escena-2-9.jpg" id="imgbg-capitulo01-scena-2-9" style="display: none;">
-                        <img src="images/capitulo01/escena-2/buscando-el-norte-capitulo01-escena-2-10.jpg" id="imgbg-capitulo01-scena-2-10" style="display: none;">
-                        
-                        <img src="images/capitulo01/escena-3/buscando-el-norte-capitulo01-escena-3-1.jpg" id="imgbg-capitulo01-scena-3-1" style="display: none;">
-                        <img src="images/capitulo01/escena-3/buscando-el-norte-capitulo01-escena-3-2.jpg" id="imgbg-capitulo01-scena-3-2" style="display: none;">
-                        
-                        <img src="images/capitulo01/escena-4/buscando-el-norte-capitulo01-escena-4-1.jpg" id="imgbg-capitulo01-scena-4-1" style="display: none;">
-                        <img src="images/capitulo01/escena-4/buscando-el-norte-capitulo01-escena-4-2.jpg" id="imgbg-capitulo01-scena-4-2" style="display: none;">
-                        <img src="images/capitulo01/escena-4/buscando-el-norte-capitulo01-escena-4-3.jpg" id="imgbg-capitulo01-scena-4-3" style="display: none;">
-                        <img src="images/capitulo01/escena-4/buscando-el-norte-capitulo01-escena-4-4.jpg" id="imgbg-capitulo01-scena-4-4" style="display: none;">
-                        
-                        <img src="images/capitulo01/escena-5/buscando-el-norte-capitulo01-escena-5-1.jpg" id="imgbg-capitulo01-scena-5-1" style="display: none;">
-                        <img src="images/capitulo01/escena-5/buscando-el-norte-capitulo01-escena-5-2.jpg" id="imgbg-capitulo01-scena-5-2" style="display: none;">                       
-                        <img src="images/capitulo01/escena-5/buscando-el-norte-capitulo01-escena-5-3.jpg" id="imgbg-capitulo01-scena-5-3" style="display: none;">
-                        
-                        
-                        <img src="images/capitulo01/escena-6/buscando-el-norte-capitulo01-escena-6-1.jpg" id="imgbg-capitulo01-scena-6-1" style="display: none;">
-                        <img src="images/capitulo01/escena-6/buscando-el-norte-capitulo01-escena-6-2.jpg" id="imgbg-capitulo01-scena-6-2" style="display: none;">
-						*/ ?>
-						
+                    	<img src="images/capitulo01/escena-1/buscando-el-norte-capitulo01-escena-1-1.jpg" id="imgbg-capitulo01">                       
                     </div>                  
                 </div>
             </section>
             
             <section id="capitulo02" class="section-site cpt02"><!-- CAPITULO 02 -->
-                <div class="side-nav-section"><!-- navegacion lateral por seccion -->
+                <div class="side-nav-section" style="display: none"><!-- navegacion lateral por seccion -->
                     <ul>
                         <li class="sequence-thumb" id="sequence-capitulo02-scena-1"><a><img src="images/thumb-c2-e1.jpg"></a></li>
                         <li class="sequence-thumb" id="sequence-capitulo02-scena-2"><a><img src="images/thumb-c2-e2.jpg"></a></li>
@@ -187,8 +153,8 @@
                     </ul>
                 </div>
                 <div class="section-content-wrap"> <!-- contenedor de elementos del section -->
-                    <a class="nav-before chapter-nav" href="#capitulo01"><svg><use xlink:href="#nav"/></svg></a>                    
-                    <a class="nav-next" id="nav-next-capitulo02-inactive"><svg><use xlink:href="#nav"/></svg></a>
+                    <a class="nav-before chapter-nav" href="#capitulo01" style="display: none"><svg><use xlink:href="#nav"/></svg></a>                    
+                    <?php /*<a class="nav-next" id="nav-next-capitulo02-inactive"><svg><use xlink:href="#nav"/></svg></a> */?>
                     <a class="nav-next chapter-nav" id="nav-next-capitulo02-active" style="display: none" href="#capitulo03"><svg><use xlink:href="#nav"/></svg></a>
                     <div class="subs-section">                      
                         <audio id="audio-capitulo02-scena-1" class="audios" ontimeupdate="set_current_audio_time(this)">
@@ -209,39 +175,13 @@
                     </div> 
                     
                     <div class="background-section">
-						<img src="images/capitulo02/escena-1/buscando-el-norte-capitulo02-escena-1-1.jpg" id="imgbg-capitulo02" style="display: none;">               
-                        <?php /*
-                        <img src="images/capitulo02/escena-1/buscando-el-norte-capitulo02-escena-1-1.jpg" id="imgbg-capitulo02-scena-1-1" style="display: none;">
-                        <img src="images/capitulo02/escena-1/buscando-el-norte-capitulo02-escena-1-2.jpg" id="imgbg-capitulo02-scena-1-2" style="display: none;">
-                        <img src="images/capitulo02/escena-1/buscando-el-norte-capitulo02-escena-1-3.jpg" id="imgbg-capitulo02-scena-1-3" style="display: none;"> 
-                        <img src="images/capitulo02/escena-1/buscando-el-norte-capitulo02-escena-1-4.jpg" id="imgbg-capitulo02-scena-1-4" style="display: none;"> 
-                           
-                        <img src="images/capitulo02/escena-2/buscando-el-norte-capitulo02-escena-2-1.jpg" id="imgbg-capitulo02-scena-2-1" style="display: none;">
-                        <img src="images/capitulo02/escena-2/buscando-el-norte-capitulo02-escena-2-2.jpg" id="imgbg-capitulo02-scena-2-2" style="display: none;">
-                        <img src="images/capitulo02/escena-2/buscando-el-norte-capitulo02-escena-2-3.jpg" id="imgbg-capitulo02-scena-2-3" style="display: none;">
-                        <img src="images/capitulo02/escena-2/buscando-el-norte-capitulo02-escena-2-4.jpg" id="imgbg-capitulo02-scena-2-4" style="display: none;">
-                            
-                        <img src="images/capitulo02/escena-3/buscando-el-norte-capitulo02-escena-3-1.jpg" id="imgbg-capitulo02-scena-3-1" style="display: none;">
-                        <img src="images/capitulo02/escena-3/buscando-el-norte-capitulo02-escena-3-2.jpg" id="imgbg-capitulo02-scena-3-2" style="display: none;">
-                        <img src="images/capitulo02/escena-3/buscando-el-norte-capitulo02-escena-3-3.jpg" id="imgbg-capitulo02-scena-3-3" style="display: none;">
-                        <img src="images/capitulo02/escena-3/buscando-el-norte-capitulo02-escena-3-4.jpg" id="imgbg-capitulo02-scena-3-4" style="display: none;">
-                        <img src="images/capitulo02/escena-3/buscando-el-norte-capitulo02-escena-3-5.jpg" id="imgbg-capitulo02-scena-3-5" style="display: none;">
-                            
-                        <img src="images/capitulo02/escena-4/buscando-el-norte-capitulo02-escena-4-1.jpg" id="imgbg-capitulo02-scena-4-1" style="display: none;">
-                        <img src="images/capitulo02/escena-4/buscando-el-norte-capitulo02-escena-4-2.jpg" id="imgbg-capitulo02-scena-4-2" style="display: none;">
-                        <img src="images/capitulo02/escena-4/buscando-el-norte-capitulo02-escena-4-3.jpg" id="imgbg-capitulo02-scena-4-3" style="display: none;">
-                        <img src="images/capitulo02/escena-4/buscando-el-norte-capitulo02-escena-4-4.jpg" id="imgbg-capitulo02-scena-4-4" style="display: none;">
-                        <img src="images/capitulo02/escena-4/buscando-el-norte-capitulo02-escena-4-5.jpg" id="imgbg-capitulo02-scena-4-5" style="display: none;">   
-                        <img src="images/capitulo02/escena-4/buscando-el-norte-capitulo02-escena-4-6.jpg" id="imgbg-capitulo02-scena-4-6" style="display: none;">   
-                        <img src="images/capitulo02/escena-4/buscando-el-norte-capitulo02-escena-4-7.jpg" id="imgbg-capitulo02-scena-4-7" style="display: none;">   
-                        <img src="images/capitulo02/escena-4/buscando-el-norte-capitulo02-escena-4-8.jpg" id="imgbg-capitulo02-scena-4-8" style="display: none;">						
-						 */?>                           
+						<img src="images/capitulo02/escena-1/buscando-el-norte-capitulo02-escena-1-1.jpg" id="imgbg-capitulo02" style="display: none;">                                                
                     </div> 
                 </div> <!--end section wrap -->
             </section>
 
             <section id="capitulo03" class="section-site cpt03"><!-- CAPITULO 03 -->
-                <div class="side-nav-section"><!-- navegacion lateral por seccion -->
+                <div class="side-nav-section" style="display: none"><!-- navegacion lateral por seccion -->
                     <ul>
                         <li class="sequence-thumb" id="sequence-capitulo03-scena-1"><a><img src="images/thumb-c3-e1.jpg"></a></li>
                         <li class="sequence-thumb" id="sequence-capitulo03-scena-2"><a><img src="images/thumb-c3-e2.jpg"></a></li>
@@ -250,8 +190,8 @@
                     </ul>
                 </div>
                 <div class="section-content-wrap"> <!-- contenedor de elementos del section -->
-                    <a class="nav-before chapter-nav" href="#capitulo02"><svg><use xlink:href="#nav"/></svg></a>
-                    <a class="nav-next" id="nav-next-capitulo03-inactive"><svg><use xlink:href="#nav"/></svg></a>
+                    <a class="nav-before chapter-nav" href="#capitulo02" style="display: none"><svg><use xlink:href="#nav"/></svg></a>
+                    <?php /*<a class="nav-next" id="nav-next-capitulo03-inactive"><svg><use xlink:href="#nav"/></svg></a>*/ ?>
                     <a class="nav-next chapter-nav" id="nav-next-capitulo03-active" style="display: none" href="#capitulo04"><svg><use xlink:href="#nav"/></svg></a>
                     <div class="subs-section">  
                         <audio id="audio-capitulo03-scena-1" class="audios" ontimeupdate="set_current_audio_time(this)">
@@ -272,44 +212,13 @@
                     </div>
                     
                     <div class="background-section">
-                        <img src="images/capitulo03/escena-1/buscando-el-norte-capitulo03-escena-1-1.jpg" id="imgbg-capitulo03" style="display: none;">               
-                        <?php /*
-                        <img src="images/capitulo03/escena-1/buscando-el-norte-capitulo03-escena-1-1.jpg" id="imgbg-capitulo03-scena-1-1" style="display: none;">
-                        <img src="images/capitulo03/escena-1/buscando-el-norte-capitulo03-escena-1-2.jpg" id="imgbg-capitulo03-scena-1-2" style="display: none;">
-                        <img src="images/capitulo03/escena-1/buscando-el-norte-capitulo03-escena-1-3.jpg" id="imgbg-capitulo03-scena-1-3" style="display: none;">
-                        <img src="images/capitulo03/escena-1/buscando-el-norte-capitulo03-escena-1-4.jpg" id="imgbg-capitulo03-scena-1-4" style="display: none;">
-                        <img src="images/capitulo03/escena-1/buscando-el-norte-capitulo03-escena-1-5.jpg" id="imgbg-capitulo03-scena-1-5" style="display: none;">
-                        <img src="images/capitulo03/escena-1/buscando-el-norte-capitulo03-escena-1-6.jpg" id="imgbg-capitulo03-scena-1-6" style="display: none;">
-                        <img src="images/capitulo03/escena-1/buscando-el-norte-capitulo03-escena-1-7.jpg" id="imgbg-capitulo03-scena-1-7" style="display: none;">
-                        
-                        <img src="images/capitulo03/escena-2/buscando-el-norte-capitulo03-escena-2-1.jpg" id="imgbg-capitulo03-scena-2-1" style="display: none;">
-                        <img src="images/capitulo03/escena-2/buscando-el-norte-capitulo03-escena-2-2.jpg" id="imgbg-capitulo03-scena-2-2" style="display: none;">
-                        <img src="images/capitulo03/escena-2/buscando-el-norte-capitulo03-escena-2-3.jpg" id="imgbg-capitulo03-scena-2-3" style="display: none;">
-                        
-                        <img src="images/capitulo03/escena-3/buscando-el-norte-capitulo03-escena-3-1.jpg" id="imgbg-capitulo03-scena-3-1" style="display: none;">
-                        <img src="images/capitulo03/escena-3/buscando-el-norte-capitulo03-escena-3-2.jpg" id="imgbg-capitulo03-scena-3-2" style="display: none;">
-                        <img src="images/capitulo03/escena-3/buscando-el-norte-capitulo03-escena-3-3.jpg" id="imgbg-capitulo03-scena-3-3" style="display: none;">
-                        <img src="images/capitulo03/escena-3/buscando-el-norte-capitulo03-escena-3-4.jpg" id="imgbg-capitulo03-scena-3-4" style="display: none;">
-                        <img src="images/capitulo03/escena-3/buscando-el-norte-capitulo03-escena-3-5.jpg" id="imgbg-capitulo03-scena-3-5" style="display: none;">
-                        <img src="images/capitulo03/escena-3/buscando-el-norte-capitulo03-escena-3-6.jpg" id="imgbg-capitulo03-scena-3-6" style="display: none;">
-                        <img src="images/capitulo03/escena-3/buscando-el-norte-capitulo03-escena-3-7.jpg" id="imgbg-capitulo03-scena-3-7" style="display: none;">
-                        <img src="images/capitulo03/escena-3/buscando-el-norte-capitulo03-escena-3-8.jpg" id="imgbg-capitulo03-scena-3-8" style="display: none;">
-                        <img src="images/capitulo03/escena-3/buscando-el-norte-capitulo03-escena-3-9.jpg" id="imgbg-capitulo03-scena-3-9" style="display: none;">
-                        <img src="images/capitulo03/escena-3/buscando-el-norte-capitulo03-escena-3-10.jpg" id="imgbg-capitulo03-scena-3-10" style="display: none;">
-                        <img src="images/capitulo03/escena-3/buscando-el-norte-capitulo03-escena-3-11.jpg" id="imgbg-capitulo03-scena-3-11" style="display: none;">
-                        <img src="images/capitulo03/escena-3/buscando-el-norte-capitulo03-escena-3-12.jpg" id="imgbg-capitulo03-scena-3-12" style="display: none;">
-                                               
-                        <img src="images/capitulo03/escena-4/buscando-el-norte-capitulo03-escena-4-1.jpg" id="imgbg-capitulo03-scena-4-1" style="display: none;">
-                        <img src="images/capitulo03/escena-4/buscando-el-norte-capitulo03-escena-4-2.jpg" id="imgbg-capitulo03-scena-4-2" style="display: none;">
-                        <img src="images/capitulo03/escena-4/buscando-el-norte-capitulo03-escena-4-3.jpg" id="imgbg-capitulo03-scena-4-3" style="display: none;">
-                        <img src="images/capitulo03/escena-4/buscando-el-norte-capitulo03-escena-4-4.jpg" id="imgbg-capitulo03-scena-4-4" style="display: none;">
-						 */?>
+                        <img src="images/capitulo03/escena-1/buscando-el-norte-capitulo03-escena-1-1.jpg" id="imgbg-capitulo03" style="display: none;">                        
                     </div>                                                                  
                 </div> <!--end section wrap -->
             </section>
 
             <section id="capitulo04" class="section-site cpt04"><!-- CAPITULO 04 -->
-                <div class="side-nav-section"><!-- navegacion lateral por seccion -->
+                <div class="side-nav-section" style="display: none"><!-- navegacion lateral por seccion -->
                     <ul>
                         <li class="sequence-thumb" id="sequence-capitulo04-scena-1"><a><img src="images/thumb-c4-e1.jpg"></a></li>
                         <li class="sequence-thumb" id="sequence-capitulo04-scena-2"><a><img src="images/thumb-c4-e2.jpg"></a></li>
@@ -320,8 +229,8 @@
                     </ul>
                 </div>
                 <div class="section-content-wrap"> <!-- contenedor de elementos del section -->
-                    <a class="nav-before chapter-nav" href="#capitulo03"><svg><use xlink:href="#nav"/></svg></a>
-                    <a class="nav-next" id="nav-next-capitulo04-inactive"><svg><use xlink:href="#nav"/></svg></a>
+                    <a class="nav-before chapter-nav" href="#capitulo03" style="display: none"><svg><use xlink:href="#nav"/></svg></a>
+                    <?php /*<a class="nav-next" id="nav-next-capitulo04-inactive"><svg><use xlink:href="#nav"/></svg></a> */ ?>
                     <a class="nav-next chapter-nav" id="nav-next-capitulo04-active" style="display: none" href="#capitulo05"><svg><use xlink:href="#nav"/></svg></a>
                     <div class="subs-section">  
                         <audio id="audio-capitulo04-scena-1" class="audios" ontimeupdate="set_current_audio_time(this)">
@@ -347,53 +256,13 @@
                         <div class="txt_capitulos" id="txt_capitulo04">&nbsp;</div>
                     </div>
                     <div class="background-section">
-                    	<img src="images/capitulo04/escena-1/buscando-el-norte-capitulo04-escena-1-1.jpg" id="imgbg-capitulo04" style="display: none;">               
-                        <?php /*
-                        <img src="images/capitulo04/escena-1/buscando-el-norte-capitulo04-escena-1-1.jpg" id="imgbg-capitulo04-scena-1-1" style="display: none;">
-                        <img src="images/capitulo04/escena-1/buscando-el-norte-capitulo04-escena-1-2.jpg" id="imgbg-capitulo04-scena-1-2" style="display: none;">
-                        <img src="images/capitulo04/escena-1/buscando-el-norte-capitulo04-escena-1-3.jpg" id="imgbg-capitulo04-scena-1-3" style="display: none;">
-                        <img src="images/capitulo04/escena-1/buscando-el-norte-capitulo04-escena-1-4.jpg" id="imgbg-capitulo04-scena-1-4" style="display: none;">
-                        <img src="images/capitulo04/escena-1/buscando-el-norte-capitulo04-escena-1-5.jpg" id="imgbg-capitulo04-scena-1-5" style="display: none;">
-                        <img src="images/capitulo04/escena-1/buscando-el-norte-capitulo04-escena-1-6.jpg" id="imgbg-capitulo04-scena-1-6" style="display: none;">
-                        
-                        <img src="images/capitulo04/escena-2/buscando-el-norte-capitulo04-escena-2-1.jpg" id="imgbg-capitulo04-scena-2-1" style="display: none;">
-                        <img src="images/capitulo04/escena-2/buscando-el-norte-capitulo04-escena-2-2.jpg" id="imgbg-capitulo04-scena-2-2" style="display: none;">
-                        <img src="images/capitulo04/escena-2/buscando-el-norte-capitulo04-escena-2-3.jpg" id="imgbg-capitulo04-scena-2-3" style="display: none;">
-                        <img src="images/capitulo04/escena-2/buscando-el-norte-capitulo04-escena-2-4.jpg" id="imgbg-capitulo04-scena-2-4" style="display: none;">
-                        <img src="images/capitulo04/escena-2/buscando-el-norte-capitulo04-escena-2-5.jpg" id="imgbg-capitulo04-scena-2-5" style="display: none;">
-                        
-                        <img src="images/capitulo04/escena-3/buscando-el-norte-capitulo04-escena-3-1.jpg" id="imgbg-capitulo04-scena-3-1" style="display: none;">
-                        <img src="images/capitulo04/escena-3/buscando-el-norte-capitulo04-escena-3-2.jpg" id="imgbg-capitulo04-scena-3-2" style="display: none;">
-                        <img src="images/capitulo04/escena-3/buscando-el-norte-capitulo04-escena-3-3.jpg" id="imgbg-capitulo04-scena-3-3" style="display: none;">
-                        <img src="images/capitulo04/escena-3/buscando-el-norte-capitulo04-escena-3-4.jpg" id="imgbg-capitulo04-scena-3-4" style="display: none;">
-                        <img src="images/capitulo04/escena-3/buscando-el-norte-capitulo04-escena-3-5.jpg" id="imgbg-capitulo04-scena-3-5" style="display: none;">
-                        <img src="images/capitulo04/escena-3/buscando-el-norte-capitulo04-escena-3-6.jpg" id="imgbg-capitulo04-scena-3-6" style="display: none;">
-                        <img src="images/capitulo04/escena-3/buscando-el-norte-capitulo04-escena-3-7.jpg" id="imgbg-capitulo04-scena-3-7" style="display: none;">
-                        
-                        <img src="images/capitulo04/escena-4/buscando-el-norte-capitulo04-escena-4-1.jpg" id="imgbg-capitulo04-scena-4-1" style="display: none;">
-                        <img src="images/capitulo04/escena-4/buscando-el-norte-capitulo04-escena-4-2.jpg" id="imgbg-capitulo04-scena-4-2" style="display: none;">
-                        <img src="images/capitulo04/escena-4/buscando-el-norte-capitulo04-escena-4-3.jpg" id="imgbg-capitulo04-scena-4-3" style="display: none;">
-                        <img src="images/capitulo04/escena-4/buscando-el-norte-capitulo04-escena-4-4.jpg" id="imgbg-capitulo04-scena-4-4" style="display: none;">
-                        <img src="images/capitulo04/escena-4/buscando-el-norte-capitulo04-escena-4-5.jpg" id="imgbg-capitulo04-scena-4-5" style="display: none;">
-                        <img src="images/capitulo04/escena-4/buscando-el-norte-capitulo04-escena-4-6.jpg" id="imgbg-capitulo04-scena-4-6" style="display: none;">
-                        
-                        <img src="images/capitulo04/escena-5/buscando-el-norte-capitulo04-escena-5-1.jpg" id="imgbg-capitulo04-scena-5-1" style="display: none;">
-                        <img src="images/capitulo04/escena-5/buscando-el-norte-capitulo04-escena-5-2.jpg" id="imgbg-capitulo04-scena-5-2" style="display: none;">
-                        <img src="images/capitulo04/escena-5/buscando-el-norte-capitulo04-escena-5-3.jpg" id="imgbg-capitulo04-scena-5-3" style="display: none;">
-                        <img src="images/capitulo04/escena-5/buscando-el-norte-capitulo04-escena-5-4.jpg" id="imgbg-capitulo04-scena-5-4" style="display: none;">
-                        <img src="images/capitulo04/escena-5/buscando-el-norte-capitulo04-escena-5-5.jpg" id="imgbg-capitulo04-scena-5-5" style="display: none;">
-                        <img src="images/capitulo04/escena-5/buscando-el-norte-capitulo04-escena-5-6.jpg" id="imgbg-capitulo04-scena-5-6" style="display: none;">
-                        <img src="images/capitulo04/escena-5/buscando-el-norte-capitulo04-escena-5-7.jpg" id="imgbg-capitulo04-scena-5-7" style="display: none;">
-                        <img src="images/capitulo04/escena-5/buscando-el-norte-capitulo04-escena-5-8.jpg" id="imgbg-capitulo04-scena-5-8" style="display: none;">
-                        
-                        <img src="images/capitulo04/escena-6/buscando-el-norte-capitulo04-escena-6-1.jpg" id="imgbg-capitulo04-scena-6-1" style="display: none;">						
-						 */?>
+                    	<img src="images/capitulo04/escena-1/buscando-el-norte-capitulo04-escena-1-1.jpg" id="imgbg-capitulo04" style="display: none;">                       
                     </div>    
                 </div> <!--end section wrap -->
             </section>
 
             <section id="capitulo05" class="section-site cpt05"><!-- CAPITULO 05 -->
-                <div class="side-nav-section"><!-- navegacion lateral por seccion -->
+                <div class="side-nav-section" style="display: none"><!-- navegacion lateral por seccion -->
                     <ul>
                         <li class="sequence-thumb" id="sequence-capitulo05-scena-1"><a><img src="images/thumb-c5-e1.jpg"></a></li>                              
                         <li class="sequence-thumb" id="sequence-capitulo05-scena-2"><a><img src="images/thumb-c5-e2.jpg"></a></li>
@@ -404,8 +273,8 @@
                     </ul>                    
                 </div>
                 <div class="section-content-wrap"> <!-- contenedor de elementos del section -->
-                    <a class="nav-before chapter-nav" href="#capitulo04"><svg><use xlink:href="#nav"/></svg></a>
-                    <a class="nav-next" id="nav-next-capitulo05-inactive"><svg><use xlink:href="#nav"/></svg></a>
+                    <a class="nav-before chapter-nav" href="#capitulo04" style="display: none"><svg><use xlink:href="#nav"/></svg></a>
+                    <?php /*<a class="nav-next" id="nav-next-capitulo05-inactive"><svg><use xlink:href="#nav"/></svg></a>*/ ?>
                     <a class="nav-next chapter-nav" id="nav-next-capitulo05-active" style="display: none" href="#capitulo06"><svg><use xlink:href="#nav"/></svg></a>
                     <div class="subs-section">  
                         <audio id="audio-capitulo05-scena-1" class="audios" ontimeupdate="set_current_audio_time(this)">
@@ -431,40 +300,13 @@
                         <div class="txt_capitulos" id="txt_capitulo05">&nbsp;</div>
                     </div> 
                     <div class="background-section">
-						<img src="images/capitulo05/escena-1/buscando-el-norte-capitulo05-escena-1-1.jpg" id="imgbg-capitulo05" style="display: none;">               
-                        <?php /*
-                        <img src="images/capitulo05/escena-1/buscando-el-norte-capitulo05-escena-1-1.jpg" id="imgbg-capitulo05-scena-1-1" style="display: none;">
-                        <img src="images/capitulo05/escena-1/buscando-el-norte-capitulo05-escena-1-2.jpg" id="imgbg-capitulo05-scena-1-2" style="display: none;">
-                        <img src="images/capitulo05/escena-1/buscando-el-norte-capitulo05-escena-1-3.jpg" id="imgbg-capitulo05-scena-1-3" style="display: none;">
-                        <img src="images/capitulo05/escena-1/buscando-el-norte-capitulo05-escena-1-4.jpg" id="imgbg-capitulo05-scena-1-4" style="display: none;">
-                        <img src="images/capitulo05/escena-1/buscando-el-norte-capitulo05-escena-1-5.jpg" id="imgbg-capitulo05-scena-1-5" style="display: none;">
-                        
-                        <img src="images/capitulo05/escena-2/buscando-el-norte-capitulo05-escena-2-1.jpg" id="imgbg-capitulo05-scena-2-1" style="display: none;">
-                        <img src="images/capitulo05/escena-2/buscando-el-norte-capitulo05-escena-2-2.jpg" id="imgbg-capitulo05-scena-2-2" style="display: none;">
-                        
-                        <img src="images/capitulo05/escena-3/buscando-el-norte-capitulo05-escena-3-1.jpg" id="imgbg-capitulo05-scena-3-1" style="display: none;">
-                        <img src="images/capitulo05/escena-3/buscando-el-norte-capitulo05-escena-3-2.jpg" id="imgbg-capitulo05-scena-3-2" style="display: none;">
-                        <img src="images/capitulo05/escena-3/buscando-el-norte-capitulo05-escena-3-3.jpg" id="imgbg-capitulo05-scena-3-3" style="display: none;">
-                        <img src="images/capitulo05/escena-3/buscando-el-norte-capitulo05-escena-3-4.jpg" id="imgbg-capitulo05-scena-3-4" style="display: none;">
-                        
-                        <img src="images/capitulo05/escena-4/buscando-el-norte-capitulo05-escena-4-1.jpg" id="imgbg-capitulo05-scena-4-1" style="display: none;">
-                        <img src="images/capitulo05/escena-4/buscando-el-norte-capitulo05-escena-4-2.jpg" id="imgbg-capitulo05-scena-4-2" style="display: none;">                       
-                       
-                        <img src="images/capitulo05/escena-5/buscando-el-norte-capitulo05-escena-5-1.jpg" id="imgbg-capitulo05-scena-5-1" style="display: none;">
-                        <img src="images/capitulo05/escena-5/buscando-el-norte-capitulo05-escena-5-2.jpg" id="imgbg-capitulo05-scena-5-2" style="display: none;">
-                        <img src="images/capitulo05/escena-5/buscando-el-norte-capitulo05-escena-5-3.jpg" id="imgbg-capitulo05-scena-5-3" style="display: none;">
-                        <img src="images/capitulo05/escena-5/buscando-el-norte-capitulo05-escena-5-4.jpg" id="imgbg-capitulo05-scena-5-4" style="display: none;">
-                        <img src="images/capitulo05/escena-5/buscando-el-norte-capitulo05-escena-5-5.jpg" id="imgbg-capitulo05-scena-5-5" style="display: none;">
-                        
-                        <img src="images/capitulo05/escena-6/buscando-el-norte-capitulo05-escena-6-1.jpg" id="imgbg-capitulo05-scena-6-1" style="display: none;">
-                        <img src="images/capitulo05/escena-6/buscando-el-norte-capitulo05-escena-6-2.jpg" id="imgbg-capitulo05-scena-6-2" style="display: none;">
-                       */?>
+						<img src="images/capitulo05/escena-1/buscando-el-norte-capitulo05-escena-1-1.jpg" id="imgbg-capitulo05" style="display: none;">                                      
                     </div>    
                 </div>
             </section> 
 
             <section id="capitulo06" class="section-site cpt06"><!-- CAPITULO 05 -->
-                <div class="side-nav-section"><!-- navegacion lateral por seccion -->
+                <div class="side-nav-section" style="display: none"><!-- navegacion lateral por seccion -->
                     <ul>
                         <li class="sequence-thumb" id="sequence-capitulo06-scena-1"><a><img src="images/thumb-c6-e1.jpg"></a></li>                        
                         <li class="sequence-thumb" id="sequence-capitulo06-scena-2"><a><img src="images/thumb-c6-e2.jpg"></a></li>
@@ -475,9 +317,9 @@
                     </ul>
                 </div>
                 <div class="section-content-wrap"> <!-- contenedor de elementos del section -->
-                    <a class="nav-before chapter-nav" href="#capitulo05"><svg><use xlink:href="#nav"/></svg></a>
-                    <a class="nav-next" id="nav-next-capitulo06-inactive"><svg><use xlink:href="#nav"/></svg></a>
-                    <a class="nav-next chapter-nav" id="nav-next-capitulo06-active" style="display: none" href="#introduccion"><svg><use xlink:href="#nav"/></svg></a>                  
+                    <a class="nav-before chapter-nav" href="#capitulo05" style="display: none"><svg><use xlink:href="#nav"/></svg></a>
+                    <?php /*<a class="nav-next" id="nav-next-capitulo06-inactive"><svg><use xlink:href="#nav"/></svg></a> */?>
+                    <a class="nav-next chapter-nav" id="nav-next-capitulo06-active" style="display: none" href="#firmar-peticion"><svg><use xlink:href="#nav"/></svg></a>                  
                     <div class="subs-section">
                         <audio id="audio-capitulo06-scena-1" class="audios" ontimeupdate="set_current_audio_time(this)">
                             <source src="audio/capitulo06/buscando-el-norte-capitulo06-E1.mp3" type="audio/mp3">                                                        
@@ -502,34 +344,38 @@
                         <div class="txt_capitulos" id="txt_capitulo06">&nbsp;</div>
                     </div>
                     <div class="background-section">
-                    	<img src="images/capitulo06/escena-1/buscando-el-norte-capitulo06-escena-1-1.jpg" id="imgbg-capitulo06" style="display: none;">               
-                        <?php /*
-                        <img src="images/capitulo06/escena-1/buscando-el-norte-capitulo06-escena-1-1.jpg" id="imgbg-capitulo06-scena-1-1" style="display: none;">
-                        <img src="images/capitulo06/escena-1/buscando-el-norte-capitulo06-escena-1-2.jpg" id="imgbg-capitulo06-scena-1-2" style="display: none;">
-                        
-                        <img src="images/capitulo06/escena-2/buscando-el-norte-capitulo06-escena-2-1.jpg" id="imgbg-capitulo06-scena-2-1" style="display: none;">
-                        <img src="images/capitulo06/escena-2/buscando-el-norte-capitulo06-escena-2-2.jpg" id="imgbg-capitulo06-scena-2-2" style="display: none;">
-                        <img src="images/capitulo06/escena-2/buscando-el-norte-capitulo06-escena-2-3.jpg" id="imgbg-capitulo06-scena-2-3" style="display: none;">
-                        <img src="images/capitulo06/escena-2/buscando-el-norte-capitulo06-escena-2-4.jpg" id="imgbg-capitulo06-scena-2-4" style="display: none;">
-                        <img src="images/capitulo06/escena-2/buscando-el-norte-capitulo06-escena-2-5.jpg" id="imgbg-capitulo06-scena-2-5" style="display: none;">                       
-                        
-                        <img src="images/capitulo06/escena-3/buscando-el-norte-capitulo06-escena-3-1.jpg" id="imgbg-capitulo06-scena-3-1" style="display: none;">
-                        <img src="images/capitulo06/escena-3/buscando-el-norte-capitulo06-escena-3-2.jpg" id="imgbg-capitulo06-scena-3-2" style="display: none;">
-                        <img src="images/capitulo06/escena-3/buscando-el-norte-capitulo06-escena-3-3.jpg" id="imgbg-capitulo06-scena-3-3" style="display: none;">
-                        <img src="images/capitulo06/escena-3/buscando-el-norte-capitulo06-escena-3-4.jpg" id="imgbg-capitulo06-scena-3-4" style="display: none;">
-                        
-                        <img src="images/capitulo06/escena-4/buscando-el-norte-capitulo06-escena-4-1.jpg" id="imgbg-capitulo06-scena-4-1" style="display: none;">
-                        
-                        <img src="images/capitulo06/escena-5/buscando-el-norte-capitulo06-escena-5-1.jpg" id="imgbg-capitulo06-scena-5-1" style="display: none;">
-                        <img src="images/capitulo06/escena-5/buscando-el-norte-capitulo06-escena-5-2.jpg" id="imgbg-capitulo06-scena-5-2" style="display: none;">
-                        <img src="images/capitulo06/escena-5/buscando-el-norte-capitulo06-escena-5-3.jpg" id="imgbg-capitulo06-scena-5-3" style="display: none;">
-                        
-                        <img src="images/capitulo06/escena-6/buscando-el-norte-capitulo06-escena-6-1.jpg" id="imgbg-capitulo06-scena-6-1" style="display: none;">
-                        <img src="images/capitulo06/escena-6/buscando-el-norte-capitulo06-escena-6-2.jpg" id="imgbg-capitulo06-scena-6-2" style="display: none;">                                              
-						*/?>
+                    	<img src="images/capitulo06/escena-1/buscando-el-norte-capitulo06-escena-1-1.jpg" id="imgbg-capitulo06" style="display: none;">                                       
                     </div>     
                 </div>
             </section> 
+            
+            <section id="firmar-peticion" class="section-site peticion">                
+                <div class="content-intro">
+                  <div class="logo">
+                  Buscando el Norte es el sueño de encontrar un &lt;&lt;mejor futuro&gt;&gt; en otro país, ya que el presente no es muy prometedor.
+                  Cada vez son más niños, niñas y adolecentes que lo hacen, expuestos a todo tipo de vulneración de derechos en el tránsito. 
+                  Un gran pocentaje es detenido y retornado a su comunidad de origen. Desesperanzados y maltratados, vuelven a los contextos de probreza
+                  y violencia que originaron su migración. Con esta campaña nos unimos para exigir a las autoridades que garanticen sus derechos.
+                  <br />
+                  Decimos NO DETENCIÓN, MÁS PROTECCIÓN para toda la niñez. Tu puedes ser parte de esto firmando nuestra petición/.
+                  </div>
+                  <a class="blackBtn intro-chapter-startbtn" href="#">Firmar petición</a> 
+                </div>
+                <div class="intro-chapter-menu" style="display:none">
+                    <h3>Navega por los diferentes capítulos:</h3>
+                    <ul>
+                        <li><a href="#capitulo01"><img src="images/thumb-portada-c1.jpg"></a></li>
+                        <li><a href="#capitulo02"><img src="images/thumb-portada-c2.jpg"></a></li>
+                        <li><a href="#capitulo03"><img src="images/thumb-portada-c3.jpg"></a></li>
+                        <li><a href="#capitulo04"><img src="images/thumb-portada-c4.jpg"></a></li>
+                        <li><a href="#capitulo05"><img src="images/thumb-portada-c5.jpg"></a></li>
+                        <li><a href="#capitulo06"><img src="images/thumb-portada-c6.jpg"></a></li>
+                    </ul>
+                </div>
+                <div class="background-section">
+                    <img class="med-bg" id="imgbg-firmar-peticion" src="images/buscando-el-norte-1024-intro.png">
+                </div>
+            </section>
             
             <!-- barra progreso -->
             <div id="barra-progreso">
