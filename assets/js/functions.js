@@ -171,7 +171,13 @@ $(document).ready(function(){
 	      let_audios_text_begins(); //restart audios and text if the user returns start all again
         	
 		    if(this.hash.slice(1)=="introduccion" || this.hash.slice(1)=="firmar-peticion") {
-		    	if(progress_bar>=100){ $(".intro-chapter-menu").show(); $(".intro-chapter-startbtn").hide(); }
+		    	if(progress_bar>=100){ 
+		    		$(".intro-chapter-menu").show(); $(".intro-chapter-startbtn").hide();
+		    		$(".section-content-wrap").css("width", "92%");
+			  		$(".section-content-wrap").css("float", "right");
+			  		$(".side-nav-section").show();
+			  		$(".chapter-nav").show(); 
+		    	}
 		    	else{ $(".intro-chapter-menu").hide(); $(".intro-chapter-startbtn").show(); }
 		    	$(".main-header > h1").hide();//hide image page title
 		    	$(".chapter-title").hide(); //hide chpaters title
@@ -257,14 +263,7 @@ $(document).ready(function(){
 	  	$("#nav-next-"+current_chapter+"-inactive").hide();
 	  	$("#nav-next-"+current_chapter+"-active").show();
 	  	
-	  	$("#nav-next-"+current_chapter+"-active").trigger("click");
-	  	
-	  	if(current_chapter == "firmar-peticion"){	 
-	  		$(".section-content-wrap").css("width", "92%");
-	  		$(".section-content-wrap").css("float", "right");
-	  		$(".side-nav-section").show();
-	  		$(".chapter-nav").show();
-	  	}	 	
+	  	$("#nav-next-"+current_chapter+"-active").trigger("click");	  		  		 
 	  }
 	  
 	}
