@@ -269,9 +269,16 @@ header .submenu ul li a:hover{
 	
 }
 @-webkit-keyframes logo{
-		from{ left:0;}
-		to{right:2em;}
-	}
+	from{ left:0;}
+	to{right:2em;}
+}
+.content-intro.sign-p{
+    font-size: 20px;
+    width: 80%;
+    padding: 5%;
+    background-color: rgba(255, 255, 255, 0.5)
+    line-height: 25px;	
+}
 .intro-chapter-menu{
     position: absolute;
     z-index: 5;

@@ -350,7 +350,7 @@
             </section> 
             
             <section id="firmar-peticion" class="section-site peticion">                
-                <div class="content-intro">
+                <div class="content-intro sign-p">
                   <div class="logo">
                   Buscando el Norte es el sueño de encontrar un &lt;&lt;mejor futuro&gt;&gt; en otro país, ya que el presente no es muy prometedor.
                   Cada vez son más niños, niñas y adolecentes que lo hacen, expuestos a todo tipo de vulneración de derechos en el tránsito. 
