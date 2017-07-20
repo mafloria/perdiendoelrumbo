@@ -360,15 +360,16 @@
             
             <section id="firmar-peticion" class="section-site peticion">                
                 <div class="content-intro sign-p">
-                  <div class="logo">
-                  Buscando el Norte es el sueño de encontrar un &lt;&lt;mejor futuro&gt;&gt; en otro país, ya que el presente no es muy prometedor.
-                  Cada vez son más niños, niñas y adolecentes que lo hacen, expuestos a todo tipo de vulneración de derechos en el tránsito. 
-                  Un gran pocentaje es detenido y retornado a su comunidad de origen. Desesperanzados y maltratados, vuelven a los contextos de probreza
-                  y violencia que originaron su migración. Con esta campaña nos unimos para exigir a las autoridades que garanticen sus derechos.
-                  <br />
-                  Decimos NO DETENCIÓN, MÁS PROTECCIÓN para toda la niñez. Tu puedes ser parte de esto firmando nuestra petición/.
-                  </div>
-                  <a class="blackBtn intro-chapter-startbtn" href="#">Firmar petición</a> 
+                    <img src="images/buscando-el-norte-logo-horizontal-top.png" width="541" height="61">
+                    <div class="sign-p-txt">
+                      Buscando el Norte es el sueño de encontrar un &lt;&lt;mejor futuro&gt;&gt; en otro país, ya que el presente no es muy prometedor.
+                      Cada vez son más niños, niñas y adolecentes que lo hacen, expuestos a todo tipo de vulneración de derechos en el tránsito. 
+                      Un gran pocentaje es detenido y retornado a su comunidad de origen. Desesperanzados y maltratados, vuelven a los contextos de probreza
+                      y violencia que originaron su migración. Con esta campaña nos unimos para exigir a las autoridades que garanticen sus derechos.
+                      <br /><br />
+                      Decimos NO DETENCIÓN, MÁS PROTECCIÓN para toda la niñez. Tu puedes ser parte de esto firmando nuestra petición.
+                    </div>
+                    <a class="blackBtn" href="#">Firmar petición</a> 
                 </div>
                 <div class="intro-chapter-menu" style="display:none">
                     <h3>Navega por los diferentes capítulos:</h3>

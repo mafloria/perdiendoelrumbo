@@ -255,8 +255,9 @@ header .submenu ul li a:hover{
 	-moz-transition: all 0.4s ease;
 	-ms-transition: all 0.4s ease;
 }
-.content-intro .logo{
-	
+#firmar-peticion .intro-chapter-menu{
+	left: 5%;
+	text-align: initial;
 }
 @-webkit-keyframes logo{
 	from{ left:0;}
@@ -264,10 +265,17 @@ header .submenu ul li a:hover{
 }
 .content-intro.sign-p{
     font-size: 20px;
-    width: 80%;
-    padding: 5%;
-    background-color: rgba(255, 255, 255, 0.5)
-    line-height: 25px;	
+    width: 35%;
+    padding: 3%;
+    background-color: rgba(255, 255, 255, 0.5);
+    top: 0;
+    left: 5%;
+}
+.content-intro.sign-p img{
+	margin-bottom: 1em;
+}
+.content-intro.sign-p a.blackBtn{
+	margin-top: 2em;	
 }
 .intro-chapter-menu{
     position: absolute;
