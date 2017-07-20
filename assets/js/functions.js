@@ -9,7 +9,7 @@
 // Setup total images per chapter per scena
 	var totalimg_capitulo01_scena_1 = 4; var totalimg_capitulo01_scena_2 = 10; var totalimg_capitulo01_scena_3 = 2; var totalimg_capitulo01_scena_4 = 4; var totalimg_capitulo01_scena_5 = 3; var totalimg_capitulo01_scena_6 = 2;
 	var totalimg_capitulo02_scena_1 = 4; var totalimg_capitulo02_scena_2 = 4; var totalimg_capitulo02_scena_3 = 5; var totalimg_capitulo02_scena_4 = 5;
-	var totalimg_capitulo03_scena_1 = 7; var totalimg_capitulo03_scena_2 = 3; var totalimg_capitulo03_scena_3 = 12; var totalimg_capitulo03_scena_4 = 4;
+	var totalimg_capitulo03_scena_1 = 7; var totalimg_capitulo03_scena_2 = 3; var totalimg_capitulo03_scena_3 = 12; var totalimg_capitulo03_scena_4 = 6;
 	var totalimg_capitulo04_scena_1 = 6; var totalimg_capitulo04_scena_2 = 5; var totalimg_capitulo04_scena_3 = 7; var totalimg_capitulo04_scena_4 = 6;var totalimg_capitulo04_scena_5 = 8;var totalimg_capitulo04_scena_6 = 1;
 	var totalimg_capitulo05_scena_1 = 5; var totalimg_capitulo05_scena_2 = 2; var totalimg_capitulo05_scena_3 = 4; var totalimg_capitulo05_scena_4 = 2;var totalimg_capitulo05_scena_5 = 5;var totalimg_capitulo05_scena_6 = 2;
 	var totalimg_capitulo06_scena_1 = 2; var totalimg_capitulo06_scena_2 = 5; var totalimg_capitulo06_scena_3 = 4; var totalimg_capitulo06_scena_4 = 1;var totalimg_capitulo06_scena_5 = 3;var totalimg_capitulo06_scena_6 = 2;
@@ -30,7 +30,7 @@
 	var timeimg_capitulo03_scena_1 = [11, 25, 32, 36, 46, 50, 64]; 
 	var timeimg_capitulo03_scena_2 = [12, 31, 35];
 	var timeimg_capitulo03_scena_3 = [13, 30, 42, 46, 50, 53, 56, 59, 62, 65, 67, 82];
-	var timeimg_capitulo03_scena_4 = [22, 31, 44, 53];
+	var timeimg_capitulo03_scena_4 = [21, 36, 40, 44, 48, 53];
 	
 	var timeimg_capitulo04_scena_1 = [10, 22, 29, 32, 36, 41]; 
 	var timeimg_capitulo04_scena_2 = [2, 4, 5, 6, 11];
