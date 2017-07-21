@@ -55,14 +55,14 @@
                     <span id="title-capitulo05" style="display: none;">Cap&iacute;tulo 5: Encuentros y despedidas</span>
                     <span id="title-capitulo06" style="display: none;">Cap&iacute;tulo 6: El regreso</span>
                 </h3>
-                <?php /* */?>     
+                <?php /*     
                 <div> 
                     <a class="nav-chap-us" href="#capitulo02">C2</a>
                     <a class="nav-chap-us" href="#capitulo03">C3</a>
                     <a class="nav-chap-us" href="#capitulo04">C4</a>
                     <a class="nav-chap-us" href="#capitulo05">C5</a>
                     <a class="nav-chap-us" href="#firmar-peticion">C6</a>
-                </div>
+                </div> */?> 
             </div>
             <nav id="nav-menu">
                 <a id="ben-main-menu" href="javascript:void(0);"><svg><use xlink:href="#menu"/></svg></a>
