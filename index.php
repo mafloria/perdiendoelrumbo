@@ -69,11 +69,11 @@
             </nav>
             <div class="submenu" style="display: none;">
                 <ul>
-                    <li><a href="">Información Educativa</a></li>
+                    <li><a href="sobre-buscando-el-norte.pdf" download>Información Educativa</a></li>
                     <li><a href="">Perfil del Migrante</a></li>
                     <li><a href="">Información para tomadores de decisiones</a></li>
                     <li><a href="">Qué hacer si eres joven migrante</a></li>
-                    <li><a href="">Créditos</a></li>
+                    <li><a href="creditos-buscandoelnorte.pdf" download>Créditos</a></li>
                 </ul>
             </div>
 
