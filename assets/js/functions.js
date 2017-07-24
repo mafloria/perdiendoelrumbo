@@ -685,9 +685,10 @@ $(document).ready(function(){
     text_capitulo06[38]="Because if nothing comes up in the next few months -mom has already said-, we’ll go back to the North.";    
     
     
-    //waits 5 seconds after all is available to show story   
+    //waits 5 seconds after all is available to show story
+    /*   
    	setTimeout(function() {
     	$("#cargando-historia").hide();
     	$(".wrapper").show();
-  	}, 10000);	    
+  	}, 10000);	    */
 });
