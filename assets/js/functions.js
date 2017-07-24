@@ -50,7 +50,7 @@
 	var timeimg_capitulo06_scena_2 = [4, 6, 13, 22, 33];
 	var timeimg_capitulo06_scena_3 = [5, 12, 18, 30, 33, 56];
 	var timeimg_capitulo06_scena_4 = [24];
-	var timeimg_capitulo06_scena_5 = [4, 8, 17, 22, 30, 39];
+	var timeimg_capitulo06_scena_5 = [4, 11, 17, 22, 30, 39];
 	var timeimg_capitulo06_scena_6 = [15, 61, 68];
 	
 	//setup line number for each scena inside the chapter
