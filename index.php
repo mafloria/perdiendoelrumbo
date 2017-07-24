@@ -35,9 +35,14 @@
 </style>
     <div id="cargando-historia" class="section-site overlay">
         <div class="loadH-content">
-        <img src="images/cargando-img.png">
-        <p id="cargando-texto-animado" data-text="Cargando historia ...">Cargando historia ...</p>
-        </div>                      
+            <img src="images/cargando-img.png">
+            <p id="cargando-texto-animado" data-text="Cargando historia ...">Cargando historia ...</p>
+
+            <div class="mss">
+                <img src="images/icono-speaker.png">
+                <p>Para una mejor experiencia, habilita el sonido de tu equipo o dispositivo.</p> 
+            </div>
+        </div>                        
     </div>
     <div class="wrapper" style="display:none">
         <header class="main-header">
@@ -69,11 +74,13 @@
             </nav>
             <div class="submenu" style="display: none;">
                 <ul>
-                    <li><a href="sobre-buscando-el-norte.pdf" download>Sobre Buscando el norte</a></li>
+                    <li><a href="sobre-buscando-el-norte.pdf">Sobre Buscando el norte</a></li>
+                    <li><a href="">Historias de vida</a></li>
+                    <li><a href="sobre-buscando-el-norte.pdf" download>Buscando el norte [PDF]</a></li>
                     <!--<li><a href="">Perfil del Migrante</a></li>
                     <li><a href="">Información para tomadores de decisiones</a></li>
                     <li><a href="">Qué hacer si eres joven migrante</a></li>-->
-                    <li><a href="creditos-buscandoelnorte.pdf" download>Créditos</a></li>
+                    <li><a href="creditos-buscandoelnorte.pdf">Créditos</a></li>
                 </ul>
             </div>
 

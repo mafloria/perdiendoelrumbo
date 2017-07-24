@@ -232,8 +232,21 @@ header .submenu ul li a:hover{
 	width: 100%;
 	position: relative;
 }
-.cpt00{	
-
+.mss{	
+	width: 100%;
+    margin: 0 auto;
+    margin-top: 2em;
+    opacity: .5;
+}
+.mss img{
+	width: auto;
+	float: left;
+	margin-right: 0.5em;
+}
+.mss p{
+	width: 82%;
+	float: left;
+	color: white;
 }
 .content-intro{
 	position: absolute;
@@ -525,8 +538,8 @@ a.next-scenas-detail:hover{
 	width: 45%;
 }
 .content-intro.sign-p{
-    font-size: 16px;
-    width: 50%;
+    font-size: 16px !important;
+    width: 50% !important;
     height: auto;
     padding: 3%;
     background-color: rgba(255, 255, 255, 0.5);
@@ -538,7 +551,7 @@ a.next-scenas-detail:hover{
 	height: auto;
 }
 img.sign-logo-bn{
-	width: 70%;
+	width: 70% !important;
 }
 /* Media queries
 -------------------------------------------------------------------------------*/
@@ -559,8 +572,8 @@ img.sign-logo-bn{
 		width: 67%;
 	}
 	.content-intro.sign-p{
-		font-size: 20px;
-		width: 38%;
+		font-size: 20px !important;
+		width: 38% !important;
 	}
 }
 /* Print styles
