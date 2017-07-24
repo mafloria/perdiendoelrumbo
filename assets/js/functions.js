@@ -166,11 +166,10 @@ $(document).ready(function(){
 	      $(".submenu").hide();
 	      
 	      var target = $(this.hash);		      
-	      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-	     
+	      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');	     
 	      let_audios_text_begins(); //restart audios and text if the user returns start all again
-        	
-		    if(this.hash.slice(1)=="introduccion" || this.hash.slice(1)=="firmar-peticion") {
+	              	
+		  if(this.hash.slice(1)=="introduccion" || this.hash.slice(1)=="firmar-peticion" || this.hash.slice(1)=="creditos-buscandoelnorte" || this.hash.slice(1)=="sobre-buscandoelnorte") {
 		    	
 		    	if(progress_bar>=100){
 		    		$(".intro-chapter-menu").show(); $(".intro-chapter-startbtn").hide();
@@ -188,7 +187,7 @@ $(document).ready(function(){
 		    	$(".chapter-title").hide(); //hide chpaters title
 		    	$("#nav-menu").show();//show main menu
 				$("#imgbg-"+this.hash.slice(1)).show();
-		    }else{
+		  }else{
 		    	current_chapter = this.hash.slice(1);
 		    	autoplay_audios(this.hash.slice(1));
 		    	//$(".main-header > h1").show();//page title
@@ -196,9 +195,9 @@ $(document).ready(function(){
 		    	$(".chapter-title").show();//show chapter title section
 		    	$(".chapter-title > h3 > span").hide(); //hide chapter titles
 		    	$("#title-"+current_chapter).show(); //show only current chapter title		    	
-		    }
+		  }
 		    
-		    $("#sequence-"+current_chapter+"-scena-1 a").addClass("current-scene");		    		    		    		      
+		  $("#sequence-"+current_chapter+"-scena-1 a").addClass("current-scene");		    		    		    		      
 
 	     
 	      if (target.length) {

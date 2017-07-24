@@ -74,13 +74,13 @@
             </nav>
             <div class="submenu" style="display: none;">
                 <ul>
-                    <li><a href="sobre-buscando-el-norte.pdf">Sobre Buscando el norte</a></li>
+                    <li><a href="#sobre-buscandoelnorte">Sobre Buscando el norte</a></li>
                     <li><a href="">Historias de vida</a></li>
                     <li><a href="sobre-buscando-el-norte.pdf" download>Buscando el norte [PDF]</a></li>
                     <!--<li><a href="">Perfil del Migrante</a></li>
                     <li><a href="">Información para tomadores de decisiones</a></li>
                     <li><a href="">Qué hacer si eres joven migrante</a></li>-->
-                    <li><a href="creditos-buscandoelnorte.pdf">Créditos</a></li>
+                    <li><a href="#creditos-buscandoelnorte">Créditos</a></li>
                 </ul>
             </div>
 
@@ -376,12 +376,10 @@
                       <br /><br />
                       Tu puedes ser parte de esto firmando nuestra petición.
                       <div class="sign-bottom">
-                            <img src="images/logo-save-children.png" width="578" height="146">
+                          <img src="images/logo-save-children.png" width="578" height="146">
                           <a class="blackBtn" href="https://goo.gl/CDG3yV" target="_blank">Firmar petición</a>
-                      </div>
-                      
-                    </div>
-                     
+                      </div>                     
+                    </div>                     
                 </div>
                 <div class="intro-chapter-menu">
                     <h3>Navega por los diferentes capítulos:</h3>
@@ -394,6 +392,85 @@
                         <li><a href="#capitulo06"><img src="images/thumb-portada-c6.jpg"></a></li>
                     </ul>
                 </div>
+                <div class="background-section">
+                    <img class="med-bg" id="imgbg-firmar-peticion" src="images/buscando-el-norte-1024-intro.png">
+                </div>
+            </section>
+            
+            <section id="sobre-buscandoelnorte" class="section-site buscandoelnorte">
+                <a class="nav-before chapter-nav" href="#introduccion"><svg><use xlink:href="#nav"/></svg></a>           
+                <div class="content-intro sign-p">
+                    <img class="sign-logo-bn" src="images/buscando-el-norte-logo-horizontal-top.png" width="541" height="61">
+                    <div class="sign-p-txt" style="height:400px; overflow-y: scroll">
+                        Más  de  200.000 niños,  niñas  y  adolescentes fueron  detenidos en  la  frontera  sur  de  los Estados  Unidos en los  últimos  3  años. 75%  de ellos provenían  del  Triángulo  Norte  de Centroamérica. 43%  viajaba  sin  compañía  de  un  adulto  o  cuidador ,  aumentando  su vulnerabilidad en  una  ruta  donde  la trata  de  personas, el  tráfico,  la  explotación,  la violencia física y sexual son frecuentes.
+                        <br/><br/>
+                        Seis niños, niñas y adolescentes de El Salvador, Guatemala y Honduras, que hicieron este viaje, fueron  detenidos  en  diferentes  coordenadas  y  retornados  a  sus  comunidades  de origen,  compartieron fragmentos  de  su  vida  con  nosotros; para  ayudarnos  a  trazar  el mapa  de esta ruta  de  esperanza,  que  es  también  una  puerta  a  situaciones  tanto  o  más peligrosas que las que viven en sus propios barrios y ciudades.
+                        <br/><br/>
+                        Quisimos  hacerles un  homenaje retratando  parte  de  sus  cotidianidades,  problemáticas y razones  por  las  que  huyeron  de  sus  comunidades -en  busca de  un  mejor  futuro-, lanzándose a esta aventura, a pesar de los riesgos y posibilidades de ser detenidos por las autoridades fronterizas y devueltos a sus países.
+                        <br/><br/>  
+                        Así nació Buscando  el  Norte. Un relato elaborado   en   el   marco   del   proyecto &lt;&lt;fortalecimiento  de  los  sistemas  de  protección  para  la  niñez  y  adolescencia  migrante retornada a los países de El Salvador, Honduras y Guatemala&gt;&gt;, cuyo propósito es visibilizar la  realidad  de  estos  niños,  niñas  y  adolescentes,  los  peligros  del  viaje,  protocolos  y procesos  de  retorno,  para  apoyarles  en  esos  momentos  de  desesperanza, cuando debes volver al punto de partida con las heridas del camino y el miedo de enfrentarte al pasado.
+                    </div>                     
+                </div>                
+                <div class="background-section">
+                    <img class="med-bg" id="imgbg-firmar-peticion" src="images/buscando-el-norte-1024-intro.png">
+                </div>
+            </section>
+            <section id="creditos-buscandoelnorte" class="section-site">
+                <a class="nav-before chapter-nav" href="#introduccion"><svg><use xlink:href="#nav"/></svg></a>           
+                <div class="content-intro sign-p">
+                    <img class="sign-logo-bn" src="images/buscando-el-norte-logo-horizontal-top.png" width="541" height="61">
+                    <div class="sign-p-txt" style="height:400px; overflow-y: scroll">
+                        <h3>EQUIPO DE TRABAJO</h3>
+                        <strong>Save the Children Panamá, presenta</strong><br/> 
+                        Buscando el Norte <br/><br/>
+                        
+                        <strong>Dirección y guión</strong><br />
+                        Carolina Ángel Idrobo <br/><br/> 
+                        
+                        <strong>Concepto de ilustraciones</strong><br />
+                        Martanoemí Noriega <br/><br/>
+
+                        <strong>Concepto de diseño web</strong><br />
+                        Álvaro Rojas Tafur <br/><br/>
+                        
+                        <strong>Desarrollo y programación</strong><br />
+                        Ruth Margaret Florian Caipa <br/><br/>
+                        
+                        <strong>Coordinación Save the Children</strong><br />
+                        Laura Marco <br/>
+                        Ivonne Arica<br/>
+                        Mónica Kuljich<br/><br/>
+                        
+                        <strong>Mapas</strong><br />
+                        Edgar Enrique Figueroa<br/><br/>
+                        
+                        <strong>Audio y diseño sonoro</strong><br />
+                        Luis Lasso<br/><br/>
+                        
+                        <strong>Voces</strong><br />
+                        Laura Valentina Noguera Idrobo<br/>
+                        Paula Andrea Baruque<br/>
+                        Santiago Baruque<br/>
+                        Michael Griffith<br/>
+                        Rodrigo Alvarado Szejner<br/>
+                        Michelle Szejner<br/>
+                        Manuel Antonio Jované Carrillo<br/><br/>
+                        
+                        <strong>Traducción</strong><br />
+                        Álvaro Girón<br/><br/>
+                        
+                        <strong>Investigación </strong><br />
+                        Save the Children Honduras, Guatemala, El Salvador<br/><br/>
+                        
+                        <strong>Producción</strong><br />
+                        Pela ́as y Pela ́os te cuentan...<br/><br/>
+                        
+                        Agradecemos  profundamente  a  los  niños,  niñas  y  adolescentes  del  triángulo  norte  de Centroamérica que hicieron parte del proceso de investigación. Ellos nos abrieron sus espacios y compartieron sus testimonios para visibilizar lo que pasa cuando estás migrando en condiciones de vulnerabilidad, y que sus historias sirvan como referencia para todos aquellos niños, niñas y adolescentes que están pensando tomar la ruta hacia los Estados.
+                        <div class="sign-bottom">
+                          <img src="images/logo-save-children.png" width="578" height="146">    
+                        </div>                         
+                    </div>                     
+                </div>                
                 <div class="background-section">
                     <img class="med-bg" id="imgbg-firmar-peticion" src="images/buscando-el-norte-1024-intro.png">
                 </div>
