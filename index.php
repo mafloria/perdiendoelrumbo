@@ -410,11 +410,47 @@
                         <br/><br/>  
                         Así nació Buscando  el  Norte. Un relato elaborado   en   el   marco   del   proyecto &lt;&lt;fortalecimiento  de  los  sistemas  de  protección  para  la  niñez  y  adolescencia  migrante retornada a los países de El Salvador, Honduras y Guatemala&gt;&gt;, cuyo propósito es visibilizar la  realidad  de  estos  niños,  niñas  y  adolescentes,  los  peligros  del  viaje,  protocolos  y procesos  de  retorno,  para  apoyarles  en  esos  momentos  de  desesperanza, cuando debes volver al punto de partida con las heridas del camino y el miedo de enfrentarte al pasado.
                     </div>                     
-                </div>                
+                </div>
+                <div class="intro-chapter-menu">
+                    <h3>Navega por los diferentes capítulos:</h3>
+                    <ul>
+                        <li><a href="#capitulo01"><img src="images/thumb-portada-c1.jpg"></a></li>
+                        <li><a href="#capitulo02"><img src="images/thumb-portada-c2.jpg"></a></li>
+                        <li><a href="#capitulo03"><img src="images/thumb-portada-c3.jpg"></a></li>
+                        <li><a href="#capitulo04"><img src="images/thumb-portada-c4.jpg"></a></li>
+                        <li><a href="#capitulo05"><img src="images/thumb-portada-c5.jpg"></a></li>
+                        <li><a href="#capitulo06"><img src="images/thumb-portada-c6.jpg"></a></li>
+                    </ul>
+                </div>
                 <div class="background-section">
-                    <img class="med-bg" id="imgbg-firmar-peticion" src="images/buscando-el-norte-1024-intro.png">
+                    <img class="med-bg" id="imgbg-sobre-buscandoelnorte" src="images/buscando-el-norte-1024-intro.png">
                 </div>
             </section>
+            <section id="historias-buscandoelnorte" class="section-site buscandoelnorte">
+                <a class="nav-before chapter-nav" href="#introduccion"><svg><use xlink:href="#nav"/></svg></a>           
+                <div class="content-intro sign-p">
+                    <img class="sign-logo-bn" src="images/buscando-el-norte-logo-horizontal-top.png" width="541" height="61">
+                    <div class="sign-p-txt" style="height:400px; overflow-y: scroll">
+                        Más  de  200.000 niños,  niñas  y  adolescentes fueron  detenidos en  la  frontera  sur  de  los Estados  Unidos en los  últimos  3  años. 75%  de ellos provenían  del  Triángulo  Norte  de Centroamérica. 43%  viajaba  sin  compañía  de  un  adulto  o  cuidador ,  aumentando  su vulnerabilidad en  una  ruta  donde  la trata  de  personas, el  tráfico,  la  explotación,  la violencia física y sexual son frecuentes.
+                        <br/><br/>                        
+                    </div>                     
+                </div>
+                <div class="intro-chapter-menu">
+                    <h3>Navega por los diferentes capítulos:</h3>
+                    <ul>
+                        <li><a href="#capitulo01"><img src="images/thumb-portada-c1.jpg"></a></li>
+                        <li><a href="#capitulo02"><img src="images/thumb-portada-c2.jpg"></a></li>
+                        <li><a href="#capitulo03"><img src="images/thumb-portada-c3.jpg"></a></li>
+                        <li><a href="#capitulo04"><img src="images/thumb-portada-c4.jpg"></a></li>
+                        <li><a href="#capitulo05"><img src="images/thumb-portada-c5.jpg"></a></li>
+                        <li><a href="#capitulo06"><img src="images/thumb-portada-c6.jpg"></a></li>
+                    </ul>
+                </div>
+                <div class="background-section">
+                    <img class="med-bg" id="imgbg-historias-buscandoelnorte" src="images/buscando-el-norte-1024-intro.png">
+                </div>
+            </section>
+            
             <section id="creditos-buscandoelnorte" class="section-site">
                 <a class="nav-before chapter-nav" href="#introduccion"><svg><use xlink:href="#nav"/></svg></a>           
                 <div class="content-intro sign-p">
@@ -470,9 +506,20 @@
                           <img src="images/logo-save-children.png" width="578" height="146">    
                         </div>                         
                     </div>                     
-                </div>                
+                </div>
+                <div class="intro-chapter-menu">
+                    <h3>Navega por los diferentes capítulos:</h3>
+                    <ul>
+                        <li><a href="#capitulo01"><img src="images/thumb-portada-c1.jpg"></a></li>
+                        <li><a href="#capitulo02"><img src="images/thumb-portada-c2.jpg"></a></li>
+                        <li><a href="#capitulo03"><img src="images/thumb-portada-c3.jpg"></a></li>
+                        <li><a href="#capitulo04"><img src="images/thumb-portada-c4.jpg"></a></li>
+                        <li><a href="#capitulo05"><img src="images/thumb-portada-c5.jpg"></a></li>
+                        <li><a href="#capitulo06"><img src="images/thumb-portada-c6.jpg"></a></li>
+                    </ul>
+                </div>  
                 <div class="background-section">
-                    <img class="med-bg" id="imgbg-firmar-peticion" src="images/buscando-el-norte-1024-intro.png">
+                    <img class="med-bg" id="imgbg-creditos-buscandoelnorte" src="images/buscando-el-norte-1024-intro.png">
                 </div>
             </section>
             
