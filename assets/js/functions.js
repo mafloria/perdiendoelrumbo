@@ -171,8 +171,7 @@ $(document).ready(function(){
 	      let_audios_text_begins(); //restart audios and text if the user returns start all again
         	
 		    if(this.hash.slice(1)=="introduccion" || this.hash.slice(1)=="firmar-peticion") {
-		    	if(this.hash.slice(1)=="firmar-peticion") progress_bar=100; 
-		    	console.log("progress_bar: "+progress_bar);
+		    	
 		    	if(progress_bar>=100){
 		    		$(".intro-chapter-menu").show(); $(".intro-chapter-startbtn").hide();
 		    		$(".section-content-wrap").css("width", "92%");
@@ -180,10 +179,8 @@ $(document).ready(function(){
 			  		$(".side-nav-section").show();
 			  		$(".chapter-nav").show(); 
 			  		$("body").attr('style', 'background-image: none !important');
-			  		$("body").css({ 'background-color': 'black' });
-			  		
-     				
-     				
+			  		$("body").css({ 'background-color': 'black' });			  		
+     				$("#back-to-capitulo06").hide(); //hide back arrow because there are all the direct access to each chpater
 		    	}
 		    	else{ $(".intro-chapter-menu").hide(); $(".intro-chapter-startbtn").show(); }
 		    	

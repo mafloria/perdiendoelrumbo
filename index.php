@@ -55,14 +55,14 @@
                     <span id="title-capitulo05" style="display: none;">Cap&iacute;tulo 5: Encuentros y despedidas</span>
                     <span id="title-capitulo06" style="display: none;">Cap&iacute;tulo 6: El regreso</span>
                 </h3>
-                <?php ?>      
+                <?php /*
                 <div> 
                     <a class="nav-chap-us" href="#capitulo02">C2</a>
                     <a class="nav-chap-us" href="#capitulo03">C3</a>
                     <a class="nav-chap-us" href="#capitulo04">C4</a>
                     <a class="nav-chap-us" href="#capitulo05">C5</a>
                     <a class="nav-chap-us" href="#firmar-peticion">C6</a>
-                </div> 
+                </div> */ ?>
             </div>
             <nav id="nav-menu">
                 <a id="ben-main-menu" href="javascript:void(0);"><svg><use xlink:href="#menu"/></svg></a>
@@ -116,8 +116,8 @@
                     </ul>
                 </div>
                 <div class="section-content-wrap"> <!-- contenedor de elementos del section -->
-                    <a class="nav-before chapter-nav" href="#introduccion" style="display: none"><svg><use xlink:href="#nav"/></svg></a>
-                    <?php /*<a class="nav-next" id="nav-next-capitulo01-inactive"><svg><use xlink:href="#nav"/></svg></a> */ ?>
+                    <a class="nav-before chapter-nav" href="#introduccion"><svg><use xlink:href="#nav"/></svg></a>
+                    <a class="nav-next" id="nav-next-capitulo01-inactive" href="#capitulo02"><svg><use xlink:href="#nav"/></svg></a>
                     <a class="nav-next chapter-nav" id="nav-next-capitulo01-active" style="display: none" href="#capitulo02"><svg><use xlink:href="#nav"/></svg></a>
                     <div class="subs-section">  
                          <audio id="audio-capitulo01-scena-1" class="audios" ontimeupdate="set_current_audio_time(this)">
@@ -162,8 +162,8 @@
                     </ul>
                 </div>
                 <div class="section-content-wrap"> <!-- contenedor de elementos del section -->
-                    <a class="nav-before chapter-nav" href="#capitulo01" style="display: none"><svg><use xlink:href="#nav"/></svg></a>                    
-                    <?php /*<a class="nav-next" id="nav-next-capitulo02-inactive"><svg><use xlink:href="#nav"/></svg></a> */?>
+                    <a class="nav-before chapter-nav" href="#capitulo01"><svg><use xlink:href="#nav"/></svg></a>                    
+                    <a class="nav-next" id="nav-next-capitulo02-inactive" href="#capitulo03"><svg><use xlink:href="#nav"/></svg></a>
                     <a class="nav-next chapter-nav" id="nav-next-capitulo02-active" style="display: none" href="#capitulo03"><svg><use xlink:href="#nav"/></svg></a>
                     <div class="subs-section">                      
                         <audio id="audio-capitulo02-scena-1" class="audios" ontimeupdate="set_current_audio_time(this)">
@@ -199,8 +199,8 @@
                     </ul>
                 </div>
                 <div class="section-content-wrap"> <!-- contenedor de elementos del section -->
-                    <a class="nav-before chapter-nav" href="#capitulo02" style="display: none"><svg><use xlink:href="#nav"/></svg></a>
-                    <?php /*<a class="nav-next" id="nav-next-capitulo03-inactive"><svg><use xlink:href="#nav"/></svg></a>*/ ?>
+                    <a class="nav-before chapter-nav" href="#capitulo02"><svg><use xlink:href="#nav"/></svg></a>
+                    <a class="nav-next" id="nav-next-capitulo03-inactive" href="#capitulo04"><svg><use xlink:href="#nav"/></svg></a>
                     <a class="nav-next chapter-nav" id="nav-next-capitulo03-active" style="display: none" href="#capitulo04"><svg><use xlink:href="#nav"/></svg></a>
                     <div class="subs-section">  
                         <audio id="audio-capitulo03-scena-1" class="audios" ontimeupdate="set_current_audio_time(this)">
@@ -238,8 +238,8 @@
                     </ul>
                 </div>
                 <div class="section-content-wrap"> <!-- contenedor de elementos del section -->
-                    <a class="nav-before chapter-nav" href="#capitulo03" style="display: none"><svg><use xlink:href="#nav"/></svg></a>
-                    <?php /*<a class="nav-next" id="nav-next-capitulo04-inactive"><svg><use xlink:href="#nav"/></svg></a> */ ?>
+                    <a class="nav-before chapter-nav" href="#capitulo03"><svg><use xlink:href="#nav"/></svg></a>
+                    <a class="nav-next" id="nav-next-capitulo04-inactive" href="#capitulo05"><svg><use xlink:href="#nav"/></svg></a>
                     <a class="nav-next chapter-nav" id="nav-next-capitulo04-active" style="display: none" href="#capitulo05"><svg><use xlink:href="#nav"/></svg></a>
                     <div class="subs-section">  
                         <audio id="audio-capitulo04-scena-1" class="audios" ontimeupdate="set_current_audio_time(this)">
@@ -282,8 +282,8 @@
                     </ul>                    
                 </div>
                 <div class="section-content-wrap"> <!-- contenedor de elementos del section -->
-                    <a class="nav-before chapter-nav" href="#capitulo04" style="display: none"><svg><use xlink:href="#nav"/></svg></a>
-                    <?php /*<a class="nav-next" id="nav-next-capitulo05-inactive"><svg><use xlink:href="#nav"/></svg></a>*/ ?>
+                    <a class="nav-before chapter-nav" href="#capitulo04"><svg><use xlink:href="#nav"/></svg></a>
+                    <a class="nav-next" id="nav-next-capitulo05-inactive" href="#capitulo06"><svg><use xlink:href="#nav"/></svg></a>
                     <a class="nav-next chapter-nav" id="nav-next-capitulo05-active" style="display: none" href="#capitulo06"><svg><use xlink:href="#nav"/></svg></a>
                     <div class="subs-section">  
                         <audio id="audio-capitulo05-scena-1" class="audios" ontimeupdate="set_current_audio_time(this)">
@@ -326,8 +326,8 @@
                     </ul>
                 </div>
                 <div class="section-content-wrap"> <!-- contenedor de elementos del section -->
-                    <a class="nav-before chapter-nav" href="#capitulo05" style="display: none"><svg><use xlink:href="#nav"/></svg></a>
-                    <?php /*<a class="nav-next" id="nav-next-capitulo06-inactive"><svg><use xlink:href="#nav"/></svg></a> */?>
+                    <a class="nav-before chapter-nav" href="#capitulo05"><svg><use xlink:href="#nav"/></svg></a>
+                    <a class="nav-next" id="nav-next-capitulo06-inactive" href="#firmar-peticion"><svg><use xlink:href="#nav"/></svg></a>
                     <a class="nav-next chapter-nav" id="nav-next-capitulo06-active" style="display: none" href="#firmar-peticion"><svg><use xlink:href="#nav"/></svg></a>                  
                     <div class="subs-section">
                         <audio id="audio-capitulo06-scena-1" class="audios" ontimeupdate="set_current_audio_time(this)">
@@ -358,7 +358,8 @@
                 </div>
             </section> 
             
-            <section id="firmar-peticion" class="section-site peticion">                
+            <section id="firmar-peticion" class="section-site peticion">
+                <a class="nav-before chapter-nav" href="#capitulo06" id="back-to-capitulo06"><svg><use xlink:href="#nav"/></svg></a>           
                 <div class="content-intro sign-p">
                     <img class="sign-logo-bn" src="images/buscando-el-norte-logo-horizontal-top.png" width="541" height="61">
                     <div class="sign-p-txt">
