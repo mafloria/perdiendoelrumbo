@@ -93,7 +93,7 @@
                     <div class="logo">
                         <img src="images/buscando-el-norte-logo-intro.png" width="781" height="260">
                     </div> 
-                    <a class="blackBtn intro-chapter-startbtn" href="#capitulo01">COMENZAR</a>    
+                    <a class="blackBtn intro-chapter-startbtn" href="#capitulo01" target="_top">COMENZAR</a>    
                 </div>
                 <div class="intro-chapter-menu" style="display:none">
                     <h3>Navega por los diferentes capítulos:</h3>
@@ -123,8 +123,8 @@
                     </ul>
                 </div>
                 <div class="section-content-wrap"> <!-- contenedor de elementos del section -->
-                    <a class="nav-before chapter-nav" href="#introduccion"><svg><use xlink:href="#nav"/></svg></a>
-                    <a class="nav-next" id="nav-next-capitulo01-inactive" href="#capitulo02"><svg><use xlink:href="#nav"/></svg></a>
+                    <a class="nav-before chapter-nav" href="/#introduccion"><svg><use xlink:href="#nav"/></svg></a>
+                    <a class="nav-next" id="nav-next-capitulo01-inactive" href="/#capitulo02"  target="_top"><svg><use xlink:href="#nav"/></svg></a>
                     <a class="nav-next chapter-nav" id="nav-next-capitulo01-active" style="display: none" href="#capitulo02"><svg><use xlink:href="#nav"/></svg></a>
                     <div class="subs-section">  
                          <audio id="audio-capitulo01-scena-1" class="audios" ontimeupdate="set_current_audio_time(this)">
