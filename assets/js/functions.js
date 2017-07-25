@@ -156,7 +156,9 @@ $(document).ready(function(){
 		
 		//background images
 		$('.background-section img').css('height', windowHeight);
-		//$('.background-section img').css('width', windowWidth);		
+		//$('.background-section img').css('width', windowWidth);
+		
+		$(".portrait-intro").css('width', windowWidth);
 	};
 //*********** end - window size to fix content
 
