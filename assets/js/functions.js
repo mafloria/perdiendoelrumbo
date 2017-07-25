@@ -210,14 +210,14 @@ $(document).ready(function(){
 	     if(current_chapter == "capitulo03") left_tmp = left_tmp*3;
 	     console.log(left_tmp);
 	     console.log(history_page_animate);
-	     
+	     */
 	      if (target.length) {	      	
 	      	$('html, body').animate({		          		         
-	          //scrollLeft: target.offset().left
+	          scrollLeft: target.offset().left
             }, history_page_animate);//1000
 		    return false;
 		  }//end if target length
-		 */  
+		   
 		}//end if location
 	});
 //*********** end - scrolls to an href section exactly	
