@@ -575,6 +575,10 @@ img.sign-logo-bn{
 	height: 100%;
 	overflow-y: scroll;
 }
+#creditos-buscandoelnorte .content-intro .sign-p-txt h2{
+	text-align: center;
+	margin: 0 0 2em 0;
+}
 /* Media queries
 -------------------------------------------------------------------------------*/
 
