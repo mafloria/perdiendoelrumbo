@@ -34,7 +34,7 @@
 /* end - loading section */
 </style>
     <div class="portrait-intro">
-    <p>gira tu dispositivo para visualizar mejor el contenido</p>
+        gira tu dispositivo para visualizar mejor el contenido
     </div>
     <div id="cargando-historia" class="section-site overlay">
         <div class="loadH-content">
