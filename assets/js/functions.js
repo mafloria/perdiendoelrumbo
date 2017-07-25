@@ -199,20 +199,23 @@ $(document).ready(function(){
 		    	$("#title-"+current_chapter).show(); //show only current chapter title		    	
 		  }
 		    
-		  $("#sequence-"+current_chapter+"-scena-1 a").addClass("current-scene");		    		    		    		      
+		  $("#sequence-"+current_chapter+"-scena-1 a").addClass("current-scene");
+		  $(".section-site").hide();
+		  $("#"+this.hash.slice(1)).show();		    		    		    		      
 
 	     /*var left_tmp = $(window).innerWidth();
 	     if(current_chapter == "capitulo02") left_tmp = left_tmp*2;
 	     if(current_chapter == "capitulo03") left_tmp = left_tmp*3;
 	     console.log(left_tmp);
 	     console.log(history_page_animate);
+	     
 	      if (target.length) {	      	
 	      	$('html, body').animate({		          		         
-	          scrollLeft: target.offset().left	          
+	          //scrollLeft: target.offset().left
             }, history_page_animate);//1000
 		    return false;
 		  }//end if target length
-		  */ 
+		 */  
 		}//end if location
 	});
 //*********** end - scrolls to an href section exactly	
