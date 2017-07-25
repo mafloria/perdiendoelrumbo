@@ -588,6 +588,11 @@ img.sign-logo-bn{
 	text-align: center;
 	margin: 0 0 2em 0;
 }
+.intro-chapter-menu.inner-page{
+	position: inherit;
+	width: 100%;
+	display: inline-block !important;
+}
 /* Media queries
 -------------------------------------------------------------------------------*/
 
