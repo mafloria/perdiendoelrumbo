@@ -553,11 +553,53 @@ a.next-scenas-detail:hover{
 img.sign-logo-bn{
 	width: 70% !important;
 }
+.portrait-intro{
+	display: none;
+}
 /* Media queries
 -------------------------------------------------------------------------------*/
 
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 0px;) and (max-width: 639px){
+	.portrait-intro{
+		display: block !important;
+	}
+}
 
+@media screen and (max-width: 40em){
+	.content-intro a.blackBtn{
+		margin-top: 1em;
+		padding: 0.2em;
+    	border-radius: 0.2em;
+    	font-size: 1em;	
+	}
+	a.nav-before svg, a.nav-next svg {
+	    width: 30px;
+	    height: 30px;
+	}
+	a.nav-before, a.nav-next{
+		top: 35%;
+	}
+	.loadH-content {
+	    width: 50% !important;
+	    margin-top: 3% !important;
+	}
+	.loadH-content img{
+		width: 50%;
+		margin: 0 25%;
+	}
+	#cargando-texto-animado{
+		font-size: 1em !important;
+		text-align: center !important;
+	}
+	.mss img{
+		width: 10%;
+		margin: 0 45%;
+	}
+	.mss p{
+		font-size: 14px !important;
+		text-align: center !important;
+		width: 100% !important;
+	}
 
 }
 
