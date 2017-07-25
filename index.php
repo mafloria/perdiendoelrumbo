@@ -77,10 +77,10 @@
             </nav>
             <div class="submenu" style="display: none;">
                 <ul>
-                    <li><a href="#sobre-buscandoelnorte">Sobre Buscando el norte</a></li>
-                    <li><a href="">Historias de vida</a></li>
-                    <li><a href="sobre-buscando-el-norte.pdf" download>Buscando el norte [PDF]</a></li>
+                    <li><a href="#sobre-buscandoelnorte">Sobre Buscando el norte</a></li> 
+                    <li><a href="buscando-el-norte.pdf" download>Buscando el norte [PDF]</a></li>
                     <!--<li><a href="">Perfil del Migrante</a></li>
+                    <li><a href="">Historias de vida</a></li>
                     <li><a href="">Información para tomadores de decisiones</a></li>
                     <li><a href="">Qué hacer si eres joven migrante</a></li>-->
                     <li><a href="#creditos-buscandoelnorte">Créditos</a></li>
@@ -95,6 +95,7 @@
                 <div class="content-intro">
                     <div class="logo">
                         <img src="images/buscando-el-norte-logo-intro.png" width="781" height="260">
+                        
                     </div> 
                     <a class="blackBtn intro-chapter-startbtn" href="#capitulo01" target="_top">COMENZAR</a>    
                 </div>
@@ -109,6 +110,8 @@
                         <li><a href="#capitulo06"><img src="images/thumb-portada-c6.jpg"></a></li>
                     </ul>
                 </div>
+                <div class="logo-stc"><img src="images/logo-save-children.png" width="578" height="146"></div>
+                
                 <div class="background-section">
                     <img class="med-bg" id="imgbg-introduccion" src="images/buscando-el-norte-1024-intro.png">
                 </div>
@@ -404,7 +407,7 @@
                 <a class="nav-before chapter-nav" href="#introduccion"><svg><use xlink:href="#nav"/></svg></a>           
                 <div class="content-intro sign-p">
                     <img class="sign-logo-bn" src="images/buscando-el-norte-logo-horizontal-top.png" width="541" height="61">
-                    <div class="sign-p-txt" style="height:400px; overflow-y: scroll">
+                    <div class="sign-p-txt">
                         Más  de  200.000 niños,  niñas  y  adolescentes fueron  detenidos en  la  frontera  sur  de  los Estados  Unidos en los  últimos  3  años. 75%  de ellos provenían  del  Triángulo  Norte  de Centroamérica. 43%  viajaba  sin  compañía  de  un  adulto  o  cuidador ,  aumentando  su vulnerabilidad en  una  ruta  donde  la trata  de  personas, el  tráfico,  la  explotación,  la violencia física y sexual son frecuentes.
                         <br/><br/>
                         Seis niños, niñas y adolescentes de El Salvador, Guatemala y Honduras, que hicieron este viaje, fueron  detenidos  en  diferentes  coordenadas  y  retornados  a  sus  comunidades  de origen,  compartieron fragmentos  de  su  vida  con  nosotros; para  ayudarnos  a  trazar  el mapa  de esta ruta  de  esperanza,  que  es  también  una  puerta  a  situaciones  tanto  o  más peligrosas que las que viven en sus propios barrios y ciudades.
@@ -457,8 +460,8 @@
             <section id="creditos-buscandoelnorte" class="section-site">
                 <a class="nav-before chapter-nav" href="#introduccion"><svg><use xlink:href="#nav"/></svg></a>           
                 <div class="content-intro sign-p">
-                    <img class="sign-logo-bn" src="images/buscando-el-norte-logo-horizontal-top.png" width="541" height="61">
-                    <div class="sign-p-txt" style="height:400px; overflow-y: scroll">
+                    <div class="sign-p-txt">
+                        <h2>Créditos</h2>
                         <h3>EQUIPO DE TRABAJO</h3>
                         <strong>Save the Children Panamá, presenta</strong><br/> 
                         Buscando el Norte <br/><br/>
@@ -510,7 +513,7 @@
                         </div>                         
                     </div>                     
                 </div>
-                <div class="intro-chapter-menu">
+                <!--<div class="intro-chapter-menu">
                     <h3>Navega por los diferentes capítulos:</h3>
                     <ul>
                         <li><a href="#capitulo01"><img src="images/thumb-portada-c1.jpg"></a></li>
@@ -520,7 +523,7 @@
                         <li><a href="#capitulo05"><img src="images/thumb-portada-c5.jpg"></a></li>
                         <li><a href="#capitulo06"><img src="images/thumb-portada-c6.jpg"></a></li>
                     </ul>
-                </div>  
+                </div> --> 
                 <div class="background-section">
                     <img class="med-bg" id="imgbg-creditos-buscandoelnorte" src="images/buscando-el-norte-1024-intro.png">
                 </div>

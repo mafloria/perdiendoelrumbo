@@ -265,6 +265,13 @@ header .submenu ul li a:hover{
 	-moz-transition: all 0.4s ease;
 	-ms-transition: all 0.4s ease;
 }
+.logo-stc{
+	position: absolute;
+    z-index: 4;
+    left: 1em;
+    bottom: 1em;
+    width: 20%;
+}
 #firmar-peticion .intro-chapter-menu{
 	left: 5%;
 	text-align: initial;
@@ -542,7 +549,7 @@ a.next-scenas-detail:hover{
     width: 50% !important;
     height: auto;
     padding: 3%;
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.85);
     top: 0;
     left: 5%;
 }
@@ -555,6 +562,18 @@ img.sign-logo-bn{
 }
 .portrait-intro{
 	display: none;
+}
+#creditos-buscandoelnorte .content-intro,
+#sobre-buscandoelnorte .content-intro{
+	width: 50% !important;
+	bottom: 0;
+	margin: 0 25%;
+	left: 0;
+}
+#creditos-buscandoelnorte .content-intro .sign-p-txt,
+#sobre-buscandoelnorte .content-intro .sign-p-txt{
+	height: 100%;
+	overflow-y: scroll;
 }
 /* Media queries
 -------------------------------------------------------------------------------*/
@@ -616,6 +635,9 @@ img.sign-logo-bn{
 	.content-intro.sign-p{
 		font-size: 20px !important;
 		width: 38% !important;
+	}
+	.logo-stc{
+		width: 15% !important;
 	}
 }
 /* Print styles
