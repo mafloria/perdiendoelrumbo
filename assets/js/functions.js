@@ -204,16 +204,15 @@ $(document).ready(function(){
 	     /*var left_tmp = $(window).innerWidth();
 	     if(current_chapter == "capitulo02") left_tmp = left_tmp*2;
 	     if(current_chapter == "capitulo03") left_tmp = left_tmp*3;
-	     console.log(left_tmp);*/ 
+	     console.log(left_tmp);
 	     console.log(history_page_animate);
 	      if (target.length) {	      	
-	        $('html, body').animate({		          		         
+	      	$('html, body').animate({		          		         
 	          scrollLeft: target.offset().left	          
             }, history_page_animate);//1000
-        	
-        	
 		    return false;
 		  }//end if target length
+		  */ 
 		}//end if location
 	});
 //*********** end - scrolls to an href section exactly	
@@ -376,9 +375,9 @@ $(document).ready(function(){
 		stop_last_image = false;//allows move images again 
 		$(".background-section > img").hide();		
 		//$("#imgbg-"+current_chapter+"-scena-"+current_scena_number+"-1").show();//shows first bg image fot this audio
-		$("#imgbg-"+current_chapter).show();		
-		$("#imgbg-"+current_chapter).attr("src", "images/"+current_chapter+"/escena-"+current_scena_number+"/buscando-el-norte-"+current_chapter+"-escena-"+current_scena_number+"-"+current_image_counter+".jpg");				
-		console.log("play next audio: "+capitulo + "scena: "+current_scena_number);
+		$("#imgbg-"+current_chapter).attr("src", "images/"+current_chapter+"/escena-"+current_scena_number+"/buscando-el-norte-"+current_chapter+"-escena-"+current_scena_number+"-"+current_image_counter+".jpg");
+		$("#imgbg-"+current_chapter).show();							
+		//console.log("play next audio: "+capitulo + "scena: "+current_scena_number);
 				
 	}
 	//when back or forward restart audios and texts
