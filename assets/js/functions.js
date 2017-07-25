@@ -171,7 +171,7 @@ $(document).ready(function(){
 	      var history_page_animate = 1000; 	
 		  if(this.hash.slice(1)=="introduccion" || this.hash.slice(1)=="firmar-peticion" || this.hash.slice(1)=="creditos-buscandoelnorte" || this.hash.slice(1)=="sobre-buscandoelnorte" || this.hash.slice(1)=="historias-buscandoelnorte") {
 		    	history_page_animate = 0;
-		    	if(this.hash.slice(1)=="sobre-buscandoelnorte") progress_bar=100;
+		    	//if(this.hash.slice(1)=="sobre-buscandoelnorte") progress_bar=100;
 		    	if(progress_bar>=100){
 		    		$(".intro-chapter-menu").show(); $(".intro-chapter-startbtn").hide();
 		    		$(".section-content-wrap").css("width", "92%");
