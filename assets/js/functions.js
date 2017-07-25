@@ -200,8 +200,8 @@ $(document).ready(function(){
 		  }
 		    
 		  $("#sequence-"+current_chapter+"-scena-1 a").addClass("current-scene");
-		  $(".section-site").hide();
-		  $("#"+this.hash.slice(1)).show();		    		    		    		      
+		  /*$(".section-site").hide();
+		  $("#"+this.hash.slice(1)).show();*/		    		    		    		      
 
 	     /*var left_tmp = $(window).innerWidth();
 	     if(current_chapter == "capitulo02") left_tmp = left_tmp*2;
