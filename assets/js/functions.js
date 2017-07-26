@@ -75,7 +75,10 @@
 	var timer = new Array();
 	var delayCounter = 1;
 	
-	var interval;
+	var scrollleft_position = {capitulo01:1, capitulo02:2, capitulo03:3, capitulo04:4, capitulo05:5, capitulo06:6, firmapeticion:7, sobrenosotros:8, historias:9, creditos:10 };
+	
+	windowHeight = $(window).innerHeight();
+	windowWidth = $(window).innerWidth();	  
 	
 /* function needed to load before html end loading */
 function set_current_audio_time(event){
@@ -142,9 +145,7 @@ $(document).ready(function(){
 		setHeight();
 	});
 	//adjust sections to the browser height
-	function setHeight() {
-		windowHeight = $(window).innerHeight();
-		windowWidth = $(window).innerWidth();
+	function setHeight() {		
 		//loading
 		$('#cargando-historia').css('height', windowHeight);
 		$('#cargando-historia').css('width', windowWidth);
@@ -171,10 +172,9 @@ $(document).ready(function(){
 	      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');	     
 	      let_audios_text_begins(); //restart audios and text if the user returns start all again
 	      var history_page_animate = 1000; 	
-		  if(this.hash.slice(1)=="introduccion" || this.hash.slice(1)=="firmar-peticion" || this.hash.slice(1)=="creditos-buscandoelnorte" || this.hash.slice(1)=="sobre-buscandoelnorte" || this.hash.slice(1)=="historias-buscandoelnorte") {
+		  if(this.hash.slice(1)=="introduccion" || this.hash.slice(1)=="firmapeticion" || this.hash.slice(1)=="creditos" || this.hash.slice(1)=="sobrenosotros" || this.hash.slice(1)=="historias") {
 		  		history_page_animate = 0;
-		  		if(this.hash.slice(1)=="firmar-peticion")history_page_animate = 1000; 			    	
-		    	//if(this.hash.slice(1)=="sobre-buscandoelnorte") progress_bar=100;
+		  		if(this.hash.slice(1)=="firmapeticion")history_page_animate = 1000; 			    			    	
 		    	if(progress_bar>=100){
 		    		$(".intro-chapter-menu").show(); $(".intro-chapter-startbtn").hide();
 		    		$(".section-content-wrap").css("width", "92%");
@@ -208,12 +208,11 @@ $(document).ready(function(){
 	     /*var left_tmp = $(window).innerWidth();
 	     if(current_chapter == "capitulo02") left_tmp = left_tmp*2;
 	     if(current_chapter == "capitulo03") left_tmp = left_tmp*3;
-	     console.log(left_tmp);
-	     console.log(history_page_animate);
-	     */
+	     console.log(left_tmp); */
+	     console.log(scrollleft_position[this.hash.slice(1)] * windowWidth);	     
 	      if (target.length) {	      	
 	      	$('html, body').animate({		          		         
-	          scrollLeft: target.offset().left
+	          scrollLeft: scrollleft_position[this.hash.slice(1)] * windowWidth //target.offset().left
             }, history_page_animate);//1000
 		    return false;
 		  }//end if target length

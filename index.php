@@ -72,7 +72,7 @@
                     <a class="nav-chap-us" href="#capitulo03">C3</a>
                     <a class="nav-chap-us" href="#capitulo04">C4</a>
                     <a class="nav-chap-us" href="#capitulo05">C5</a>
-                    <a class="nav-chap-us" href="#firmar-peticion">C6</a>
+                    <a class="nav-chap-us" href="#firmapeticion">C6</a>
                 </div>*/ ?>
             </div>
             <nav id="nav-menu">
@@ -80,13 +80,13 @@
             </nav>
             <div class="submenu" style="display: none;">
                 <ul>
-                    <li><a href="#sobre-buscandoelnorte">Sobre Buscando el norte</a></li> 
+                    <li><a href="#sobrenosotros">Sobre Buscando el norte</a></li> 
                     <li><a href="buscando-el-norte.pdf" download>Buscando el norte [PDF]</a></li>
                     <!--<li><a href="">Perfil del Migrante</a></li>
                     <li><a href="">Historias de vida</a></li>
                     <li><a href="">Información para tomadores de decisiones</a></li>
                     <li><a href="">Qué hacer si eres joven migrante</a></li>-->
-                    <li><a href="#creditos-buscandoelnorte">Créditos</a></li>
+                    <li><a href="#creditos">Créditos</a></li>
                 </ul>
             </div>
 
@@ -343,8 +343,8 @@
                 </div>
                 <div class="section-content-wrap"> <!-- contenedor de elementos del section -->
                     <a class="nav-before chapter-nav" href="#capitulo05"><svg><use xlink:href="#nav"/></svg></a>
-                    <a class="nav-next" id="nav-next-capitulo06-inactive" href="#firmar-peticion"><svg><use xlink:href="#nav"/></svg></a>
-                    <a class="nav-next chapter-nav" id="nav-next-capitulo06-active" style="display: none" href="#firmar-peticion"><svg><use xlink:href="#nav"/></svg></a>                  
+                    <a class="nav-next" id="nav-next-capitulo06-inactive" href="#firmapeticion"><svg><use xlink:href="#nav"/></svg></a>
+                    <a class="nav-next chapter-nav" id="nav-next-capitulo06-active" style="display: none" href="#firmapeticion"><svg><use xlink:href="#nav"/></svg></a>                  
                     <div class="subs-section">
                         <audio id="audio-capitulo06-scena-1" class="audios" ontimeupdate="set_current_audio_time(this)">
                             <source src="audio/capitulo06/buscando-el-norte-capitulo06-E1.mp3" type="audio/mp3">                                                        
@@ -374,7 +374,7 @@
                 </div>
             </section> 
             
-            <section id="firmar-peticion" class="section-site peticion">
+            <section id="firmapeticion" class="section-site peticion">
                 <a class="nav-before chapter-nav" href="#capitulo06" id="back-to-capitulo06"><svg><use xlink:href="#nav"/></svg></a>           
                 <div class="content-intro sign-p">
                     <img class="sign-logo-bn" src="images/buscando-el-norte-logo-horizontal-top.png" width="541" height="61">
@@ -402,11 +402,11 @@
                     </ul>
                 </div>
                 <div class="background-section">
-                    <img class="med-bg" id="imgbg-firmar-peticion" src="images/buscando-el-norte-1024-intro.png">
+                    <img class="med-bg" id="imgbg-firmapeticion" src="images/buscando-el-norte-1024-intro.png">
                 </div>
             </section>
             
-            <section id="sobre-buscandoelnorte" class="section-site buscandoelnorte">
+            <section id="sobrenosotros" class="section-site buscandoelnorte">
                 <a class="nav-before chapter-nav" href="#introduccion"><svg><use xlink:href="#nav"/></svg></a>           
                 <div class="content-intro sign-p">
                     <img class="sign-logo-bn" src="images/buscando-el-norte-logo-horizontal-top.png" width="541" height="61">
@@ -433,10 +433,10 @@
                     </div>                     
                 </div>
                 <div class="background-section">
-                    <img class="med-bg" id="imgbg-sobre-buscandoelnorte" src="images/buscando-el-norte-1024-intro.png">
+                    <img class="med-bg" id="imgbg-sobrenosotros" src="images/buscando-el-norte-1024-intro.png">
                 </div>
             </section>
-            <section id="historias-buscandoelnorte" class="section-site buscandoelnorte">
+            <section id="historias" class="section-site buscandoelnorte">
                 <a class="nav-before chapter-nav" href="#introduccion"><svg><use xlink:href="#nav"/></svg></a>           
                 <div class="content-intro sign-p">
                     <img class="sign-logo-bn" src="images/buscando-el-norte-logo-horizontal-top.png" width="541" height="61">
@@ -459,11 +459,11 @@
                     </div>                     
                 </div>
                 <div class="background-section">
-                    <img class="med-bg" id="imgbg-historias-buscandoelnorte" src="images/buscando-el-norte-1024-intro.png">
+                    <img class="med-bg" id="imgbg-historias" src="images/buscando-el-norte-1024-intro.png">
                 </div>
             </section>
             
-            <section id="creditos-buscandoelnorte" class="section-site">
+            <section id="creditos" class="section-site">
                 <a class="nav-before chapter-nav" href="#introduccion"><svg><use xlink:href="#nav"/></svg></a>           
                 <div class="content-intro sign-p">
                     <div class="sign-p-txt">
@@ -542,7 +542,7 @@
                 </div>
                 
                 <div class="background-section">
-                    <img class="med-bg" id="imgbg-creditos-buscandoelnorte" src="images/buscando-el-norte-1024-intro.png">
+                    <img class="med-bg" id="imgbg-creditos" src="images/buscando-el-norte-1024-intro.png">
                 </div>
             </section>
             
