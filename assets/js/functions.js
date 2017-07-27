@@ -5,6 +5,19 @@
  * Date: May 22 - 2017
  * Author: Margaret Florian (mafloria - UXDevco)
  */
+	// load audios elements	
+	//capitulo 01
+	var vid_capitulo01_scena_1 = document.getElementById("audio-capitulo01-scena-1"); var vid_capitulo01_scena_2 = document.getElementById("audio-capitulo01-scena-2"); var vid_capitulo01_scena_3 = document.getElementById("audio-capitulo01-scena-3"); var vid_capitulo01_scena_4 = document.getElementById("audio-capitulo01-scena-4");	var vid_capitulo01_scena_5 = document.getElementById("audio-capitulo01-scena-5"); var vid_capitulo01_scena_6 = document.getElementById("audio-capitulo01-scena-6");	
+	//capitulo 02
+	var vid_capitulo02_scena_1 = document.getElementById("audio-capitulo02-scena-1"); var vid_capitulo02_scena_2 = document.getElementById("audio-capitulo02-scena-2"); var vid_capitulo02_scena_3 = document.getElementById("audio-capitulo02-scena-3"); var vid_capitulo02_scena_4 = document.getElementById("audio-capitulo02-scena-4");	
+	//capitulo 03
+	var vid_capitulo03_scena_1 = document.getElementById("audio-capitulo03-scena-1"); var vid_capitulo03_scena_2 = document.getElementById("audio-capitulo03-scena-2"); var vid_capitulo03_scena_3 = document.getElementById("audio-capitulo03-scena-3"); var vid_capitulo03_scena_4 = document.getElementById("audio-capitulo03-scena-4");	
+	//capitulo 04
+	var vid_capitulo04_scena_1 = document.getElementById("audio-capitulo04-scena-1"); var vid_capitulo04_scena_2 = document.getElementById("audio-capitulo04-scena-2"); var vid_capitulo04_scena_3 = document.getElementById("audio-capitulo04-scena-3"); var vid_capitulo04_scena_4 = document.getElementById("audio-capitulo04-scena-4"); var vid_capitulo04_scena_5 = document.getElementById("audio-capitulo04-scena-5"); var vid_capitulo04_scena_6 = document.getElementById("audio-capitulo04-scena-6");	
+	//capitulo 05
+	var vid_capitulo05_scena_1 = document.getElementById("audio-capitulo05-scena-1"); var vid_capitulo05_scena_2 = document.getElementById("audio-capitulo05-scena-2"); var vid_capitulo05_scena_3 = document.getElementById("audio-capitulo05-scena-3"); var vid_capitulo05_scena_4 = document.getElementById("audio-capitulo05-scena-4"); var vid_capitulo05_scena_5 = document.getElementById("audio-capitulo05-scena-5"); var vid_capitulo05_scena_6 = document.getElementById("audio-capitulo05-scena-6");
+	//capitulo 06
+	var vid_capitulo06_scena_1 = document.getElementById("audio-capitulo06-scena-1"); var vid_capitulo06_scena_2 = document.getElementById("audio-capitulo06-scena-2");  var vid_capitulo06_scena_3 = document.getElementById("audio-capitulo06-scena-3"); var vid_capitulo06_scena_4 = document.getElementById("audio-capitulo06-scena-4"); var vid_capitulo06_scena_5 = document.getElementById("audio-capitulo06-scena-5"); var vid_capitulo06_scena_6 = document.getElementById("audio-capitulo06-scena-6");
 
 // Setup total images per chapter per scena
 	var totalimg_capitulo01_scena_1 = 4; var totalimg_capitulo01_scena_2 = 10; var totalimg_capitulo01_scena_3 = 2; var totalimg_capitulo01_scena_4 = 4; var totalimg_capitulo01_scena_5 = 3; var totalimg_capitulo01_scena_6 = 2;
@@ -113,21 +126,7 @@ $(document).ready(function(){
 	var capitulo03_escena_1 = capitulo03_escena_2 = capitulo03_escena_3 = capitulo03_escena_4 = 3;	
 	var capitulo04_escena_1 = capitulo04_escena_2 = capitulo04_escena_3 = capitulo04_escena_4 = capitulo04_escena_5 = capitulo04_escena_6 =3;
 	var capitulo05_escena_1 = capitulo05_escena_2 = capitulo05_escena_3 = capitulo05_escena_4 = capitulo05_escena_5 = capitulo05_escena_6 =3;
-	var capitulo06_escena_1 = capitulo06_escena_2 = capitulo06_escena_3 = capitulo06_escena_4 = capitulo06_escena_5 = capitulo06_escena_6 =4;
-	
-	// load audios elements	
-	//capitulo 01
-	var vid_capitulo01_scena_1 = document.getElementById("audio-capitulo01-scena-1"); var vid_capitulo01_scena_2 = document.getElementById("audio-capitulo01-scena-2"); var vid_capitulo01_scena_3 = document.getElementById("audio-capitulo01-scena-3"); var vid_capitulo01_scena_4 = document.getElementById("audio-capitulo01-scena-4");	var vid_capitulo01_scena_5 = document.getElementById("audio-capitulo01-scena-5"); var vid_capitulo01_scena_6 = document.getElementById("audio-capitulo01-scena-6");	
-	//capitulo 02
-	var vid_capitulo02_scena_1 = document.getElementById("audio-capitulo02-scena-1"); var vid_capitulo02_scena_2 = document.getElementById("audio-capitulo02-scena-2"); var vid_capitulo02_scena_3 = document.getElementById("audio-capitulo02-scena-3"); var vid_capitulo02_scena_4 = document.getElementById("audio-capitulo02-scena-4");	
-	//capitulo 03
-	var vid_capitulo03_scena_1 = document.getElementById("audio-capitulo03-scena-1"); var vid_capitulo03_scena_2 = document.getElementById("audio-capitulo03-scena-2"); var vid_capitulo03_scena_3 = document.getElementById("audio-capitulo03-scena-3"); var vid_capitulo03_scena_4 = document.getElementById("audio-capitulo03-scena-4");	
-	//capitulo 04
-	var vid_capitulo04_scena_1 = document.getElementById("audio-capitulo04-scena-1"); var vid_capitulo04_scena_2 = document.getElementById("audio-capitulo04-scena-2"); var vid_capitulo04_scena_3 = document.getElementById("audio-capitulo04-scena-3"); var vid_capitulo04_scena_4 = document.getElementById("audio-capitulo04-scena-4"); var vid_capitulo04_scena_5 = document.getElementById("audio-capitulo04-scena-5"); var vid_capitulo04_scena_6 = document.getElementById("audio-capitulo04-scena-6");	
-	//capitulo 05
-	var vid_capitulo05_scena_1 = document.getElementById("audio-capitulo05-scena-1"); var vid_capitulo05_scena_2 = document.getElementById("audio-capitulo05-scena-2"); var vid_capitulo05_scena_3 = document.getElementById("audio-capitulo05-scena-3"); var vid_capitulo05_scena_4 = document.getElementById("audio-capitulo05-scena-4"); var vid_capitulo05_scena_5 = document.getElementById("audio-capitulo05-scena-5"); var vid_capitulo05_scena_6 = document.getElementById("audio-capitulo05-scena-6");
-	//capitulo 06
-	var vid_capitulo06_scena_1 = document.getElementById("audio-capitulo06-scena-1"); var vid_capitulo06_scena_2 = document.getElementById("audio-capitulo06-scena-2");  var vid_capitulo06_scena_3 = document.getElementById("audio-capitulo06-scena-3"); var vid_capitulo06_scena_4 = document.getElementById("audio-capitulo06-scena-4"); var vid_capitulo06_scena_5 = document.getElementById("audio-capitulo06-scena-5"); var vid_capitulo06_scena_6 = document.getElementById("audio-capitulo06-scena-6");						
+	var capitulo06_escena_1 = capitulo06_escena_2 = capitulo06_escena_3 = capitulo06_escena_4 = capitulo06_escena_5 = capitulo06_escena_6 =4;								
 	
 	//scenas counter and total per chapter
 	var total_scenas_capitulo01 = 6;
@@ -362,9 +361,9 @@ $(document).ready(function(){
 	function autoplay_audios(capitulo){
 		text_current_chapter = eval("text_"+capitulo);
 		current_chapter_total_lines = text_current_chapter.length;
-		
-		eval("vid_"+capitulo+"_scena_"+current_scena_number).load();
-		eval("vid_"+capitulo+"_scena_"+current_scena_number).play();
+		//console.log("vid_"+capitulo+"_scena_"+current_scena_number);
+		eval("vid_"+capitulo+"_scena_"+current_scena_number+".load();");
+		eval("vid_"+capitulo+"_scena_"+current_scena_number+".play();");
 		text_current_line = eval("textini_"+current_chapter+"["+(current_scena_number-1)+"];");
 		$("#txt_"+capitulo).html(text_current_chapter[text_current_line]);
 		
@@ -386,14 +385,14 @@ $(document).ready(function(){
 				
 	}
 	//when back or forward restart audios and texts
-	function let_audios_text_begins(){
+	function let_audios_text_begins(){		
 		vid_capitulo01_scena_1.pause();vid_capitulo01_scena_2.pause();vid_capitulo01_scena_3.pause();vid_capitulo01_scena_4.pause();vid_capitulo01_scena_5.pause();vid_capitulo01_scena_6.pause();
 		vid_capitulo02_scena_1.pause();vid_capitulo02_scena_2.pause();vid_capitulo02_scena_3.pause();vid_capitulo02_scena_4.pause();
 		vid_capitulo03_scena_1.pause();vid_capitulo03_scena_2.pause();vid_capitulo03_scena_3.pause();vid_capitulo03_scena_4.pause();
 		vid_capitulo04_scena_1.pause();vid_capitulo04_scena_2.pause();vid_capitulo04_scena_3.pause();vid_capitulo04_scena_4.pause();vid_capitulo04_scena_5.pause();vid_capitulo04_scena_6.pause();
 		vid_capitulo05_scena_1.pause();vid_capitulo05_scena_2.pause();vid_capitulo05_scena_3.pause();vid_capitulo05_scena_4.pause();vid_capitulo05_scena_5.pause();vid_capitulo05_scena_6.pause();
 		vid_capitulo06_scena_1.pause();vid_capitulo06_scena_2.pause();vid_capitulo06_scena_3.pause();vid_capitulo06_scena_4.pause();vid_capitulo06_scena_5.pause();vid_capitulo06_scena_6.pause();
-				
+			
 		var total_timer_lines = timer.length;
 		for(j=0; j<=total_timer_lines; j++){ clearTimeout(timer[j]); }		
 		pausePhrases = false;
