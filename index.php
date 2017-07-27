@@ -34,7 +34,10 @@
 /* end - loading section */
 </style>
     <div class="portrait-intro">
-        gira tu dispositivo para visualizar mejor el contenido
+        <div class="girar">
+            <img src="images/girrar-phone.png">
+            <p>Gira tu dispositivo para poder visualizar el contenido</p>
+        </div>
     </div>
     <div id="cargando-historia" class="section-site overlay">
         <div class="loadH-content">
