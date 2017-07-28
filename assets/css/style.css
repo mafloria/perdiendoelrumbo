@@ -695,6 +695,9 @@ img.sign-logo-bn{
 	    width: 76% !important;
         margin: 0 12%;
 	}
+	.subs-section a.playAudio svg, .subs-section a.pauseAudio svg{
+		width: 30px;
+	}
 
 }
 
