@@ -85,13 +85,8 @@ a.blackBtn:hover{
     display: inline-block;
 }
 #nav-menu{
-	float: right;
-    position: absolute;
-    /*background-color: white;*/
+	float: left;
     padding: 10px;
-    top: 0;
-    right: 0;
-    z-index: 3;
 }
 #nav-menu svg{
 	float: left;
@@ -671,10 +666,6 @@ img.sign-logo-bn{
 	.txt_capitulos{
 		font-size: 14px;
 		padding: 0 0 0 8%;
-	}
-	#nav-menu {
-	    float: left;
-	    padding: 10px;
 	}
 	#nav-menu svg {
 	    width: 20px;
