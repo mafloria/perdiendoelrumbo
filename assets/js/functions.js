@@ -159,7 +159,7 @@ $(document).ready(function(){
 		//$('.background-section img').css('width', windowWidth);
 		
 		$(".portrait-intro").css('width', windowWidth);
-		$("#nav-menu").css('width', windowWidth);
+		$(".main-header").css('width', windowWidth);
 	};
 //*********** end - window size to fix content
 
