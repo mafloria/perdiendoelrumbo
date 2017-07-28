@@ -190,7 +190,8 @@ $(document).ready(function(){
 		    	$(".main-header > h1").hide();//hide image page title
 		    	$(".chapter-title").hide(); //hide chpaters title
 		    	$("#nav-menu").show();//show main menu
-				$("#imgbg-"+this.hash.slice(1)).show();
+				$("#imgbg-"+this.hash.slice(1)).show();								
+				
 		  }else{
 		    	current_chapter = this.hash.slice(1);
 		    	autoplay_audios(this.hash.slice(1));
@@ -209,7 +210,7 @@ $(document).ready(function(){
 	     if(current_chapter == "capitulo02") left_tmp = left_tmp*2;
 	     if(current_chapter == "capitulo03") left_tmp = left_tmp*3;
 	     console.log(left_tmp); */
-	     console.log(scrollleft_position[this.hash.slice(1)] * windowWidth);	     
+	     //console.log(scrollleft_position[this.hash.slice(1)] * windowWidth);	     
 	      if (target.length) {	      	
 	      	$('html, body').animate({		          		         
 	          scrollLeft: scrollleft_position[this.hash.slice(1)] * windowWidth //target.offset().left
