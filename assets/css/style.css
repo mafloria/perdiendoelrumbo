@@ -87,13 +87,14 @@ a.blackBtn:hover{
 #nav-menu{
 	float: right;
     position: absolute;
-    background-color: white;
+    /*background-color: white;*/
     padding: 10px;
     top: 0;
     right: 0;
     z-index: 3;
 }
 #nav-menu svg{
+	float: right;
 	width: 30px;
     height: 30px;
     fill: black;
@@ -551,7 +552,9 @@ a.next-scenas-detail:hover{
     padding: 3%;
     background-color: rgba(255, 255, 255, 0.85);
     top: 0;
-    left: 5%;
+    left: 25%;
+    overflow-y: scroll;
+    height: 100%;
 }
 .content-intro.sign-p img{
 	margin-bottom: 1em;
@@ -695,7 +698,7 @@ img.sign-logo-bn{
 	}
 	.content-intro.sign-p{
 		font-size: 20px !important;
-		width: 38% !important;
+		width: 38%;
 	}
 	.logo-stc{
 		width: 15% !important;
