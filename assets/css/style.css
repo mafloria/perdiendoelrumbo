@@ -94,7 +94,7 @@ a.blackBtn:hover{
     z-index: 3;
 }
 #nav-menu svg{
-	float: right;
+	float: left;
 	width: 30px;
     height: 30px;
     fill: black;
@@ -622,6 +622,14 @@ img.sign-logo-bn{
 		display: block !important;
 	}
 }
+@media only screen 
+  and (min-device-width: 480px) 
+  and (max-device-width: 820px){
+ 	.content-intro.sign-p{
+ 		width: 70% !important;
+ 		left: 15%;
+ 	} 	
+  }
 @media screen and (max-width: 40em){
 	.content-intro a.blackBtn{
 		margin-top: 1em;
@@ -661,7 +669,8 @@ img.sign-logo-bn{
 		bottom: 0 !important;
 	}
 	.txt_capitulos{
-		font-size: 16px;
+		font-size: 14px;
+		padding: 0 0 0 8%;
 	}
 	#nav-menu {
 	    float: left;
@@ -673,11 +682,14 @@ img.sign-logo-bn{
 	    height: 20px;
 	}
 	header .submenu {
-	    top: 40px;
+        top: 40px;
 	    left: 0;
+	    width: 300px;
+	    float: left;
 	}
 	header .submenu ul li a {
-	    padding: 0.8em 2em;
+	    padding: 1em 2em;
+	    font-size: 16px;
 	}
 	#creditos-buscandoelnorte .content-intro, #sobre-buscandoelnorte .content-intro {
 	    width: 76% !important;
