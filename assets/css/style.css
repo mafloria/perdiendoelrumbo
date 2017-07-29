@@ -43,6 +43,9 @@ ul{
 	margin: 0;
 	padding: 0;
 }
+.center{
+	text-align: center;
+}
 a:focus,
 map area:focus{
 	border: 0;
@@ -200,7 +203,7 @@ a.nav-next svg{
 header .submenu{
 	position: absolute;
 	top: 3.15em;
-	left: 0;
+	right: 0;
 	width: auto;
 }
 header .submenu ul li{
@@ -604,6 +607,41 @@ img.sign-logo-bn{
 .girar p{
 	text-align: center;
 	font-size: 1.2em;
+}
+/*historias de vida*/
+.title-info{
+	width: 100%;
+	display: inline-block;
+	margin-bottom: 1em;
+	padding-bottom: 1em;
+	border-bottom: 2px dashed black;
+}
+.h-cases{
+	margin-bottom: 2em;
+	padding-bottom: 1em;
+	border-bottom: 2px solid black;
+}
+.photo-cases img{
+	border: 4px solid black;
+	width: 70%;
+    margin: 0 15%;
+}
+.quote{
+	width: 70%;
+	margin: 0 15%;	
+}
+.quote i{
+	font-style: italic;
+	font-size: 18px;
+	line-height: 20px;	
+}
+.quote h4{
+	font-size: 22px;
+    font-weight: bold;
+    text-align: right;
+}
+.quote p{
+	text-align: right;
 }
 /* Media queries
 -------------------------------------------------------------------------------*/
