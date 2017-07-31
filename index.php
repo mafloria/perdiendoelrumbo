@@ -546,6 +546,48 @@
                        </div>
 
 
+                        
+
+                        <div class="coleccion2">
+                            <div class="center"> 
+                                <h3><strong>Colección 02: El retorno</strong></h3>
+                            </div>
+                            <div class="quote">
+                                <p>Luis no piensa cruzar la frontera de nuevo. Ni siquiera intentarlo.</p>
+                                <i>No me gustó el camino, me dio miedo (…) Policías, bandidos, hasta los «coyotes» se peleaban, se pusieron borrachos y se dieron duro. No quiero ni intentar ese viaje otra vez. Por ahora seguir estudiando y trabajar para pagar la deuda, en el futuro tal vez pueda hacer un profesorado en enseñanza, lo cual me haría un maestro.</i>
+                            </div>  
+
+                            <div class="quote">
+                                <p>Al preguntarle respecto a sus estudios Gabriela dice:</p>
+                                <i>Mi vida no ha cambiado tanto. Me levanto temprano para juntar leña, pongo café y frijoles a calentar y muelo la masa para hacer tortillas. Lavar, cocinar, fregar... Todo el día hago algo para la casa y después de la comida veo la televisión hasta la hora de dormir.</i>
+                            </div>  
+
+                            <div class="quote">
+                                <p>Amalia está contenta de haber regresado a su país.</p>
+                                <i>La peor parte es que te truncan los sueños. Cuando te detienen dices: «¡vaya! y ahora ¿qué voy hacer?, no tengo esperanzas aquí en El Salvador». Y eso lo viví.<br /> 
+                                Pero, aunque mi comunidad no es segura y me costó reincorporarme por el hecho que me discriminan y me hacen bullying, CANAF me contactó en mi residencia y me ayudó a integrarme.<br />  
+                                He tenido bastantes oportunidades desde ese momento.
+                                </i>
+                            </div> 
+
+                            <div class="quote">
+                                <p>José Nahum tiene pensamientos contradictorios. Cree que en Estados Unidos hubiera encontrado el bienestar de su familia, pero quiere tratar de realizar sus sueños en su país:</p>
+                                <i>Si yo hubiera llegado a ese país donde iba -la verdad-, no vivieran mis padres ya acá, les hubiera conseguido una casa, estuviera trabajando y sacando mis estudios. Pero quiero decir a los jóvenes que piensan migrar -si no hayan la manera de estar aquí-, que le echen ganas, solo es de buscar y seguir buscando sin rendirse, en los estudios, en el hogar, en la sociedad.</i>
+                            </div>
+
+                            <div class="quote">
+                                <p>Estefhany es una voluntaria comunitaria que aconseja a jóvenes compartiendo los aprendizajes de su experiencia y guiándolos a buscar opciones de vida en Honduras.</p>
+                                <i>No quiero volver a tratar de emigrar. La primera vez nos fuimos de aquí 17 personas de la comunidad y  llegamos a la frontera de México, pero solo cruzaron 8. Los demás no pudimos cruzar porque pasaron cosas feas y nos entró un miedo de lo que podría pasar en el río, en la vía del tren. En ese viaje se sufre, se llora, en ese viaje se corre el riesgo de no seguir viviendo. </i>
+                            </div>  
+
+                            <div class="quote">
+                                <p>Roberto sí piensa repetir el viaje… Considera que sus mejores opciones de vida están en los Estados..</p>
+                                <i>Drásticamente volveré  a migrar porque mi hermano ya se fue y no lo agarraron. Si a él le dan el permiso de estar allá, en 3 años me voy yo. Es los mejor para mi futuro.</i>
+                            </div>
+                        </div>
+
+
+
                         <div class="intro-chapter-menu inner-page">
                             <h3>Navega por los diferentes capítulos:</h3>
                             <ul>
@@ -557,7 +599,6 @@
                                 <li><a href="#capitulo06"><img src="images/thumb-portada-c6.jpg"></a></li>
                             </ul>
                         </div>
-
                     </div>                     
                 </div>
                 <div class="background-section">

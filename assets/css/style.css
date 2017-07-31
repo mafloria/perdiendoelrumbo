@@ -643,6 +643,14 @@ img.sign-logo-bn{
 .quote p{
 	text-align: right;
 }
+.coleccion2 .quote p{
+	text-align: inherit;
+	font-weight: bold;
+}
+.coleccion2 .quote{
+	margin: 2em 20%;
+	width: 60%;
+}
 /* Media queries
 -------------------------------------------------------------------------------*/
 
