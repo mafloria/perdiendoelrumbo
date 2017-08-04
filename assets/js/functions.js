@@ -185,7 +185,7 @@ $(document).ready(function(){
 			  		$("body").css({ 'background-color': 'black' });			  		
      				$("#back-to-capitulo06").hide(); //hide back arrow because there are all the direct access to each chpater
 		    	}
-		    	else{ $(".intro-chapter-menu").hide(); $(".intro-chapter-startbtn").show(); }
+		    	else{ /*$(".intro-chapter-menu").hide();*/ $(".intro-chapter-startbtn").show(); }
 		    	
 		    	$(".main-header > h1").hide();//hide image page title
 		    	$(".chapter-title").hide(); //hide chpaters title
@@ -410,7 +410,7 @@ $(document).ready(function(){
 //********** texts
 	//write texts acording the chapter
 	
-	async function writesentences(capitulo, pause){//		
+ function writesentences(capitulo, pause){//		
 		for(i=text_current_line; i<=current_chapter_total_lines; i++, delayCounter++){
 			 (function (i, delayCounter) {
 			    timer[i] = setTimeout(function () {
