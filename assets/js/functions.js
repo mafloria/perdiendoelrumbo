@@ -197,7 +197,8 @@ $(document).ready(function(){
 			  		$("body").attr('style', 'background-image: none !important');
 			  		$("body").css({ 'background-color': 'black' });			  		
      				$("#back-to-capitulo06").hide(); //hide back arrow because there are all the direct access to each chpater
-     				if(this.hash.slice(1)=="introduccion") { $("#chapter-title").removeClass("chapter-title"); }
+     				if(this.hash.slice(1)=="introduccion") { //$("#chapter-title").removeClass("chapter-title"); 
+     				}
 		    	}
 		    	else{ /*$(".intro-chapter-menu").hide();*/ $(".intro-chapter-startbtn").show(); }
 		    	
@@ -207,7 +208,7 @@ $(document).ready(function(){
 				$("#imgbg-"+this.hash.slice(1)).show();								
 				
 		  }else{
-		  		$("#chapter-title").addClass("chapter-title"); //class for chapter title
+		  		//$("#chapter-title").addClass("chapter-title"); //class for chapter title
 		    	current_chapter = this.hash.slice(1);
 		    	autoplay_audios(this.hash.slice(1));
 		    	//$(".main-header > h1").show();//page title
@@ -218,13 +219,7 @@ $(document).ready(function(){
 		  }
 		    
 		  $("#sequence-"+current_chapter+"-scena-1 a").addClass("current-scene");
-		  /*$(".section-site").hide();
-		  $("#"+this.hash.slice(1)).show();*/		    		    		    		      
-
-	     /*var left_tmp = $(window).innerWidth();
-	     if(current_chapter == "capitulo02") left_tmp = left_tmp*2;
-	     if(current_chapter == "capitulo03") left_tmp = left_tmp*3;
-	     console.log(left_tmp); */
+		  
 	     //console.log(scrollleft_position[this.hash.slice(1)] * windowWidth);	     
 	      if (target.length) {	      	
 	      	$('html, body').animate({		          		         

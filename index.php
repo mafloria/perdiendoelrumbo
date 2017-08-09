@@ -61,7 +61,7 @@
                     <img src="images/buscando-el-norte-logo-horizontal-top.png" width="541" height="61">
                 </a>            
             </h1>
-            <div id="chapter-title">    
+            <div id="chapter-title" class="chapter-title" style="display: none;">    
                 <h3>
                     <span id="title-capitulo01" style="display: none;">Cap&iacute;tulo 1: La partida</span>
                     <span id="title-capitulo02" style="display: none;">Cap&iacute;tulo 2: Las amigas del camino</span>
