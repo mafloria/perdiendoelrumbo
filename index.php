@@ -31,6 +31,7 @@
 /* loading section */
 .loadH-content{	width: 20%; margin: 0 auto; margin-top: 10%;}
 #cargando-historia img{}
+#cargando-historia{ background-color:black;}
 #cargando-texto-animado {position: relative;color: rgba(216, 212, 217, .3);font-size: 1.4em; width: 100%; text-align: right; right: 0;} 
 #cargando-texto-animado:before {content: attr(data-text);position: absolute;overflow: hidden;max-width: 10em;white-space: nowrap;color: #fff;animation: loading 4s linear;}	
 @keyframes loading {from { max-width: 0; }}
