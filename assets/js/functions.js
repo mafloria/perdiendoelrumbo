@@ -141,6 +141,8 @@ $(document).ready(function(){
 	setHeight();	
 		  
 	$(window).resize(function() {
+		windowHeight = $(window).innerHeight();
+		windowWidth = $(window).innerWidth();
 		setHeight();
 	});
 	//adjust sections to the browser height
@@ -161,6 +163,16 @@ $(document).ready(function(){
 		$(".portrait-intro").css('width', windowWidth);
 		$(".main-header").css('width', windowWidth);
 	};
+	
+	//for movile change orientation
+
+	$(window).on("orientationchange",function(){
+  		//alert("orientacion");
+  		windowHeight = $(window).innerHeight();
+		windowWidth = $(window).innerWidth();
+  		setHeight();
+
+	}); 
 //*********** end - window size to fix content
 
 //*********** scrolls to an href section exactly - just for biggest navegation
@@ -184,6 +196,7 @@ $(document).ready(function(){
 			  		$("body").attr('style', 'background-image: none !important');
 			  		$("body").css({ 'background-color': 'black' });			  		
      				$("#back-to-capitulo06").hide(); //hide back arrow because there are all the direct access to each chpater
+     				if(this.hash.slice(1)=="introduccion") { $("#chapter-title").removeClass("chapter-title"); }
 		    	}
 		    	else{ /*$(".intro-chapter-menu").hide();*/ $(".intro-chapter-startbtn").show(); }
 		    	
@@ -193,6 +206,7 @@ $(document).ready(function(){
 				$("#imgbg-"+this.hash.slice(1)).show();								
 				
 		  }else{
+		  		$("#chapter-title").addClass("chapter-title"); //class for chapter title
 		    	current_chapter = this.hash.slice(1);
 		    	autoplay_audios(this.hash.slice(1));
 		    	//$(".main-header > h1").show();//page title

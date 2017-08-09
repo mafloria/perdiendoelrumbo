@@ -60,7 +60,7 @@
                     <img src="images/buscando-el-norte-logo-horizontal-top.png" width="541" height="61">
                 </a>            
             </h1>
-            <div class="chapter-title">    
+            <div id="chapter-title">    
                 <h3>
                     <span id="title-capitulo01" style="display: none;">Cap&iacute;tulo 1: La partida</span>
                     <span id="title-capitulo02" style="display: none;">Cap&iacute;tulo 2: Las amigas del camino</span>
@@ -700,6 +700,8 @@
 </body>
 
 <script src="assets/js/libs/jquery-1.11.3.min.js"></script>    
+<!-- for movile -->
+<script src="assets/js/libs/jquery.mobile-1.4.5.min.js"></script>
 <!-- for scrolling -->
 <script src="assets/js/libs/jquery.disablescroll.min.js"></script>
 <!-- for buscando el norte management -->
