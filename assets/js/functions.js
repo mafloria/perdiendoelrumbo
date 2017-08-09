@@ -173,7 +173,9 @@ $(document).ready(function(){
 			windowWidth = $(window).innerWidth();
 	  		setHeight();
 		}, 200);
-	}); 
+	});
+	
+	var isMobile = window.matchMedia("only screen and (max-width: 760px)"); 
 //*********** end - window size to fix content
 
 //*********** scrolls to an href section exactly - just for biggest navegation
@@ -196,9 +198,7 @@ $(document).ready(function(){
 			  		$(".chapter-nav").show(); 
 			  		$("body").attr('style', 'background-image: none !important');
 			  		$("body").css({ 'background-color': 'black' });			  		
-     				$("#back-to-capitulo06").hide(); //hide back arrow because there are all the direct access to each chpater
-     				if(this.hash.slice(1)=="introduccion") { //$("#chapter-title").removeClass("chapter-title"); 
-     				}
+     				$("#back-to-capitulo06").hide(); //hide back arrow because there are all the direct access to each chpater     				
 		    	}
 		    	else{ /*$(".intro-chapter-menu").hide();*/ $(".intro-chapter-startbtn").show(); }
 		    	
@@ -207,15 +207,17 @@ $(document).ready(function(){
 		    	$("#nav-menu").show();//show main menu
 				$("#imgbg-"+this.hash.slice(1)).show();								
 				
-		  }else{
-		  		//$("#chapter-title").addClass("chapter-title"); //class for chapter title
+		  }else{		  		
 		    	current_chapter = this.hash.slice(1);
 		    	autoplay_audios(this.hash.slice(1));
 		    	//$(".main-header > h1").show();//page title
 		    	$("#nav-menu").hide();//hide main menu
-		    	$(".chapter-title").show();//show chapter title section
-		    	$(".chapter-title > h3 > span").hide(); //hide chapter titles
-		    	$("#title-"+current_chapter).show(); //show only current chapter title		    	
+		    	
+		    	if(!isMobile.matches) {
+			    	$(".chapter-title").show();//show chapter title section
+			    	$(".chapter-title > h3 > span").hide(); //hide chapter titles
+			    	$("#title-"+current_chapter).show(); //show only current chapter title
+		    	}		    	
 		  }
 		    
 		  $("#sequence-"+current_chapter+"-scena-1 a").addClass("current-scene");
