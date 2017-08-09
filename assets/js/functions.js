@@ -167,11 +167,12 @@ $(document).ready(function(){
 	//for movile change orientation
 
 	$(window).on("orientationchange",function(){
-  		//alert("orientacion");
-  		windowHeight = $(window).innerHeight();
-		windowWidth = $(window).innerWidth();
-  		setHeight();
-
+		setTimeout(function () {
+	  		//alert("orientacion");
+	  		windowHeight = $(window).innerHeight();
+			windowWidth = $(window).innerWidth();
+	  		setHeight();
+		}, 200);
 	}); 
 //*********** end - window size to fix content
 
