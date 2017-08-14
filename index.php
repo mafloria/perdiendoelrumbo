@@ -86,11 +86,9 @@
                 <ul>
                     <li><a href="#sobrenosotros">Sobre Buscando el norte</a></li> 
                     <li><a href="#historias">Historias de vida</a></li>
+                    <li><a href="">historietas del Migrante</a> 
+                    <li><a href="">Tomadores de decisiones</a></li>
                     <li><a href="buscando-el-norte.pdf" download>Buscando el norte [PDF]</a></li>
-                    <!--<li><a href="">Perfil del Migrante</a></li>
-                    
-                    <li><a href="">Información para tomadores de decisiones</a></li>
-                    <li><a href="">Qué hacer si eres joven migrante</a></li>-->
                     <li><a href="#creditos">Créditos</a></li>
                 </ul>
             </div>
