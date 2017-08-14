@@ -88,7 +88,8 @@
 	var timer = new Array();
 	var delayCounter = 1;
 	
-	var scrollleft_position = {capitulo01:1, capitulo02:2, capitulo03:3, capitulo04:4, capitulo05:5, capitulo06:6, firmapeticion:7, sobrenosotros:8, historias:9, creditos:10 };
+	//allows to scroll over all site section. NOTE: new section has to be ncluded here by using the id
+	var scrollleft_position = {capitulo01:1, capitulo02:2, capitulo03:3, capitulo04:4, capitulo05:5, capitulo06:6, firmapeticion:7, sobrenosotros:8, historias:9, creditos:10, historietas:11, tomadoresdecisiones:12 };
 	
 	windowHeight = $(window).innerHeight();
 	windowWidth = $(window).innerWidth();	  
@@ -177,7 +178,9 @@ $(document).ready(function(){
 	
 	var isMobile = window.matchMedia("only screen and (max-width: 760px)"); 
 //*********** end - window size to fix content
-
+	
+	var static_sections = ["introduccion", "firmapeticion", "creditos", "sobrenosotros", "historias", "historietas", "tomadoresdecisiones"];
+	 
 //*********** scrolls to an href section exactly - just for biggest navegation
     $('a[href*="#"]:not([href="#"])').click(function() {
 	    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
@@ -187,7 +190,8 @@ $(document).ready(function(){
 	      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');	     
 	      let_audios_text_begins(); //restart audios and text if the user returns start all again
 	      var history_page_animate = 1000; 	
-		  if(this.hash.slice(1)=="introduccion" || this.hash.slice(1)=="firmapeticion" || this.hash.slice(1)=="creditos" || this.hash.slice(1)=="sobrenosotros" || this.hash.slice(1)=="historias") {
+		  //if(this.hash.slice(1)=="introduccion" || this.hash.slice(1)=="firmapeticion" || this.hash.slice(1)=="creditos" || this.hash.slice(1)=="sobrenosotros" || this.hash.slice(1)=="historias") {
+		  	if($.inArray(this.hash.slice(1), static_sections)>-1){ //is static page
 		  		history_page_animate = 0;
 		  		if(this.hash.slice(1)=="firmapeticion")history_page_animate = 1000; 			    			    	
 		    	if(progress_bar>=100){
