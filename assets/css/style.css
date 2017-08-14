@@ -589,11 +589,54 @@ img.sign-logo-bn{
 	text-align: center;
 	margin: 0 0 2em 0;
 }
-.intro-chapter-menu.inner-page{
-	position: inherit;
+.pages-chapter-menu{
 	width: 100%;
-	display: inline-block !important;
-}/**/
+	display: inline-block;
+	text-align: center;
+}
+.pages-chapter-menu ul{
+	display: inline-block;
+    padding: 1em 0px;
+}
+.pages-chapter-menu ul li{
+    width: 16.5%;
+    float: left;	
+}
+.pages-chapter-menu h3{
+	margin: 0;
+}
+.pages-chapter-menu ul li a img {
+    border: 5px solid black;
+    border-radius: 50%;
+    width: 80%;
+    height: auto;
+    transition: all 0.4s ease;
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    opacity: 0.5;
+    -webkit-box-shadow: inset 0px 0px 42px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: inset 0px 0px 42px 0px rgba(0,0,0,0.75);
+    box-shadow: inset 0px 0px 42px 0px rgba(0,0,0,0.75);
+}
+.pages-chapter-menu ul li a img:hover{
+	opacity: 1;
+	border: 5px solid #b46127;
+}
+ul.pages-url-list li a{
+    padding: 0.5em;
+    background-color: #e32211;
+    display: block;
+    color: white;
+    width: 50%;
+    margin-bottom: 1em;	
+}
+ul.pages-url-list li a:hover{
+	background-color: #940c00;
+}
+img.chapter-logo-sc{
+	width: 35%;
+	margin: 4em 0 0 0;
+}
 .girar{
 	width: 70%;
 	margin: 0 auto;

@@ -3,15 +3,14 @@
                 <div class="content-intro sign-p">
                     <div class="sign-p-txt">
                         <h2>Tomadores de Decisiones</h2>
+                        <p>Selecciona una etiqueta para descargar documento PDF:</p>
+                        <ul class="pages-url-list">
+                            <li><a href="el-salvador_tomadores_decisiones-es.pdf" download>El Salvador [ES]</a></li>
+                            <li><a href="guatemala_tomadores_decisiones-es.pdf" download>Guatemala [ES]</a></li>
+                            <li><a href="honduras_tomadores_decisiones-es.pdf" download>Honduras [ES]</a></li>
+                        </ul>
                         
-                        AQUI HISOTRIETAS
-                        
-                        <div class="sign-bottom">
-                          <img src="images/logo-save-children.png" width="578" height="146">    
-                        </div> 
-
                         <?php include("sections/navegacion-capitulos.php"); ?>
-
                     </div>
                 </div>
                 

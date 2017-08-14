@@ -3,15 +3,14 @@
                 <div class="content-intro sign-p">
                     <div class="sign-p-txt">
                         <h2>Historietas</h2>
-                        
-                        AQUI HISOTRIETAS
-                        
-                        <div class="sign-bottom">
-                          <img src="images/logo-save-children.png" width="578" height="146">    
-                        </div> 
+                        <p>Selecciona una etiqueta para descargar documento PDF:</p>
+                        <ul class="pages-url-list">
+                            <li><a href="el-salvador_comic-es.pdf" download>Historieta: El Salvador [ES]</a></li>
+                            <li><a href="guatemala_comic-es.pdf" download>Historieta: Guatemala [ES]</a></li>
+                            <li><a href="honduras_comic-es.pdf" download>Historieta: Honduras [ES]</a></li>
+                        </ul>   
 
                         <?php include("sections/navegacion-capitulos.php"); ?>
-
                     </div>
                 </div>
                 

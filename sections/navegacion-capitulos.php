@@ -1,4 +1,5 @@
-                        <div class="intro-chapter-menu inner-page">
+                        <div class="pages-chapter-menu inner-page">
+                            <img class="chapter-logo-sc" src="images/logo-save-children.png" width="578" height="146"> 
                             <h3>Navega por los diferentes capítulos:</h3>
                             <ul>
                                 <li><a href="#capitulo01"><img src="images/thumb-portada-c1.jpg"></a></li>
