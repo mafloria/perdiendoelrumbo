@@ -712,7 +712,16 @@ img.chapter-logo-sc{
  	.content-intro.sign-p{
  		width: 70% !important;
  		left: 15%;
- 	} 	
+ 	} 
+ 	.logo-stc{
+	    bottom: 0.3em;	
+ 	}	
+ 	header .submenu{
+ 		top: 0 !important;
+ 	}
+ 	header .submenu ul li a {
+    	padding: 0.7em 2em !important;
+	}
   }
 @media screen and (max-width: 40em){
 	.content-intro a.blackBtn{
