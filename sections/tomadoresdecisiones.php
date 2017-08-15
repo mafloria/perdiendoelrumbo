@@ -5,9 +5,9 @@
                         <h2>Tomadores de Decisiones</h2>
                         <p>Selecciona una etiqueta para descargar documento PDF:</p>
                         <ul class="pages-url-list">
-                            <li><a href="el-salvador_tomadores_decisiones-es.pdf" download>El Salvador [ES]</a></li>
-                            <li><a href="guatemala_tomadores_decisiones-es.pdf" download>Guatemala [ES]</a></li>
-                            <li><a href="honduras_tomadores_decisiones-es.pdf" download>Honduras [ES]</a></li>
+                            <li><a href="download/el-salvador-tomadores-decisiones-es.php" target="_blank">El Salvador [ES]</a></li>
+                            <li><a href="download/guatemala-tomadores-decisiones-es.php" target="_blank">Guatemala [ES]</a></li>
+                            <li><a href="download/honduras-tomadores-decisiones-es.php" target="_blank">Honduras [ES]</a></li>
                         </ul>
                         
                         <?php include("sections/navegacion-capitulos.php"); ?>

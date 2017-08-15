@@ -1,5 +1,5 @@
 <?php ?>
-<!doctype html>
+<!DOCTYPE html>
 <!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
 <!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
 <!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
@@ -88,9 +88,9 @@
                     <li><a href="#historias">Historias de vida</a></li>
                     <li><a href="#tomadoresdecisiones">Tomadores de decisiones</a></li>
                     <li><a href="#historietas">Historietas del Migrante</a></li>
-                    <li><a href="buscando-el-norte.pdf" download>Buscando el norte [PDF]</a></li>
+                    <li><a href="download/buscando-el-norte.php" target="_blank">Buscando el norte [PDF]</a></li>
                     <li><a href="#creditos">Créditos</a></li>
-                </ul>
+                </ul>                
             </div>
 
         </header><!-- end headerr -->
@@ -103,7 +103,7 @@
                         <img src="images/buscando-el-norte-logo-intro.png" width="781" height="260">
                         
                     </div> 
-                    <a class="blackBtn intro-chapter-startbtn" href="#capitulo01" target="_top">COMENZAR</a>    
+                    <a class="blackBtn intro-chapter-startbtn" href="#capitulo01" target="_top">COMENZAR</a>                       
                 </div>
                 <div class="intro-chapter-menu" style="display:none">
                     <h3>Navega por los diferentes capítulos:</h3>

@@ -5,9 +5,9 @@
                         <h2>Historietas</h2>
                         <p>Selecciona una etiqueta para descargar documento PDF:</p>
                         <ul class="pages-url-list">
-                            <li><a href="el-salvador_comic-es.pdf" download>Historieta: El Salvador [ES]</a></li>
-                            <li><a href="guatemala_comic-es.pdf" download>Historieta: Guatemala [ES]</a></li>
-                            <li><a href="honduras_comic-es.pdf" download>Historieta: Honduras [ES]</a></li>
+                            <li><a href="download/el-salvador_comic-es.php" target="_blank">Historieta: El Salvador [ES]</a></li>
+                            <li><a href="download/guatemala-comic-es.php" target="_blank">Historieta: Guatemala [ES]</a></li>
+                            <li><a href="download/honduras-comic-es.php" target="_blank">Historieta: Honduras [ES]</a></li>
                         </ul>   
 
                         <?php include("sections/navegacion-capitulos.php"); ?>
