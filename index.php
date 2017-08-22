@@ -124,6 +124,7 @@
             </section><!-- end - INTRODUCCION -->
 
             <section id="capitulo01" class="section-site cpt01"><!-- CAPITULO 01 -->
+                <a class="continue-view" href="">Toca la pantalla para continuar</a>
                 <div class="side-nav-section" style="display: none"><!-- navegacion lateral por seccion -->
                     <ul>
                         <li class="sequence-thumb" id="sequence-capitulo01-scena-1"><a><img src="images/thumb-c1-e1.jpg"></a></li>
