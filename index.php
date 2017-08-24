@@ -211,7 +211,7 @@
             </section><!-- end - CAPITULO 02 -->
 
             <section id="capitulo03" class="section-site cpt03"><!-- CAPITULO 03 -->
-            	<a id="audio-capitulo02-continue" class="continue-view">Toca la pantalla para continuar</a>
+            	<a id="audio-capitulo03-continue" class="continue-view">Toca la pantalla para continuar</a>
                 <div class="side-nav-section" style="display: none"><!-- navegacion lateral por seccion -->
                     <ul>
                         <li class="sequence-thumb" id="sequence-capitulo03-scena-1"><a><img src="images/thumb-c3-e1.jpg"></a></li>

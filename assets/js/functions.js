@@ -101,10 +101,9 @@ function set_current_audio_time(event){
 		if(eval(current_image_counter+" < totalimg_"+current_chapter+"_scena_"+current_scena_number) && !stop_last_image){
 			//console.log(eval("timeimg_"+current_chapter+"_scena_"+current_scena_number+"["+(current_image_counter-1)+"]")+"<"+current_audio_tracktime);
 			if(eval("timeimg_"+current_chapter+"_scena_"+current_scena_number+"["+(current_image_counter-1)+"]<current_audio_tracktime")){				
-				//$(".background-section > img").hide();				
+								
 				current_image_counter++;
-				$("#imgbg-"+current_chapter).attr("src", "images/"+current_chapter+"/escena-"+current_scena_number+"/buscando-el-norte-"+current_chapter+"-escena-"+current_scena_number+"-"+current_image_counter+".jpg");
-				//$("#imgbg-"+current_chapter+"-scena-"+current_scena_number+"-"+current_image_counter).show();//shows new background image
+				$("#imgbg-"+current_chapter).attr("src", "images/"+current_chapter+"/escena-"+current_scena_number+"/buscando-el-norte-"+current_chapter+"-escena-"+current_scena_number+"-"+current_image_counter+".jpg");				
 				console.log("#imgbg-"+current_chapter+"-scena-"+current_scena_number+"-"+current_image_counter + "---"+current_audio_tracktime );
 			}
 		}else{
@@ -299,7 +298,13 @@ $(document).ready(function(){
 	  	$("#nav-next-"+current_chapter+"-inactive").hide();
 	  	$("#nav-next-"+current_chapter+"-active").show();
 	  	
-	  	$("#nav-next-"+current_chapter+"-active").trigger("click");	  		  		 
+	  	$("#nav-next-"+current_chapter+"-active").trigger("click");
+	  	
+	  	if(isMobile){
+	   			pause_audio(current_chapter);
+	   			$("#audio-"+current_chapter+"-continue").show();
+	   			$("#playAudio-"+current_chapter).hide();
+	   	}	  		  		 
 	  }
 	  
 	}
@@ -717,9 +722,10 @@ $(document).ready(function(){
     
     
     //waits 5 seconds after all is available to show story
-    
+    var loadingtime = 10000;
+    if(isMobile) loadingtime = 25000;
    	setTimeout(function() {
     	$("#cargando-historia").hide();
     	$(".wrapper").show();
-  	}, 10000);	    
+  	}, loadingtime);	    
 });
