@@ -173,6 +173,7 @@
             </section><!-- end - CAPITULO 01 -->
             
             <section id="capitulo02" class="section-site cpt02"><!-- CAPITULO 02 -->
+            	<a id="audio-capitulo02-continue" class="continue-view">Toca la pantalla para continuar</a>
                 <div class="side-nav-section" style="display: none"><!-- navegacion lateral por seccion -->
                     <ul>
                         <li class="sequence-thumb" id="sequence-capitulo02-scena-1"><a><img src="images/thumb-c2-e1.jpg"></a></li>
@@ -210,6 +211,7 @@
             </section><!-- end - CAPITULO 02 -->
 
             <section id="capitulo03" class="section-site cpt03"><!-- CAPITULO 03 -->
+            	<a id="audio-capitulo02-continue" class="continue-view">Toca la pantalla para continuar</a>
                 <div class="side-nav-section" style="display: none"><!-- navegacion lateral por seccion -->
                     <ul>
                         <li class="sequence-thumb" id="sequence-capitulo03-scena-1"><a><img src="images/thumb-c3-e1.jpg"></a></li>
@@ -247,6 +249,7 @@
             </section><!-- end - CAPITULO 03 -->
 
             <section id="capitulo04" class="section-site cpt04"><!-- CAPITULO 04 -->
+            	<a id="audio-capitulo04-continue" class="continue-view">Toca la pantalla para continuar</a>
                 <div class="side-nav-section" style="display: none"><!-- navegacion lateral por seccion -->
                     <ul>
                         <li class="sequence-thumb" id="sequence-capitulo04-scena-1"><a><img src="images/thumb-c4-e1.jpg"></a></li>
@@ -291,6 +294,7 @@
             </section><!-- end - CAPITULO 04 -->
 
             <section id="capitulo05" class="section-site cpt05"><!-- CAPITULO 05 -->
+            	<a id="audio-capitulo05-continue" class="continue-view">Toca la pantalla para continuar</a>
                 <div class="side-nav-section" style="display: none"><!-- navegacion lateral por seccion -->
                     <ul>
                         <li class="sequence-thumb" id="sequence-capitulo05-scena-1"><a><img src="images/thumb-c5-e1.jpg"></a></li>                              
@@ -335,6 +339,7 @@
             </section><!-- end - CAPITULO 05 -->
 
             <section id="capitulo06" class="section-site cpt06"><!-- CAPITULO 06 -->
+            	<a id="audio-capitulo06-continue" class="continue-view">Toca la pantalla para continuar</a>
                 <div class="side-nav-section" style="display: none"><!-- navegacion lateral por seccion -->
                     <ul>
                         <li class="sequence-thumb" id="sequence-capitulo06-scena-1"><a><img src="images/thumb-c6-e1.jpg"></a></li>                        

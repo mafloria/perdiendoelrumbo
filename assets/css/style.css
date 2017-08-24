@@ -738,9 +738,6 @@ a.continue-view{
  	header .submenu ul li a {
     	padding: 0.7em 2em !important;
 	}
-	a.continue-view{
-		display: block !important;
-	}
   }
 @media screen and (max-width: 40em){
 	.content-intro a.blackBtn{
