@@ -286,6 +286,12 @@ $(document).ready(function(){
 	   			   
 	   		$("#sequence-"+current_chapter+"-scena-"+current_scena_number+" > a").addClass("current-scene");
 	   		
+	   		if(isMobile){
+	   			pause_audio(current_chapter);
+	   			$("#audio-"+current_chapter+"-continue").show();
+	   			$("#playAudio-"+current_chapter).hide();
+	   		}
+	   		
 	  }else{	  		  	
 	  	
 	  	$("#imgbg-"+current_chapter+"-scena-0").show();	//shows scena after all images passed
@@ -334,7 +340,7 @@ $(document).ready(function(){
 	});
 	
 	//click over play audio icon
-	$(document).on('click', '.playAudio', function(){
+	$(document).on('click', '.playAudio, .continue-view', function(){
 		var id_info = $(this).attr('id').split('-');
 		eval("vid_"+id_info[1]+"_scena_"+current_scena_number).play();
 		if(text_current_line==0){
