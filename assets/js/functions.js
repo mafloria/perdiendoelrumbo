@@ -208,7 +208,7 @@ $(document).ready(function(){
 		    	$(".main-header > h1").hide();//hide image page title
 		    	$(".chapter-title").hide(); //hide chpaters title
 		    	$("#nav-menu").show();//show main menu
-				$("#imgbg-"+this.hash.slice(1)).show();								
+				$("#imgbg-"+this.hash.slice(1)).show();						
 				
 		  }else{		  		
 		    	current_chapter = this.hash.slice(1);

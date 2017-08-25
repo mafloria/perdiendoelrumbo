@@ -18,7 +18,7 @@
     <link rel="shortcut icon" href="/favicon.png" type="image/x-icon">
     <link rel="icon" href="images/favicon.png" type="image/x-icon">
     
-    <link rel="stylesheet" href="assets/css/style.css" />    
+    <link rel="stylesheet" href="assets/css/style.css?v=1.1" />    
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">        
            
     <link href="https://fonts.googleapis.com/css?family=Magra" rel="stylesheet">
@@ -417,6 +417,6 @@
 <!-- for scrolling -->
 <script src="assets/js/libs/jquery.disablescroll.min.js"></script>
 <!-- for buscando el norte management -->
-<script src="assets/js/functions.js"></script>
+<script src="assets/js/functions.js?v=1.1"></script>
     
 </html>
