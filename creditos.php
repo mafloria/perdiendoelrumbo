@@ -1,4 +1,4 @@
-<?php include("sections/footer.php"); ?>
+<?php include("sections/header.php"); ?>
         <section id="creditos" class="section-page section-site">
                 <a class="nav-before chapter-nav" href="#introduccion"><svg><use xlink:href="#nav"/></svg></a>           
                 <div class="content-intro sign-p">
