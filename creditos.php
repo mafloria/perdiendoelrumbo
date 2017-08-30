@@ -1,3 +1,4 @@
+<?php include("sections/footer.php"); ?>
         <section id="creditos" class="section-site">
                 <a class="nav-before chapter-nav" href="#introduccion"><svg><use xlink:href="#nav"/></svg></a>           
                 <div class="content-intro sign-p">
@@ -69,3 +70,4 @@
                     <img class="med-bg" id="imgbg-creditos" src="images/buscando-el-norte-1024-intro.png">
                 </div>
             </section><!-- end creditos -->
+<?php include("sections/footer.php"); ?>            

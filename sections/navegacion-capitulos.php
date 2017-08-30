@@ -9,4 +9,5 @@
                                 <li><a href="#capitulo05"><img src="images/thumb-portada-c5.jpg"></a></li>
                                 <li><a href="#capitulo06"><img src="images/thumb-portada-c6.jpg"></a></li>
                             </ul>
+                            
                         </div>
