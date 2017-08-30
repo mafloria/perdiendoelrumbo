@@ -709,6 +709,12 @@ a.continue-view{
     font-size: 1.5em;
     display: none;
 }	
+/*--------------------------------------------------------------PAGINAS EXTERNAS*/
+.section-page{
+	width: 100%;
+	height: 100%;
+	background: transparent url(../../images/buscando-el-norte-1024-intro.png.jpg) !important;	
+}
 
 /* Media queries
 -------------------------------------------------------------------------------*/

@@ -1,4 +1,4 @@
-        <section id="historias" class="section-site buscandoelnorte">
+        <section id="historias" class="section-page section-site buscandoelnorte">
                 <a class="nav-before chapter-nav" href="#introduccion"><svg><use xlink:href="#nav"/></svg></a>           
                 <div class="content-intro sign-p">
                     <div class="sign-p-txt">

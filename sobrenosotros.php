@@ -1,4 +1,4 @@
-        <section id="sobrenosotros" class="section-site buscandoelnorte">
+        <section id="sobrenosotros" class="section-page section-site buscandoelnorte">
                 <a class="nav-before chapter-nav" href="#introduccion"><svg><use xlink:href="#nav"/></svg></a>           
                 <div class="content-intro sign-p">
                     <img class="sign-logo-bn" src="images/buscando-el-norte-logo-horizontal-top.png" width="541" height="61">

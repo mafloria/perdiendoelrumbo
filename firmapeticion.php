@@ -1,4 +1,4 @@
-            <section id="firmapeticion" class="section-site peticion">
+            <section id="firmapeticion" class="section-page section-site peticion">
                 <a class="nav-before chapter-nav" href="#capitulo06" id="back-to-capitulo06"><svg><use xlink:href="#nav"/></svg></a>           
                 <div class="content-intro sign-p">
                     <img class="sign-logo-bn" src="images/buscando-el-norte-logo-horizontal-top.png" width="541" height="61">

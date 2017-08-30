@@ -1,4 +1,4 @@
-        <section id="historietas" class="section-site">
+        <section id="historietas" class="section-page section-site">
                 <a class="nav-before chapter-nav" href="#introduccion"><svg><use xlink:href="#nav"/></svg></a>           
                 <div class="content-intro sign-p">
                     <div class="sign-p-txt">
