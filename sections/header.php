@@ -27,8 +27,6 @@
 <body>
 
 <?php include_once("svg/buscandoelnorte.php"); ?> 
-<style>
-</style>
     <div class="portrait-intro">
         <div class="girar">
             <img src="images/girrar-phone.png">
@@ -36,7 +34,7 @@
         </div>
     </div>
     
-    <div class="wrapper" style="display:none">
+    <div class="wrapper">
         <header class="main-header">
             <h1 id="back-to-intro">
                 <a href="#introduccion">

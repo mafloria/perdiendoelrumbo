@@ -1,6 +1,6 @@
 <?php include("sections/header.php"); ?>
         <section id="creditos" class="section-page section-site">
-                <a class="nav-before chapter-nav" href="#introduccion"><svg><use xlink:href="#nav"/></svg></a>           
+                <a class="nav-before chapter-nav" href="http://localhost/php-apps/perdiendoelrumbo/creditos.php?#introduccion"><svg><use xlink:href="#nav"/></svg></a>           
                 <div class="content-intro sign-p">
                     <div class="sign-p-txt">
                         <h2>Créditos</h2>
@@ -58,9 +58,7 @@
                         referencia para todos aquellos niños, niñas y adolescentes que están pensando tomar
                         la ruta hacia los Estados.<br/>
                         
-                        <div class="sign-bottom">
-                          <img src="images/logo-save-children.png" width="578" height="146">    
-                        </div> 
+                        
                         <?php include("sections/navegacion-capitulos.php"); ?>
 
                     </div>
