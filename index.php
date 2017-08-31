@@ -415,7 +415,7 @@
 <!-- for movile -->
 <script src="assets/js/libs/jquery.mobile-1.4.5.min.js"></script>
 <!-- for scrolling -->
-<script src="assets/js/libs/jquery.disablescroll.min.js"></script>
+
 <!-- for buscando el norte management -->
 <script src="assets/js/functions.js?v=1.1"></script>
     

@@ -14,7 +14,7 @@ blockquote {padding: 16px; background: #eee;}
 	BUSCANDO EL NORTE CSS
 */
 html{
-	overflow: hidden !important;
+	overflow: hidden; /* !important*/
 	background-color: black;
 }
 body{
@@ -29,6 +29,7 @@ body{
 	position: relative;
 	vertical-align: middle;	
 }
+
 p, a, h1, h2, h3, h4, h5{
 	font-family: 'Magra', sans-serif;
 	margin: 0;
@@ -66,10 +67,10 @@ a.blackBtn:hover{
 	background-color: #ab6501;
 }
 /*sets horizontal scroll*/
-::-webkit-scrollbar {
+/*::-webkit-scrollbar {
     width: 0px;  /* remove scrollbar space */
-    background: transparent;  /* optional: just make scrollbar invisible */
-}
+/*    background: transparent;  /* optional: just make scrollbar invisible */
+/*}
 /* optional: show position indicator in red */
 ::-webkit-scrollbar-thumb {
     background: #FF0000;

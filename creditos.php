@@ -1,6 +1,6 @@
 <?php include("sections/header.php"); ?>
         <section id="creditos" class="section-page section-site">
-                <a class="nav-before chapter-nav" href="http://localhost/php-apps/perdiendoelrumbo/creditos.php?#introduccion"><svg><use xlink:href="#nav"/></svg></a>           
+                <a class="nav-before chapter-nav" href="http://localhost/php-apps/perdiendoelrumbo/"><svg><use xlink:href="#nav"/></svg></a>           
                 <div class="content-intro sign-p">
                     <div class="sign-p-txt">
                         <h2>Créditos</h2>
