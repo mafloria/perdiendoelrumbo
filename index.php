@@ -142,7 +142,6 @@
                     <div class="subs-section">  
                          <audio id="audio-capitulo01-scena-1" class="audios" ontimeupdate="set_current_audio_time(this)">
                             <source src="audio/capitulo01/buscando-el-norte-capitulo01-E1.mp3" type="audio/mp3">
-                            <em class="error"><strong>Error:</strong> Your browser doesn't appear to support HTML5 Audio.</em>
                         </audio>                        
                         <audio id="audio-capitulo01-scena-2" class="audios" ontimeupdate="set_current_audio_time(this)">
                             <source src="audio/capitulo01/buscando-el-norte-capitulo01-E2.mp3" type="audio/mp3">                                                        

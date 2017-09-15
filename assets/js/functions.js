@@ -175,7 +175,8 @@ $(document).ready(function(){
 		}, 200);
 	});
 	
-	var isMobile = window.matchMedia("only screen and (max-width: 760px)"); 
+	var isMobile = window.matchMedia("only screen and (max-width: 760px)");
+	//console.log("IS MOVILE "+isMobile.matches);
 //*********** end - window size to fix content
 	
 	var static_sections = ["introduccion", "firmapeticion", "creditos", "sobrenosotros", "historias", "historietas", "tomadoresdecisiones"];
@@ -285,7 +286,7 @@ $(document).ready(function(){
 	   			   
 	   		$("#sequence-"+current_chapter+"-scena-"+current_scena_number+" > a").addClass("current-scene");
 	   		
-	   		if(isMobile){
+	   		if(isMobile.matches){
 	   			pause_audio(current_chapter);
 	   			$("#audio-"+current_chapter+"-continue").show();
 	   			$("#playAudio-"+current_chapter).hide();
@@ -300,7 +301,7 @@ $(document).ready(function(){
 	  	
 	  	$("#nav-next-"+current_chapter+"-active").trigger("click");
 	  	
-	  	if(isMobile){
+	  	if(isMobile.matches){
 	   			pause_audio(current_chapter);
 	   			$("#audio-"+current_chapter+"-continue").show();
 	   			$("#playAudio-"+current_chapter).hide();
@@ -723,7 +724,7 @@ $(document).ready(function(){
     
     //waits 5 seconds after all is available to show story
     var loadingtime = 10000;
-    if(isMobile) loadingtime = 25000;
+    if(isMobile.matches) loadingtime = 25000;
    	setTimeout(function() {
     	$("#cargando-historia").hide();
     	$(".wrapper").show();
